@@ -3,10 +3,12 @@ package seedu.wildwatch;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+import java.util.Arrays;
 
-class WildWatchTest {
+public class WildWatchTest {
+
     @Test
-    public void sampleTest() {
+    public void isDateValid() {
         assertTrue(true);
     }
 }
