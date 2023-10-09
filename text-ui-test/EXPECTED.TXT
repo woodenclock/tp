@@ -1,5 +1,4 @@
 Hello there! Welcome to Wild Watch!
 
-
 What is your name?
 Hello James Gosling
