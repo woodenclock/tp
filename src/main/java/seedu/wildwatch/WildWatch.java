@@ -1,8 +1,8 @@
-package seedu.duke;
+package seedu.wildwatch;
 
 import java.util.Scanner;
 
-public class Duke {
+public class WildWatch {
     /**
      * Main entry-point for the java.duke.Duke application.
      */
