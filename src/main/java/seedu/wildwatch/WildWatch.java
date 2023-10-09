@@ -1,6 +1,6 @@
 package seedu.wildwatch;
 
-import seedu.operatingsystem.BootUp;
+import seedu.wildwatch.operatingsystem.BootUp;
 import java.util.Scanner;
 
 public class WildWatch {
