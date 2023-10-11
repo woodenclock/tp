@@ -21,7 +21,7 @@ public class ErrorHandler {
             Ui.emptyListMessagePrinter();
             validInput = true;
         } catch (EmptyInputException exception) {
-                Ui.emptyDescriptionMessagePrinter(null);
+            Ui.emptyDescriptionMessagePrinter(null);
         } catch (EmptyDeleteException exception) {
             Ui.emptyDescriptionMessagePrinter("delete");
         } catch (UnknownInputException exception) {

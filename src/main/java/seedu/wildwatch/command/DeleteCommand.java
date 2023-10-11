@@ -1,7 +1,5 @@
 package seedu.wildwatch.command;
 
-import seedu.wildwatch.operation.Ui;
-
 /**
  * Command class for listing all task in EntryList
  */

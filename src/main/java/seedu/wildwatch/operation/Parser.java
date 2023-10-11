@@ -44,7 +44,7 @@ public class Parser {
         } else if (firstWord.equals("delete") && hasInteger && !bufferScanner.hasNext()) {
             DeleteCommand.taskRemover(numberInput);
         } else if (inputBuffer.equals("list")) {
-                ListCommand.listOut(isFromFile);
+            ListCommand.listOut(isFromFile);
         }
         throw new UnknownInputException();
     }

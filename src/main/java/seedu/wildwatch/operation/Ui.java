@@ -1,6 +1,5 @@
 package seedu.wildwatch.operation;
 
-import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 
 import java.util.Scanner;
