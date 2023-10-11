@@ -57,6 +57,8 @@ public class Ui {
     public static void emptyDescriptionMessagePrinter(String description) {
         if (description == null) {
             System.out.println("OOPS!!! The description cannot be empty. :-(");
+        } else if (description.equals("add")) {
+            System.out.println("OOPS!!! The description of an add cannot be empty. :-(");
         } else if (description.equals("delete")) {
             System.out.println("OOPS!!! The description of a delete cannot be empty. :-(");
         } else {
