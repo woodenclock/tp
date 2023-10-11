@@ -1,7 +1,8 @@
 package seedu.wildwatch;
 
 import seedu.wildwatch.operatingsystem.BootUp;
-import java.util.Scanner;
+import seedu.wildwatch.operation.Parser;
+
 
 public class WildWatch {
     /**
@@ -9,9 +10,7 @@ public class WildWatch {
      */
     public static void main(String[] args) {
         System.out.println(BootUp.WELCOME_MESSAGE);
-        System.out.println("What is your name?");
-
-        Scanner in = new Scanner(System.in);
-        System.out.println("Hello " + in.nextLine());
+        System.out.println("What would you like to do?");
+        Parser.entryHandler();
     }
 }
