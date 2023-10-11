@@ -1,4 +1,4 @@
-package seedu.wildwatch.operatingsystem;
+package seedu.wildwatch.operation;
 
 public class BootUp {
     public static final String WELCOME_MESSAGE =
