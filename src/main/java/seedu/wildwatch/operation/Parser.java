@@ -10,7 +10,7 @@ public class Parser {
                 break;
             } else if (inputBuffer.equals("help")) {
                 Ui.printHorizontalLines();
-
+                Help.helper();
                 Ui.printHorizontalLines();
             } else {
                 Ui.printHorizontalLines();
