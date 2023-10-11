@@ -1,8 +1,12 @@
-package seedu.wildwatch.operatingsystem;
+package seedu.wildwatch.operation;
 
 public class BootUp {
-    public static final String WELCOME_MESSAGE =
-            "Hello there! Welcome to Wild Watch!\n";
+    public static final String WELCOME_MESSAGE_1 =
+            "Hello there! Welcome to WildWatch!\n";
+
+    public static final String WELCOME_MESSAGE_2 =
+            "What would you like to do?\n";
+
     public static final String LOGO =
             "____    __    ____  __   __       _______\n" +
             "\\   \\  /  \\  /   / |  | |  |     |       \\\n" +
@@ -10,11 +14,10 @@ public class BootUp {
             "  \\            /   |  | |  |     |  |  |  |\n" +
             "   \\    /\\    /    |  | |  `----.|  '--'  |\n" +
             "    \\__/  \\__/     |__| |_______||_______/\n" +
-            "\n" +
             "____    __    ____  ___   .___________.  ______  __    __\n" +
             "\\   \\  /  \\  /   / /   \\  |           | /      ||  |  |  |\n" +
             " \\   \\/    \\/   / /  ^  \\ `---|  |----`|  ,----'|  |__|  |\n" +
             "  \\            / /  /_\\  \\    |  |     |  |     |   __   |\n" +
             "   \\    /\\    / /  _____  \\   |  |     |  `----.|  |  |  |\n" +
-            "    \\__/  \\__/ /__/     \\__\\  |__|      \\______||__|  |__|";
+            "    \\__/  \\__/ /__/     \\__\\  |__|      \\______||__|  |__|\n";
 }
