@@ -16,4 +16,4 @@ java -jar %jarloc% < ..\..\text-ui-test\input.txt > ..\..\text-ui-test\ACTUAL.TX
 
 cd ..\..\text-ui-test
 
-FC ACTUAL.TXT ACTUAL.TXT && ECHO Test passed! || Echo Test failed!
+FC ACTUAL.TXT EXPECTED.TXT && ECHO Test passed! || Echo Test failed!
