@@ -14,4 +14,16 @@ public class Entry {
         this.species = species;
         this.remark = remark;
     }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
 }

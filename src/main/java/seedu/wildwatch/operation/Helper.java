@@ -1,6 +1,6 @@
 package seedu.wildwatch.operation;
 
-public class Help {
+public class Helper {
     /**
      * Requires UPDATE
      */
@@ -62,7 +62,7 @@ public class Help {
     /**
      * Prints out help page
      */
-    public static void helper() {
+    public static void printHelpMessage() {
         System.out.println(helpPage);
     }
 }

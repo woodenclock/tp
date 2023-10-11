@@ -1,5 +1,8 @@
 package seedu.wildwatch.operation;
 
+import seedu.wildwatch.entry.Entry;
+import seedu.wildwatch.entry.EntryList;
+
 import java.util.Scanner;
 
 /**
@@ -32,6 +35,40 @@ public class Ui {
         System.out.print(System.lineSeparator());
     }
 
+    public static void listMessagePrinter() {
+        System.out.println("Here are the tasks in your list: ");
+    }
 
+    public static void entryCountPrinter() {
+        System.out.println("Now you have " + (EntryList.getArraySize()) + " task(s) in the list.");
+    }
 
+    public static void unknownInputMessagePrinter() {
+        System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
+    }
+
+    public static void invalidDateTimeMessagePrinter() {
+        System.out.println("OOPS!!! Invalid Date input :-(");
+    }
+
+    public static void emptyListMessagePrinter() {
+        System.out.println("OOPS!!! Nothing to list. :-(");
+    }
+
+    public static void emptyDescriptionMessagePrinter(String description) {
+        if (description == null) {
+            System.out.println("OOPS!!! The description cannot be empty. :-(");
+        } else if (description.equals("delete")) {
+            System.out.println("OOPS!!! The description of a delete cannot be empty. :-(");
+        } else {
+            System.out.println("OOPS!!! The description cannot be empty. :-(");
+        }
+    }
+
+    public static void print(int nthTask) {
+        System.out.print("Date: [" + EntryList.getEntryDate(nthTask) + "] ");
+        System.out.print("Species: [" + EntryList.getEntrySpecies(nthTask) + "] ");
+        System.out.print("Remark: [" + EntryList.getEntryRemark(nthTask) + "]");
+        System.out.print(System.lineSeparator());
+    }
 }
