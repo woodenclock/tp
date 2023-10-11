@@ -10,15 +10,7 @@ import java.util.Scanner;
  */
 public class Ui {
     private static final int NUMBER_OF_UNDERSCORES = 60;
-
     private static Scanner in = new Scanner(System.in);
-
-    public static void printHorizontalLines() {
-        for (int i = 0; i < NUMBER_OF_UNDERSCORES; i++) {
-            System.out.print("_");
-        }
-        System.out.print(System.lineSeparator());
-    }
 
     /**
      * Returns input of the user from the console.
@@ -28,4 +20,18 @@ public class Ui {
     public static String inputRetriever() {
         return in.nextLine().trim();
     }
+
+    public static void helpRequestMessagePrinter() {
+        System.out.println("No worries, I'm here to help!");
+    }
+
+    public static void printHorizontalLines() {
+        for (int i = 0; i < NUMBER_OF_UNDERSCORES; i++) {
+            System.out.print("_");
+        }
+        System.out.print(System.lineSeparator());
+    }
+
+
+
 }

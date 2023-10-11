@@ -1,7 +1,7 @@
 package seedu.wildwatch.operation;
 
 public class Parser {
-    public static void manualEntryHandler() {
+    public static void manualInputHandler() {
 
         while (true) {
             String inputBuffer = Ui.inputRetriever(); //Retrieves input of user
@@ -10,8 +10,9 @@ public class Parser {
                 break;
             } else if (inputBuffer.equals("help")) {
                 Ui.printHorizontalLines();
-                Help.helper();
+                Ui.helpRequestMessagePrinter();
                 Ui.printHorizontalLines();
+                Help.helper();
             } else {
                 Ui.printHorizontalLines();
                 Ui.printHorizontalLines();

@@ -2,7 +2,7 @@ package seedu.wildwatch.operation;
 
 public class Help {
     /**
-     * Requires Update
+     * Requires UPDATE
      */
     private static final String helpPage =
             "\n\n" +
