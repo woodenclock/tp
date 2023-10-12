@@ -27,13 +27,6 @@ public class Ui {
         System.out.println("No worries, I'm here to help!");
     }
 
-    public static void printHorizontalLines() {
-        for (int i = 0; i < NUMBER_OF_UNDERSCORES; i++) {
-            System.out.print("_");
-        }
-        System.out.print(System.lineSeparator());
-    }
-
     public static void listMessagePrinter() {
         System.out.println("Here are the tasks in your list: ");
     }
@@ -57,6 +50,8 @@ public class Ui {
     public static void emptyDescriptionMessagePrinter(String description) {
         if (description == null) {
             System.out.println("OOPS!!! The description cannot be empty. :-(");
+        } else if (description.equals("add")) {
+            System.out.println("OOPS!!! The description of an add cannot be empty. :-(");
         } else if (description.equals("delete")) {
             System.out.println("OOPS!!! The description of a delete cannot be empty. :-(");
         } else {
@@ -68,6 +63,13 @@ public class Ui {
         System.out.print("Date: [" + EntryList.getEntryDate(nthTask) + "] ");
         System.out.print("Species: [" + EntryList.getEntrySpecies(nthTask) + "] ");
         System.out.print("Remark: [" + EntryList.getEntryRemark(nthTask) + "]");
+        System.out.print(System.lineSeparator());
+    }
+
+    public static void printHorizontalLines() {
+        for (int i = 0; i < NUMBER_OF_UNDERSCORES; i++) {
+            System.out.print("_");
+        }
         System.out.print(System.lineSeparator());
     }
 }
