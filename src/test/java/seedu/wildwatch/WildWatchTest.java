@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class WildWatchTest {
 
     @Test
-    public void isDateValid() {
+    public void isMainValid() {
         assertTrue(true);
     }
 }
