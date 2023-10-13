@@ -14,6 +14,10 @@ public class EntryList {
         return entries.size();
     }
 
+    public static void entryRemover(int numberInput){
+        entries.remove(numberInput);
+    }
+
     public static void addEntry(String date, String species, String remark) {
         entries.add(new Entry(date, species, remark));
     }
