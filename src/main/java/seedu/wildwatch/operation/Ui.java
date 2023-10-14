@@ -47,6 +47,14 @@ public class Ui {
         System.out.println("OOPS!!! Nothing to list. :-(");
     }
 
+    public static void noEntryfoundPrinter() {
+        System.out.println("OOPS!!! The entry number that u stated could not be found :-(");
+    }
+
+    public static void entryRemovedMessagePrinter() {
+        System.out.println("The entry have been removed.");
+    }
+
     public static void emptyDescriptionMessagePrinter(String description) {
         if (description == null) {
             System.out.println("OOPS!!! The description cannot be empty. :-(");
@@ -73,3 +81,5 @@ public class Ui {
         System.out.print(System.lineSeparator());
     }
 }
+
+
