@@ -4,58 +4,60 @@ public class Helper {
     /**
      * Requires UPDATE
      */
-    private static final String helpPage =
+    private static final String helpCommandMessage =
             "\n\n" +
-                    "---------------------------HELP PAGE----------------------------\n\n"+
-                    "1.  To add a todo, type \"todo + {description}\"\n" +
-                    "     Example: todo borrow book\n" +
                     "    ____________________________________________________________\n" +
-                    "     Got it. I've added this task:\n" +
-                    "       [T][ ] borrow book\n" +
-                    "     Now you have 5 tasks in the list.\n" +
+                    "1.  Get help - show the list of commands available for this app\n" +
+                    "     Format: help\n" +
+                    "     Examples: \n" +
+                    "       help\n" +
+                    "    ____________________________________________________________\n";
+    private static final String addCommandMessage =
+            "\n\n" +
                     "    ____________________________________________________________\n" +
+                    "2.  To add a new wildlife\n" +
+                    "     Format: add D/DATE S/SPECIES N/NAME R/REMARKS\n" +
+                    "       DATE should be in the format DD-MM-YY\n" +
+                    "     Examples: \n" +
+                    "       add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n" +
+                    "       add D/10-11-20 S/Bali Myna N/Myna_1 R/ S/Malayan Water Monitor N/Monitor_1 R/Aggressive\n" +
+                    "    ____________________________________________________________\n";
+
+    private static final String listCommandMessage =
+            "\n\n" +
+                    "    ____________________________________________________________\n" +
+                    "3.  To list all wildlife,\n" +
+                    "     Format: list\n" +
+                    "     Examples: \n" +
+                    "       list\n" +
+                    "    ____________________________________________________________\n";
+
+    private static final String deleteCommandMessage =
+            "\n\n" +
+                    "    ____________________________________________________________\n" +
+                    "4.  To delete a wildlife\n" +
+                    "     Format: delete INDEX\n" +
+                    "       The index refers to the index number shown in the displayed observation list.\n" +
+                    "       Note:\n" +
+                    "           - The index must be a positive integer:\n" +
+                    "           - Deleted items may not be recoverable:\n" +
+                    "     Examples: \n" +
+                    "       delete 1\n" +
+                    "       delete 6\n" +
+                    "    ____________________________________________________________\n";
+
+    private static final String helpPage =
                     "\n\n" +
-                    "2.  To list out all the tasks, type \"list\"\n" +
-                    "     Example: list\n" +
-                    "    ____________________________________________________________\n" +
-                    "     Here are the tasks in your list:\n" +
-                    "     1.[T][X] read book\n" +
-                    "     2.[T][X] join sports club\n" +
-                    "     3.[T][ ] borrow book\n" +
-                    "    ____________________________________________________________\n" +
+                    "---------------------------HELP PAGE----------------------------\n"+
+                    helpCommandMessage +
                     "\n\n" +
-                    "3.  To add a deadline, type \"deadline + {description} + /by + {date time}\"\n" +
-                    "     Example: deadline return book /by 2023/09/23 1800\n" +
-                    "    ____________________________________________________________\n" +
-                    "     Got it. I've added this task:\n" +
-                    "       [D][ ] return book (by: 2023-09-23 18:00)\n" +
-                    "     Now you have 4 tasks in the list.\n" +
-                    "    ____________________________________________________________\n" +
+                    addCommandMessage +
                     "\n\n" +
-                    "4.  To add an event, type \"deadline + {description} + /from + {date time} + /to {date time}\"\n" +
-                    "     Example: event project meeting /from 2023-09-23 1800 /to 2023-09-23 1900\n" +
-                    "    ____________________________________________________________\n" +
-                    "     Got it. I've added this task:\n" +
-                    "       [E][ ] project meeting (from: 2023-09-23 18:00 to: 2023-09-23 19:00)\n" +
-                    "     Now you have 5 tasks in the list.\n" +
-                    "    ____________________________________________________________\n" +
+                    listCommandMessage +
                     "\n\n" +
-                    "5.  {date time} should be written in this format:\n" +
-                    "    ____________________________________________________________\n" +
-                    "     Date: dd/mm/yyyy OR yyyy-mm-dd\n" +
-                    "      - Example: 09/11/2023 OR 2023-11-09\n" +
-                    "     Time: HHmm OR HH:mm in 24-Hr format\n" +
-                    "      - Example: 1800 OR 18:00\n" +
-                    "     NOTE: There should be a spacing between the date and time\n" +
-                    "    ____________________________________________________________\n" +
-                    "\n\n" +
-                    "6.  To delete a task, type \"delete + {task number}\"\n" +
-                    "     Example: delete 5\n" +
-                    "    ____________________________________________________________\n" +
-                    "     Noted. I've removed this task:\n" +
-                    "       [E][ ] project meeting (from: 2023-09-23 18:00 to: 2023-09-23 19:00)\n" +
-                    "     Now you have 4 tasks in the list.\n" +
-                    "    ____________________________________________________________\n" +
+                    deleteCommandMessage +
+                    //"\n\n" +
+
                     "\n" +
                     "-------------------------HELP PAGE END--------------------------\n";
 
