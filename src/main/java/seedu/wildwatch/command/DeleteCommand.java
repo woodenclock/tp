@@ -13,12 +13,6 @@ public class DeleteCommand extends Command {
      * @param numberInput
      */
     public static void deleteEntry(int numberInput) {
-        int taskToBeDeleted = numberInput - 1;
-        int arraySize = EntryList.getArraySize();
-//        if (taskToBeDeleted >= arraySize || taskToBeDeleted < 1 || EntryList.isArrayEmpty()) {
-//            Ui.entryNotFoundMessagePrinter();
-//            return;
-//        }
         Ui.entryRemovedMessagePrinter();
         EntryList.entryRemover(numberInput);
         Ui.entryCountPrinter();

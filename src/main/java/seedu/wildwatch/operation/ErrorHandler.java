@@ -3,6 +3,7 @@ package seedu.wildwatch.operation;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
+import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.EmptyAddException;
 import seedu.wildwatch.exception.EmptyDeleteException;
@@ -39,7 +40,7 @@ public class ErrorHandler {
         } finally {
             if (!validInput) {
                 Ui.printHorizontalLines();
-                Helper.printHelpMessage();
+                HelpCommand.printHelpMessage();
             }
         }
     }

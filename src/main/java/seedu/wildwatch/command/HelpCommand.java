@@ -1,6 +1,6 @@
-package seedu.wildwatch.operation;
+package seedu.wildwatch.command;
 
-public class Helper {
+public class HelpCommand {
     /**
      * Requires UPDATE
      */

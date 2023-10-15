@@ -2,6 +2,7 @@ package seedu.wildwatch.operation;
 
 import java.util.Scanner;
 
+import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.command.DeleteCommand;
 import seedu.wildwatch.command.AddCommand;
@@ -19,7 +20,7 @@ public class Parser {
                 Ui.printHorizontalLines();
                 Ui.helpRequestMessagePrinter();
                 Ui.printHorizontalLines();
-                Helper.printHelpMessage();
+                HelpCommand.printHelpMessage();
             } else {
                 Ui.printHorizontalLines();
                 ErrorHandler.handleError(inputBuffer);
