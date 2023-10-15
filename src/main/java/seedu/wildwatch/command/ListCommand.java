@@ -12,7 +12,7 @@ public class ListCommand extends Command {
      *
      * @param isFromFile
      */
-    public static void listOut(boolean isFromFile) {
+    public static void listEntry(boolean isFromFile) {
         if (!isFromFile) {
             Ui.listMessagePrinter();
         }

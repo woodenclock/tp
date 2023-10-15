@@ -18,8 +18,8 @@ public class EntryList {
         entries.remove(numberInput);
     }
 
-    public static void addEntry(String date, String species, String remark) {
-        entries.add(new Entry(date, species, remark));
+    public static void addEntry(String date, String species, String name, String remark) {
+        entries.add(new Entry(date, species, name, remark));
     }
 
     public static Entry getEntry(int nthTask) {
