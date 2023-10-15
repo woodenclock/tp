@@ -39,7 +39,7 @@ public class Ui {
         System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
     }
 
-    public static void invalidDateTimeMessagePrinter() {
+    public static void invalidDateMessagePrinter() {
         System.out.println("OOPS!!! Invalid Date input :-(");
     }
 
@@ -47,8 +47,8 @@ public class Ui {
         System.out.println("OOPS!!! Nothing to list. :-(");
     }
 
-    public static void noEntryfoundPrinter() {
-        System.out.println("OOPS!!! The entry number that u stated could not be found :-(");
+    public static void entryNotFoundMessagePrinter() {
+        System.out.println("OOPS!!! The entry number could not be found :-(");
     }
 
     public static void entryRemovedMessagePrinter() {

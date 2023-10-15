@@ -29,7 +29,7 @@ public class Parser {
         ShutDown.shutDown();
     }
 
-    public static void taskManager(String inputBuffer, boolean isFromFile) throws UnknownInputException {
+    public static void entryManager(String inputBuffer, boolean isFromFile) throws UnknownInputException {
         Scanner bufferScanner = new Scanner(inputBuffer);   //Scanner for the buffer
         String firstWord = bufferScanner.next();            //Stores first word in the input
         boolean hasInteger = bufferScanner.hasNextInt();    //Indicates that some integer was input
@@ -40,11 +40,11 @@ public class Parser {
 
         //Functionalities
         if (firstWord.equals("add")) {
-            AddCommand.insertToDo(inputBuffer, isFromFile);
+            AddCommand.addEntry(inputBuffer, isFromFile);
         } else if (firstWord.equals("delete") && hasInteger && !bufferScanner.hasNext()) {
-            DeleteCommand.taskRemover(numberInput);
+            DeleteCommand.deleteEntry(numberInput);
         } else if (inputBuffer.equals("list")) {
-            ListCommand.listOut(isFromFile);
+            ListCommand.listEntry(isFromFile);
         }
         throw new UnknownInputException();
     }
