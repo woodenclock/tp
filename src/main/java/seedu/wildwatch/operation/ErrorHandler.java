@@ -14,7 +14,7 @@ import seedu.wildwatch.exception.UnknownInputException;
 import seedu.wildwatch.exception.UnknownDateFormatException;
 
 public class ErrorHandler {
-    private static final int DEFAULT_NUMBER_INPUT = -100;
+    private static final int DEFAULT_NUMBER_INPUT = -3710; //Number that can never be input in normal use of WildWatch
     public static void handleError(String inputBuffer) {
         boolean validInput = false;
         try {
