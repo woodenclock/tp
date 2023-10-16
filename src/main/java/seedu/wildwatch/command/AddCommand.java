@@ -29,9 +29,9 @@ public class AddCommand extends Command {
             throw new IncorrectInputException();
         }
 
-        final String date = matcher.group("date");
-        final String species = matcher.group("species");
-        final String name = matcher.group("name");
+        final String date = matcher.group("date").trim();
+        final String species = matcher.group("species").trim();
+        final String name = matcher.group("name").trim();
         final String remark = matcher.group("remark");
 
         EntryList.addEntry(date, species, name, remark);
