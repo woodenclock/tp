@@ -14,7 +14,7 @@ public class DeleteCommand extends Command {
      */
     public static void deleteEntry(int numberInput) {
         Ui.entryRemovedMessagePrinter();
-        EntryList.entryRemover(numberInput);
+        EntryList.deleteEntry(numberInput);
         Ui.entryCountPrinter();
     }
 }
