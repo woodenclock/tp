@@ -1,10 +1,11 @@
 package seedu.wildwatch.entry;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class EntryList {
-    private static ArrayList<Entry> entries = new ArrayList<>();   //Keeps track of all Entry instances made
+    private static ArrayList<Entry> entries = new ArrayList<>(); //Keeps track of all Entry instances made
 
     public static ArrayList<Entry> getArray() {
         return entries;
@@ -14,12 +15,12 @@ public class EntryList {
         return entries.size();
     }
 
-    public static void entryRemover(int numberInput){
-        entries.remove(numberInput);
-    }
-
     public static void addEntry(String date, String species, String name, String remark) {
         entries.add(new Entry(date, species, name, remark));
+    }
+
+    public static void deleteEntry(int numberInput){
+        entries.remove(numberInput - 1);
     }
 
     public static Entry getEntry(int nthTask) {
@@ -32,6 +33,10 @@ public class EntryList {
 
     public static String getEntrySpecies(int nthTask) {
         return getEntry(nthTask).getSpecies();
+    }
+
+    public static String getEntryName(int nthTask) {
+        return getEntry(nthTask).getName();
     }
 
     public static String getEntryRemark(int nthTask) {
