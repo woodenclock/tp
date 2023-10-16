@@ -48,7 +48,8 @@ public class Parser {
             DeleteCommand.deleteEntry(numberInput);
         } else if (inputBuffer.equals("list")) {
             ListCommand.listEntry(isFromFile);
+        } else {
+            throw new UnknownInputException();
         }
-        throw new UnknownInputException();
     }
 }
