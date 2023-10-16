@@ -1,6 +1,6 @@
 package seedu.wildwatch.command;
 
-public class HelpCommand {
+public class HelpCommand extends Command {
     /**
      * Requires UPDATE
      */

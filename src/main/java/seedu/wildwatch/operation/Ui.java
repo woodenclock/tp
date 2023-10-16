@@ -2,6 +2,7 @@ package seedu.wildwatch.operation;
 
 import seedu.wildwatch.entry.EntryList;
 
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 /**
@@ -32,7 +33,7 @@ public class Ui {
     }
 
     public static void entryCountPrinter() {
-        System.out.println("Now you have " + (EntryList.getArraySize()) + " task(s) in the list.");
+        System.out.println("Now you have " + (EntryList.getArraySize()) + " entries in the list.");
     }
 
     public static void unknownInputMessagePrinter() {
@@ -51,8 +52,16 @@ public class Ui {
         System.out.println("OOPS!!! The entry number could not be found :-(");
     }
 
+    public static void incorrectInputMessagePrinter() {
+        System.out.println("OOPS!!! Format of command is incorrect.");
+    }
+
     public static void entryRemovedMessagePrinter() {
-        System.out.println("The entry have been removed.");
+        System.out.println("The entry has been removed.");
+    }
+
+    public static void entryAddedMessagePrinter() {
+        System.out.println("The following entry has been added:");
     }
 
     public static void emptyDescriptionMessagePrinter(String description) {
@@ -67,9 +76,11 @@ public class Ui {
         }
     }
 
-    public static void print(int nthTask) {
-        System.out.print("Date: [" + EntryList.getEntryDate(nthTask) + "] ");
-        System.out.print("Species: [" + EntryList.getEntrySpecies(nthTask) + "] ");
+    public static void printEntry(int nthTask) {
+        System.out.print("Date: [" +
+                EntryList.getEntryDate(nthTask).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")) + "] | ");
+        System.out.print("Species: [" + EntryList.getEntrySpecies(nthTask) + "] | ");
+        System.out.print("Name: [" + EntryList.getEntryName(nthTask) + "] | ");
         System.out.print("Remark: [" + EntryList.getEntryRemark(nthTask) + "]");
         System.out.print(System.lineSeparator());
     }

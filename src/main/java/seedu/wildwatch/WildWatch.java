@@ -17,6 +17,6 @@ public class WildWatch {
         Ui.printHorizontalLines();
         System.out.print(BootUp.WELCOME_MESSAGE_2);
         Ui.printHorizontalLines();
-        Parser.manualInputHandler();
+        Parser.manualInputHandler(); //Parser takes on
     }
 }

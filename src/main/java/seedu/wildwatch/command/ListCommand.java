@@ -19,7 +19,7 @@ public class ListCommand extends Command {
         int arraySize = EntryList.getArraySize();
         for (int i = 0; i < arraySize; i++) {
             System.out.print(i + 1 + ".");
-            Ui.print(i);
+            Ui.printEntry(i);
         }
         Ui.entryCountPrinter();
     }
