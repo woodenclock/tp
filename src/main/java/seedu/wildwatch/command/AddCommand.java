@@ -20,9 +20,9 @@ public class AddCommand extends Command {
                     + "(?: R/(?<remark>[^/]+))?");
 
     public static void addEntry(String inputBuffer, boolean isFromFile) throws IncorrectInputException {
-//        if (!isFromFile) {
-//            Ui.listMessagePrinter();
-//        }
+//      if (!isFromFile) {
+//          Ui.listMessagePrinter();
+//      }
 
         final Matcher matcher = ADD_ENTRY_COMMAND_FORMAT.matcher(inputBuffer);
         if (!matcher.matches()) {
