@@ -6,6 +6,7 @@ import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.command.DeleteCommand;
 import seedu.wildwatch.command.AddCommand;
+import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.exception.UnknownInputException;
 
 
@@ -31,8 +32,9 @@ public class Parser {
         ShutDown.shutDown();
     }
 
-    public static void entryManager(String inputBuffer, boolean isFromFile) throws UnknownInputException {
-        Scanner bufferScanner = new Scanner(inputBuffer);   //Scanner for the inputBuffer
+    public static void entryManager(String inputBuffer, boolean isFromFile)
+            throws UnknownInputException, IncorrectInputException {
+        Scanner bufferScanner = new Scanner(inputBuffer);   //Scanner for the buffer
         String firstWord = bufferScanner.next();            //Stores first word in the input
         assert firstWord != null && !firstWord.isEmpty() : "First word shouldn't be null or empty";
         boolean hasInputInteger = bufferScanner.hasNextInt();    //Indicates that some integer was input

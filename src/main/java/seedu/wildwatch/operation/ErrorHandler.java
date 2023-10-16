@@ -12,6 +12,7 @@ import seedu.wildwatch.exception.EmptyInputException;
 import seedu.wildwatch.exception.EntryNotFoundException;
 import seedu.wildwatch.exception.UnknownInputException;
 import seedu.wildwatch.exception.UnknownDateFormatException;
+import seedu.wildwatch.exception.IncorrectInputException;
 
 public class ErrorHandler {
     private static final int DEFAULT_NUMBER_INPUT = -3710; //Number that can never be input in normal use of WildWatch
@@ -37,6 +38,8 @@ public class ErrorHandler {
             Ui.unknownInputMessagePrinter();
         } catch (UnknownDateFormatException | DateTimeParseException exception) {
             Ui.invalidDateMessagePrinter();
+        } catch (IncorrectInputException exception) {
+            Ui.incorrectInputMessagePrinter();
         } finally {
             if (!validInput) {
                 Ui.printHorizontalLines();
