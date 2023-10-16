@@ -1,7 +1,6 @@
 package seedu.wildwatch.entry;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class EntryList {
