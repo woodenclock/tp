@@ -31,7 +31,8 @@ public class Parser {
         ShutDown.shutDown();
     }
 
-    public static void entryManager(String inputBuffer, boolean isFromFile) throws UnknownInputException, IncorrectInputException {
+    public static void entryManager(String inputBuffer, boolean isFromFile)
+            throws UnknownInputException, IncorrectInputException {
         Scanner bufferScanner = new Scanner(inputBuffer);   //Scanner for the buffer
         String firstWord = bufferScanner.next();            //Stores first word in the input
         boolean hasInteger = bufferScanner.hasNextInt();    //Indicates that some integer was input

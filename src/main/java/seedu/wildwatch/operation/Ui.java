@@ -59,7 +59,9 @@ public class Ui {
         System.out.println("The entry have been removed.");
     }
 
-    public static void entryAddedMessagePrinter() { System.out.println("The entry has been added."); }
+    public static void entryAddedMessagePrinter() {
+        System.out.println("The entry has been added.");
+    }
 
     public static void emptyDescriptionMessagePrinter(String description) {
         if (description == null) {
