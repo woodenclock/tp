@@ -18,3 +18,4 @@ text-ui-test/runtest.bat
 text-ui-test/runtest.sh
 WildWatch.log
 text-ui-test/ACTUAL.TXT
+META-INF/MANIFEST.MF
