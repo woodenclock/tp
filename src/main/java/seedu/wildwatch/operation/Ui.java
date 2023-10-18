@@ -29,7 +29,7 @@ public class Ui {
     }
 
     public static void listMessagePrinter() {
-        System.out.println("Here are the tasks in your list: ");
+        System.out.println("Here are the entries in your list: ");
     }
 
     public static void entryCountPrinter() {
