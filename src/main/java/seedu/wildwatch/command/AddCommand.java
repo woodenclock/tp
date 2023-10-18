@@ -37,6 +37,7 @@ public class AddCommand extends Command {
         EntryList.addEntry(date, species, name, remark);
         Ui.entryAddedMessagePrinter();
         Ui.printEntry(EntryList.getArraySize() - 1);
+        Ui.entryCountPrinter();
     }
 }
 

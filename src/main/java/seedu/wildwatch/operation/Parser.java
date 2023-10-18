@@ -41,11 +41,11 @@ public class Parser {
     public static void entryManager(String inputBuffer, boolean isFromFile)
             throws UnknownInputException, IncorrectInputException {
         LOGGER.log(Level.INFO, "Managing entry for input: {0}", inputBuffer);
-        Scanner bufferScanner = new Scanner(inputBuffer);   //Scanner for the buffer
-        String firstWord = bufferScanner.next();            //Stores first word in the input
+        Scanner bufferScanner = new Scanner(inputBuffer);     //Scanner for the buffer
+        String firstWord = bufferScanner.next();              //Stores first word in the input
         assert firstWord != null && !firstWord.isEmpty() : "First word shouldn't be null or empty";
-        boolean hasInputInteger = bufferScanner.hasNextInt();    //Indicates that some integer was input
-        int numberInput = DEFAULT_NUMBER_INPUT;             //Stores the number input
+        boolean hasInputInteger = bufferScanner.hasNextInt(); //Indicates that some integer was input
+        int numberInput = DEFAULT_NUMBER_INPUT;               //Stores the number input
         if (hasInputInteger) {
             numberInput = bufferScanner.nextInt();
             assert numberInput != DEFAULT_NUMBER_INPUT : "Number input wasn't parsed correctly";

@@ -18,6 +18,7 @@ import seedu.wildwatch.exception.IncorrectInputException;
 public class ErrorHandler {
     private static final int DEFAULT_NUMBER_INPUT = -3710; //Number never input during normal use of WildWatch
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());
+    
     public static void handleError(String inputBuffer) {
         boolean validInput = false;
         try {
