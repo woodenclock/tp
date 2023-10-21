@@ -7,6 +7,7 @@ Some code snippets were referenced from [here](https://github.com/woodenclock/ip
 ## Design & implementation
 
 {Describe the design and implementation of the product. Use UML diagrams and short code snippets where applicable.}
+
 WildWatch is a CLI based software that helps zoos keep track of animal inhabitants.
 
 ## Product scope
