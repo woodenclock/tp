@@ -1,10 +1,20 @@
 # Developer Guide
 
+- [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
+- [Design & Implementation](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#design--implementation)
+- [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope)
+  - [Target User Profile](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#target-user-profile)
+  - [Value Proposition](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#value-proposition)
+- [User Story](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#user-stories)
+- [Non-Funtional Requirements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#non-functional-requirements)
+- [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary)
+- [Manual Testing](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#manual-testing)
+   
 ## Acknowledgements
 
 Some code snippets were referenced from [here](https://github.com/woodenclock/ip.git).
 
-## Design & implementation
+## Design & Implementation
 
 {Describe the design and implementation of the product. Use UML diagrams and short code snippets where applicable.}
 
@@ -37,6 +47,6 @@ Target user profile are the clerks working in zoos.
 
 * *glossary item* - Definition
 
-## Instructions for manual testing
+## Manual Testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
