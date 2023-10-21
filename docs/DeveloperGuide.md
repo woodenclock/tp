@@ -2,7 +2,7 @@
 
 ## Acknowledgements
 
-Some code snippets were referenced from (here)[https://github.com/woodenclock/ip.git].
+Some code snippets were referenced from !(here)[https://github.com/woodenclock/ip.git].
 
 ## Design & implementation
 
