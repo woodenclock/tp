@@ -23,7 +23,10 @@ Target user profile are the clerks working in zoos.
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
-|v1.0|new user|see usage instructions|refer to them when I forget how to use the application|
+|v1.0|new user|see help instructions|refer to them when I forget how to use the application|
+|v1.0|zoo clerk|add an animal entry|record the animals in the zoo, and refer to them afterwards|
+|v1.0|zoo clerk|delete an animal entry|remove redundant or invalid animal entry|
+|v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
 ## Non-Functional Requirements
