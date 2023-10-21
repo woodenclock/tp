@@ -9,10 +9,13 @@
 - [Non-Funtional Requirements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#non-functional-requirements)
 - [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary)
 - [Manual Testing](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#manual-testing)
+- [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary)
    
 ## Acknowledgements
 
 Some code snippets were referenced from [here](https://github.com/woodenclock/ip.git).
+
+
 
 ## Design & Implementation
 
@@ -20,14 +23,18 @@ Some code snippets were referenced from [here](https://github.com/woodenclock/ip
 
 WildWatch is a CLI based software that helps zoos keep track of animal inhabitants.
 
+
+
 ## Product scope
 ### Target user profile
 
 Target user profile are the clerks working in zoos.
 
+
 ### Value proposition
 
 {Describe the value proposition: what problem does it solve?}
+
 
 ## User Stories
 
@@ -39,14 +46,26 @@ Target user profile are the clerks working in zoos.
 |v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
+
+
 ## Non-Functional Requirements
 
 {Give non-functional requirements}
+
+
 
 ## Glossary
 
 * *glossary item* - Definition
 
+
+
 ## Manual Testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+
+
+
+## Command Summary
+
+
