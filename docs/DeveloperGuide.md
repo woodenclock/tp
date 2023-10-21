@@ -2,17 +2,17 @@
 
 ## Acknowledgements
 
-Some code snippets were referenced from !(here)[https://github.com/woodenclock/ip.git].
+Some code snippets were referenced from [here](https://github.com/woodenclock/ip.git).
 
 ## Design & implementation
 
 {Describe the design and implementation of the product. Use UML diagrams and short code snippets where applicable.}
-
+WildWatch is a CLI based software that helps zoos keep track of animal inhabitants.
 
 ## Product scope
 ### Target user profile
 
-{Describe the target user profile}
+Target user profile are the clerks working in zoos.
 
 ### Value proposition
 
