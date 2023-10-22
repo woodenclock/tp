@@ -23,7 +23,7 @@ public class ErrorHandler {
         boolean validInput = false;
         try {
             checkError(inputBuffer);
-            Parser.entryManager(inputBuffer, false);
+            EntryHandler.handleEntry(inputBuffer, false);
             validInput = true;
         } catch (EmptyInputException exception) {
             LOGGER.warning("Received an empty input.");
@@ -54,7 +54,7 @@ public class ErrorHandler {
         } finally {
             if (!validInput) {
                 Ui.printHorizontalLines();
-                HelpCommand.printHelpMessage();
+                HelpCommand.printNeedHelpMessage();
             }
         }
     }

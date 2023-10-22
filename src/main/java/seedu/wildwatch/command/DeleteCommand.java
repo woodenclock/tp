@@ -4,11 +4,11 @@ import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.operation.Ui;
 
 /**
- * Command class for deleting task in EntryList
+ * Command class for deleting entry in EntryList
  */
 public class DeleteCommand extends Command {
     /**
-     * Deletes task in the EntryList
+     * Deletes entry in the EntryList
      *
      * @param numberInput
      */

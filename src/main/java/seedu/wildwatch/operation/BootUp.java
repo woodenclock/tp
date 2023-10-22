@@ -20,4 +20,16 @@ public class BootUp {
             "  \\            / /  /_\\  \\    |  |     |  |     |   __   |\n" +
             "   \\    /\\    / /  _____  \\   |  |     |  `----.|  |  |  |\n" +
             "    \\__/  \\__/ /__/     \\__\\  |__|      \\______||__|  |__|\n";
+
+    public static void bootUpOne() {
+        Ui.printHorizontalLines();
+        System.out.print(BootUp.LOGO);
+        Ui.printHorizontalLines();
+        System.out.print(BootUp.WELCOME_MESSAGE_1);
+    }
+
+    public static void bootUpTwo() {
+        System.out.print(BootUp.WELCOME_MESSAGE_2);
+        Ui.printHorizontalLines();
+    }
 }

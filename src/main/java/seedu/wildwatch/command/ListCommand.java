@@ -4,11 +4,11 @@ import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.operation.Ui;
 
 /**
- * Command class for listing all task in EntryList
+ * Command class for listing all entries in EntryList
  */
 public class ListCommand extends Command {
     /**
-     * Lists out all task in EntryList
+     * Lists out all entry in EntryList
      *
      * @param isFromFile
      */

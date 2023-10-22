@@ -8,7 +8,7 @@ import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.operation.Ui;
 
 /**
- * Command class for adding task to EntryList
+ * Command class for adding entry to EntryList
  */
 public class AddCommand extends Command {
 
@@ -20,11 +20,9 @@ public class AddCommand extends Command {
                     + "(?: R/(?<remark>[^/]+))?");
 
     public static void addEntry(String inputBuffer, boolean isFromFile) throws IncorrectInputException {
-        //if (!isFromFile) {
-        //    Ui.listMessagePrinter();
-        //}
 
         final Matcher matcher = ADD_ENTRY_COMMAND_FORMAT.matcher(inputBuffer);
+
         if (!matcher.matches()) {
             throw new IncorrectInputException();
         }
@@ -35,9 +33,11 @@ public class AddCommand extends Command {
         final String remark = matcher.group("remark");
 
         EntryList.addEntry(date, species, name, remark);
-        Ui.entryAddedMessagePrinter();
-        Ui.printEntry(EntryList.getArraySize() - 1);
-        Ui.entryCountPrinter();
+        if (!isFromFile) {
+            Ui.entryAddedMessagePrinter();
+            Ui.printEntry(EntryList.getArraySize() - 1);
+            Ui.entryCountPrinter();
+        }
     }
 }
 
