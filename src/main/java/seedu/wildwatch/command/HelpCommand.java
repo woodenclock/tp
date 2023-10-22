@@ -51,10 +51,21 @@ public class HelpCommand extends Command {
                     "\n" +
                     "-------------------------HELP PAGE END---------------------------\n";
 
+    private static final String needHelpPage =
+            "\n" +
+            "Please type \"help\" if you need help" +
+            "\n";
+
+    public static void printNeedHelpMessage() {
+        System.out.println(needHelpPage);
+    }
+
     /**
      * Prints out help page
      */
     public static void printHelpMessage() {
         System.out.println(helpPage);
     }
+
+
 }

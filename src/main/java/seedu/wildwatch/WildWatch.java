@@ -1,9 +1,8 @@
 package seedu.wildwatch;
 
-import seedu.wildwatch.operation.BootUp;
 import seedu.wildwatch.operation.LogHandler;
-import seedu.wildwatch.operation.Parser;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.operation.BootUp;
+import seedu.wildwatch.operation.FileHandler;
 
 
 public class WildWatch {
@@ -12,13 +11,7 @@ public class WildWatch {
      */
     public static void main(String[] args) {
         LogHandler.configure(); //Configure Log
-        Ui.printHorizontalLines();
-        System.out.print(BootUp.WELCOME_MESSAGE_1);
-        Ui.printHorizontalLines();
-        System.out.print(BootUp.LOGO);
-        Ui.printHorizontalLines();
-        System.out.print(BootUp.WELCOME_MESSAGE_2);
-        Ui.printHorizontalLines();
-        Parser.manualInputHandler(); //Parser takes on
+        BootUp.bootUpOne();
+        FileHandler.handleFile(); //FileHandler takes on
     }
 }

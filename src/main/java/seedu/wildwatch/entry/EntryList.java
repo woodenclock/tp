@@ -1,5 +1,7 @@
 package seedu.wildwatch.entry;
 
+import seedu.wildwatch.operation.FileHandler;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -22,27 +24,31 @@ public class EntryList {
         entries.remove(numberInput - 1);
     }
 
-    public static Entry getEntry(int nthTask) {
-        return entries.get(nthTask);
+    public static Entry getEntry(int nthEntry) {
+        return entries.get(nthEntry);
     }
 
-    public static LocalDate getEntryDate(int nthTask) {
-        return getEntry(nthTask).getDate();
+    public static LocalDate getEntryDate(int nthEntry) {
+        return getEntry(nthEntry).getDate();
     }
 
-    public static String getEntrySpecies(int nthTask) {
-        return getEntry(nthTask).getSpecies();
+    public static String getEntrySpecies(int nthEntry) {
+        return getEntry(nthEntry).getSpecies();
     }
 
-    public static String getEntryName(int nthTask) {
-        return getEntry(nthTask).getName();
+    public static String getEntryName(int nthEntry) {
+        return getEntry(nthEntry).getName();
     }
 
-    public static String getEntryRemark(int nthTask) {
-        return getEntry(nthTask).getRemark();
+    public static String getEntryRemark(int nthEntry) {
+        return getEntry(nthEntry).getRemark();
     }
 
     public static boolean isArrayEmpty() {
         return entries.isEmpty();
+    }
+
+    public static void saveEntry() {
+        FileHandler.saver(entries);
     }
 }

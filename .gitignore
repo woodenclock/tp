@@ -20,3 +20,7 @@ WildWatch.log
 text-ui-test/ACTUAL.TXT
 META-INF/MANIFEST.MF
 text-ui-test/EXPECTED-UNIX.TXT
+WildWatch.log.1
+WildWatch.log.1.lck
+WildWatch.log.lck
+WildWatch.txt
