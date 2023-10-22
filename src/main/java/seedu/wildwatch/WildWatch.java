@@ -1,6 +1,8 @@
 package seedu.wildwatch;
 
-import seedu.wildwatch.operation.*;
+import seedu.wildwatch.operation.LogHandler;
+import seedu.wildwatch.operation.BootUp;
+import seedu.wildwatch.operation.FileHandler;
 
 
 public class WildWatch {
