@@ -19,3 +19,4 @@ text-ui-test/runtest.sh
 WildWatch.log
 text-ui-test/ACTUAL.TXT
 META-INF/MANIFEST.MF
+text-ui-test/EXPECTED-UNIX.TXT
