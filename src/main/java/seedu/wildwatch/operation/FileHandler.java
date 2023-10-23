@@ -28,7 +28,6 @@ public class FileHandler {
             createFile();
         }
         BootUp.bootUpTwo(); //Welcome prompt message
-        EntryHandler.handleManualInput();
     }
 
     /**
