@@ -16,35 +16,34 @@ public class FileHandler {
     private static File openedFile; //File to save the entries
 
     public static void handleFile() {
-        boolean hasFile = checkFileExistence();
-        loadFile();
-        if (hasFile) {
+        if (checkFileExistence()) {
+            Ui.fileExistMessagePrinter();
+            loadFile();
             Ui.taskLoadedMessagePrinter();
+
+            // Lists entries loaded from file
             EntryHandler.handleFileInput("list");
+        } else {  // File does not exist
+            Ui.noFileMessagePrinter();
+            createFile();
         }
-        BootUp.bootUpTwo();
+        BootUp.bootUpTwo(); //Welcome prompt message
         EntryHandler.handleManualInput();
     }
 
+    /**
+     * Checks if file exists. Opens file if the file exists.
+     *
+     * @return true if file exists; false if not
+     */
     public static boolean checkFileExistence() {
         System.out.print(System.lineSeparator());
         Ui.checkingIfFileExistsMessagePrinter();
         File file = new File(FILE_PATH);
 
-        if (!file.exists()) {   //File doesn't exist, so create it
-            try {
-                if (file.createNewFile()) { //Returns true if successfully created
-                    openedFile = file;      //File used to save tasks
-                    Ui.noFileMessagePrinter();
-                } else {
-                    Ui.fileCreationFailMessagePrinter();
-                }
-            } catch (IOException exception) {
-                Ui.errorMessagePrinter(exception);
-            }
+        if (!file.exists()) {
             return false;
         } else {
-            Ui.fileExistMessagePrinter();
             openedFile = file;      //File used to save tasks
             return true;
         }
@@ -62,6 +61,23 @@ public class FileHandler {
             }
         } catch (FileNotFoundException exception) {
             Ui.fileNotFoundMessagePrinter();
+        }
+    }
+
+    /**
+     * Creates new file with filename specified by {@code FILE_PATH}.
+     */
+    public static void createFile() {
+        File file = new File(FILE_PATH);
+        try {
+            if (file.createNewFile()) {
+                openedFile = file;
+                Ui.createNewFileMessagePrinter();
+            } else {
+                Ui.fileCreationFailMessagePrinter();
+            }
+        } catch (IOException exception) {
+            Ui.errorMessagePrinter(exception);
         }
     }
 

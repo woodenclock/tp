@@ -119,7 +119,14 @@ public class Ui {
      * Prints out appropriate message when no file found
      */
     public static void noFileMessagePrinter() {
-        System.out.println("File does not exist.\nCreating new file...\nFile created successfully.");
+        System.out.println("File does not exist.");
+    }
+
+    /**
+     * Prints out message after a new file has been created.
+     */
+    public static void createNewFileMessagePrinter() {
+        System.out.println("Creating new file...\nFile created successfully.");
     }
 
     public static void printEntry(int nthEntry) {
