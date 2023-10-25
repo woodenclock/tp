@@ -1,4 +1,4 @@
-# WildWatch User Guide ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/542a69c6-d83b-410a-885f-c529d784ce5e)
+# WildWatch User Guide 🐘
 
 
 Wildwatch is a program for a clerk managing animal entries in a wildlife reserve via the Command Line Interface (CLI).
@@ -15,7 +15,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
     
 --- 
 
-## Quick Start
+## Quick Start 🐵
 
 1. Ensure you have Java 11 or above installed in your Computer.
    
@@ -62,7 +62,7 @@ Refer to the [features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.ht
 
 --- 
 
-## Features
+## Features 🦊
 >❗IMPORTANT
 > * Capitalized words are to be substituted appropriately
 > * E.g., `delete INDEX` should be `delete 2`
@@ -189,7 +189,7 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 
 --- 
 
-## Command Reference 
+## Command Reference 🐱
 
 | Action         | Format |
 | -------------- | ------ |
