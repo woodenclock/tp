@@ -22,7 +22,7 @@ public class FileHandler {
             Ui.taskLoadedMessagePrinter();
 
             // Lists entries loaded from file
-            EntryHandler.handleFileInput("list");
+            InputHandler.handleFileInput("list");
         } else {  // File does not exist
             Ui.noFileMessagePrinter();
             createFile();
@@ -56,7 +56,7 @@ public class FileHandler {
             Scanner fileReader = new Scanner(openedFile); // create a Scanner using the File as the source
             while (fileReader.hasNext()) {
                 String lineOfFile = fileReader.nextLine();
-                EntryHandler.handleFileInput(lineOfFile); // Parse each line into the entry ArrayList
+                InputHandler.handleFileInput(lineOfFile); // Parse each line into the entry ArrayList
             }
         } catch (FileNotFoundException exception) {
             Ui.fileNotFoundMessagePrinter();

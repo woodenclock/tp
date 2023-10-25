@@ -7,11 +7,15 @@ public class DateHandler {
     );
 
     public static boolean isDateValid(String inputBuffer) {
-        //Trims off everything except date
-        CharSequence date = inputBuffer.substring(inputBuffer.indexOf("D/") + 2, inputBuffer.indexOf("S/")).trim();
-        if (DATE_PATTERN.matcher(date).matches()) {
-            return true;
+        try {
+            //Trims off everything except date
+            CharSequence date = inputBuffer.substring(inputBuffer.indexOf("D/") + 2, inputBuffer.indexOf("S/")).trim();
+            if (DATE_PATTERN.matcher(date).matches()) {
+                return true;
+            }
+            return false;
+        } catch (StringIndexOutOfBoundsException exception) {
+            return false;
         }
-        return false;
     }
 }

@@ -10,6 +10,7 @@ import seedu.wildwatch.exception.EmptyAddException;
 import seedu.wildwatch.exception.EmptyDeleteException;
 import seedu.wildwatch.exception.EmptyListException;
 import seedu.wildwatch.exception.EmptyInputException;
+import seedu.wildwatch.exception.EmptyFindException;
 import seedu.wildwatch.exception.EntryNotFoundException;
 import seedu.wildwatch.exception.UnknownInputException;
 import seedu.wildwatch.exception.UnknownDateFormatException;
@@ -34,6 +35,9 @@ public class ErrorHandler {
         } catch (EmptyDeleteException exception) {
             LOGGER.warning("Received an empty delete input.");
             Ui.emptyDescriptionMessagePrinter("delete");
+        } catch (EmptyFindException exception) {
+            LOGGER.warning("Received an empty find input.");
+            Ui.emptyDescriptionMessagePrinter("find");
         } catch (EmptyListException exception) {
             LOGGER.info("List is empty.");
             Ui.emptyListMessagePrinter();
@@ -60,7 +64,8 @@ public class ErrorHandler {
     }
 
     public static void checkError(String inputBuffer) throws EmptyInputException, EmptyAddException,
-            EmptyListException, EmptyDeleteException, EntryNotFoundException, UnknownDateFormatException {
+            EmptyListException, EmptyDeleteException, EntryNotFoundException, UnknownDateFormatException,
+            EmptyFindException {
         assert inputBuffer != null : "Input buffer should not be null.";
         Scanner bufferScanner = new Scanner(inputBuffer);   //Scanner for the buffer
         String firstWord;                                   //First word of input
@@ -82,6 +87,8 @@ public class ErrorHandler {
             throw new EmptyDeleteException();
         } else if (firstWord.equals("delete") && (numberInput < 1 || numberInput > EntryList.getArraySize())) {
             throw new EntryNotFoundException();
+        } else if (firstWord.equals("find") && !bufferScanner.hasNext() && !bufferScanner.hasNextInt()) {
+            throw new EmptyFindException();
         } else if (firstWord.equals("list") && EntryList.isArrayEmpty()) {
             throw new EmptyListException();
         }
