@@ -1,4 +1,4 @@
-# WildWatch 
+# WildWatch User Guide
 
 Wildwatch is a program for recording, and finding animals in a wildlife reserve via the Command Line Interface (CLI).
 
@@ -64,7 +64,7 @@ Refer to the [features](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Features) 
 ## Features
 
 ### 1. Getting Help : `help`
-Will display a URL/link to the complete online user guide, along with a  condensed summary of how to use every command.
+Shows the user how to use all the commands.
 
 ```
 ____________________________________________________________
@@ -120,7 +120,7 @@ Adds new entry.
 Format: `add D/<date> S/<species> N/<name> R/<remarks>`
 `<date>` should be in the format **DD-MM-YY**
 
-> :pencil: More than 1 species may be specified in one go if multiple new animals are added to the reserve on the same day. A new set of (species, name, remarks) should be specified for each addition. 
+> ✏ More than 1 species may be specified in one go if multiple new animals are added to the reserve on the same day. A new set of (species, name, remarks) should be specified for each addition. 
 
 Examples: 
 ```
