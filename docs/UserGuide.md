@@ -141,11 +141,11 @@ ____________________________________________________________
 ---
 
 ### 3. Deleting Entries: `del`
-Deletes entry. 
+Deletes an entry. 
 
 Format: `delete INDEX`
-Deletes the observation at the specified INDEX. 
-The index refers to the index number shown in the displayed observation list.
+Deletes the entry at the specified INDEX. 
+The index refers to the index number shown in the displayed entry list.
 
 > ✏ Notes on `INDEX`
 > * Index must be a positive integer 1, 2, 3, ...
@@ -172,8 +172,7 @@ Information such as the species, name, age, gender, size, remarks are shown toge
 
 Format: `list` 
 
-
-Examples: 
+Example: 
 ```
 ________________________________________
 list
@@ -193,9 +192,9 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 
 | Action         | Format |
 | -------------- | ------ |
-| List Entries   | `list` |
+| Getting Help   | `help` |
 | Add Entries    | `add`  |
 | Delete Entries | `del`  |
-| Getting Help   | `help` |
+| List Entries   | `list` |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
