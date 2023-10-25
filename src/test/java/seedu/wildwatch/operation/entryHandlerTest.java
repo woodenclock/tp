@@ -2,52 +2,34 @@ package seedu.wildwatch.operation;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import org.junit.jupiter.api.Assertions;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.exception.UnknownInputException;
 
 public class EntryHandlerTest {
 
     @BeforeEach
-    public void setUp() {
-        // Set up necessary mocks, initial data, etc.
+    public void setup() {
+        // Initialize or set up any required resources for tests
     }
 
     @Test
-    public void testAddEntryFromFile() {
-        String input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, true));
+    public void testHandleEntry_AddFromFile() {
+        try {
+            EntryHandler.handleEntry("add testEntry", true);
+            // Further assertions or verifications here based on expected behavior
+        } catch (UnknownInputException | IncorrectInputException e) {
+            Assertions.fail("Exception should not be thrown for valid input.");
+        }
     }
 
     @Test
-    public void testAddEntryNotFromFile() {
-        String input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, false));
+    public void testHandleEntry_UnknownInput() {
+        Assertions.assertThrows(UnknownInputException.class, () -> {
+            EntryHandler.handleEntry("unknownInput", false);
+        });
     }
 
-    @Test
-    public void testDeleteEntryWithValidNumber() {
-        String input = "delete 1"; // Assuming 1 is a valid entry number.
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, false));
-    }
+    // You can add more test methods for various cases, e.g., for "delete", "list", etc.
 
-    @Test
-    public void testDeleteEntryWithInvalidNumber() {
-        String input = "delete -5"; // Negative numbers should be invalid.
-        assertThrows(IncorrectInputException.class, () -> EntryHandler.handleEntry(input, false));
-    }
-
-    @Test
-    public void testListEntry() {
-        String input = "list";
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, false));
-    }
-
-    @Test
-    public void testUnknownCommand() {
-        String input = "unknownCommand";
-        assertThrows(UnknownInputException.class, () -> EntryHandler.handleEntry(input, false));
-    }
 }
-

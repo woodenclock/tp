@@ -1,17 +1,22 @@
 package seedu.wildwatch.operation;
 
 import java.util.regex.Pattern;
+import java.lang.StringIndexOutOfBoundsException;
 public class DateHandler {
     private static final Pattern DATE_PATTERN = Pattern.compile(
             "(0[1-9]|[1-2][0-9]|3[0-1])-(0[1-9]|1[0-2])-\\d{2}"   // dd-mm-yy
     );
 
     public static boolean isDateValid(String inputBuffer) {
-        //Trims off everything except date
-        CharSequence date = inputBuffer.substring(inputBuffer.indexOf("D/") + 2, inputBuffer.indexOf("S/")).trim();
-        if (DATE_PATTERN.matcher(date).matches()) {
-            return true;
+        try {
+            //Trims off everything except date
+            CharSequence date = inputBuffer.substring(inputBuffer.indexOf("D/") + 2, inputBuffer.indexOf("S/")).trim();
+            if (DATE_PATTERN.matcher(date).matches()) {
+                return true;
+            }
+            return false;
+        } catch (StringIndexOutOfBoundsException exception) {
+            return false;
         }
-        return false;
     }
 }

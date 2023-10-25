@@ -1,9 +1,6 @@
 package seedu.wildwatch;
 
-import seedu.wildwatch.operation.EntryHandler;
-import seedu.wildwatch.operation.LogHandler;
-import seedu.wildwatch.operation.BootUp;
-import seedu.wildwatch.operation.FileHandler;
+import seedu.wildwatch.operation.*;
 
 
 public class WildWatch {
@@ -14,6 +11,6 @@ public class WildWatch {
         LogHandler.configure(); //Configure Log
         BootUp.bootUpOne();
         FileHandler.handleFile(); //FileHandler takes on
-        EntryHandler.handleManualInput();
+        InputHandler.handleManualInput();
     }
 }
