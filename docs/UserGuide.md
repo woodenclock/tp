@@ -60,7 +60,7 @@ Some example commands you can try:
 
 Refer to the [features](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Features) below for details of each command.
 
-[⬆ Back to top](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Table-of-Contents)
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --- 
 
@@ -73,7 +73,7 @@ Will display a URL/link to the complete online user guide, along with a  condens
 
 Format: `help`
 
-[⬆ Back to top](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Table-of-Contents)
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --- 
 
@@ -93,7 +93,7 @@ add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
 add D/10-11-20 S/Bali Myna N/Myna_1 R/ S/Malayan Water Monitor N/Monitor_1 R/Aggressive
 ```
 
-[⬆ Back to top](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Table-of-Contents)
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 ---
 
@@ -113,7 +113,7 @@ Examples:
 list followed by delete 2 deletes the 2nd observation in the displayed list of observations.
 
 
-[⬆ Back to top](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Table-of-Contents)
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --- 
 
@@ -136,7 +136,7 @@ Species: Low land gorilla | Name: gorilla_01 | Age: | Gender: | Size: | Remarks:
 Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M | Remarks: Herd leader
 ```
 
-[⬆ Back to top](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Table-of-Contents)
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --- 
 
@@ -149,4 +149,4 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 | Delete Entries | `del`  |
 | Getting Help   | `help` |
 
-[⬆ Back to top](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Table-of-Contents)
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
