@@ -6,11 +6,11 @@ Wildwatch is a program for recording, and finding animals in a wildlife reserve 
 ## Table of Contents 
 - [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start)
 - [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features)
-    - [Getting Help](#getting-help-help): `help`
-    - [Adding Entries](#adding-entries-add): `add`
-    - [Deleting Entries](#deleting-entries-del): `del`
-    - [Listing Entries](#listing-entries-list): `list`
-- [Command reference](#command-reference)
+    - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-getting-help--help): `help`
+    - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#2-adding-entries-add): `add`
+    - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-deleting-entries-del): `del`
+    - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-listing-entries-list): `list`
+- [Command reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference)
     
 --- 
 
