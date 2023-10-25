@@ -3,6 +3,7 @@ package seedu.wildwatch.operation;
 import seedu.wildwatch.entry.EntryList;
 
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -41,9 +42,11 @@ public class Ui {
         if (description == null) {
             System.out.println("OOPS!!! The description cannot be empty. :-(");
         } else if (description.equals("add")) {
-            System.out.println("OOPS!!! The description of an add cannot be empty. :-(");
+            System.out.println("OOPS!!! The description of an add command cannot be empty. :-(");
         } else if (description.equals("delete")) {
-            System.out.println("OOPS!!! The description of a delete cannot be empty. :-(");
+            System.out.println("OOPS!!! The description of a delete command cannot be empty. :-(");
+        } else if (description.equals("find")) {
+            System.out.println("OOPS!!! The description of a find command cannot be empty. :-(");
         } else {
             System.out.println("OOPS!!! The description cannot be empty. :-(");
         }
@@ -89,6 +92,18 @@ public class Ui {
      */
     public static void fileNotFoundMessagePrinter() {
         System.out.println("File not found.");
+    }
+
+    public static void findTaskMessagePrinter(boolean hasMatch, ArrayList<Integer> matchingTasks) {
+        if (!hasMatch) {
+            System.out.println("No matching tasks found.");
+        } else {
+            System.out.println("Here are the matching tasks in your list:");
+            for (int i = 0; i < matchingTasks.size(); i++) {
+                System.out.print((i+1) + ".");
+                printEntry(i);
+            }
+        }
     }
 
     public static void helpRequestMessagePrinter() {

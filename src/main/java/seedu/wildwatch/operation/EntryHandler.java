@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.command.DeleteCommand;
 import seedu.wildwatch.command.ListCommand;
+import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.exception.UnknownInputException;
 
@@ -37,6 +38,8 @@ public class EntryHandler {
         } else if (firstWord.equals("delete") && hasInputInteger && !bufferScanner.hasNext()) {
             assert numberInput > 0 : "Entry number to delete should be positive";
             DeleteCommand.deleteEntry(numberInput);
+        } else if (firstWord.equals("find")) {
+            FindCommand.findEntry(inputBuffer);
         } else if (inputBuffer.equals("list")) {
             ListCommand.listEntry(isFromFile);
         } else {
