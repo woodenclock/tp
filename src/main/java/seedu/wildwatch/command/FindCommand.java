@@ -5,6 +5,7 @@ import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.operation.Ui;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 
@@ -23,20 +24,28 @@ public class FindCommand {
         ArrayList<Entry> entries = EntryList.getArray();
         ArrayList<Integer> matchingEntries = new ArrayList<>();
 
-        LocalDate matchingDate = null;
+        LocalDate inputDate = null;
         try {
-            matchingDate = LocalDate.parse(matchingWord);
+            inputDate = LocalDate.parse(matchingWord, DateTimeFormatter.ofPattern("dd-MM-yy"));
         } catch (DateTimeParseException exception) {
             // matchingWord is not a date
         }
 
         for (Entry entry: entries) {
-            boolean matchesDate = (entry.getDate().equals(matchingDate));
+            boolean isInputADate = (inputDate != null && entry.getDate().equals(inputDate));
+            if (inputDate != null) {
+                System.out.println("Entry Date: " + entry.getDate());
+                System.out.println("Input Date: " + inputDate);
+            }
 
-            if (entry.getSpecies().toLowerCase().contains(matchingWord)
+
+            if (entry.getSpecies().contains(matchingWord)
+                    || entry.getSpecies().toLowerCase().contains(matchingWord)
+                    || entry.getName().contains(matchingWord)
                     || entry.getName().toLowerCase().contains(matchingWord)
+                    || entry.getRemark().contains(matchingWord)
                     || entry.getRemark().toLowerCase().contains(matchingWord)
-                    || matchesDate) {
+                    || isInputADate) {
                 hasMatch = true;
                 matchingEntries.add(entries.indexOf(entry));
             }

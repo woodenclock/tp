@@ -87,7 +87,7 @@ public class ErrorHandler {
             throw new EmptyDeleteException();
         } else if (firstWord.equals("delete") && (numberInput < 1 || numberInput > EntryList.getArraySize())) {
             throw new EntryNotFoundException();
-        } else if (firstWord.equals("find") && !bufferScanner.hasNext()) {
+        } else if (firstWord.equals("find") && !bufferScanner.hasNext() && !bufferScanner.hasNextInt()) {
             throw new EmptyFindException();
         } else if (firstWord.equals("list") && EntryList.isArrayEmpty()) {
             throw new EmptyListException();
