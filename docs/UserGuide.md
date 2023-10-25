@@ -62,10 +62,17 @@ Refer to the [features](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Features) 
 --- 
 
 ## Features
+>❗IMPORTANT
+> Capitalized words are to be substituted appropriatedly
+> E.g., `delete INDEX` should be `delete 2`
+
 
 ### 1. Getting Help : `help`
 Shows the user how to use all the commands.
 
+Format: `help`
+
+Example:
 ```
 ____________________________________________________________
 help
@@ -108,27 +115,26 @@ _________________________________________________________________
 -------------------------HELP PAGE END---------------------------
 ```
 
-Format: `help`
-
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --- 
 
 ### 2. Adding Entries: `add`
-Adds new entry. 
+Adds a new entry to the system.
 
 Format: `add D/<date> S/<species> N/<name> R/<remarks>`
 `<date>` should be in the format **DD-MM-YY**
 
-> ✏ More than 1 species may be specified in one go if multiple new animals are added to the reserve on the same day. A new set of (species, name, remarks) should be specified for each addition. 
-
-Examples: 
+Example: 
 ```
 add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
+____________________________________________________________
+The following entry has been added:
+Date: [02-03-2023] | Species: [Annam Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
+Now you have 1 entries in the list.
+____________________________________________________________
 ```
-```
-add D/10-11-20 S/Bali Myna N/Myna_1 R/ S/Malayan Water Monitor N/Monitor_1 R/Aggressive
-```
+
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
@@ -141,13 +147,18 @@ Format: `delete INDEX`
 Deletes the observation at the specified INDEX. 
 The index refers to the index number shown in the displayed observation list.
 
-> :pencil: Notes on `INDEX`
+> ✏ Notes on `INDEX`
 > * Index must be a positive integer 1, 2, 3, ...
 > * Deleted items may not be recoverable
 
-Examples:
-//TODO: insert the following 
-list followed by delete 2 deletes the 2nd observation in the displayed list of observations.
+Example:
+```
+delete 1
+____________________________________________________________
+The entry has been removed.
+Now you have 0 entries in the list.
+____________________________________________________________
+```
 
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
@@ -160,6 +171,7 @@ Shows useful information about each entry.
 Information such as the species, name, age, gender, size, remarks are shown together.
 
 Format: `list` 
+
 
 Examples: 
 ```
