@@ -1,4 +1,5 @@
-# WildWatch User Guide
+# WildWatch User Guide ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/542a69c6-d83b-410a-885f-c529d784ce5e)
+
 
 Wildwatch is a program for a clerk managing animal entries in a wildlife reserve via the Command Line Interface (CLI).
 
