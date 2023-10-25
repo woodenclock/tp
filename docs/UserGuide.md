@@ -66,7 +66,47 @@ Refer to the [features](https://hackmd.io/r8Nj6jFWTW2axYiqpQ_PHw?both#Features) 
 ### 1. Getting Help : `help`
 Will display a URL/link to the complete online user guide, along with a  condensed summary of how to use every command.
 
-//TODO: insert image of output 
+```
+____________________________________________________________
+help
+____________________________________________________________
+No worries, I'm here to help!
+____________________________________________________________
+
+---------------------------HELP PAGE-----------------------------
+
+_________________________________________________________________
+1.  Get help - show the list of commands available for this app
+     Format: help
+     Examples: 
+       help
+
+_________________________________________________________________
+2.  To add a new wildlife
+     Format: add D/DATE S/SPECIES N/NAME R/REMARKS
+       DATE should be in the format DD-MM-YY
+     Examples: 
+       add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
+
+_________________________________________________________________
+3.  To list all wildlife,
+     Format: list
+     Examples: 
+       list
+
+_________________________________________________________________
+4.  To delete a wildlife
+     Format: delete INDEX
+       The index refers to the index number shown in the displayed observation list.
+       Note:
+           - The index must be a positive integer:
+           - Deleted items may not be recoverable:
+     Examples: 
+       delete 1
+_________________________________________________________________
+
+-------------------------HELP PAGE END---------------------------
+```
 
 Format: `help`
 
