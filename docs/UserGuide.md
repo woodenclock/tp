@@ -1,6 +1,6 @@
 # WildWatch User Guide
 
-Wildwatch is a program for managing animals in a wildlife reserve via the Command Line Interface (CLI).
+Wildwatch is a program for a clerk managing animal entries in a wildlife reserve via the Command Line Interface (CLI).
 
 ---
 ## Table of Contents 
