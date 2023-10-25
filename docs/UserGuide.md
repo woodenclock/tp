@@ -62,9 +62,9 @@ Refer to the [features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.ht
 --- 
 
 ## Features
->❗IMPORTANT\n
-> Capitalized words are to be substituted appropriatedly\n
-> E.g., `delete INDEX` should be `delete 2`
+>❗IMPORTANT
+> * Capitalized words are to be substituted appropriatedly
+> * E.g., `delete INDEX` should be `delete 2`
 
 
 ### 1. Getting Help : `help`
