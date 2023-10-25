@@ -2,7 +2,7 @@
 
 Wildwatch is a program for recording, and finding animals in a wildlife reserve via the Command Line Interface (CLI).
 
-
+---
 ## Table of Contents 
 - [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start)
 - [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features)
@@ -23,6 +23,7 @@ Wildwatch is a program for recording, and finding animals in a wildlife reserve 
 1. Copy the file to the folder you want to use as the home folder for your WildWatch.
 
 1. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
+You should see the welcome screen as follows.
 
 ```
 ____________________________________________________________
@@ -42,13 +43,9 @@ ____________________________________________________________
 Hello there! Welcome to WildWatch!
 
 Checking if "WildWatch.txt" already exists...
-File already exists.
-Opening existing file...
-
-These are tasks loaded from before: 
-1.Date: [09-10-2023] | Species: [White Rhinoceros] | Name: [Rhino_1] | Remark: [Aggressive]
-2.Date: [02-03-2023] | Species: [Annam Leaf Turtle] | Name: [Ariel_2] | Remark: [Injured left flipper]
-Now you have 2 entries in the list.
+File does not exist.
+Creating new file...
+File created successfully.
 What would you like to do?
 ____________________________________________________________
 ```
