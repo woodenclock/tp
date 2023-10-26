@@ -56,7 +56,7 @@ Some example commands you can try:
 - `list` : Lists all entries.
 - `bye` : Exits the program.
 
-Refer to the [features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features) below for details of each command.
+Refer to the features below for details of each command.
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
