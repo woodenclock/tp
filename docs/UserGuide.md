@@ -9,7 +9,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
 - [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-)
     - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-getting-help--help): `help`
     - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#2-adding-entries-add): `add`
-    - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-deleting-entries-del): `del`
+    - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-deleting-entries-del): `delete`
     - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-listing-entries-list): `list`
 - [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq)
 - [Command reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-)
@@ -142,7 +142,7 @@ ____________________________________________________________
 
 ---
 
-### 3. Deleting Entries: `del`
+### 3. Deleting Entries: `delete`
 Deletes an entry. 
 
 Format: `delete INDEX`
