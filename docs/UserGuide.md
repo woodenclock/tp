@@ -206,7 +206,7 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 | -------------- | ------ |
 | Getting Help   | `help` |
 | Add Entries    | `add D/DATE S/SPECIES N/NAME R/REMARKS`  |
-| Delete Entries | `del`  |
+| Delete Entries | `delete INDEX`  |
 | List Entries   | `list` |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
