@@ -64,7 +64,7 @@ Refer to the features below for details of each command.
 
 ## Features 🦊
 >❗IMPORTANT
-> * Capitalized words are to be substituted appropriately
+> * Capitalized words are parameters to be substituted appropriately
 > * E.g., `delete INDEX` should be `delete 2`
 
 
@@ -194,7 +194,7 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 | Action         | Format |
 | -------------- | ------ |
 | Getting Help   | `help` |
-| Add Entries    | `add`  |
+| Add Entries    | `add D/DATE S/SPECIES N/NAME R/REMARKS`  |
 | Delete Entries | `del`  |
 | List Entries   | `list` |
 
