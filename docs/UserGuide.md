@@ -3,7 +3,7 @@
 
 Wildwatch is a program for a clerk managing animal entries in a wildlife reserve via the Command Line Interface (CLI).
 
----
+--------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents 
 - [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-)
 - [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-)
@@ -13,7 +13,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
     - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-listing-entries-list): `list`
 - [Command reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-)
     
---- 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Quick Start 🐵
 
@@ -60,7 +60,7 @@ Refer to the features below for details of each command.
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
---- 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features 🦊
 >❗IMPORTANT
@@ -187,7 +187,17 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
---- 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## FAQ
+
+**Q**: Why do I get the `Invalid Date/Time input` error?
+**A**: Ensure there is only 1 whitespace between date and time.
+
+**Q**: I found a bug! What do I do?
+**A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Command Reference 🐱
 
