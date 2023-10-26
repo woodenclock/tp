@@ -33,10 +33,6 @@ public class FindCommand {
 
         for (Entry entry: entries) {
             boolean isInputADate = (inputDate != null && entry.getDate().equals(inputDate));
-            if (inputDate != null) {
-                System.out.println("Entry Date: " + entry.getDate());
-                System.out.println("Input Date: " + inputDate);
-            }
 
 
             if (entry.getSpecies().contains(matchingWord)
