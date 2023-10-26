@@ -65,8 +65,8 @@ Refer to the features below for details of each command.
 
 ## Features 🦊
 >❗IMPORTANT
-> * Capitalized words are parameters to be substituted appropriately
-> * E.g., `delete INDEX` should be `delete 2`
+> * Capitalized words between <> are parameters to be substituted appropriately
+> * E.g., `delete <INDEX>` should be `delete 2`
 
 
 ### 1. Getting Help : `help`
@@ -124,7 +124,7 @@ _________________________________________________________________
 ### 2. Adding Entries: `add`
 Adds a new entry to the system.
 
-Format: `add D/<date> S/<species> N/<name> R/<remarks>`
+Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
 `<date>` should be in the format **DD-MM-YY**
 
 Example: 
@@ -205,8 +205,8 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 | Action         | Format |
 | -------------- | ------ |
 | Getting Help   | `help` |
-| Add Entries    | `add D/DATE S/SPECIES N/NAME R/REMARKS`  |
-| Delete Entries | `delete INDEX`  |
+| Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`  |
+| Delete Entries | `delete <INDEX>`  |
 | List Entries   | `list` |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
