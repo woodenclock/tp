@@ -196,7 +196,9 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 > **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
 
 > **Q**: I found a bug! What do I do?  
-> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!  
+> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
