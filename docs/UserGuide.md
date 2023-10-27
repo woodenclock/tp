@@ -50,6 +50,7 @@ Creating new file...
 File created successfully.
 What would you like to do?
 ____________________________________________________________
+Type here ...
 ```
 
 5. Type commands below the horizontal line and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
@@ -65,7 +66,7 @@ Refer to the features below for details of each command.
 
 ## Features 🦊
 > ❗ IMPORTANT
-> * Capitalized words between <> chevrons are parameters to be substituted appropriately by the user.
+> * Capitalized words between angle brackets `< >` are information to be written appropriately by the user.
 > * E.g., `delete <INDEX>` should be `delete 2`
 
 
