@@ -192,11 +192,11 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 
 ## FAQ
 
-> **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?
-> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.
+> **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
+> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
 
-> **Q**: I found a bug! What do I do?
-> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
+> **Q**: I found a bug! What do I do?  
+> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
