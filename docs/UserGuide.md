@@ -20,11 +20,11 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
 
 1. Ensure you have Java 11 or above installed in your Computer.
    
-1. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
+2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-1. Copy the file to the folder you want to use as the home folder for your WildWatch.
+3. Copy the file to the folder you want to use as the home folder for your WildWatch.
 
-1. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
+4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as follows.
 
 ```
