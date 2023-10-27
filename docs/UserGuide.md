@@ -64,7 +64,7 @@ Refer to the features below for details of each command.
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features 🦊
->❗IMPORTANT
+> ❗ IMPORTANT
 > * Capitalized words between <> chevrons are parameters to be substituted appropriately by the user.
 > * E.g., `delete <INDEX>` should be `delete 2`
 
