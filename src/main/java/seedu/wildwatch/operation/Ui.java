@@ -16,6 +16,10 @@ public class Ui {
     private static final int NUMBER_OF_UNDERSCORES = 60;
     private static Scanner in = new Scanner(System.in);
 
+    public static void inputPromptPrinter() {
+        System.out.print(">>> ");
+    }
+
     /**
      * Prints out appropriate message when checking if file exists
      */
