@@ -6,7 +6,7 @@ import seedu.wildwatch.operation.ShutDown;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ByeCommand {
+public class ByeCommand extends Command {
 
     public static final String COMMAND_WORD = "bye";
 
@@ -15,5 +15,9 @@ public class ByeCommand {
     public static void exitProgram() {
         LOGGER.log(Level.INFO, "Initiating shutdown procedures.");
         ShutDown.shutDown();
+    }
+
+    //TODO: figure out a way to get rid of this
+    public void execute() {
     }
 }

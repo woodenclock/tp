@@ -113,10 +113,6 @@ public class Ui {
         }
     }
 
-    public static void helpRequestMessagePrinter() {
-        System.out.println("No worries, I'm here to help!");
-    }
-
     public static void incorrectInputMessagePrinter() {
         System.out.println("OOPS!!! Format of command is incorrect.");
     }

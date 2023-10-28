@@ -1,7 +1,7 @@
 package seedu.wildwatch.operation;
 
+import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.ByeCommand;
-import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.exception.UnknownInputException;
@@ -18,27 +18,33 @@ public class InputHandler {
             String inputBuffer = Ui.inputRetriever(); //Retrieves input of user
             LOGGER.log(Level.INFO, "Input received: {0}", inputBuffer);
 
-            if (inputBuffer.equals(ByeCommand.COMMAND_WORD)) {        //Program exit
-                break;
-            } else if (inputBuffer.equals(HelpCommand.COMMAND_WORD)) {  //User request "help"
+            try {
+                Command command = EntryHandler.handleEntry(inputBuffer);
+
+                if (command instanceof ByeCommand) {
+                    break;
+                }
+
                 Ui.printHorizontalLines();
-                Ui.helpRequestMessagePrinter();
+                command.execute();
                 Ui.printHorizontalLines();
-                new HelpCommand().execute();
-            } else {
-                Ui.printHorizontalLines();
-                ErrorHandler.handleError(inputBuffer);
-                Ui.printHorizontalLines();
+
+            } catch (IncorrectInputException e) {
+                Ui.incorrectInputMessagePrinter();
+            } catch (UnknownInputException e) {
+                Ui.unknownInputMessagePrinter();
             }
-            EntryList.saveEntry();
         }
+
+        EntryList.saveEntry();
         ByeCommand.exitProgram();
     }
 
     public static void handleFileInput(String lineOfFile) {
         try {
-            EntryHandler.handleEntry(lineOfFile, true);
+            EntryHandler.handleEntry(lineOfFile);
         } catch (UnknownInputException | IncorrectInputException exception) {
+            //TODO: this function is no longer useful but this has to be moved somewhere
             Ui.corruptFileMessagePrinter();
             ShutDown.shutDown();
             System.exit(0);
