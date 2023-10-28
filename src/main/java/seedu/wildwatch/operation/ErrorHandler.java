@@ -89,9 +89,11 @@ public class ErrorHandler {
             throw new UnknownDateFormatException();
         } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) && numberInput == DEFAULT_NUMBER_INPUT) {
             throw new EmptyDeleteException();
-        } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) && (numberInput < 1 || numberInput > EntryList.getArraySize())) {
+        } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) &&
+                (numberInput < 1 || numberInput > EntryList.getArraySize())) {
             throw new EntryNotFoundException();
-        } else if (firstWord.equals(FindCommand.COMMAND_WORD) && !bufferScanner.hasNext() && !bufferScanner.hasNextInt()) {
+        } else if (firstWord.equals(FindCommand.COMMAND_WORD) &&
+                !bufferScanner.hasNext() && !bufferScanner.hasNextInt()) {
             throw new EmptyFindException();
         } else if (firstWord.equals(ListCommand.COMMAND_WORD) && EntryList.isArrayEmpty()) {
             throw new EmptyListException();
