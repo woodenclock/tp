@@ -14,6 +14,7 @@ public class InputHandler {
 
     public static void handleManualInput() {
         while (true) {
+            Ui.inputPromptPrinter();
             String inputBuffer = Ui.inputRetriever(); //Retrieves input of user
             LOGGER.log(Level.INFO, "Input received: {0}", inputBuffer);
 
