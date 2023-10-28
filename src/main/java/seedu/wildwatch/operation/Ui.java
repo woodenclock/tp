@@ -170,6 +170,13 @@ public class Ui {
     public static void unknownInputMessagePrinter() {
         System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
     }
+
+    public static void printSummarySpecieMessage() {
+        System.out.println("Here are the species recorded: ");
+    }
+    public static void printSummaryNameMessage(String speciesName) {
+        System.out.println("Here is the data for the " + speciesName + ", grouped by their names");
+    }
 }
 
 
