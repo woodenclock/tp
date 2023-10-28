@@ -14,6 +14,9 @@ import seedu.wildwatch.operation.Ui;
  * Command class for `summary`
  */
 public class SummaryCommand extends Command {
+
+    public static final String COMMAND_WORD = "summary";
+
     public static Map<String, List<Entry>> groupEntriesBySpecies(List<Entry> entries) {
 
         Map<String, List<Entry>> map = new HashMap<String, List<Entry>>();

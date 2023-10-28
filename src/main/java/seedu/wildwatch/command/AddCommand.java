@@ -13,6 +13,8 @@ import seedu.wildwatch.operation.Ui;
  */
 public class AddCommand extends Command {
 
+    public static final String COMMAND_WORD = "add";
+
     public static final Pattern ADD_ENTRY_COMMAND_FORMAT =
             Pattern.compile("add"
                     + " D/(?<date>[^/]+)"

@@ -1,5 +1,8 @@
 package seedu.wildwatch.operation;
 
+import seedu.wildwatch.command.AddCommand;
+import seedu.wildwatch.command.DeleteCommand;
+import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.entry.EntryList;
 
 import java.time.format.DateTimeFormatter;
@@ -45,11 +48,11 @@ public class Ui {
     public static void emptyDescriptionMessagePrinter(String description) {
         if (description == null) {
             System.out.println("OOPS!!! The description cannot be empty. :-(");
-        } else if (description.equals("add")) {
+        } else if (description.equals(AddCommand.COMMAND_WORD)) {
             System.out.println("OOPS!!! The description of an add command cannot be empty. :-(");
-        } else if (description.equals("delete")) {
+        } else if (description.equals(DeleteCommand.COMMAND_WORD)) {
             System.out.println("OOPS!!! The description of a delete command cannot be empty. :-(");
-        } else if (description.equals("find")) {
+        } else if (description.equals(FindCommand.COMMAND_WORD)) {
             System.out.println("OOPS!!! The description of a find command cannot be empty. :-(");
         } else {
             System.out.println("OOPS!!! The description cannot be empty. :-(");
