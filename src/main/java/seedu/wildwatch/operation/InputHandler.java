@@ -18,9 +18,9 @@ public class InputHandler {
             String inputBuffer = Ui.inputRetriever(); //Retrieves input of user
             LOGGER.log(Level.INFO, "Input received: {0}", inputBuffer);
 
-            if (inputBuffer.equals("bye")) {        //Program exit
+            if (inputBuffer.equals(ByeCommand.COMMAND_WORD)) {        //Program exit
                 break;
-            } else if (inputBuffer.equals("help")) {  //User request "help"
+            } else if (inputBuffer.equals(HelpCommand.COMMAND_WORD)) {  //User request "help"
                 Ui.printHorizontalLines();
                 Ui.helpRequestMessagePrinter();
                 Ui.printHorizontalLines();

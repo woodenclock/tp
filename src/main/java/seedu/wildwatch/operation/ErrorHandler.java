@@ -4,6 +4,10 @@ import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
+import seedu.wildwatch.command.AddCommand;
+import seedu.wildwatch.command.DeleteCommand;
+import seedu.wildwatch.command.FindCommand;
+import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.EmptyAddException;
@@ -31,13 +35,13 @@ public class ErrorHandler {
             Ui.emptyDescriptionMessagePrinter(null);
         } catch (EmptyAddException exception){
             LOGGER.warning("Received an empty add input.");
-            Ui.emptyDescriptionMessagePrinter("add");
+            Ui.emptyDescriptionMessagePrinter(AddCommand.COMMAND_WORD);
         } catch (EmptyDeleteException exception) {
             LOGGER.warning("Received an empty delete input.");
-            Ui.emptyDescriptionMessagePrinter("delete");
+            Ui.emptyDescriptionMessagePrinter(DeleteCommand.COMMAND_WORD);
         } catch (EmptyFindException exception) {
             LOGGER.warning("Received an empty find input.");
-            Ui.emptyDescriptionMessagePrinter("find");
+            Ui.emptyDescriptionMessagePrinter(FindCommand.COMMAND_WORD);
         } catch (EmptyListException exception) {
             LOGGER.info("List is empty.");
             Ui.emptyListMessagePrinter();
@@ -79,17 +83,19 @@ public class ErrorHandler {
             numberInput = bufferScanner.nextInt();
         }
 
-        if (firstWord.equals("add") && !bufferScanner.hasNext()) {
+        if (firstWord.equals(AddCommand.COMMAND_WORD) && !bufferScanner.hasNext()) {
             throw new EmptyAddException();
-        } else if (firstWord.equals("add") && !(DateHandler.isDateValid(inputBuffer))) {
+        } else if (firstWord.equals(AddCommand.COMMAND_WORD) && !(DateHandler.isDateValid(inputBuffer))) {
             throw new UnknownDateFormatException();
-        } else if (firstWord.equals("delete") && numberInput == DEFAULT_NUMBER_INPUT) {
+        } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) && numberInput == DEFAULT_NUMBER_INPUT) {
             throw new EmptyDeleteException();
-        } else if (firstWord.equals("delete") && (numberInput < 1 || numberInput > EntryList.getArraySize())) {
+        } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) &&
+                (numberInput < 1 || numberInput > EntryList.getArraySize())) {
             throw new EntryNotFoundException();
-        } else if (firstWord.equals("find") && !bufferScanner.hasNext() && !bufferScanner.hasNextInt()) {
+        } else if (firstWord.equals(FindCommand.COMMAND_WORD) &&
+                !bufferScanner.hasNext() && !bufferScanner.hasNextInt()) {
             throw new EmptyFindException();
-        } else if (firstWord.equals("list") && EntryList.isArrayEmpty()) {
+        } else if (firstWord.equals(ListCommand.COMMAND_WORD) && EntryList.isArrayEmpty()) {
             throw new EmptyListException();
         }
     }

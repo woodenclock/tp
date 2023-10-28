@@ -7,6 +7,9 @@ import seedu.wildwatch.operation.Ui;
  * Command class for listing all entries in EntryList
  */
 public class ListCommand extends Command {
+
+    public static final String COMMAND_WORD = "list";
+
     /**
      * Lists out all entry in EntryList
      */

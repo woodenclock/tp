@@ -7,6 +7,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ByeCommand {
+
+    public static final String COMMAND_WORD = "bye";
+
     private static final Logger LOGGER = Logger.getLogger(EntryHandler.class.getName());
 
     public static void exitProgram() {

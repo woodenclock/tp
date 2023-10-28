@@ -13,6 +13,9 @@ import java.util.ArrayList;
  * Handles the "find" command to search for tasks that contain a specific keyword.
  */
 public class FindCommand {
+
+    public static final String COMMAND_WORD = "find";
+
     /**
      * Searches for tasks that contain the specified keyword and prints them.
      *

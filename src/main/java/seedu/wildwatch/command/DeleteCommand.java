@@ -7,6 +7,9 @@ import seedu.wildwatch.operation.Ui;
  * Command class for deleting entry in EntryList
  */
 public class DeleteCommand extends Command {
+
+    public static final String COMMAND_WORD = "delete";
+
     /**
      * Deletes entry in the EntryList
      *
