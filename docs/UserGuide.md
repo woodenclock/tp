@@ -33,7 +33,6 @@ Some example commands you can try:
 - `bye` : Exits the program.  
 
 ```
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/8fba5a72-41a4-4059-bb92-38ba2e78ca0d)
 
 ```
 
