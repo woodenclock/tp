@@ -22,7 +22,14 @@ public class AddCommand extends Command {
                     + " N/(?<name>[^/]+)"
                     + "(?: R/(?<remark>[^/]+))?");
 
-    public static void addEntry(String inputBuffer, boolean isFromFile) throws IncorrectInputException {
+    //TODO[PARSER]: TEMPORARY. REMOVE LATER.
+    private String inputBuffer;
+
+    public AddCommand(String inputBuffer) {
+        this.inputBuffer = inputBuffer;
+    }
+
+    public void execute() throws IncorrectInputException {
 
         final Matcher matcher = ADD_ENTRY_COMMAND_FORMAT.matcher(inputBuffer);
 
@@ -36,11 +43,10 @@ public class AddCommand extends Command {
         final String remark = matcher.group("remark");
 
         EntryList.addEntry(new Entry(date, species, name, remark));
-        if (!isFromFile) {
-            Ui.entryAddedMessagePrinter();
-            Ui.printEntry(EntryList.getArraySize() - 1);
-            Ui.entryCountPrinter();
-        }
+
+        Ui.entryAddedMessagePrinter();
+        Ui.printEntry(EntryList.getArraySize() - 1);
+        Ui.entryCountPrinter();
     }
 }
 

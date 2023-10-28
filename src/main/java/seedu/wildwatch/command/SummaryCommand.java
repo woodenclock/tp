@@ -17,7 +17,14 @@ public class SummaryCommand extends Command {
 
     public static final String COMMAND_WORD = "summary";
 
-    public static Map<String, List<Entry>> groupEntriesBySpecies(List<Entry> entries) {
+    //TODO[PARSER]: REMOVE L8ER
+    private String inputBuffer;
+
+    public SummaryCommand(String inputBuffer) {
+        this.inputBuffer = inputBuffer;
+    }
+
+    private static Map<String, List<Entry>> groupEntriesBySpecies(List<Entry> entries) {
 
         Map<String, List<Entry>> map = new HashMap<String, List<Entry>>();
         for (Entry entry : entries) {
@@ -33,7 +40,7 @@ public class SummaryCommand extends Command {
         }
         return map;
     }
-    public static Map<String, List<Entry>> groupSpecieByName(List<Entry> filteredEntries) {
+    private static Map<String, List<Entry>> groupSpecieByName(List<Entry> filteredEntries) {
         Map<String, List<Entry>> filteredMap = new HashMap<String, List<Entry>>();
 
         for (Entry entry : filteredEntries) {
@@ -49,7 +56,7 @@ public class SummaryCommand extends Command {
         }
         return filteredMap;
     }
-    public static void showSummary(String inputBuffer) throws IncorrectInputException {
+    public void execute() throws IncorrectInputException {
         String argument = inputBuffer.replace("summary","").trim();
         String speciesName = argument;
         boolean hasArgument = !argument.isEmpty();

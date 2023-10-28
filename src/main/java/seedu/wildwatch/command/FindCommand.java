@@ -12,16 +12,21 @@ import java.util.ArrayList;
 /**
  * Handles the "find" command to search for tasks that contain a specific keyword.
  */
-public class FindCommand {
+public class FindCommand extends Command {
 
     public static final String COMMAND_WORD = "find";
 
+    //TODO[PARSER]: SHOULD BE REMOVED AFTER IMPLEMENTING PARSER
+    private String inputBuffer;
+
+    public FindCommand(String inputBuffer) {
+        this.inputBuffer = inputBuffer;
+    }
+
     /**
      * Searches for tasks that contain the specified keyword and prints them.
-     *
-     * @param inputBuffer The full find command entered by the user.
      */
-    public static void findEntry(String inputBuffer) {
+    public void execute() {
         boolean hasMatch = false;
         String matchingWord = inputBuffer.substring(inputBuffer.indexOf("find") + 5).trim();
         ArrayList<Entry> entries = EntryList.getArray();

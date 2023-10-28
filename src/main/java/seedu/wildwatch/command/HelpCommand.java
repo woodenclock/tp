@@ -66,7 +66,7 @@ public class HelpCommand extends Command {
     /**
      * Prints out help page
      */
-    public static void printHelpMessage() {
+    public void execute() {
         System.out.println(helpPage);
     }
 

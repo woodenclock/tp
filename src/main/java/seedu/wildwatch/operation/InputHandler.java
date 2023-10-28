@@ -24,7 +24,7 @@ public class InputHandler {
                 Ui.printHorizontalLines();
                 Ui.helpRequestMessagePrinter();
                 Ui.printHorizontalLines();
-                HelpCommand.printHelpMessage();
+                new HelpCommand().execute();
             } else {
                 Ui.printHorizontalLines();
                 ErrorHandler.handleError(inputBuffer);
