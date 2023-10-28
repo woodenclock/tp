@@ -32,19 +32,17 @@ public class EntryHandler {
         }
 
         //Functionalities
-        if (isFromFile && firstWord.equals(AddCommand.COMMAND_WORD)) {
-            AddCommand.addEntry(inputBuffer, isFromFile);
-        } else if (firstWord.equals(AddCommand.COMMAND_WORD)) {
-            AddCommand.addEntry(inputBuffer, false);
+        if (firstWord.equals(AddCommand.COMMAND_WORD)) {
+            new AddCommand(inputBuffer).execute();
         } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) && hasInputInteger && !bufferScanner.hasNext()) {
             assert numberInput > 0 : "Entry number to delete should be positive";
-            DeleteCommand.deleteEntry(numberInput);
+            new DeleteCommand(numberInput).execute();
         } else if (firstWord.equals(FindCommand.COMMAND_WORD)) {
-            FindCommand.findEntry(inputBuffer);
+            new FindCommand(inputBuffer).execute();
         } else if (inputBuffer.equals(ListCommand.COMMAND_WORD)) {
             new ListCommand().execute();
         } else if (firstWord.equals(SummaryCommand.COMMAND_WORD)) {
-            SummaryCommand.showSummary(inputBuffer);
+            new SummaryCommand(inputBuffer).execute();
         } else {
             LOGGER.log(Level.WARNING, "Unknown input received: {0}. Throwing exception.", inputBuffer);
             throw new UnknownInputException(); //Unrecognizable by Parser

@@ -10,12 +10,16 @@ public class DeleteCommand extends Command {
 
     public static final String COMMAND_WORD = "delete";
 
+    private final int numberInput;
+
+    public DeleteCommand(int numberInput) {
+        this.numberInput = numberInput;
+    }
+
     /**
      * Deletes entry in the EntryList
-     *
-     * @param numberInput
      */
-    public static void deleteEntry(int numberInput) {
+    public void execute() {
         Ui.entryRemovedMessagePrinter();
         EntryList.deleteEntry(numberInput);
         Ui.entryCountPrinter();
