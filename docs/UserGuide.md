@@ -18,7 +18,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
 
 ## Quick Start 🐵
 
-1. Ensure you have Java 11 or above installed in your Computer. What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?
+1. Ensure you have Java 11 or above installed in your Computer. (What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
