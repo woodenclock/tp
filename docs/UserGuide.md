@@ -33,29 +33,8 @@ Some example commands you can try:
 - `bye` : Exits the program.  
 
 ```
-____________________________________________________________
-____    __    ____  __   __       _______
-\   \  /  \  /   / |  | |  |     |       \
- \   \/    \/   /  |  | |  |     |  .--.  |
-  \            /   |  | |  |     |  |  |  |
-   \    /\    /    |  | |  `----.|  '--'  |
-    \__/  \__/     |__| |_______||_______/
-____    __    ____  ___   .___________.  ______  __    __
-\   \  /  \  /   / /   \  |           | /      ||  |  |  |
- \   \/    \/   / /  ^  \ `---|  |----`|  ,----'|  |__|  |
-  \            / /  /_\  \    |  |     |  |     |   __   |
-   \    /\    / /  _____  \   |  |     |  `----.|  |  |  |
-    \__/  \__/ /__/     \__\  |__|      \______||__|  |__|
-____________________________________________________________
-Hello there! Welcome to WildWatch!
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/8fba5a72-41a4-4059-bb92-38ba2e78ca0d)
 
-Checking if "WildWatch.txt" already exists...
-File does not exist.
-Creating new file...
-File created successfully.
-What would you like to do?
-____________________________________________________________
-Type here ...
 ```
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
