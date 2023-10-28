@@ -20,6 +20,7 @@ import seedu.wildwatch.exception.UnknownInputException;
 import seedu.wildwatch.exception.UnknownDateFormatException;
 import seedu.wildwatch.exception.IncorrectInputException;
 
+//TODO: this file should not exist
 public class ErrorHandler {
     private static final int DEFAULT_NUMBER_INPUT = -3710; //Number never input during normal use of WildWatch
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());
@@ -28,7 +29,7 @@ public class ErrorHandler {
         boolean validInput = false;
         try {
             checkError(inputBuffer);
-            EntryHandler.handleEntry(inputBuffer, false);
+            EntryHandler.handleEntry(inputBuffer);
             validInput = true;
         } catch (EmptyInputException exception) {
             LOGGER.warning("Received an empty input.");
