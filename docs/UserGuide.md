@@ -18,7 +18,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
 
 ## Quick Start 🐵
 
-1. Ensure you have Java 11 or above installed in your Computer.
+1. Ensure you have Java 11 or above installed in your Computer. What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
@@ -26,6 +26,11 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
 
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as follows.
+
+5. Type commands below the horizontal line and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
+Some example commands you can try:
+- `list` : Lists all entries.  
+- `bye` : Exits the program.  
 
 ```
 ____________________________________________________________
@@ -52,13 +57,6 @@ What would you like to do?
 ____________________________________________________________
 Type here ...
 ```
-
-5. Type commands below the horizontal line and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
-Some example commands you can try:
-- `list` : Lists all entries.
-- `bye` : Exits the program.
-
-Refer to the features below for details of each command.
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
