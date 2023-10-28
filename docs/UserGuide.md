@@ -70,7 +70,76 @@ Refer to the features below for details of each command.
 > * E.g., `delete <INDEX>` should be `delete 2`
 
 
-### 1. Getting Help : `help`
+### 1. Adding Entries: `add`
+Adds a new entry to the system.
+
+Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
+`<date>` should be in the format **DD-MM-YY**
+
+Example: 
+```
+add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
+____________________________________________________________
+The following entry has been added:
+Date: [02-03-2023] | Species: [Annam Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
+Now you have 1 entries in the list.
+____________________________________________________________
+```
+
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+
+---
+
+### 2. Deleting Entries: `delete`
+Deletes an entry. 
+
+Format: `delete INDEX`
+Deletes the entry at the specified INDEX. 
+The index refers to the index number shown in the displayed entry list.
+
+> ✏ Notes on `INDEX`
+> * Index must be a positive integer 1, 2, 3, ...
+> * Deleted items may not be recoverable
+
+Example:
+```
+delete 1
+____________________________________________________________
+The entry has been removed.
+Now you have 0 entries in the list.
+____________________________________________________________
+```
+
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+
+--- 
+
+### 3. Listing Entries: `list`
+Shows a list of all entries of wildlife in the WildWatch so far.
+Shows useful information about each entry.
+Information such as the species, name, age, gender, size, remarks are shown together.
+
+Format: `list` 
+
+Example: 
+```
+________________________________________
+list
+________________________________________
+There are 2 entries in the list:
+
+Species: Low land gorilla | Name: gorilla_01 | Age: | Gender: | Size: | Remarks:
+
+Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M | Remarks: Herd leader
+```
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+### 4. Getting Help : `help`
 Shows the user how to use all the commands.
 
 Format: `help`
@@ -121,75 +190,6 @@ _________________________________________________________________
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --- 
-
-### 2. Adding Entries: `add`
-Adds a new entry to the system.
-
-Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
-`<date>` should be in the format **DD-MM-YY**
-
-Example: 
-```
-add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
-____________________________________________________________
-The following entry has been added:
-Date: [02-03-2023] | Species: [Annam Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
-Now you have 1 entries in the list.
-____________________________________________________________
-```
-
-
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-
----
-
-### 3. Deleting Entries: `delete`
-Deletes an entry. 
-
-Format: `delete INDEX`
-Deletes the entry at the specified INDEX. 
-The index refers to the index number shown in the displayed entry list.
-
-> ✏ Notes on `INDEX`
-> * Index must be a positive integer 1, 2, 3, ...
-> * Deleted items may not be recoverable
-
-Example:
-```
-delete 1
-____________________________________________________________
-The entry has been removed.
-Now you have 0 entries in the list.
-____________________________________________________________
-```
-
-
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-
---- 
-
-### 4. Listing Entries: `list`
-Shows a list of all entries of wildlife in the WildWatch so far.
-Shows useful information about each entry.
-Information such as the species, name, age, gender, size, remarks are shown together.
-
-Format: `list` 
-
-Example: 
-```
-________________________________________
-list
-________________________________________
-There are 2 entries in the list:
-
-Species: Low land gorilla | Name: gorilla_01 | Age: | Gender: | Size: | Remarks:
-
-Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M | Remarks: Herd leader
-```
-
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-
---------------------------------------------------------------------------------------------------------------------------------------
 
 ## FAQ
 
