@@ -1,6 +1,8 @@
 package seedu.wildwatch.operation;
 
+import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.entry.Entry;
+import seedu.wildwatch.entry.EntryList;
 
 import java.io.IOException;
 import java.io.File;
@@ -22,7 +24,7 @@ public class FileHandler {
             Ui.taskLoadedMessagePrinter();
 
             // Lists entries loaded from file
-            InputHandler.handleFileInput("list");
+            ListCommand.listEntry();
         } else {  // File does not exist
             Ui.noFileMessagePrinter();
             createFile();
@@ -56,7 +58,12 @@ public class FileHandler {
             Scanner fileReader = new Scanner(openedFile); // create a Scanner using the File as the source
             while (fileReader.hasNext()) {
                 String lineOfFile = fileReader.nextLine();
-                InputHandler.handleFileInput(lineOfFile); // Parse each line into the entry ArrayList
+
+                // Creates new entry from line in file
+                String[] entryDetails = lineOfFile.split(" \\| ");
+                Entry newEntry = new Entry(entryDetails[0], entryDetails[1], entryDetails[2], entryDetails[3]);
+
+                EntryList.addEntry(newEntry);
             }
         } catch (FileNotFoundException exception) {
             Ui.fileNotFoundMessagePrinter();
@@ -108,6 +115,7 @@ public class FileHandler {
         String species = entry.getSpecies();
         String name = entry.getName();
         String remark = entry.getRemark();
-        return String.format("add D/%s S/%s N/%s R/%s", date, species, name, remark);
+
+        return String.format("%s | %s | %s | %s", date, species, name, remark);
     }
 }
