@@ -3,6 +3,7 @@ package seedu.wildwatch.command;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.operation.Ui;
@@ -32,7 +33,7 @@ public class AddCommand extends Command {
         final String name = matcher.group("name").trim();
         final String remark = matcher.group("remark");
 
-        EntryList.addEntry(date, species, name, remark);
+        EntryList.addEntry(new Entry(date, species, name, remark));
         if (!isFromFile) {
             Ui.entryAddedMessagePrinter();
             Ui.printEntry(EntryList.getArraySize() - 1);

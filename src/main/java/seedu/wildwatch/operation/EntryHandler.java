@@ -42,7 +42,7 @@ public class EntryHandler {
         } else if (firstWord.equals("find")) {
             FindCommand.findEntry(inputBuffer);
         } else if (inputBuffer.equals("list")) {
-            ListCommand.listEntry(isFromFile);
+            new ListCommand().execute();
         } else if (firstWord.equals("summary")) {
             SummaryCommand.showSummary(inputBuffer);
         } else {
