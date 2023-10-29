@@ -40,7 +40,9 @@ public class Ui {
     public static void entryAddedMessagePrinter() {
         System.out.println("The following entry has been added:");
     }
-
+    public static void entryEditedMessagePrinter() {
+        System.out.println("The following entry has been edited:");
+    }
     public static void entryCountPrinter() {
         System.out.println("Now you have " + (EntryList.getArraySize()) + " entries in the list.");
     }
