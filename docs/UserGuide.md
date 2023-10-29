@@ -209,9 +209,9 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary 🐨
-We are here to help you with terms used in the user guide, that may not be familiar to you.
+We are here to help you with terminologies used in the user guide, that may not be familiar to you.
 
-| Action         | Format                                                     |
+| Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
 
