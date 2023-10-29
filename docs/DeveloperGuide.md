@@ -2,6 +2,7 @@
 
 ## Table of Contents  
 - [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
+- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#introduction)
 - [Design & Implementation](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#design--implementation)
 - [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope)
   - [Target User Profile](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#target-user-profile)
@@ -15,8 +16,8 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Acknowledgements
-Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch, get to know them better!
-Some code snippets were referenced from [woodenclock](https://github.com/woodenclock/ip.git).
+Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch, get to know them better!  
+Some code snippets were referenced from [woodenclock](https://github.com/woodenclock/ip.git).  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -28,9 +29,31 @@ This document specifies the architectural and software design decisions in the i
 ### Audience
 The intended audience for this document are developers who would like to look under the hood and understand how WildWatch works, and are looking to introduce new functionalities into WildWatch.
 
+### How to use the Developer Guide  
+- Are you new here?  
+No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#quick-start-) page.
+- Lost among the pages?  
+Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents) to look for the right pages.  
+- Need help with the functionalities?  
+Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page for detailed guidance.  
+- Do you have a question for us?  
+Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.  
+- Do you want a concise summary of all functionalities?  
+Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-) page for a summary of all commands.
+- Not sure what that word meant?  
+Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) page for its meaning.  
+
+### Legend
+
+ Symbol         | Meaning
+ -------------- |------------------------------------------------------------
+ ❗ IMPORTANT   | These are important instructions that you should follow.  
+ ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
+ 🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Quick Start
+## Quick Start 🐵
 
 1. Ensure you have Java 11 or above installed in your Computer. (What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
    
