@@ -11,6 +11,13 @@ import java.util.regex.Matcher;
 
 public class AddCommandParser implements Parser<AddCommand> {
 
+    private static final Pattern ADD_ENTRY_COMMAND_FORMAT_CHECK =
+            Pattern.compile("add"
+                    + "\\s*(?<dprefix> D/)?\\s*(?<date>[^/]+)?"
+                    + "\\s*(?<sprefix> S/)?\\s*(?<species>[^/]+)?"
+                    + "\\s*(?<nprefix> N/)?\\s*(?<name>[^/]+)?"
+                    + "\\s*(?: R/(?<remark>[^/]+))?");
+
     @Override
     public AddCommand parse(String input) throws IncorrectInputException {
         performChecks(input);
@@ -37,12 +44,6 @@ public class AddCommandParser implements Parser<AddCommand> {
      * @throws IncorrectInputException thrown if the input does not adhere to command format.
      */
     private void performChecks(String input) throws IncorrectInputException {
-        final Pattern ADD_ENTRY_COMMAND_FORMAT_CHECK =
-                Pattern.compile("add"
-                        + "\\s*(?<dprefix> D/)?\\s*(?<date>[^/]+)?"
-                        + "\\s*(?<sprefix> S/)?\\s*(?<species>[^/]+)?"
-                        + "\\s*(?<nprefix> N/)?\\s*(?<name>[^/]+)?"
-                        + "\\s*(?: R/(?<remark>[^/]+))?");
 
         final Matcher matcher = ADD_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {

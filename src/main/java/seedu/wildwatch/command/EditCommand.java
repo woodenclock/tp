@@ -4,6 +4,7 @@ import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.operation.error.IncorrectInputErrorType;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -47,7 +48,7 @@ public class EditCommand extends Command {
         final Matcher matcher = EDIT_ENTRY_COMMAND_FORMAT.matcher(this.inputBuffer);
 
         if (!matcher.matches()) {
-            throw new IncorrectInputException();
+            throw new IncorrectInputException(IncorrectInputErrorType.INVALID_EDIT_INPUT);
         }
         final String indexStr = matcher.group("index").trim();
         final String date = matcher.group("date");
@@ -56,7 +57,7 @@ public class EditCommand extends Command {
         final String remark = matcher.group("remark");
         int index = Integer.parseInt(indexStr);
         if( index <= 0 ) {
-            throw new IncorrectInputException();
+            throw new IncorrectInputException(IncorrectInputErrorType.ENTRY_NOT_FOUND);
         }
         index -= 1; // EntryList is 0 based.
         //System.out.println(indexStr + " " + date + " " + species + " " + name + " " + remark);

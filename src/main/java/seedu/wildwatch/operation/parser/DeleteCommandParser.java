@@ -10,6 +10,9 @@ import java.util.regex.Matcher;
 
 public class DeleteCommandParser implements Parser<DeleteCommand> {
 
+    private static final Pattern DELETE_ENTRY_COMMAND_FORMAT_CHECK =
+            Pattern.compile("delete\\s+(?<index>\\S+)\\s*");
+
     @Override
     public DeleteCommand parse(String input) throws IncorrectInputException {
         int getIdx = getIndexFromInput(input);
@@ -28,8 +31,6 @@ public class DeleteCommandParser implements Parser<DeleteCommand> {
      * @throws IncorrectInputException thrown when command format is incorrect.
      */
     private int getIndexFromInput(String input) throws IncorrectInputException {
-        final Pattern DELETE_ENTRY_COMMAND_FORMAT_CHECK =
-                Pattern.compile("delete\\s+(?<index>\\S+)\\s*");
 
         final Matcher matcher = DELETE_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {

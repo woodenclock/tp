@@ -9,6 +9,7 @@ public enum IncorrectInputErrorType {
     ENTRY_NOT_FOUND,
     INVALID_DATE,
     INVALID_DELETE_INDEX,
+    INVALID_EDIT_INPUT,
     INVALID_INPUT,
     UNKNOWN_INPUT,
     CUSTOM

@@ -2,7 +2,6 @@ package seedu.wildwatch.operation;
 
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.entry.Entry;
-import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.operation.parser.FileStringParser;
 

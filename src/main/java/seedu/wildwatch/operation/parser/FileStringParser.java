@@ -10,6 +10,12 @@ import java.util.regex.Matcher;
 
 public class FileStringParser implements Parser<AddFileStringCommand> {
 
+    private static final Pattern ADD_FILE_ENTRY_COMMAND_FORMAT_CHECK =
+            Pattern.compile("\\s*(?<date>[^/]+)?\\s*/" +
+                    "\\s*(?<species>[^/]+)?\\s*/" +
+                    "\\s*(?<name>[^/]+)?\\s*/" +
+                    "\\s*(?<remark>[^/]+)?");
+
     @Override
     public AddFileStringCommand parse(String input) throws IncorrectInputException {
         performChecks(input);
@@ -30,11 +36,6 @@ public class FileStringParser implements Parser<AddFileStringCommand> {
     }
 
     private void performChecks(String input) throws IncorrectInputException {
-        final Pattern ADD_FILE_ENTRY_COMMAND_FORMAT_CHECK =
-                Pattern.compile("\\s*(?<date>[^/]+)?\\s*/" +
-                        "\\s*(?<species>[^/]+)?\\s*/" +
-                        "\\s*(?<name>[^/]+)?\\s*/" +
-                        "\\s*(?<remark>[^/]+)?");
 
         final Matcher matcher = ADD_FILE_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {
