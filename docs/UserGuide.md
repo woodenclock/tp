@@ -4,7 +4,7 @@
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
 Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-).  
 The purpose of this user guide is to familiarize you with the program and help you when you face a problem using it.  
-Its main job is to store and present animal data, this would make your life so much more convenient!
+Its main job is to store and present animal data, this would make your job so much more convenient!
 
 ### How to use the User Guide
 - Are you new here? No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-) page, and you will be up and running in no time!
@@ -209,14 +209,10 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary 🐨
+We are here to help you with terms used in the user guide, that may not be familiar to you.
 
 | Action         | Format                                                     |
 | -------------- |------------------------------------------------------------|
-| Getting Help   | `help`                                                     |
-| Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
-| Delete Entries | `delete <INDEX>`                                           |
-| Edit Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`   |
-| Summarizing Entries | `summary <SPECIES>`                                   |
-| List Entries   | `list`                                                     |
+| Command Line Interface   | A way to communicate with your computer using texts. |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
