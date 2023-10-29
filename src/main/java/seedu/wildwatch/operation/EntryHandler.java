@@ -4,14 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import seedu.wildwatch.command.Command;
-import seedu.wildwatch.command.AddCommand;
-import seedu.wildwatch.command.DeleteCommand;
-import seedu.wildwatch.command.FindCommand;
-import seedu.wildwatch.command.HelpCommand;
-import seedu.wildwatch.command.ListCommand;
-import seedu.wildwatch.command.SummaryCommand;
-import seedu.wildwatch.command.ByeCommand;
+import seedu.wildwatch.command.*;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.exception.UnknownInputException;
 
@@ -52,6 +45,8 @@ public class EntryHandler {
             return new HelpCommand();
         } else if (firstWord.equals(ByeCommand.COMMAND_WORD)) {
             return new ByeCommand();
+        } else if (firstWord.equals(EditCommand.COMMAND_WORD)) {
+            return new EditCommand(inputBuffer);
         } else {
             LOGGER.log(Level.WARNING, "Unknown input received: {0}. Throwing exception.", inputBuffer);
             throw new UnknownInputException(); //Unrecognizable by Parser

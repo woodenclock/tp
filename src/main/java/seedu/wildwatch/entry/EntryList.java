@@ -28,6 +28,10 @@ public class EntryList {
         return entries.get(nthEntry);
     }
 
+    public static void editEntry(int nthEntry, Entry updatedEntry) {
+        entries.set(nthEntry, updatedEntry);
+    }
+
     public static LocalDate getEntryDate(int nthEntry) {
         return getEntry(nthEntry).getDate();
     }
