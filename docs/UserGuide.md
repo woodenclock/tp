@@ -16,7 +16,7 @@ Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
 - Do you have a question for us?  
 Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.  
 - Do you want a concise summary of all functionalities?  
-Head to the [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-) page for a summary of all commands.
+Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
 Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) page for its meaning.  
 
