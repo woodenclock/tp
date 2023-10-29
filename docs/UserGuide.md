@@ -1,10 +1,17 @@
 # WildWatch User Guide 🐘
+  
+## Introduction
+The purpose of this user guide is to familiarize you with the program and help you when you face a problem.  
+Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the Command Line Interface (CLI).  
+Its main functionality is to store and present animal data, this would make your life so much more convenient!
 
-
-Wildwatch is a program for a clerk managing animal entries in a wildlife reserve via the Command Line Interface (CLI).
+### How to use the User Guide
+- If you are new, go to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-) 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents 
+- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#introduction)
+    - [How to use the User Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#how-to-use-the-user-guide) 
 - [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-)
 - [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-)
     - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-adding-entries-add): `add`
