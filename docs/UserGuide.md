@@ -13,7 +13,8 @@ Its main job is to store and present animal data, this would make your life so m
 - Do you have a question for us? Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.
 - Do you want a concise summary of all functionalities? Head to the [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-) page.
 
-### Legend  
+### Legend
+
 | Symbol         | Meaning                                                    |  
 | -------------- |------------------------------------------------------------|  
 | ❗ IMPORTANT   | These are important instructions that you should follow.   |  
@@ -198,8 +199,8 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 | Getting Help   | `help`                                                     |
 | Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
 | Delete Entries | `delete <INDEX>`                                           |
-| Edit Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>` |
-| Summarizing Entries | `summary <SPECIES>`                                        |
+| Edit Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`   |
+| Summarizing Entries | `summary <SPECIES>`                                   |
 | List Entries   | `list`                                                     |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
