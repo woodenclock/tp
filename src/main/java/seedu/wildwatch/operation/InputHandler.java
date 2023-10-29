@@ -30,7 +30,7 @@ public class InputHandler {
                 Ui.printHorizontalLines();
 
             } catch (IncorrectInputException e) {
-                Ui.incorrectInputMessagePrinter();
+                Ui.incorrectInputMessagePrinter(e.toString());
             } catch (UnknownInputException e) {
                 Ui.unknownInputMessagePrinter();
             }

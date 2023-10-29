@@ -59,7 +59,7 @@ public class ErrorHandler {
             Ui.invalidDateMessagePrinter();
         } catch (IncorrectInputException exception) {
             LOGGER.warning("Command is invalid.");
-            Ui.incorrectInputMessagePrinter();
+            Ui.incorrectInputMessagePrinter(exception.toString());
         } finally {
             if (!validInput) {
                 Ui.printHorizontalLines();
@@ -84,11 +84,7 @@ public class ErrorHandler {
             numberInput = bufferScanner.nextInt();
         }
 
-        if (firstWord.equals(AddCommand.COMMAND_WORD) && !bufferScanner.hasNext()) {
-            throw new EmptyAddException();
-        } else if (firstWord.equals(AddCommand.COMMAND_WORD) && !(DateHandler.isDateValid(inputBuffer))) {
-            throw new UnknownDateFormatException();
-        } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) && numberInput == DEFAULT_NUMBER_INPUT) {
+        if (firstWord.equals(DeleteCommand.COMMAND_WORD) && numberInput == DEFAULT_NUMBER_INPUT) {
             throw new EmptyDeleteException();
         } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) &&
                 (numberInput < 1 || numberInput > EntryList.getArraySize())) {

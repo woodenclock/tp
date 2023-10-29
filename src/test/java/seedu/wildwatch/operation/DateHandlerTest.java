@@ -11,8 +11,8 @@ public class DateHandlerTest {
         Ui.printHorizontalLines();
         System.out.println("Testing whether date is valid...");
         Ui.printHorizontalLines();
-        assertTrue(DateHandler.isDateValid("D/ 09-11-23 S/"));
-        assertFalse(DateHandler.isDateValid("D/9-11-23 S/"));
-        assertFalse(DateHandler.isDateValid("D/ 99-11-23 S/"));
+        assertTrue(DateHandler.isDateValid("09-11-23"));
+        assertFalse(DateHandler.isDateValid("9-11-23"));
+        assertFalse(DateHandler.isDateValid("99-11-23"));
     }
 }

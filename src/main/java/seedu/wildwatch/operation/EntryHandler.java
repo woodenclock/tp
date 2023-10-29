@@ -14,6 +14,7 @@ import seedu.wildwatch.command.SummaryCommand;
 import seedu.wildwatch.command.ByeCommand;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.exception.UnknownInputException;
+import seedu.wildwatch.operation.parser.AddCommandParser;
 
 
 public class EntryHandler {
@@ -38,7 +39,7 @@ public class EntryHandler {
 
         //Functionalities
         if (firstWord.equals(AddCommand.COMMAND_WORD)) {
-            return new AddCommand(inputBuffer);
+            return new AddCommandParser().parse(inputBuffer);
         } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) && hasInputInteger && !bufferScanner.hasNext()) {
             assert numberInput > 0 : "Entry number to delete should be positive";
             return new DeleteCommand(numberInput);

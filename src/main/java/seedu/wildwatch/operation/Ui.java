@@ -113,8 +113,9 @@ public class Ui {
         }
     }
 
-    public static void incorrectInputMessagePrinter() {
+    public static void incorrectInputMessagePrinter(String error) {
         System.out.println("OOPS!!! Format of command is incorrect.");
+        System.out.println(error);
     }
 
     public static void invalidDateMessagePrinter() {
