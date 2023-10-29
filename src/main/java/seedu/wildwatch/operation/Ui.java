@@ -71,6 +71,15 @@ public class Ui {
 
     public static void entryRemovedMessagePrinter() {
         System.out.println("The entry has been removed.");
+        printHorizontalLines();
+    }
+
+    public static void entryDeletionConfirmationPrinter() {
+        System.out.println("Are you sure you want to delete this entry? (yes/no): ");
+    }
+
+    public static void entryNotDeletedMessagePrinter() {
+        System.out.println("The entry was not deleted.");
     }
 
     /**
