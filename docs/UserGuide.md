@@ -19,7 +19,7 @@ Its main job is to store and present animal data, this would make your life so m
  -------------- |------------------------------------------------------------
  ❗ IMPORTANT   | These are important instructions that you should follow.  
  ⬆ Back to top  | Click on to scroll back up to the `Table of Contents.
- 🐵 🦊 🦁      | Your cute animal friend pops up to let you know that you have reached a new section.
+ 🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -36,7 +36,8 @@ Its main job is to store and present animal data, this would make your life so m
     - [Summarizing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#5-summarizing-entries-summary): `summary`
     - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#6-getting-help--help): `help` 
 - [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-)
-- [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-)
+- [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-)
+- [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-)
     
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -192,7 +193,22 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Command Reference 🐱
+## Command Summary 🐱
+
+| Action         | Format                                                     |
+| -------------- |------------------------------------------------------------|
+| Getting Help   | `help`                                                     |
+| Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
+| Delete Entries | `delete <INDEX>`                                           |
+| Edit Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`   |
+| Summarizing Entries | `summary <SPECIES>`                                   |
+| List Entries   | `list`                                                     |
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Glossary 🐨
 
 | Action         | Format                                                     |
 | -------------- |------------------------------------------------------------|
