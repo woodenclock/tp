@@ -7,11 +7,16 @@ The purpose of this user guide is to familiarize you with the program and help y
 Its main job is to store and present animal data, this would make your job so much more convenient!
 
 ### How to use the User Guide
-- Are you new here? No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-) page, and you will be up and running in no time!
-- Lost among the pages? Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents) to look for your 
-- Need help with the functionalities? Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page for detailed guidance.
-- Do you have a question for us? Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.
-- Do you want a concise summary of all functionalities? Head to the [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-) page.
+> Are you new here?  
+No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-) page, and you will be up and running in no time!
+> Lost among the pages?  
+Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents) to look for your 
+> Need help with the functionalities?  
+Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page for detailed guidance.
+> Do you have a question for us?  
+Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.
+> Do you want a concise summary of all functionalities?  
+Head to the [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-) page.
 
 ### Legend
 
