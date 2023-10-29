@@ -25,7 +25,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
  Symbol         | Meaning
  -------------- |------------------------------------------------------------
  ❗ IMPORTANT   | These are important instructions that you should follow.  
- ⬆ Back to top  | Click on to scroll back up to the `Table of Contents`.
+ ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
 
