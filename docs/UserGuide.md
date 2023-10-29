@@ -46,6 +46,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
  ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
