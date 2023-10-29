@@ -1,7 +1,7 @@
 # WildWatch User Guide 🐘
   
 ## Introduction
-Welcome aboard fellow animal lover! We are really excited to have you here!
+Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
 The purpose of this user guide is to familiarize you with the program and help you when you face a problem.  
 Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the Command Line Interface (CLI).  
 Its main functionality is to store and present animal data, this would make your life so much more convenient!
