@@ -114,7 +114,7 @@ ____________________________________________________________
 ```
   
   
-### 5. Listing Entries: `summary`
+### 5. Summarizing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system.
 
 Format: `summary <SPECIES>`
@@ -174,8 +174,8 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 | Getting Help   | `help`                                                     |
 | Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
 | Delete Entries | `delete <INDEX>`                                           |
-| Delete Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>` |
-| Delete Entries | `summary <SPECIES>`                                        |
+| Edit Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>` |
+| Summarizing Entries | `summary <SPECIES>`                                        |
 | List Entries   | `list`                                                     |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
