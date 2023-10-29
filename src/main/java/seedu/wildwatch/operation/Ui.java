@@ -19,9 +19,6 @@ public class Ui {
     private static final int NUMBER_OF_UNDERSCORES = 60;
     private static Scanner in = new Scanner(System.in);
 
-    public static void inputPromptPrinter() {
-        System.out.print(">>> ");
-    }
 
     /**
      * Prints out appropriate message when checking if file exists
@@ -37,14 +34,20 @@ public class Ui {
         System.out.println("File is corrupted.\nUnable to read file");
     }
 
+    public static void corruptLoggerMessagePrinter() {
+        System.out.println("Logger is corrupted.\nUnable to be configured");
+    }
+
     public static void customInvalidInputMessagePrinter(String e) {
         System.out.println(e);
     }
-
+    
     public static void entryAddedMessagePrinter() {
         System.out.println("The following entry has been added:");
     }
-
+    public static void entryEditedMessagePrinter() {
+        System.out.println("The following entry has been edited:");
+    }
     public static void entryCountPrinter() {
         System.out.println("Now you have " + (EntryList.getArraySize()) + " entries in the list.");
     }
@@ -72,7 +75,16 @@ public class Ui {
     }
 
     public static void entryRemovedMessagePrinter() {
-        System.out.println("The entry has been removed.");
+        System.out.println("The entry has been deleted.");
+        printHorizontalLines();
+    }
+
+    public static void entryDeletionConfirmationPrinter() {
+        System.out.println("Are you sure you want to delete this entry? (yes/no): ");
+    }
+
+    public static void entryNotDeletedMessagePrinter() {
+        System.out.println("The entry was not deleted.");
     }
 
     /**
@@ -124,6 +136,11 @@ public class Ui {
     public static void invalidDateMessagePrinter() {
         System.out.println("OOPS!!! Invalid Date input :-(");
     }
+
+    public static void inputPromptPrinter() {
+        System.out.print(">>> ");
+    }
+
 
     /**
      * Returns input of the user from the console.

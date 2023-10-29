@@ -6,6 +6,8 @@ import java.util.logging.FileHandler;
 import java.util.logging.SimpleFormatter;
 
 public class LogHandler {
+    private static final Logger LOGGER = Logger.getLogger(LogHandler.class.getName());
+
     static {
         try {
             // Configure a FileHandler
@@ -24,7 +26,10 @@ public class LogHandler {
             // Add the FileHandler to the root logger
             rootLogger.addHandler(file);
         } catch (Exception exception) {
-            exception.printStackTrace();
+            LOGGER.warning("Queried entry not found.");
+            Ui.corruptLoggerMessagePrinter();
+            ShutDown.shutDownWithError();
+            System.exit(0);
         }
     }
 

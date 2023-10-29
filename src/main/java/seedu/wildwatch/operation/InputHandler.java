@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class InputHandler {
-    private static final Logger LOGGER = Logger.getLogger(EntryHandler.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(InputHandler.class.getName());
 
     public static void handleInput() {
         while (true) {

@@ -5,13 +5,15 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import seedu.wildwatch.command.Command;
+import seedu.wildwatch.command.EditCommand;
+import seedu.wildwatch.command.SummaryCommand;
+import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.command.AddCommand;
+import seedu.wildwatch.command.ByeCommand;
 import seedu.wildwatch.command.DeleteCommand;
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
-import seedu.wildwatch.command.ListCommand;
-import seedu.wildwatch.command.SummaryCommand;
-import seedu.wildwatch.command.ByeCommand;
+
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.operation.error.IncorrectInputErrorType;
 import seedu.wildwatch.operation.parser.AddCommandParser;
@@ -37,6 +39,8 @@ public class EntryHandler {
             return new AddCommandParser().parse(inputBuffer);
         case DeleteCommand.COMMAND_WORD:
             return new DeleteCommandParser().parse(inputBuffer);
+        case EditCommand.COMMAND_WORD:
+            return new EditCommand(inputBuffer);
         case FindCommand.COMMAND_WORD:
             return new FindCommand(inputBuffer);
         case ListCommand.COMMAND_WORD:
