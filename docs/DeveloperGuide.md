@@ -1,4 +1,4 @@
-# WildWatch Developer Guide 🦈
+# WildWatch Developer Guide 🦣
 
 ## Table of Contents  
 - [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
