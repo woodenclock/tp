@@ -27,7 +27,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
 3. Copy the file to the folder you want to use as the home folder for your WildWatch.
 
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
-You should see the welcome screen as in Fig. 1.
+You should see the welcome screen as in Figure 1.
 
 5. Type commands below the horizontal line and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
 Some example commands you can try:
@@ -35,7 +35,7 @@ Some example commands you can try:
 - `bye` : Exits the program.  
 
 ![Image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1dcd7951-eb68-46d5-bdae-4cb4e275d94f)  
-                                                Figure 1
+Figure 1
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
@@ -54,15 +54,7 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
 `<date>` should be in the format **DD-MM-YY**
 
 Example: 
-```
-add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
-____________________________________________________________
-The following entry has been added:
-Date: [02-03-2023] | Species: [Annam Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
-Now you have 1 entries in the list.
-____________________________________________________________
-```
-
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6864fe77-f579-45d1-9680-b5b30e7530b5)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
@@ -80,14 +72,7 @@ The index refers to the index number shown in the displayed entry list.
 > * Deleted items may not be recoverable
 
 Example:
-```
-delete 1
-____________________________________________________________
-The entry has been removed.
-Now you have 0 entries in the list.
-____________________________________________________________
-```
-
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6ab91cb4-722e-4e0b-94af-095b0a9f4f24)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
@@ -101,20 +86,11 @@ Information such as the species, name, age, gender, size, remarks are shown toge
 Format: `list` 
 
 Example: 
-```
-________________________________________
-list
-________________________________________
-There are 2 entries in the list:
-
-Species: Low land gorilla | Name: gorilla_01 | Age: | Gender: | Size: | Remarks:
-
-Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M | Remarks: Herd leader
-```
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/92befe34-c75e-4269-9aeb-42a6c02344bd)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
-### 4. Adding Entries: `edit`
+### 4. Editing Entries: `edit`
 Edits an entry in the system.
 
 Format: `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
@@ -171,47 +147,7 @@ Shows the user how to use all the commands.
 Format: `help`
 
 Example:
-```
-____________________________________________________________
-help
-____________________________________________________________
-No worries, I'm here to help!
-____________________________________________________________
-
----------------------------HELP PAGE-----------------------------
-
-_________________________________________________________________
-1.  Get help - show the list of commands available for this app
-     Format: help
-     Examples: 
-       help
-
-_________________________________________________________________
-2.  To add a new wildlife
-     Format: add D/DATE S/SPECIES N/NAME R/REMARKS
-       DATE should be in the format DD-MM-YY
-     Examples: 
-       add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
-
-_________________________________________________________________
-3.  To list all wildlife,
-     Format: list
-     Examples: 
-       list
-
-_________________________________________________________________
-4.  To delete a wildlife
-     Format: delete INDEX
-       The index refers to the index number shown in the displayed observation list.
-       Note:
-           - The index must be a positive integer:
-           - Deleted items may not be recoverable:
-     Examples: 
-       delete 1
-_________________________________________________________________
-
--------------------------HELP PAGE END---------------------------
-```
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/9acf7e67-2f0a-407a-9235-400661ce3fed)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
