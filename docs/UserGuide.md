@@ -10,8 +10,8 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
     - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#2-adding-entries-add): `add`
     - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-deleting-entries-delete): `delete`
     - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-listing-entries-list): `list`
-    - [Edit Entries](): `edit` --- update link when github page ready
-    - [Show Summary](): `summary` --- update link when github page ready
+    - [Edit Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-adding-entries-edit): `edit`
+    - [Show Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#5-listing-entries-summary): `summary`
     - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-getting-help--help): `help` 
 - [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq)
 - [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-)
@@ -221,10 +221,12 @@ _________________________________________________________________
 ## FAQ
 
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
-> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
+
+Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
 
 > **Q**: I found a bug! What do I do?  
-> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
+
+Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
