@@ -9,10 +9,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EditCommand extends Command {
-    private String inputBuffer;
-    public EditCommand(String inputBuffer) {
-        this.inputBuffer = inputBuffer;
-    }
     public static final String COMMAND_WORD = "edit";
 
     public static final Pattern EDIT_ENTRY_COMMAND_FORMAT =
@@ -22,6 +18,10 @@ public class EditCommand extends Command {
                     + "( S/(?<species>[^/]+))?"
                     + "( N/(?<name>[^/]+))?"
                     + "(?: R/(?<remark>[^/]+))?");
+    private String inputBuffer;
+    public EditCommand(String inputBuffer) {
+        this.inputBuffer = inputBuffer;
+    }
 
     public Entry checkAndUpdateEntry(Entry entry, String date, String species, String name, String remark) {
         if( date != null && !date.isEmpty() ) {

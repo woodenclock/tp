@@ -4,7 +4,16 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import seedu.wildwatch.command.*;
+import seedu.wildwatch.command.Command;
+import seedu.wildwatch.command.EditCommand;
+import seedu.wildwatch.command.SummaryCommand;
+import seedu.wildwatch.command.ListCommand;
+import seedu.wildwatch.command.AddCommand;
+import seedu.wildwatch.command.ByeCommand;
+import seedu.wildwatch.command.DeleteCommand;
+import seedu.wildwatch.command.FindCommand;
+import seedu.wildwatch.command.HelpCommand;
+
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.exception.UnknownInputException;
 
