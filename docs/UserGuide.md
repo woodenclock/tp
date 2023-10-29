@@ -18,7 +18,7 @@ Its main job is to store and present animal data, this would make your life so m
 | -------------- |------------------------------------------------------------|
 | ❗ IMPORTANT   | These are important instructions that you should follow.   |
 | ⬆ Back to top  | Click on to scroll back up to the `Table of Contents`.     |
-| 🐵             | Your cute animal friend pops up to let you know that you have reached a new section. |
+| 🐵 🦊 🦁      | Your cute animal friend pops up to let you know that you have reached a new section. |
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
