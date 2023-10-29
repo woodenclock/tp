@@ -70,7 +70,7 @@ public class Ui {
     }
 
     public static void entryRemovedMessagePrinter() {
-        System.out.println("The entry has been removed.");
+        System.out.println("The entry has been deleted.");
         printHorizontalLines();
     }
 

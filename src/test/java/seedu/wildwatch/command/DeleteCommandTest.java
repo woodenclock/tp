@@ -1,12 +1,16 @@
 package seedu.wildwatch.command;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 import static seedu.wildwatch.entry.EntryList.addEntry;
 import static seedu.wildwatch.entry.EntryList.clearEntry;
 import seedu.wildwatch.entry.Entry;
@@ -46,7 +50,7 @@ public class DeleteCommandTest {
 
         // Assert: Verify the confirmation message and that the entry is removed
         assertTrue(consoleOutput.contains("Are you sure you want to delete this entry? (yes/no):"));
-        assertTrue(consoleOutput.contains("Entry removed."));
+        assertTrue(consoleOutput.contains("The entry has been deleted."));
     }
 
     @Test
@@ -65,7 +69,7 @@ public class DeleteCommandTest {
 
         // Assert: Verify the confirmation message and that the entry is not removed
         assertTrue(consoleOutput.contains("Are you sure you want to delete this entry? (yes/no):"));
-        assertTrue(consoleOutput.contains("Entry not removed."));
+        assertTrue(consoleOutput.contains("The entry was not deleted."));
     }
 
     @Test
