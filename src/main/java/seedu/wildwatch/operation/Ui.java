@@ -19,9 +19,6 @@ public class Ui {
     private static final int NUMBER_OF_UNDERSCORES = 60;
     private static Scanner in = new Scanner(System.in);
 
-    public static void inputPromptPrinter() {
-        System.out.print(">>> ");
-    }
 
     /**
      * Prints out appropriate message when checking if file exists
@@ -36,6 +33,11 @@ public class Ui {
     public static void corruptFileMessagePrinter() {
         System.out.println("File is corrupted.\nUnable to read file");
     }
+
+    public static void corruptLoggerMessagePrinter() {
+        System.out.println("Logger is corrupted.\nUnable to be configured");
+    }
+
 
     public static void entryAddedMessagePrinter() {
         System.out.println("The following entry has been added:");
@@ -122,6 +124,11 @@ public class Ui {
     public static void invalidDateMessagePrinter() {
         System.out.println("OOPS!!! Invalid Date input :-(");
     }
+
+    public static void inputPromptPrinter() {
+        System.out.print(">>> ");
+    }
+
 
     /**
      * Returns input of the user from the console.

@@ -46,7 +46,7 @@ public class InputHandler {
         } catch (UnknownInputException | IncorrectInputException exception) {
             //TODO: this function is no longer useful but this has to be moved somewhere
             Ui.corruptFileMessagePrinter();
-            ShutDown.shutDown();
+            ShutDown.shutDownWithError();
             System.exit(0);
         }
     }
