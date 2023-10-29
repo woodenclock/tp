@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class InputHandler {
-    private static final Logger LOGGER = Logger.getLogger(EntryHandler.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(InputHandler.class.getName());
 
     public static void handleManualInput() {
         while (true) {
@@ -46,7 +46,7 @@ public class InputHandler {
         } catch (UnknownInputException | IncorrectInputException exception) {
             //TODO: this function is no longer useful but this has to be moved somewhere
             Ui.corruptFileMessagePrinter();
-            ShutDown.shutDown();
+            ShutDown.shutDownWithError();
             System.exit(0);
         }
     }

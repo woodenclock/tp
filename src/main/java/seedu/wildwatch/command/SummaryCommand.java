@@ -17,7 +17,7 @@ public class SummaryCommand extends Command {
 
     public static final String COMMAND_WORD = "summary";
 
-    //TODO[PARSER]: REMOVE L8ER
+    //TODO[PARSER]: REMOVE LATER
     private String inputBuffer;
 
     public SummaryCommand(String inputBuffer) {
