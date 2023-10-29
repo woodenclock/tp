@@ -23,6 +23,9 @@ public class EntryList {
     public static void deleteEntry(int numberInput){
         entries.remove(numberInput - 1);
     }
+    public static void clearEntry(){
+        entries.clear();
+    }
 
     public static Entry getEntry(int nthEntry) {
         return entries.get(nthEntry);
