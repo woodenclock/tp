@@ -14,11 +14,11 @@ Its main job is to store and present animal data, this would make your life so m
 - Do you want a concise summary of all functionalities? Head to the [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-) page.
 
 ### Legend  
-| Symbol         | Meaning                                                    |
-| -------------- |------------------------------------------------------------|
-| ❗ IMPORTANT   | These are important instructions that you should follow.   |
-| ⬆ Back to top  | Click on to scroll back up to the `Table of Contents`.     |
-| 🐵 🦊 🦁      | Your cute animal friend pops up to let you know that you have reached a new section. |
+| Symbol         | Meaning                                                    |  
+| -------------- |------------------------------------------------------------|  
+| ❗ IMPORTANT   | These are important instructions that you should follow.   |  
+| ⬆ Back to top  | Click on to scroll back up to the `Table of Contents`.     |  
+| 🐵 🦊 🦁      | Your cute animal friend pops up to let you know that you have reached a new section. |  
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
