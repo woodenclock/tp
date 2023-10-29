@@ -41,21 +41,21 @@ No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/t
 - Lost among the pages?  
 Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents) to look for the right pages.  
 - Need help with the functionalities?  
-Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page for detailed guidance.  
+Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#features-) page for detailed guidance.  
 - Do you have a question for us?  
-Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.  
+Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#faq-) page.  
 - Do you want a concise summary of all functionalities?  
-Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-) page for a summary of all commands.
+Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
-Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) page for its meaning.  
+Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-) page for its meaning.  
 
 ### Legend
 
-| Symbol         | Meaning                                                                                       |
-| -------------- |------------------------------------------------------------                                    |
-| ❗ IMPORTANT   | These are important instructions that you should follow.                                        |
-| ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.                                            |
-| 🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.            |
+| Symbol         | Meaning                                                     |
+| -------------- |------------------------------------------------------------ |
+| ❗ IMPORTANT   | These are important instructions that you should follow.   |
+| ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
+| 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
