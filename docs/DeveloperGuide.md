@@ -2,6 +2,9 @@
 
 ## Table of Contents  
 - [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
+    - [Purpose](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#purpose)
+    - [Audience](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#audience)
+    - [How to use the Developer Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#how-to-use-the-developer-guide)
 - [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#introduction)
 - [Design & Implementation](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#design--implementation)
 - [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope)
@@ -15,13 +18,13 @@
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Acknowledgements
+## Acknowledgements  
 Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch, get to know them better!  
 Some code snippets were referenced from [woodenclock](https://github.com/woodenclock/ip.git).  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Introduction
+## Introduction 🐻
 
 ### Purpose
 This document specifies the architectural and software design decisions in the implementation of the WildWatch.
