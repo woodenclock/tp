@@ -35,6 +35,7 @@ Some example commands you can try:
 - `bye` : Exits the program.  
 
 ```
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/48605da2-41d9-4791-b29b-cb1feb73626e)
 
 ```
 
