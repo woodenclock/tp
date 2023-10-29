@@ -4,6 +4,7 @@ import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.operation.DateHandler;
+import seedu.wildwatch.operation.error.IncorrectInputErrorType;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -71,7 +72,7 @@ public class AddCommandParser implements Parser<AddCommand> {
         }
         String date = matcher.group("date");
         if (!DateHandler.isDateValid(date)) {
-            throw new IncorrectInputException("Unknown date format.");
+            throw new IncorrectInputException(IncorrectInputErrorType.INVALID_DATE);
         }
     }
 

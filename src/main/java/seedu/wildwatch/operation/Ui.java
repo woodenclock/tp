@@ -37,6 +37,10 @@ public class Ui {
         System.out.println("File is corrupted.\nUnable to read file");
     }
 
+    public static void customInvalidInputMessagePrinter(String e) {
+        System.out.println(e);
+    }
+
     public static void entryAddedMessagePrinter() {
         System.out.println("The following entry has been added:");
     }
@@ -113,9 +117,8 @@ public class Ui {
         }
     }
 
-    public static void incorrectInputMessagePrinter(String error) {
+    public static void invalidInputMessagePrinter() {
         System.out.println("OOPS!!! Format of command is incorrect.");
-        System.out.println(error);
     }
 
     public static void invalidDateMessagePrinter() {

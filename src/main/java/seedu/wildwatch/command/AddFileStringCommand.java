@@ -1,6 +1,25 @@
 package seedu.wildwatch.command;
 
-public class AddFileStringCommand {
-    //TODO: execute() should just EntryList.addEntry()
-    // need this because there's going to be a parser
+import java.util.regex.Pattern;
+
+import seedu.wildwatch.entry.Entry;
+import seedu.wildwatch.entry.EntryList;
+
+public class AddFileStringCommand extends Command {
+    public static final Pattern FILE_STRING_FORMAT =
+            Pattern.compile("\\s*(?<date>[^/]+)\\s*/" +
+                    "\\s*(?<species>[^/]+)\\s*/" +
+                    "\\s*(?<name>[^/]+)\\s*/" +
+                    "\\s*(?<remark>[^/]+)");
+
+    private final Entry newEntry;
+
+    public AddFileStringCommand(Entry entry) {
+        newEntry = entry;
+    }
+
+    @Override
+    public void execute() {
+        EntryList.addEntry(newEntry);
+    }
 }
