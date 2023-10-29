@@ -1,6 +1,24 @@
 # WildWatch User Guide 🐘
+
+## Table of Contents 
+- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#introduction-)
+    - [How to use the User Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#how-to-use-the-user-guide)
+    - [Legend](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#legend)
+- [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-)
+- [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-)
+    - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-adding-entries-add): `add`
+    - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#2-deleting-entries-delete): `delete`
+    - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-listing-entries-list): `list`
+    - [Editiing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-editing-entries-edit): `edit`
+    - [Summarizing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#5-summarizing-entries-summary): `summary`
+    - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#6-getting-help--help): `help` 
+- [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-)
+- [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-)
+- [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-)
+    
+--------------------------------------------------------------------------------------------------------------------------------------
   
-## Introduction
+## Introduction 🐻
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
 Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-).  
 The purpose of this user guide is to familiarize you with the program and help you when you face a problem using it.  
@@ -29,24 +47,6 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
 
---------------------------------------------------------------------------------------------------------------------------------------
-
-## Table of Contents 
-- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#introduction)
-    - [How to use the User Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#how-to-use-the-user-guide)
-    - [Legend](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#legend)
-- [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-)
-- [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-)
-    - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-adding-entries-add): `add`
-    - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#2-deleting-entries-delete): `delete`
-    - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-listing-entries-list): `list`
-    - [Editiing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-editing-entries-edit): `edit`
-    - [Summarizing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#5-summarizing-entries-summary): `summary`
-    - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#6-getting-help--help): `help` 
-- [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-)
-- [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-)
-- [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-)
-    
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Quick Start 🐵
