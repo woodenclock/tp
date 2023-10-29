@@ -59,7 +59,7 @@ public class EditCommand extends Command {
             throw new IncorrectInputException();
         }
         index -= 1; // EntryList is 0 based.
-        System.out.println(indexStr + " " + date + " " + species + " " + name + " " + remark);
+        //System.out.println(indexStr + " " + date + " " + species + " " + name + " " + remark);
         Entry currentEntry = EntryList.getEntry(index);
         Entry updatedEntry = checkAndUpdateEntry(currentEntry, date, species, name, remark);
         EntryList.editEntry(index, updatedEntry);

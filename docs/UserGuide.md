@@ -10,6 +10,8 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
     - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#2-adding-entries-add): `add`
     - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-deleting-entries-delete): `delete`
     - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-listing-entries-list): `list`
+    - [Edit Entries](): `edit` --- update link when github page ready
+    - [Show Summary](): `summary` --- update link when github page ready
     - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-getting-help--help): `help` 
 - [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq)
 - [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-)
@@ -113,9 +115,58 @@ Species: African elephant | Name: strongOne | Age: 25 | Gender: M | Size: 5.5M |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
---------------------------------------------------------------------------------------------------------------------------------------
+### 4. Adding Entries: `edit`
+Edits an entry in the system.
 
-### 4. Getting Help : `help`
+Format: `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
+`<date>` should be in the format **DD-MM-YY**
+
+`I/<INDEX>` argument is required.
+
+Example:
+```
+edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
+____________________________________________________________
+The following entry has been edited:
+Date: [02-04-2024] | Species: [Annam Leaf Turtle] | Name: [Javier] | Remark: [Injured right flipper]
+____________________________________________________________
+```
+```
+edit I/1 S/Green Leaf Turtle
+____________________________________________________________
+The following entry has been edited:
+Date: [02-03-2023] | Species: [Green Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
+____________________________________________________________
+```
+
+--------------------------------------------------------------------------------------------------------------------------------------
+### 5. Listing Entries: `summary`
+Shows a summary of all wildlife in the WildWatch system.
+
+Format: `summary <SPECIES>`
+
+`<SPECIES>` argument is optional. When specified, it will show a summary of the wildlife recorded for the specified species.
+
+Example:
+```
+________________________________________
+summary
+________________________________________
+Here are the species recorded: 
+Annam Leaf Turtle - (2)
+Green Leaf Turtle - (1)
+```
+```
+____________________________________________________________
+summary Annam Leaf Turtle
+____________________________________________________________
+Here is the data for the Annam Leaf Turtle, grouped by their names
+Javier - (1)
+Ariel - (1)
+____________________________________________________________
+```
+
+### 6. Getting Help : `help`
 Shows the user how to use all the commands.
 
 Format: `help`
@@ -181,11 +232,13 @@ _________________________________________________________________
 
 ## Command Reference 🐱
 
-| Action         | Format |
-| -------------- | ------ |
-| Getting Help   | `help` |
-| Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`  |
-| Delete Entries | `delete <INDEX>`  |
-| List Entries   | `list` |
+| Action         | Format                                                     |
+| -------------- |------------------------------------------------------------|
+| Getting Help   | `help`                                                     |
+| Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
+| Delete Entries | `delete <INDEX>`                                           |
+| Delete Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>` |
+| Delete Entries | `summary <SPECIES>`                                        |
+| List Entries   | `list`                                                     |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
