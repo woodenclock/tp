@@ -27,7 +27,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
 3. Copy the file to the folder you want to use as the home folder for your WildWatch.
 
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
-You should see the welcome screen as follows.
+You should see the welcome screen as in Fig. 1.
 
 5. Type commands below the horizontal line and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
 Some example commands you can try:
@@ -35,6 +35,7 @@ Some example commands you can try:
 - `bye` : Exits the program.  
 
 ![Image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1dcd7951-eb68-46d5-bdae-4cb4e275d94f)
+Figure 1
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
