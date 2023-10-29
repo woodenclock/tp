@@ -24,7 +24,8 @@ Its main job is to store and present animal data, this would make your life so m
 --------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents 
 - [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#introduction)
-    - [How to use the User Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#how-to-use-the-user-guide) 
+    - [How to use the User Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#how-to-use-the-user-guide)
+    - [Legend](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#legend)
 - [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-)
 - [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-)
     - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-adding-entries-add): `add`
