@@ -2,7 +2,8 @@ package seedu.wildwatch.operation;
 
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.entry.Entry;
-import seedu.wildwatch.entry.EntryList;
+import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.operation.parser.FileStringParser;
 
 import java.io.IOException;
 import java.io.File;
@@ -20,15 +21,18 @@ public class FileHandler {
     public static void handleFile() {
         if (checkFileExistence()) {
             Ui.fileExistMessagePrinter();
+            // Loads entries from file
             loadFile();
             Ui.taskLoadedMessagePrinter();
 
             // Lists entries loaded from file
             ListCommand.listEntry();
+
         } else {  // File does not exist
             Ui.noFileMessagePrinter();
             createFile();
         }
+
         BootUp.bootUpTwo(); //Welcome prompt message
     }
 
@@ -60,13 +64,14 @@ public class FileHandler {
                 String lineOfFile = fileReader.nextLine();
 
                 // Creates new entry from line in file
-                String[] entryDetails = lineOfFile.split(" \\| ");
-                Entry newEntry = new Entry(entryDetails[0], entryDetails[1], entryDetails[2], entryDetails[3]);
-
-                EntryList.addEntry(newEntry);
+                new FileStringParser().parse(lineOfFile).execute();
             }
         } catch (FileNotFoundException exception) {
             Ui.fileNotFoundMessagePrinter();
+        } catch (IncorrectInputException e) {
+            Ui.corruptFileMessagePrinter();
+            ShutDown.shutDown();
+            System.exit(0);
         }
     }
 
@@ -116,6 +121,6 @@ public class FileHandler {
         String name = entry.getName();
         String remark = entry.getRemark();
 
-        return String.format("%s | %s | %s | %s", date, species, name, remark);
+        return String.format("%s / %s / %s / %s", date, species, name, remark);
     }
 }

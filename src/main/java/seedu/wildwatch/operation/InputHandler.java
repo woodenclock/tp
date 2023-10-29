@@ -4,7 +4,7 @@ import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.ByeCommand;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.IncorrectInputException;
-import seedu.wildwatch.exception.UnknownInputException;
+import seedu.wildwatch.operation.error.ErrorHandler;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class InputHandler {
     private static final Logger LOGGER = Logger.getLogger(InputHandler.class.getName());
 
-    public static void handleManualInput() {
+    public static void handleInput() {
         while (true) {
             Ui.inputPromptPrinter();
             String inputBuffer = Ui.inputRetriever(); //Retrieves input of user
@@ -20,7 +20,6 @@ public class InputHandler {
 
             try {
                 Command command = EntryHandler.handleEntry(inputBuffer);
-
                 if (command instanceof ByeCommand) {
                     break;
                 }
@@ -30,24 +29,11 @@ public class InputHandler {
                 Ui.printHorizontalLines();
 
             } catch (IncorrectInputException e) {
-                Ui.incorrectInputMessagePrinter();
-            } catch (UnknownInputException e) {
-                Ui.unknownInputMessagePrinter();
+                ErrorHandler.handleInputError(e);
             }
         }
 
         EntryList.saveEntry();
         ByeCommand.exitProgram();
-    }
-
-    public static void handleFileInput(String lineOfFile) {
-        try {
-            EntryHandler.handleEntry(lineOfFile);
-        } catch (UnknownInputException | IncorrectInputException exception) {
-            //TODO: this function is no longer useful but this has to be moved somewhere
-            Ui.corruptFileMessagePrinter();
-            ShutDown.shutDownWithError();
-            System.exit(0);
-        }
     }
 }
