@@ -45,8 +45,8 @@ Some example commands you can try:
 > ❗ IMPORTANT
 > * Capitalized words between angle brackets `< >` are information to be written appropriately by the user.
 > * E.g., `delete <INDEX>` should be `delete 2`
-
-
+  
+  
 ### 1. Adding Entries: `add`
 Adds a new entry to the system.
 
@@ -57,9 +57,8 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6864fe77-f579-45d1-9680-b5b30e7530b5)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-
----
-
+  
+  
 ### 2. Deleting Entries: `delete`
 Deletes an entry. 
 
@@ -75,9 +74,8 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6ab91cb4-722e-4e0b-94af-095b0a9f4f24)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-
---- 
-
+  
+  
 ### 3. Listing Entries: `list`
 Shows a list of all entries of wildlife in the WildWatch so far.
 Shows useful information about each entry.
@@ -89,7 +87,8 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/92befe34-c75e-4269-9aeb-42a6c02344bd)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-
+  
+  
 ### 4. Editing Entries: `edit`
 Edits an entry in the system.
 
@@ -113,8 +112,8 @@ The following entry has been edited:
 Date: [02-03-2023] | Species: [Green Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
 ____________________________________________________________
 ```
-
---------------------------------------------------------------------------------------------------------------------------------------
+  
+  
 ### 5. Listing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system.
 
@@ -140,7 +139,8 @@ Javier - (1)
 Ariel - (1)
 ____________________________________________________________
 ```
-
+  
+  
 ### 6. Getting Help : `help`
 Shows the user how to use all the commands.
 
@@ -151,9 +151,9 @@ Example:
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
---- 
+--------------------------------------------------------------------------------------------------------------------------------------
 
-## FAQ
+## FAQ 🦁
 
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
 
