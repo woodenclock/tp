@@ -13,7 +13,7 @@ Wildwatch is a program for a clerk managing animal entries in a wildlife reserve
     - [Editiing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-editing-entries-edit): `edit`
     - [Summarizing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#5-summarizing-entries-summary): `summary`
     - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#6-getting-help--help): `help` 
-- [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq)
+- [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-)
 - [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-)
     
 --------------------------------------------------------------------------------------------------------------------------------------
