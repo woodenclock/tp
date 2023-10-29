@@ -53,7 +53,7 @@ Adds a new entry to the system.
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
 `<date>` should be in the format **DD-MM-YY**
 
-Example: 
+Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6864fe77-f579-45d1-9680-b5b30e7530b5)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
@@ -71,7 +71,7 @@ The index refers to the index number shown in the displayed entry list.
 > * Index must be a positive integer 1, 2, 3, ...
 > * Deleted items may not be recoverable
 
-Example:
+Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6ab91cb4-722e-4e0b-94af-095b0a9f4f24)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
@@ -85,7 +85,7 @@ Information such as the species, name, age, gender, size, remarks are shown toge
 
 Format: `list` 
 
-Example: 
+Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/92befe34-c75e-4269-9aeb-42a6c02344bd)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
@@ -146,7 +146,7 @@ Shows the user how to use all the commands.
 
 Format: `help`
 
-Example:
+Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/9acf7e67-2f0a-407a-9235-400661ce3fed)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
