@@ -20,8 +20,12 @@ public class DeleteCommand extends Command {
      * Deletes entry in the EntryList
      */
     public void execute() {
-        Ui.entryRemovedMessagePrinter();
-        EntryList.deleteEntry(numberInput);
-        Ui.entryCountPrinter();
+        if (numberInput < 0 || numberInput > EntryList.getArraySize()) {
+            Ui.entryNotFoundMessagePrinter();
+        } else {
+            Ui.entryRemovedMessagePrinter();
+            EntryList.deleteEntry(numberInput);
+            Ui.entryCountPrinter();
+        }
     }
 }
