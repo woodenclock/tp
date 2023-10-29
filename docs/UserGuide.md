@@ -112,6 +112,8 @@ The following entry has been edited:
 Date: [02-03-2023] | Species: [Green Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
 ____________________________________________________________
 ```
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
   
   
 ### 5. Summarizing Entries: `summary`
@@ -139,8 +141,9 @@ Javier - (1)
 Ariel - (1)
 ____________________________________________________________
 ```
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
   
-  
+    
 ### 6. Getting Help : `help`
 Shows the user how to use all the commands.
 
