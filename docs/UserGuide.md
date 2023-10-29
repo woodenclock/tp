@@ -30,6 +30,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
+
 ## Table of Contents 
 - [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#introduction)
     - [How to use the User Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#how-to-use-the-user-guide)
