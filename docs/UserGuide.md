@@ -2,9 +2,9 @@
   
 ## Introduction
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
-The purpose of this user guide is to familiarize you with the program and help you when you face a problem.  
 Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the Command Line Interface (CLI).  
-Its main functionality is to store and present animal data, this would make your life so much more convenient!
+The purpose of this user guide is to familiarize you with the program and help you when you face a problem using it.  
+Its main job is to store and present animal data, this would make your life so much more convenient!
 
 ### How to use the User Guide
 - Are you new here? No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-) page, and you will be up and running in no time!
@@ -12,6 +12,14 @@ Its main functionality is to store and present animal data, this would make your
 - Need help with the functionalities? Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page for detailed guidance.
 - Do you have a question for us? Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.
 - Do you want a concise summary of all functionalities? Head to the [Command Reference](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-reference-) page.
+
+### Legend  
+| Symbol         | Meaning                                                    |
+| -------------- |------------------------------------------------------------|
+| ❗ IMPORTANT   | These are important instructions that you should follow.   |
+| ⬆ Back to top  | Click on to scroll back up to the `Table of Contents`.     |
+| 🐵             | Your cute animal friend pops up to let you know that you have reached a new section. |
+
 
 --------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents 
@@ -78,7 +86,7 @@ Format: `delete INDEX`
 Deletes the entry at the specified INDEX. 
 The index refers to the index number shown in the displayed entry list.
 
-> ✏ Notes on `INDEX`
+>❗ IMPORTANT
 > * Index must be a positive integer 1, 2, 3, ...
 > * Deleted items may not be recoverable
 
