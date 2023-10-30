@@ -20,7 +20,8 @@
 
 ## Acknowledgements  
 Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch, get to know them better!  
-Some code snippets were referenced from [woodenclock](https://github.com/woodenclock/ip.git).  
+[woodenclock](https://github.com/woodenclock/ip.git) - Reference  
+[AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
