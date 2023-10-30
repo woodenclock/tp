@@ -2,7 +2,7 @@ package seedu.wildwatch.parser;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddFileStringCommand;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.operation.DateHandler;
 
 import java.util.regex.Pattern;
@@ -17,7 +17,7 @@ public class FileStringParser implements Parser<AddFileStringCommand> {
                     "\\s*(?<remark>[^/]+)?");
 
     @Override
-    public AddFileStringCommand parse(String input) throws IncorrectInputException {
+    public AddFileStringCommand parse(String input) throws InvalidInputException {
         performChecks(input);
 
         final Matcher matcher = AddFileStringCommand.FILE_STRING_FORMAT.matcher(input);
@@ -35,23 +35,23 @@ public class FileStringParser implements Parser<AddFileStringCommand> {
         return new AddFileStringCommand(newEntry);
     }
 
-    private void performChecks(String input) throws IncorrectInputException {
+    private void performChecks(String input) throws InvalidInputException {
 
         final Matcher matcher = ADD_FILE_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {
-            throw new IncorrectInputException("Invalid entry found!\n" + input);
+            throw new InvalidInputException("Invalid entry found!\n" + input);
         }
 
         // Check that all groups present
         if (matcher.group("date") == null ||
                 matcher.group("species") == null ||
                 matcher.group("name") == null) {
-            throw new IncorrectInputException("Invalid entry found!\n" + input);
+            throw new InvalidInputException("Invalid entry found!\n" + input);
         }
 
         // Check that date is valid
         if (!DateHandler.isDateValid(matcher.group("date"))) {
-            throw new IncorrectInputException("Invalid entry found!\n" + input);
+            throw new InvalidInputException("Invalid entry found!\n" + input);
         }
     }
 }

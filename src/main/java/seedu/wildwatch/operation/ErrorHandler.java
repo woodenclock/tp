@@ -11,15 +11,11 @@ import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.exception.EmptyAddException;
-import seedu.wildwatch.exception.EmptyDeleteException;
 import seedu.wildwatch.exception.EmptyListException;
 import seedu.wildwatch.exception.EmptyInputException;
-import seedu.wildwatch.exception.EmptyFindException;
 import seedu.wildwatch.exception.EntryNotFoundException;
-import seedu.wildwatch.exception.UnknownInputException;
 import seedu.wildwatch.exception.UnknownDateFormatException;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 
 //TODO: this file should not exist
 public class ErrorHandler {
@@ -35,15 +31,6 @@ public class ErrorHandler {
         } catch (EmptyInputException exception) {
             LOGGER.warning("Received an empty input.");
             Ui.emptyDescriptionMessagePrinter(null);
-        } catch (EmptyAddException exception){
-            LOGGER.warning("Received an empty add input.");
-            Ui.emptyDescriptionMessagePrinter(AddCommand.COMMAND_WORD);
-        } catch (EmptyDeleteException exception) {
-            LOGGER.warning("Received an empty delete input.");
-            Ui.emptyDescriptionMessagePrinter(DeleteCommand.COMMAND_WORD);
-        } catch (EmptyFindException exception) {
-            LOGGER.warning("Received an empty find input.");
-            Ui.emptyDescriptionMessagePrinter(FindCommand.COMMAND_WORD);
         } catch (EmptyListException exception) {
             LOGGER.info("List is empty.");
             Ui.emptyListMessagePrinter();
@@ -52,15 +39,15 @@ public class ErrorHandler {
             LOGGER.warning("Queried entry not found.");
             Ui.entryNotFoundMessagePrinter();
             validInput = true;
-        } catch (UnknownInputException exception) {
+        } catch (InvalidInputException exception) {
             LOGGER.warning("Unknown input received.");
             Ui.unknownInputMessagePrinter();
         } catch (UnknownDateFormatException | DateTimeParseException exception) {
             LOGGER.warning("Date is invalid.");
             Ui.invalidDateMessagePrinter();
-        } catch (IncorrectInputException exception) {
+        } catch (InvalidInputException exception) {
             LOGGER.warning("Command is invalid.");
-            Ui.incorrectInputMessagePrinter();
+            Ui.invalidInputMessagePrinter();
         } finally {
             if (!validInput) {
                 Ui.printHorizontalLines();
@@ -69,9 +56,8 @@ public class ErrorHandler {
         }
     }
 
-    public static void checkError(String inputBuffer) throws EmptyInputException, EmptyAddException,
-            EmptyListException, EmptyDeleteException, EntryNotFoundException, UnknownDateFormatException,
-            EmptyFindException {
+    public static void checkError(String inputBuffer) throws EmptyInputException,
+            EmptyListException, EntryNotFoundException, UnknownDateFormatException {
         assert inputBuffer != null : "Input buffer should not be null.";
         Scanner bufferScanner = new Scanner(inputBuffer);   //Scanner for the buffer
         String firstWord;                                   //First word of input
@@ -86,17 +72,17 @@ public class ErrorHandler {
         }
 
         if (firstWord.equals(AddCommand.COMMAND_WORD) && !bufferScanner.hasNext()) {
-            throw new EmptyAddException();
+            throw new EmptyInputException();
         } else if (firstWord.equals(AddCommand.COMMAND_WORD) && !(DateHandler.isDateValid(inputBuffer))) {
             throw new UnknownDateFormatException();
         } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) && numberInput == DEFAULT_NUMBER_INPUT) {
-            throw new EmptyDeleteException();
+            throw new EmptyInputException();
         } else if (firstWord.equals(DeleteCommand.COMMAND_WORD) &&
                 (numberInput < 1 || numberInput > EntryList.getArraySize())) {
             throw new EntryNotFoundException();
         } else if (firstWord.equals(FindCommand.COMMAND_WORD) &&
                 !bufferScanner.hasNext() && !bufferScanner.hasNextInt()) {
-            throw new EmptyFindException();
+            throw new EmptyInputException();
         } else if (firstWord.equals(ListCommand.COMMAND_WORD) && EntryList.isArrayEmpty()) {
             throw new EmptyListException();
         }

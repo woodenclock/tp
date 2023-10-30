@@ -6,8 +6,8 @@ import seedu.wildwatch.entry.Entry;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import seedu.wildwatch.exception.IncorrectInputException;
-import seedu.wildwatch.operation.error.IncorrectInputErrorType;
+import seedu.wildwatch.exception.InvalidInputException;
+import seedu.wildwatch.operation.error.InvalidInputErrorType;
 
 public class AddCommandParserTest {
     private final AddCommandParser parser = new AddCommandParser();
@@ -68,7 +68,7 @@ public class AddCommandParserTest {
         input = "add S/Annam Leaf Turtle N/Ariel R/Injured left flipper";
         try {
             parser.parse(input);
-        } catch (IncorrectInputException e) {
+        } catch (InvalidInputException e) {
             assertEquals(e.getCustomMessage(), "D/ is not defined");
         }
 
@@ -76,7 +76,7 @@ public class AddCommandParserTest {
         input = "add D/ S/Annam Leaf Turtle N/Ariel R/Injured left flipper";
         try {
             parser.parse(input);
-        } catch (IncorrectInputException e) {
+        } catch (InvalidInputException e) {
             assertEquals(e.getCustomMessage(), "Date value cannot be empty.");
         }
 
@@ -84,15 +84,15 @@ public class AddCommandParserTest {
         input = "add D/1 S/Annam Leaf Turtle N/Ariel R/Injured left flipper";
         try {
             parser.parse(input);
-        } catch (IncorrectInputException e) {
-            assertEquals(e.getError(), IncorrectInputErrorType.INVALID_DATE);
+        } catch (InvalidInputException e) {
+            assertEquals(e.getError(), InvalidInputErrorType.INVALID_DATE);
         }
 
         // S/ prefix is not present
         input = "add D/02-03-23 N/Ariel R/Injured left flipper";
         try {
             parser.parse(input);
-        } catch (IncorrectInputException e) {
+        } catch (InvalidInputException e) {
             assertEquals(e.getCustomMessage(), "S/ is not defined");
         }
 
@@ -100,7 +100,7 @@ public class AddCommandParserTest {
         input = "add D/02-03-23 S/ N/Ariel R/Injured left flipper";
         try {
             parser.parse(input);
-        } catch (IncorrectInputException e) {
+        } catch (InvalidInputException e) {
             assertEquals(e.getCustomMessage(), "Species is not defined.");
         }
 
@@ -108,7 +108,7 @@ public class AddCommandParserTest {
         input = "add D/02-03-23 S/Annam Leaf Turtle R/Injured left flipper";
         try {
             parser.parse(input);
-        } catch (IncorrectInputException e) {
+        } catch (InvalidInputException e) {
             assertEquals(e.getCustomMessage(), "N/ is not defined");
         }
 
@@ -116,7 +116,7 @@ public class AddCommandParserTest {
         input = "add D/02-03-23 S/Annam Leaf Turtle N/ R/Injured left flipper";
         try {
             parser.parse(input);
-        } catch (IncorrectInputException e) {
+        } catch (InvalidInputException e) {
             assertEquals(e.getCustomMessage(), "Name is not defined");
         }
     }

@@ -3,7 +3,7 @@ package seedu.wildwatch.operation;
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.ByeCommand;
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.operation.error.ErrorHandler;
 
 import java.util.logging.Level;
@@ -28,7 +28,7 @@ public class InputHandler {
                 command.execute();
                 Ui.printHorizontalLines();
 
-            } catch (IncorrectInputException e) {
+            } catch (InvalidInputException e) {
                 ErrorHandler.handleInputError(e);
             }
         }

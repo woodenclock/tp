@@ -7,7 +7,7 @@ import java.util.Map;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.operation.Ui;
 
 /**
@@ -56,7 +56,7 @@ public class SummaryCommand extends Command {
         }
         return filteredMap;
     }
-    public void execute() throws IncorrectInputException {
+    public void execute() throws InvalidInputException {
         String argument = inputBuffer.replace("summary","").trim();
         String speciesName = argument;
         boolean hasArgument = !argument.isEmpty();

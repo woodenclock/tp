@@ -1,6 +1,6 @@
 package seedu.wildwatch.operation.error;
 
-public enum IncorrectInputErrorType {
+public enum InvalidInputErrorType {
     EMPTY_INPUT,
     EMPTY_ADD_INPUT,
     EMPTY_DELETE_INPUT,

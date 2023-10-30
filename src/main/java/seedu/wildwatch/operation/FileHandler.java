@@ -3,7 +3,7 @@ package seedu.wildwatch.operation;
 
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.entry.Entry;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.parser.FileStringParser;
 
 import java.io.IOException;
@@ -69,7 +69,7 @@ public class FileHandler {
             }
         } catch (FileNotFoundException exception) {
             Ui.fileNotFoundMessagePrinter();
-        } catch (IncorrectInputException e) {
+        } catch (InvalidInputException e) {
             Ui.corruptFileMessagePrinter();
             ShutDown.shutDown();
             System.exit(0);
