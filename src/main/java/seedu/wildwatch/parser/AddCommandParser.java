@@ -27,10 +27,16 @@ public class AddCommandParser implements Parser<AddCommand> {
 
         assert isMatch : "Command should match format.";
 
-        final String date = matcher.group("date");
-        final String species = matcher.group("species");
-        final String name = matcher.group("name");
-        final String remark = matcher.group("remark");
+        final String date = matcher.group("date").trim();
+        final String species = matcher.group("species").trim();
+        final String name = matcher.group("name").trim();
+        String remark = matcher.group("remark");
+
+        if (remark == null) {
+            remark = "";
+        } else {
+            remark = remark.trim();
+        }
 
         Entry newEntry = new Entry(date, species, name, remark);
 
@@ -71,7 +77,7 @@ public class AddCommandParser implements Parser<AddCommand> {
         if (matcher.group("date") == null) {
             throw new IncorrectInputException("Date value cannot be empty.");
         }
-        String date = matcher.group("date");
+        String date = matcher.group("date").trim();
         if (!DateHandler.isDateValid(date)) {
             throw new IncorrectInputException(IncorrectInputErrorType.INVALID_DATE);
         }

@@ -45,4 +45,25 @@ public class Entry {
     public void setRemark(String remark) {
         this.remark = remark;
     }
+
+    /**
+     * Returns true if both entries have the same value for each field.
+     */
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+
+        // instanceof handles nulls
+        if (!(other instanceof Entry)) {
+            return false;
+        }
+
+        Entry otherEntry = (Entry) other;
+        return date.equals(otherEntry.date)
+                && species.equals(otherEntry.species)
+                && name.equals(otherEntry.name)
+                && remark.equals(otherEntry.remark);
+    }
 }

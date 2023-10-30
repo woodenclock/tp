@@ -18,7 +18,7 @@ public class AddCommand extends Command {
                     + "\\s* D/\\s*(?<date>[^/]+)"
                     + "\\s* S/\\s*(?<species>[^/]+)"
                     + "\\s* N/\\s*(?<name>[^/]+)"
-                    + "\\s*(?: R/(?<remark>[^/]+))?");
+                    + "\\s*(?: R/\\s*(?<remark>[^/]+)\\s*)?");
 
     private final Entry newEntry;
 
@@ -33,6 +33,21 @@ public class AddCommand extends Command {
         Ui.entryAddedMessagePrinter();
         Ui.printEntry(EntryList.getArraySize() - 1);
         Ui.entryCountPrinter();
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+
+        // instanceof handles nulls
+        if (!(other instanceof AddCommand)) {
+            return false;
+        }
+
+        AddCommand otherAddCommand = (AddCommand) other;
+        return newEntry.equals(otherAddCommand.newEntry);
     }
 }
 
