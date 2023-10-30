@@ -66,7 +66,7 @@ Some example commands you can try:
 - `list` : Lists all entries.  
 - `bye` : Exits the program.  
 
-![Image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1dcd7951-eb68-46d5-bdae-4cb4e275d94f)  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/c110856f-dd16-4c5c-8205-446d86425ddb)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
