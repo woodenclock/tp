@@ -154,7 +154,7 @@ Format: `summary <SPECIES>`
 
 `<SPECIES>` argument is optional. When specified, it will show a summary of the wildlife recorded for the specified species.
 
-Example:
+Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
