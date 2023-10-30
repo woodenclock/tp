@@ -24,6 +24,7 @@ public class FileHandler {
             Ui.fileExistMessagePrinter();
             // Loads entries from file
             loadFile();
+            assert openedFile != null : "Trying to read from a non-initialized file.";
             Ui.taskLoadedMessagePrinter();
 
             // Lists entries loaded from file
@@ -32,6 +33,7 @@ public class FileHandler {
         } else {  // File does not exist
             Ui.noFileMessagePrinter();
             createFile();
+            assert openedFile.exists() : "File was supposed to be created but it doesn't exist.";
         }
 
         BootUp.bootUpTwo(); //Welcome prompt message
@@ -45,6 +47,7 @@ public class FileHandler {
     public static boolean checkFileExistence() {
         System.out.print(System.lineSeparator());
         Ui.checkingIfFileExistsMessagePrinter();
+        assert FILE_PATH != null : "File path should not be null.";
         File file = new File(FILE_PATH);
 
         if (!file.exists()) {

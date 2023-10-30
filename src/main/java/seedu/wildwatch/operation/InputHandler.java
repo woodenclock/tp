@@ -14,6 +14,8 @@ public class InputHandler {
         while (loopFlag) {
             Ui.inputPromptPrinter();
             String inputBuffer = Ui.inputRetriever(); //Retrieves input of user
+            assert ((inputBuffer != null) && (!inputBuffer.trim().isEmpty())) :
+                    "inputBuffer should not be null or empty after reading input";
             LOGGER.log(Level.INFO, "Input received: {0}", inputBuffer);
 
             loopFlag = CommandHandler.processCommand(inputBuffer);
