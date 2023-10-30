@@ -16,8 +16,8 @@ import seedu.wildwatch.command.HelpCommand;
 
 import seedu.wildwatch.exception.IncorrectInputException;
 import seedu.wildwatch.operation.error.IncorrectInputErrorType;
-import seedu.wildwatch.operation.parser.AddCommandParser;
-import seedu.wildwatch.operation.parser.DeleteCommandParser;
+import seedu.wildwatch.parser.AddCommandParser;
+import seedu.wildwatch.parser.DeleteCommandParser;
 
 
 public class EntryHandler {
