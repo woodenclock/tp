@@ -19,9 +19,11 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Acknowledgements  
-Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch, get to know them better!  
 [woodenclock](https://github.com/woodenclock/ip.git) - Reference  
 [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
+Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch!  
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -58,6 +60,8 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuid
 | ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Quick Start 🐵
@@ -80,6 +84,8 @@ Some example commands you can try:
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 ## Design & Implementation
 
 ### System Architecture
@@ -97,6 +103,9 @@ WildWatch is comprised of 7 major components.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `FileHandler`: A class that saves and retrieves all the wildlife data from the local storage
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Product scope
 ### Target user profile
@@ -107,6 +116,10 @@ Target user profile are the clerks working in zoos.
 ### Value proposition
 
 {Describe the value proposition: what problem does it solve?}
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## User Stories
@@ -119,23 +132,39 @@ Target user profile are the clerks working in zoos.
 |v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 ## Non-Functional Requirements
 
 {Give non-functional requirements}
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## Manual Testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Command Summary
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary
 
 * *glossary item* - Definition
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
