@@ -85,7 +85,7 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
 `<date>` should be in the format **DD-MM-YY**
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6864fe77-f579-45d1-9680-b5b30e7530b5)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
   
@@ -102,7 +102,7 @@ The index refers to the index number shown in the displayed entry list.
 > * Deleted items may not be recoverable
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6ab91cb4-722e-4e0b-94af-095b0a9f4f24)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
   
@@ -115,7 +115,7 @@ Information such as the species, name, age, gender, size, remarks are shown toge
 Format: `list` 
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/92befe34-c75e-4269-9aeb-42a6c02344bd)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ef21314f-fb23-4bd6-bcfd-fddfa8fb0330)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
   
@@ -148,30 +148,15 @@ ____________________________________________________________
   
   
 ### 5. Summarizing Entries: `summary`
-Shows a summary of all wildlife in the WildWatch system.
+Shows a summary of all wildlife in the WildWatch system by the species type.
 
 Format: `summary <SPECIES>`
 
 `<SPECIES>` argument is optional. When specified, it will show a summary of the wildlife recorded for the specified species.
 
 Example:
-```
-________________________________________
-summary
-________________________________________
-Here are the species recorded: 
-Annam Leaf Turtle - (2)
-Green Leaf Turtle - (1)
-```
-```
-____________________________________________________________
-summary Annam Leaf Turtle
-____________________________________________________________
-Here is the data for the Annam Leaf Turtle, grouped by their names
-Javier - (1)
-Ariel - (1)
-____________________________________________________________
-```
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
+
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
   
     
