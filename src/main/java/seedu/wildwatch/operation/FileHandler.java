@@ -3,7 +3,7 @@ package seedu.wildwatch.operation;
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.exception.IncorrectInputException;
-import seedu.wildwatch.operation.parser.FileStringParser;
+import seedu.wildwatch.parser.FileStringParser;
 
 import java.io.IOException;
 import java.io.File;

@@ -1,4 +1,4 @@
-package seedu.wildwatch.operation.parser;
+package seedu.wildwatch.parser;
 
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.exception.IncorrectInputException;
