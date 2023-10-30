@@ -83,7 +83,7 @@ Some example commands you can try:
 
 ### System Architecture
 
-![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c39eb20-8257-4d5c-bbd9-dc25f9246090)
+![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/7bdda637-1c7a-4358-a648-a9972184cd3d)
 
 The **_Architecture Diagram_** above explains the high-level design of the application.  
 WildWatch is comprised of 7 major components.  
