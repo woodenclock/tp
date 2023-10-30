@@ -101,6 +101,7 @@ public class FileHandler {
      * Write each task in the desired format to the file.
      */
     public static void saver(ArrayList<Entry> entries) {
+        assert entries != null : "Trying to save a null list of entries.";
         try {
             FileWriter writer = new FileWriter(FILE_PATH);
             for (Entry entry : entries) {
@@ -120,6 +121,7 @@ public class FileHandler {
      * @throws IOException when there is problem with formatting the task.
      */
     public static String toFileString(Entry entry) throws IOException {
+        assert entry != null : "Trying to convert a null entry to file string.";
         String date = entry.getDate().format(STD_FORMAT);
         String species = entry.getSpecies();
         String name = entry.getName();
