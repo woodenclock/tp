@@ -86,7 +86,8 @@ Some example commands you can try:
 
 ![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/7bdda637-1c7a-4358-a648-a9972184cd3d)
 
-The **_Architecture Diagram_** above explains the high-level design of the application.  
+The **_Architecture Diagram_** shows the high-level architectural design of WildWatch.  
+Actual detailed implementation may differ from the architectural diagram.  
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
 - `UI`: A class that receives input from, and prints output to the user.
