@@ -1,9 +1,10 @@
+//@@woodenclock
 package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.operation.Ui;
-import seedu.wildwatch.operation.error.IncorrectInputErrorType;
+import seedu.wildwatch.operation.error.InvalidInputErrorType;
 
 /**
  * Command class for listing all entries in EntryList
@@ -24,9 +25,9 @@ public class ListCommand extends Command {
         Ui.entryCountPrinter();
     }
 
-    public void execute() throws IncorrectInputException {
+    public void execute() throws InvalidInputException {
         if (EntryList.isArrayEmpty()) {
-            throw new IncorrectInputException(IncorrectInputErrorType.EMPTY_LIST);
+            throw new InvalidInputException(InvalidInputErrorType.EMPTY_LIST);
         }
 
         Ui.listMessagePrinter();

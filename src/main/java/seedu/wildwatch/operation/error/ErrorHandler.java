@@ -4,13 +4,13 @@ import java.util.logging.Logger;
 
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.operation.Ui;
 
 public class ErrorHandler {
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());
 
-    public static void handleInputError(IncorrectInputException e) {
+    public static void handleInputError(InvalidInputException e) {
         boolean validInput = false;
 
         switch (e.getError()) {

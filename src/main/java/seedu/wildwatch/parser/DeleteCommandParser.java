@@ -2,8 +2,8 @@ package seedu.wildwatch.parser;
 
 import seedu.wildwatch.command.DeleteCommand;
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.exception.IncorrectInputException;
-import seedu.wildwatch.operation.error.IncorrectInputErrorType;
+import seedu.wildwatch.exception.InvalidInputException;
+import seedu.wildwatch.operation.error.InvalidInputErrorType;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -14,7 +14,7 @@ public class DeleteCommandParser implements Parser<DeleteCommand> {
             Pattern.compile("delete\\s+(?<index>\\S+)\\s*");
 
     @Override
-    public DeleteCommand parse(String input) throws IncorrectInputException {
+    public DeleteCommand parse(String input) throws InvalidInputException {
         int getIdx = getIndexFromInput(input);
 
         return new DeleteCommand(getIdx);
@@ -28,13 +28,13 @@ public class DeleteCommandParser implements Parser<DeleteCommand> {
      *
      * @param input
      * @return index of entry to delete
-     * @throws IncorrectInputException thrown when command format is incorrect.
+     * @throws InvalidInputException thrown when command format is incorrect.
      */
-    private int getIndexFromInput(String input) throws IncorrectInputException {
+    private int getIndexFromInput(String input) throws InvalidInputException {
 
         final Matcher matcher = DELETE_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {
-            throw new IncorrectInputException(IncorrectInputErrorType.EMPTY_DELETE_INPUT);
+            throw new InvalidInputException(InvalidInputErrorType.EMPTY_DELETE_INPUT);
         }
 
         // Check that index is a valid number
@@ -42,12 +42,12 @@ public class DeleteCommandParser implements Parser<DeleteCommand> {
         try {
             deleteIdx = Integer.parseInt(matcher.group("index"));
         } catch (NumberFormatException e) {
-            throw new IncorrectInputException(IncorrectInputErrorType.INVALID_DELETE_INDEX);
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_DELETE_INDEX);
         }
 
         // Check that index is within bounds
         if (deleteIdx < 1 || deleteIdx > EntryList.getArraySize()) {
-            throw new IncorrectInputException(IncorrectInputErrorType.ENTRY_NOT_FOUND);
+            throw new InvalidInputException(InvalidInputErrorType.ENTRY_NOT_FOUND);
         }
 
         return deleteIdx;

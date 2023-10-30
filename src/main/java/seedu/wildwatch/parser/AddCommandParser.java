@@ -2,9 +2,9 @@ package seedu.wildwatch.parser;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddCommand;
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.operation.DateHandler;
-import seedu.wildwatch.operation.error.IncorrectInputErrorType;
+import seedu.wildwatch.operation.error.InvalidInputErrorType;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -19,7 +19,7 @@ public class AddCommandParser implements Parser<AddCommand> {
                     + "\\s*(?: R/(?<remark>[^/]+))?");
 
     @Override
-    public AddCommand parse(String input) throws IncorrectInputException {
+    public AddCommand parse(String input) throws InvalidInputException {
         performChecks(input);
 
         final Matcher matcher = AddCommand.ADD_ENTRY_COMMAND_FORMAT.matcher(input);
@@ -47,13 +47,13 @@ public class AddCommandParser implements Parser<AddCommand> {
      * Ensures that {@code input} adheres to the command format.
      *
      * @param input
-     * @throws IncorrectInputException thrown if the input does not adhere to command format.
+     * @throws InvalidInputException thrown if the input does not adhere to command format.
      */
-    private void performChecks(String input) throws IncorrectInputException {
+    private void performChecks(String input) throws InvalidInputException {
 
         final Matcher matcher = ADD_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {
-            throw new IncorrectInputException("Invalid command format.");
+            throw new InvalidInputException("Invalid command format.");
         }
 
         checkDate(matcher);
@@ -68,18 +68,18 @@ public class AddCommandParser implements Parser<AddCommand> {
      * 3. Date provided is correctly formatted
      *
      * @param matcher Input matched against command pattern
-     * @throws IncorrectInputException thrown when date is not correctly defined
+     * @throws InvalidInputException thrown when date is not correctly defined
      */
-    private void checkDate(Matcher matcher) throws IncorrectInputException {
+    private void checkDate(Matcher matcher) throws InvalidInputException {
         if (matcher.group("dprefix") == null) {
-            throw new IncorrectInputException("D/ is not defined");
+            throw new InvalidInputException("D/ is not defined");
         }
         if (matcher.group("date") == null) {
-            throw new IncorrectInputException("Date value cannot be empty.");
+            throw new InvalidInputException("Date value cannot be empty.");
         }
         String date = matcher.group("date").trim();
         if (!DateHandler.isDateValid(date)) {
-            throw new IncorrectInputException(IncorrectInputErrorType.INVALID_DATE);
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_DATE);
         }
     }
 
@@ -89,14 +89,14 @@ public class AddCommandParser implements Parser<AddCommand> {
      * 2. Species is defined
      *
      * @param matcher Input matched against command pattern
-     * @throws IncorrectInputException thrown when species is not correctly defined
+     * @throws InvalidInputException thrown when species is not correctly defined
      */
-    private void checkSpecies(Matcher matcher) throws IncorrectInputException {
+    private void checkSpecies(Matcher matcher) throws InvalidInputException {
         if (matcher.group("sprefix") == null) {
-            throw new IncorrectInputException("S/ is not defined");
+            throw new InvalidInputException("S/ is not defined");
         }
         if (matcher.group("species") == null) {
-            throw new IncorrectInputException("Species is not defined.");
+            throw new InvalidInputException("Species is not defined.");
         }
     }
 
@@ -106,14 +106,14 @@ public class AddCommandParser implements Parser<AddCommand> {
      * 2. Name is defined
      *
      * @param matcher Input matched against command pattern
-     * @throws IncorrectInputException thrown when species is not correctly defined
+     * @throws InvalidInputException thrown when species is not correctly defined
      */
-    private void checkName(Matcher matcher) throws IncorrectInputException {
+    private void checkName(Matcher matcher) throws InvalidInputException {
         if (matcher.group("nprefix") == null) {
-            throw new IncorrectInputException("N/ is not defined");
+            throw new InvalidInputException("N/ is not defined");
         }
         if (matcher.group("name") == null) {
-            throw new IncorrectInputException("Name is not defined");
+            throw new InvalidInputException("Name is not defined");
         }
     }
 }

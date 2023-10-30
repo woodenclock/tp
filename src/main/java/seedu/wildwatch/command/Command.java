@@ -1,6 +1,6 @@
 package seedu.wildwatch.command;
 
-import seedu.wildwatch.exception.IncorrectInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 
 /**
  * Command class for manipulating EntryList
@@ -8,5 +8,5 @@ import seedu.wildwatch.exception.IncorrectInputException;
 public abstract class Command {
     public Command() {}
 
-    public abstract void execute() throws IncorrectInputException;
+    public abstract void execute() throws InvalidInputException;
 }
