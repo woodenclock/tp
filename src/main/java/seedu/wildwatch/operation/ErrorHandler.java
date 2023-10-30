@@ -41,7 +41,7 @@ public class ErrorHandler {
             validInput = true;
         } catch (InvalidInputException exception) {
             LOGGER.warning("Invalid input received.");
-            Ui.unknownInputMessagePrinter();
+            Ui.invalidInputMessagePrinter();
         } catch (UnknownDateFormatException | DateTimeParseException exception) {
             LOGGER.warning("Date is invalid.");
             Ui.invalidDateMessagePrinter();

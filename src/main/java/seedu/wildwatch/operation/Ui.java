@@ -66,10 +66,16 @@ public class Ui {
         }
     }
 
+    /**
+     * Prints out appropriate message when there is no entries to list.
+     */
     public static void emptyListMessagePrinter() {
         System.out.println("OOPS!!! Nothing to list. :-(");
     }
 
+    /**
+     * Prints out appropriate message when nth entry input by the user is not found.
+     */
     public static void entryNotFoundMessagePrinter() {
         System.out.println("OOPS!!! The entry number could not be found :-(");
     }
@@ -104,19 +110,27 @@ public class Ui {
     }
 
     /**
-     * Prints out appropriate message when file already exists
+     * Prints out appropriate message when file already exists.
      */
     public static void fileExistMessagePrinter() {
         System.out.println("File already exists.\nOpening existing file...\n");
     }
 
     /**
-     * Prints out appropriate message when file is not found
+     * Prints out appropriate message when saved file is not found in the home directory.
+     * Home directory meaning where WildWatch.jar file is residing.
      */
     public static void fileNotFoundMessagePrinter() {
         System.out.println("File not found.");
     }
 
+    /**
+     * Prints out the entries that match the search key word.
+     * If no match, prints out appropriate message that there was no match found.
+     *
+     * @param hasMatch
+     * @param matchingTasks
+     */
     public static void findTaskMessagePrinter(boolean hasMatch, ArrayList<Integer> matchingTasks) {
         if (!hasMatch) {
             System.out.println("No matching tasks found.");
@@ -129,10 +143,16 @@ public class Ui {
         }
     }
 
+    /**
+     * Prints out appropriate message when invalid input is typed into the program.
+     */
     public static void invalidInputMessagePrinter() {
         System.out.println("OOPS!!! Format of command is incorrect.");
     }
 
+    /**
+     * Prints out appropriate message when the input date is invalid
+     */
     public static void invalidDateMessagePrinter() {
         System.out.println("OOPS!!! Invalid Date input :-(");
     }
@@ -144,6 +164,7 @@ public class Ui {
 
     /**
      * Returns input of the user from the console.
+     *
      * @return The user's input as a trimmed string.
      */
     public static String inputRetriever() {
@@ -155,7 +176,7 @@ public class Ui {
     }
 
     /**
-     * Prints out appropriate message when no file found
+     * Prints out appropriate message when no file found.
      */
     public static void noFileMessagePrinter() {
         System.out.println("File does not exist.");
@@ -168,6 +189,11 @@ public class Ui {
         System.out.println("Creating new file...\nFile created successfully.");
     }
 
+    /**
+     * Prints the nth entry of the wildlife data stored in WildWatch.
+     *
+     * @param nthEntry
+     */
     public static void printEntry(int nthEntry) {
         System.out.print("Date: [" +
                 EntryList.getEntryDate(nthEntry).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")) + "] | ");
@@ -177,6 +203,9 @@ public class Ui {
         System.out.print(System.lineSeparator());
     }
 
+    /**
+     * Prints horizontal lines that segment the output and input in the UI.
+     */
     public static void printHorizontalLines() {
         for (int i = 0; i < NUMBER_OF_UNDERSCORES; i++) {
             System.out.print("_");
@@ -191,13 +220,10 @@ public class Ui {
         System.out.println("These are tasks loaded from before: ");
     }
 
-    public static void unknownInputMessagePrinter() {
-        System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
-    }
-
     public static void printSummarySpecieMessage() {
         System.out.println("Here are the species recorded: ");
     }
+
     public static void printSummaryNameMessage(String speciesName) {
         System.out.println("Here is the data for the " + speciesName + ", grouped by their names");
     }

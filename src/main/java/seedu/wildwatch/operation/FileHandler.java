@@ -40,7 +40,7 @@ public class FileHandler {
     /**
      * Checks if file exists. Opens file if the file exists.
      *
-     * @return true if file exists; false if not
+     * @return true if file exists; false if not.
      */
     public static boolean checkFileExistence() {
         System.out.print(System.lineSeparator());
@@ -56,7 +56,7 @@ public class FileHandler {
     }
 
     /**
-     * Loads tasks from file into the TaskList
+     * Loads tasks from file into the TaskList.
      */
     public static void loadFile() {
         try {
@@ -95,7 +95,7 @@ public class FileHandler {
 
     /**
      * Manages the storage of tasks in a file.
-     * Write each task in the desired format to the file
+     * Write each task in the desired format to the file.
      */
     public static void saver(ArrayList<Entry> entries) {
         try {
@@ -110,11 +110,11 @@ public class FileHandler {
     }
 
     /**
-     * Returns String that is in the format to be written to file
+     * Returns String that is in the format to be written to file.
      *
-     * @param entry
-     * @return String
-     * @throws IOException when there is problem with formatting the task
+     * @param entry Entry of interest.
+     * @return String.
+     * @throws IOException when there is problem with formatting the task.
      */
     public static String toFileString(Entry entry) throws IOException {
         String date = entry.getDate().format(STD_FORMAT);
