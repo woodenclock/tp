@@ -81,6 +81,20 @@ Some example commands you can try:
 
 ## Design & Implementation
 
+### System Architecture
+
+![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c39eb20-8257-4d5c-bbd9-dc25f9246090)
+
+The **_Architecture Diagram_** above explains the high-level design of the application.  
+WildWatch is comprised of 7 major components.  
+- `Main`: Entry point of the program.
+- `UI`: A class that receives input from, and prints output to the user.
+- `Parser`: A class that processes and interpretes the input command of the user.
+- `Command`: A set of classes that does specific task according to the command of the user.
+- `EntryList`: A class that stores all the wildlife data, while the program is running.
+- `Entry`: A class that stores individual wildlife data, while the program is running.
+- `FileHandler`: A class that saves and retrieves all the wildlife data from the local storage
+
 
 ## Product scope
 ### Target user profile
