@@ -40,14 +40,11 @@ public class ErrorHandler {
             Ui.entryNotFoundMessagePrinter();
             validInput = true;
         } catch (InvalidInputException exception) {
-            LOGGER.warning("Unknown input received.");
+            LOGGER.warning("Invalid input received.");
             Ui.unknownInputMessagePrinter();
         } catch (UnknownDateFormatException | DateTimeParseException exception) {
             LOGGER.warning("Date is invalid.");
             Ui.invalidDateMessagePrinter();
-        } catch (InvalidInputException exception) {
-            LOGGER.warning("Command is invalid.");
-            Ui.invalidInputMessagePrinter();
         } finally {
             if (!validInput) {
                 Ui.printHorizontalLines();

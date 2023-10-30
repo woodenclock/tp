@@ -1,4 +1,3 @@
-//@@woodenclock
 package seedu.wildwatch.operation.error;
 
 import java.util.logging.Logger;
