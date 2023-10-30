@@ -38,7 +38,10 @@ public class Ui {
         System.out.println("Logger is corrupted.\nUnable to be configured");
     }
 
-
+    public static void customInvalidInputMessagePrinter(String e) {
+        System.out.println(e);
+    }
+    
     public static void entryAddedMessagePrinter() {
         System.out.println("The following entry has been added:");
     }
@@ -126,7 +129,7 @@ public class Ui {
         }
     }
 
-    public static void incorrectInputMessagePrinter() {
+    public static void invalidInputMessagePrinter() {
         System.out.println("OOPS!!! Format of command is incorrect.");
     }
 
