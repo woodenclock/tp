@@ -19,8 +19,11 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Acknowledgements  
-Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch, get to know them better!  
-Some code snippets were referenced from [woodenclock](https://github.com/woodenclock/ip.git).  
+[woodenclock](https://github.com/woodenclock/ip.git) - Reference  
+[AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
+Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch!  
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -57,6 +60,8 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuid
 | ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Quick Start 🐵
@@ -75,12 +80,32 @@ Some example commands you can try:
 - `list` : Lists all entries.  
 - `bye` : Exits the program.  
 
-![Image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1dcd7951-eb68-46d5-bdae-4cb4e275d94f)  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b790d1a9-9f9f-461b-962d-0183055b15d5)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 ## Design & Implementation
 
+### System Architecture
+
+![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/7bdda637-1c7a-4358-a648-a9972184cd3d)
+
+The **_Architecture Diagram_** shows the high-level architectural design of WildWatch.  
+Actual detailed implementation may differ from the architectural diagram.  
+WildWatch is comprised of 7 major components.  
+- `Main`: Entry point of the program.
+- `UI`: A class that receives input from, and prints output to the user.
+- `Parser`: A class that processes and interpretes the input command of the user.
+- `Command`: A set of classes that does specific task according to the command of the user.
+- `EntryList`: A class that stores all the wildlife data, while the program is running.
+- `Entry`: A class that stores individual wildlife data, while the program is running.
+- `FileHandler`: A class that saves and retrieves all the wildlife data from the local storage
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Product scope
 ### Target user profile
@@ -91,6 +116,10 @@ Target user profile are the clerks working in zoos.
 ### Value proposition
 
 {Describe the value proposition: what problem does it solve?}
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## User Stories
@@ -103,23 +132,39 @@ Target user profile are the clerks working in zoos.
 |v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 ## Non-Functional Requirements
 
 {Give non-functional requirements}
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## Manual Testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Command Summary
 
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary
 
 * *glossary item* - Definition
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
