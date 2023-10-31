@@ -1,9 +1,12 @@
 //@@woodenclock
-package seedu.wildwatch.operation;
+package seedu.wildwatch.operation.storage;
 
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.exception.InvalidInputException;
+import seedu.wildwatch.operation.BootUp;
+import seedu.wildwatch.operation.ShutDown;
+import seedu.wildwatch.operation.Ui;
 import seedu.wildwatch.parser.FileStringParser;
 
 import java.io.IOException;

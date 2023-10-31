@@ -1,6 +1,6 @@
 package seedu.wildwatch.entry;
 
-import seedu.wildwatch.operation.FileHandler;
+import seedu.wildwatch.operation.storage.FileHandler;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
