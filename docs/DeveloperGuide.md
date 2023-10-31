@@ -76,7 +76,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuid
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
 
-5. Type commands below the horizontal line and press `Enter` to execute it. Some example commands you can try:
+5. Type commands beside `>>>` below the horizontal line and press `Enter` to execute it. Some example commands you can try:
 - `help` : Shows the help page.  
 - `bye` : Exits the program.  
 
