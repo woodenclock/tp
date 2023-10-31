@@ -9,13 +9,13 @@ import seedu.wildwatch.operation.ShutDown;
 import seedu.wildwatch.operation.Ui;
 import seedu.wildwatch.parser.FileStringParser;
 
-import java.io.IOException;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.FileNotFoundException;
-import java.time.format.DateTimeFormatter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
 
 public class FileHandler {
     private static final String FILE_PATH = "./WildWatch.txt";

@@ -11,7 +11,8 @@ import java.util.regex.Matcher;
 public class FileStringParser implements Parser<AddFileStringCommand> {
 
     private static final Pattern ADD_FILE_ENTRY_COMMAND_FORMAT_CHECK =
-            Pattern.compile("\\s*(?<date>[^/]+)?\\s*/" +
+            Pattern.compile(
+                    "\\s*(?<date>[^/]+)?\\s*/" +
                     "\\s*(?<species>[^/]+)?\\s*/" +
                     "\\s*(?<name>[^/]+)?\\s*/" +
                     "\\s*(?<remark>[^/]+)?");
@@ -25,10 +26,10 @@ public class FileStringParser implements Parser<AddFileStringCommand> {
 
         assert isMatch : "Input line should match format.";
 
-        final String date = matcher.group("date");
-        final String species = matcher.group("species");
-        final String name = matcher.group("name");
-        final String remark = matcher.group("remark");
+        final String date = matcher.group("date").trim();
+        final String species = matcher.group("species").trim();
+        final String name = matcher.group("name").trim();
+        final String remark = matcher.group("remark").trim();
 
         Entry newEntry = new Entry(date, species, name, remark);
 
