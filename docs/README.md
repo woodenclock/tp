@@ -8,6 +8,7 @@ The purpose of this user guide is to familiarize you with the program and help y
 Its main job is to store and present animal data, this would make your job so much more convenient!  
   
 Useful links:
-* [User Guide](UserGuide.md)
-* [Developer Guide](DeveloperGuide.md)
-* [About Us](AboutUs.md)
+* [About Us](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html)
+* [User Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html)
+* [Developer Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html)
+
