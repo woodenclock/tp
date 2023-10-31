@@ -10,16 +10,13 @@ public class CommandHandler {
         try {
             Command command = EntryHandler.handleEntry(inputBuffer);
             if (command instanceof ByeCommand) {
-                return true;
+                return false;
             }
-
             executeCommand(command);
-
         } catch (InvalidInputException exception) {
             ErrorHandler.handleInputError(exception);
         }
-
-        return false;
+        return true;
     }
 
     public static void executeCommand(Command command) throws InvalidInputException {

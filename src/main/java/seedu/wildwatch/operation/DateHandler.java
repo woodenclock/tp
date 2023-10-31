@@ -8,6 +8,7 @@ public class DateHandler {
     );
 
     public static boolean isDateValid(String date) {
+        date = date.trim();
         if (DATE_PATTERN.matcher(date).matches()) {
             return true;
         }

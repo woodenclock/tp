@@ -38,6 +38,13 @@ public class Ui {
         System.out.println("Logger is corrupted.\nUnable to be configured");
     }
 
+    /**
+     * Prints out message after a new file has been created.
+     */
+    public static void createNewFileMessagePrinter() {
+        System.out.println("Creating new file...\nFile created successfully.");
+    }
+
     public static void customInvalidInputMessagePrinter(String e) {
         System.out.println(e);
     }
@@ -77,16 +84,18 @@ public class Ui {
      * Prints out appropriate message when nth entry input by the user is not found.
      */
     public static void entryNotFoundMessagePrinter() {
+        printHorizontalLines();
         System.out.println("OOPS!!! The entry number could not be found :-(");
     }
 
     public static void entryRemovedMessagePrinter() {
-        System.out.println("The entry has been deleted.");
         printHorizontalLines();
+        System.out.println("The entry has been deleted.");
     }
 
     public static void entryDeletionConfirmationPrinter() {
         System.out.println("Are you sure you want to delete this entry? (yes/no): ");
+        printHorizontalLines();
     }
 
     public static void entryNotDeletedMessagePrinter() {
@@ -180,13 +189,6 @@ public class Ui {
      */
     public static void noFileMessagePrinter() {
         System.out.println("File does not exist.");
-    }
-
-    /**
-     * Prints out message after a new file has been created.
-     */
-    public static void createNewFileMessagePrinter() {
-        System.out.println("Creating new file...\nFile created successfully.");
     }
 
     /**
