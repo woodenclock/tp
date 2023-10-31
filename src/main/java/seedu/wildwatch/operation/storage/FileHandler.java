@@ -23,10 +23,10 @@ public class FileHandler {
     private static File openedFile; //File to save the entries
 
     public static void handleFile() {
-        if (checkFileExistence()) {
+        if (ExistenceChecker.checkFileExistence(FILE_PATH)) {
             Ui.fileExistMessagePrinter();
-            // Loads entries from file
-            loadFile();
+            openedFile = new File(FILE_PATH);
+            loadFile(); // Loads entries from file
             assert openedFile != null : "Trying to read from a non-initialized file.";
             Ui.taskLoadedMessagePrinter();
 
@@ -40,25 +40,6 @@ public class FileHandler {
         }
 
         BootUp.bootUpTwo(); //Welcome prompt message
-    }
-
-    /**
-     * Checks if file exists. Opens file if the file exists.
-     *
-     * @return true if file exists; false if not.
-     */
-    public static boolean checkFileExistence() {
-        System.out.print(System.lineSeparator());
-        Ui.checkingIfFileExistsMessagePrinter();
-        assert FILE_PATH != null : "File path should not be null.";
-        File file = new File(FILE_PATH);
-
-        if (!file.exists()) {
-            return false;
-        } else {
-            openedFile = file;      //File used to save tasks
-            return true;
-        }
     }
 
     /**
