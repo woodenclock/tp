@@ -27,7 +27,8 @@ public class EntryHandlerTest {
 
     @Test
     public void testDeleteEntryWithValidNumber() {
-        String input = "delete 1"; // Assuming 1 is a valid entry number.
+        CommandHandler.processCommand("add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper");
+        String input = "delete 1"; // 1 is a valid entry number.
         assertDoesNotThrow(() -> EntryHandler.handleEntry(input));
     }
 
