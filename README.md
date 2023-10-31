@@ -1,5 +1,6 @@
-# Duke project template
+# WildWatch
 
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c982946-3165-41ec-917a-54c46c30b012)
 
 This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
 
