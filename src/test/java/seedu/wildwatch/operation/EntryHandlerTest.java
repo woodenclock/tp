@@ -16,37 +16,37 @@ public class EntryHandlerTest {
     @Test
     public void testAddEntryFromFile() {
         String input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, true));
+        assertDoesNotThrow(() -> EntryHandler.handleEntry(input));
     }
 
     @Test
     public void testAddEntryNotFromFile() {
         String input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, false));
+        assertDoesNotThrow(() -> EntryHandler.handleEntry(input));
     }
 
     @Test
     public void testDeleteEntryWithValidNumber() {
         String input = "delete 1"; // Assuming 1 is a valid entry number.
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, false));
+        assertDoesNotThrow(() -> EntryHandler.handleEntry(input));
     }
 
     @Test
     public void testDeleteEntryWithInvalidNumber() {
         String input = "delete -5"; // Negative numbers should be invalid.
-        assertThrows(InvalidInputException.class, () -> EntryHandler.handleEntry(input, false));
+        assertThrows(InvalidInputException.class, () -> EntryHandler.handleEntry(input));
     }
 
     @Test
     public void testListEntry() {
         String input = "list";
-        assertDoesNotThrow(() -> EntryHandler.handleEntry(input, false));
+        assertDoesNotThrow(() -> EntryHandler.handleEntry(input));
     }
 
     @Test
-    public void testUnknownCommand() {
-        String input = "unknownCommand";
-        assertThrows(InvalidInputException.class, () -> EntryHandler.handleEntry(input, false));
+    public void testInvalidCommand() {
+        String input = "invalidCommand";
+        assertThrows(InvalidInputException.class, () -> EntryHandler.handleEntry(input));
     }
 }
 
