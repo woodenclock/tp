@@ -34,7 +34,7 @@ Its main job is to store and present animal data required in everyday operations
 
 ### Purpose
 This document specifies the architectural and software design decisions in the implementation of the WildWatch.  
-For a detailed guide on how to use the program and explanations on the individual commands, please click [here](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html) for our **User Guide**.
+For a detailed guide on how to use the program and explanations on the individual commands, we have our very own [**WildWatch User Guide**](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html) for your perusal.
 
 ### Audience
 The intended audience for this document are developers who would like to look under the hood and understand how WildWatch works, and are looking to introduce new functionalities into WildWatch.
