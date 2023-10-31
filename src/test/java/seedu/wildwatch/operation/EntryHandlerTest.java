@@ -4,8 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import seedu.wildwatch.exception.IncorrectInputException;
-import seedu.wildwatch.exception.UnknownInputException;
+import seedu.wildwatch.exception.InvalidInputException;
 
 public class EntryHandlerTest {
 
@@ -35,7 +34,7 @@ public class EntryHandlerTest {
     @Test
     public void testDeleteEntryWithInvalidNumber() {
         String input = "delete -5"; // Negative numbers should be invalid.
-        assertThrows(IncorrectInputException.class, () -> EntryHandler.handleEntry(input, false));
+        assertThrows(InvalidInputException.class, () -> EntryHandler.handleEntry(input, false));
     }
 
     @Test
@@ -47,7 +46,7 @@ public class EntryHandlerTest {
     @Test
     public void testUnknownCommand() {
         String input = "unknownCommand";
-        assertThrows(UnknownInputException.class, () -> EntryHandler.handleEntry(input, false));
+        assertThrows(InvalidInputException.class, () -> EntryHandler.handleEntry(input, false));
     }
 }
 
