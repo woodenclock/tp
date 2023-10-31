@@ -26,7 +26,7 @@ public class FileHandler {
         if (ExistenceChecker.checkFileExistence(FILE_PATH)) {
             Ui.fileExistMessagePrinter();
             openedFile = new File(FILE_PATH);
-            loadFile(); // Loads entries from file
+            FileLoader.loadFile(openedFile); // Loads entries from file
             assert openedFile != null : "Trying to read from a non-initialized file.";
             Ui.taskLoadedMessagePrinter();
 
@@ -40,27 +40,6 @@ public class FileHandler {
         }
 
         BootUp.bootUpTwo(); //Welcome prompt message
-    }
-
-    /**
-     * Loads tasks from file into the TaskList.
-     */
-    public static void loadFile() {
-        try {
-            Scanner fileReader = new Scanner(openedFile); // create a Scanner using the File as the source
-            while (fileReader.hasNext()) {
-                String lineOfFile = fileReader.nextLine();
-
-                // Creates new entry from line in file
-                new FileStringParser().parse(lineOfFile).execute();
-            }
-        } catch (FileNotFoundException exception) {
-            Ui.fileNotFoundMessagePrinter();
-        } catch (InvalidInputException e) {
-            Ui.corruptFileMessagePrinter();
-            ShutDown.shutDown();
-            System.exit(0);
-        }
     }
 
     /**
