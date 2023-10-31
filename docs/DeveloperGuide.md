@@ -33,7 +33,8 @@ Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve 
 Its main job is to store and present animal data required in everyday operations of the wildlife reserve.  
 
 ### Purpose
-This document specifies the architectural and software design decisions in the implementation of the WildWatch.
+This document specifies the architectural and software design decisions in the implementation of the WildWatch.  
+For a detailed guide on how to use the program and explanations on the individual commands, we have our very own [**WildWatch User Guide**](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html) for your perusal.
 
 ### Audience
 The intended audience for this document are developers who would like to look under the hood and understand how WildWatch works, and are looking to introduce new functionalities into WildWatch.
@@ -75,12 +76,35 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuid
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
 
-5. Type commands below the horizontal line and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
-Some example commands you can try:
-- `list` : Lists all entries.  
+5. Type commands beside `>>>` below the horizontal line and press `Enter` to execute it. Some example commands you can try:
+- `help` : Shows the help page.  
 - `bye` : Exits the program.  
 
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b790d1a9-9f9f-461b-962d-0183055b15d5)
+```
+____________________________________________________________
+____    __    ____  __   __       _______
+\   \  /  \  /   / |  | |  |     |       \
+ \   \/    \/   /  |  | |  |     |  .--.  |
+  \            /   |  | |  |     |  |  |  |
+   \    /\    /    |  | |  `----.|  '--'  |
+    \__/  \__/     |__| |_______||_______/
+____    __    ____  ___   .___________.  ______  __    __
+\   \  /  \  /   / /   \  |           | /      ||  |  |  |
+ \   \/    \/   / /  ^  \ `---|  |----`|  ,----'|  |__|  |
+  \            / /  /_\  \    |  |     |  |     |   __   |
+   \    /\    / /  _____  \   |  |     |  `----.|  |  |  |
+    \__/  \__/ /__/     \__\  |__|      \______||__|  |__|
+____________________________________________________________
+Hello there! Welcome to WildWatch!
+
+Checking if "WildWatch.txt" already exists...
+File does not exist.
+Creating new file...
+File created successfully.
+What would you like to do?
+____________________________________________________________
+>>> 
+```
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
@@ -108,19 +132,28 @@ WildWatch is comprised of 7 major components.
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Product scope
+
+
 ### Target user profile
 
-Target user profile are the clerks working in zoos.
+Target user profile for WildWatch is the clerks working in wildlife reserves, who manages the wildlife data.
+Since our program is interacted through the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary), someone who can type fast will definitely benefit from WildWatch.
+This would significantly boost one's productivity.
+Since clerks are already accustomed to typing and working with a computer, this program would be ideal for this user profile.
 
 
 ### Value proposition
 
-{Describe the value proposition: what problem does it solve?}
+- **Effortless User Experience**: Designed with simplicity in mind, our product ensures that even users with minimal technical experience can easily navigate and interact with the software.
+- **Rapid CLI Interaction**: Unlike traditional GUIs that require multiple clicks and drags, our Command Line Interface (CLI) offers direct command inputs, allowing for faster and more efficient operations.
+- **Light & Versatile**: Built to be lean and light, our program ensures seamless performance across a variety of devices, as long as Java is installed, from high-end workstations to older laptops. Regardless of your computer's specifications, our product guarantees a smooth and efficient functioning.
+- **Robust Data Protection**: Say goodbye to the vulnerabilities of paper records! Our digital solution offers enhanced data protection, ensuring your records remain safe from damage, loss, or unauthorized access. With advanced encryption and backup mechanisms in place, your data's safety is our priority.
+- **Eco-Friendly**: Transition from paper to digital and contribute to a greener planet. Not only does this transition reduce clutter and the risk of loss, but it also significantly diminishes your carbon footprint.
+- **Cost-Effective**: Eliminate the recurring costs of paper, printing, and storage. With our solution, you'll experience a noticeable reduction in operational expenses while benefiting from advanced data management capabilities.
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
-
 
 ## User Stories
 
