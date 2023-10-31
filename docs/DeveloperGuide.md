@@ -108,19 +108,28 @@ WildWatch is comprised of 7 major components.
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Product scope
+
+
 ### Target user profile
 
-Target user profile are the clerks working in zoos.
+Target user profile for WildWatch is the clerks working in wildlife reserves, who manages the wildlife data.
+Since our program is interacted through the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary), someone who can type fast will definitely benefit from WildWatch.
+This would significantly boost one's productivity.
+Since clerks are already accustomed to typing and working with a computer, this program would be ideal for this user profile.
 
 
 ### Value proposition
 
-{Describe the value proposition: what problem does it solve?}
+- **Effortless User Experience**: Designed with simplicity in mind, our product ensures that even users with minimal technical experience can easily navigate and interact with the software.
+- **Rapid CLI Interaction**: Unlike traditional GUIs that require multiple clicks and drags, our Command Line Interface (CLI) offers direct command inputs, allowing for faster and more efficient operations.
+- **Light & Versatile**: Built to be lean and light, our program ensures seamless performance across a variety of devices, as long as Java is installed, from high-end workstations to older laptops. Regardless of your computer's specifications, our product guarantees a smooth and efficient functioning.
+- **Robust Data Protection**: Say goodbye to the vulnerabilities of paper records! Our digital solution offers enhanced data protection, ensuring your records remain safe from damage, loss, or unauthorized access. With advanced encryption and backup mechanisms in place, your data's safety is our priority.
+- **Eco-Friendly**: Transition from paper to digital and contribute to a greener planet. Not only does this transition reduce clutter and the risk of loss, but it also significantly diminishes your carbon footprint.
+- **Cost-Effective**: Eliminate the recurring costs of paper, printing, and storage. With our solution, you'll experience a noticeable reduction in operational expenses while benefiting from advanced data management capabilities.
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
-
 
 ## User Stories
 
