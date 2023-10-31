@@ -33,7 +33,8 @@ Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve 
 Its main job is to store and present animal data required in everyday operations of the wildlife reserve.  
 
 ### Purpose
-This document specifies the architectural and software design decisions in the implementation of the WildWatch.
+This document specifies the architectural and software design decisions in the implementation of the WildWatch.  
+For a detailed guide on how to use the program and explanations on the individual commands, please click [here](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html) for our **User Guide**.
 
 ### Audience
 The intended audience for this document are developers who would like to look under the hood and understand how WildWatch works, and are looking to introduce new functionalities into WildWatch.
@@ -80,7 +81,31 @@ Some example commands you can try:
 - `list` : Lists all entries.  
 - `bye` : Exits the program.  
 
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b790d1a9-9f9f-461b-962d-0183055b15d5)
+```
+____________________________________________________________
+____    __    ____  __   __       _______
+\   \  /  \  /   / |  | |  |     |       \
+ \   \/    \/   /  |  | |  |     |  .--.  |
+  \            /   |  | |  |     |  |  |  |
+   \    /\    /    |  | |  `----.|  '--'  |
+    \__/  \__/     |__| |_______||_______/
+____    __    ____  ___   .___________.  ______  __    __
+\   \  /  \  /   / /   \  |           | /      ||  |  |  |
+ \   \/    \/   / /  ^  \ `---|  |----`|  ,----'|  |__|  |
+  \            / /  /_\  \    |  |     |  |     |   __   |
+   \    /\    / /  _____  \   |  |     |  `----.|  |  |  |
+    \__/  \__/ /__/     \__\  |__|      \______||__|  |__|
+____________________________________________________________
+Hello there! Welcome to WildWatch!
+
+Checking if "WildWatch.txt" already exists...
+File does not exist.
+Creating new file...
+File created successfully.
+What would you like to do?
+____________________________________________________________
+>>> 
+```
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
