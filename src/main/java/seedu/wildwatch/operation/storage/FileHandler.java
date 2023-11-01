@@ -4,6 +4,7 @@ package seedu.wildwatch.operation.storage;
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.operation.BootUp;
+import seedu.wildwatch.operation.ShutDown;
 import seedu.wildwatch.operation.Ui;
 
 import java.io.File;
@@ -30,28 +31,15 @@ public class FileHandler {
 
         } else {  // File does not exist
             Ui.noFileMessagePrinter();
-            createFile();
+            openedFile = FileCreater.createFile(FILE_PATH);
+            if (openedFile == null) {
+                ShutDown.shutDown();
+                System.exit(0);
+            }
             assert openedFile.exists() : "File was supposed to be created but it doesn't exist.";
         }
 
         BootUp.bootUpTwo(); //Welcome prompt message
-    }
-
-    /**
-     * Creates new file with filename specified by {@code FILE_PATH}.
-     */
-    public static void createFile() {
-        File file = new File(FILE_PATH);
-        try {
-            if (file.createNewFile()) {
-                openedFile = file;
-                Ui.createNewFileMessagePrinter();
-            } else {
-                Ui.fileCreationFailMessagePrinter();
-            }
-        } catch (IOException exception) {
-            Ui.errorMessagePrinter(exception);
-        }
     }
 
     /**
