@@ -1,3 +1,4 @@
+//@@lctxct
 package seedu.wildwatch.error;
 
 import java.util.logging.Logger;
