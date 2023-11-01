@@ -58,6 +58,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuid
 | Symbol         | Meaning                                                     |
 | -------------- |------------------------------------------------------------ |
 | ❗ IMPORTANT   | These are important instructions that you should follow.   |
+| ✏ Note   | These are important details that you should take note of.   |
 | ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
 
@@ -116,7 +117,7 @@ ____________________________________________________________
 
 ![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/90309a3c-f784-4ffb-8eef-65735c05ec52)
 
-The **_Architecture Diagram_** shows a high-level overview of the architectural design of WildWatch.  
+The **_Architecture Diagram_** above shows a high-level overview of the architectural design of WildWatch.  
 Actual detailed implementation may differ from the architectural diagram.  
 (e.g., `Parser` in the diagram encompasses the `Input`, `Error`, and `Parser` packages).  
   
@@ -128,6 +129,13 @@ WildWatch is comprised of 7 major components.
 - `EntryList`: A class that stores all the wildlife data, while the program is running.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `FileHandler`: A class that saves and retrieves all the wildlife data from the local storage
+
+![Architecture Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6bea5165-aa78-4b3e-baf0-2e9ced109161)  
+
+The **_Generic Sequence Diagram_** above shows a shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
+> ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
+
+
 
 ### Parser component 
 The `Parser` component is responsible for for parsing an input from the user, and returns an `XYZCommand` class. 
