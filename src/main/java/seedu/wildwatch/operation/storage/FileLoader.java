@@ -1,13 +1,11 @@
 package seedu.wildwatch.operation.storage;
 
-import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.bootupshutdown.ShutDown;
-import seedu.wildwatch.operation.Ui;
-import seedu.wildwatch.parser.FileStringParser;
-
+import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import seedu.wildwatch.exception.InvalidInputException;
+import seedu.wildwatch.parser.FileStringParser;
+
 
 public class FileLoader {
     /**
