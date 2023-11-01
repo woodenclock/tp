@@ -2,7 +2,7 @@ package seedu.wildwatch.input;
 
 import org.junit.jupiter.api.Test;
 import seedu.wildwatch.error.DateChecker;
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.LinePrinter;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class DateCheckerTest {
     @Test
     public void testDateHandler() {
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
         System.out.println("Testing whether date is valid...");
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
         assertTrue(DateChecker.isDateValid("09-11-23"));
         assertFalse(DateChecker.isDateValid("9-11-23"));
         assertFalse(DateChecker.isDateValid("99-11-23"));

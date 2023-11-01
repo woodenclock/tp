@@ -5,7 +5,7 @@ import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.miscellaneous.BootUp;
 import seedu.wildwatch.miscellaneous.ShutDown;
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.FilePrinter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,30 +17,28 @@ public class FileHandler {
 
     public static void handleFile() {
         if (ExistenceChecker.checkFileExistence(FILE_PATH)) {
-            Ui.fileExistMessagePrinter();
+            FilePrinter.fileExistMessagePrinter();
             openedFile = new File(FILE_PATH);
             try {
                 FileLoader.loadFile(openedFile); // Loads entries from file
                 assert openedFile != null : "Trying to read from a non-initialized file.";
-                Ui.taskLoadedMessagePrinter();
+                FilePrinter.taskLoadedMessagePrinter();
 
                 // Lists entries loaded from file
                 ListCommand.listEntry();
             } catch (FileNotFoundException exception) {
-                Ui.fileNotFoundMessagePrinter();
+                FilePrinter.noFileMessagePrinter();
             } catch (InvalidInputException e) {
-                Ui.corruptFileMessagePrinter();
+                FilePrinter.corruptFileMessagePrinter();
                 ShutDown.shutDown();
                 System.exit(0);
             }
-
-
         } else {  // File does not exist
-            Ui.noFileMessagePrinter();
+            FilePrinter.noFileMessagePrinter();
             try {
                 openedFile = FileCreater.createFile(FILE_PATH);
             } catch (IOException exception) {
-                Ui.fileCreationFailMessagePrinter();
+                FilePrinter.fileCreationFailMessagePrinter();
                 ShutDown.shutDown();
                 System.exit(0);
             }

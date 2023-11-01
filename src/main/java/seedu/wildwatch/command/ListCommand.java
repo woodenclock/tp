@@ -3,7 +3,8 @@ package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.EntryPrinter;
+import seedu.wildwatch.ui.ListCommandPrinter;
 import seedu.wildwatch.error.InvalidInputErrorType;
 
 /**
@@ -20,9 +21,9 @@ public class ListCommand extends Command {
         int arraySize = EntryList.getArraySize();
         for (int i = 0; i < arraySize; i++) {
             System.out.print(i + 1 + ".");
-            Ui.printEntry(i);
+            EntryPrinter.printEntry(i);
         }
-        Ui.entryCountPrinter();
+        ListCommandPrinter.entryCountPrinter();
     }
 
     public void execute() throws InvalidInputException {
@@ -30,7 +31,7 @@ public class ListCommand extends Command {
             throw new InvalidInputException(InvalidInputErrorType.EMPTY_LIST);
         }
 
-        Ui.listMessagePrinter();
+        ListCommandPrinter.listMessagePrinter();
         listEntry();
     }
 }

@@ -8,7 +8,7 @@ import java.util.Map;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.SummaryCommandPrinter;
 
 /**
  * Command class for `summary`
@@ -66,12 +66,12 @@ public class SummaryCommand extends Command {
         Map<String, List<Entry>> map = groupEntriesBySpecies(entries);
         // change message based on whether `summary` or `summary <species>`
         if( hasArgument ) {
-            Ui.printSummaryNameMessage(speciesName);
+            SummaryCommandPrinter.printSummaryNameMessage(speciesName);
             List<Entry> filteredEntries = map.get(speciesName);
             Map<String, List<Entry>> filteredMap = groupSpecieByName(filteredEntries);
             filteredMap.forEach((key, value) -> System.out.println(key + " - (" + value.size() + ")"));
         } else {
-            Ui.printSummarySpecieMessage();
+            SummaryCommandPrinter.printSummarySpecieMessage();
             map.forEach((key, value) -> System.out.println(key + " - (" + value.size() + ")"));
         }
     }

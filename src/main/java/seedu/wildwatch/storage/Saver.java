@@ -1,7 +1,7 @@
 package seedu.wildwatch.storage;
 
 import seedu.wildwatch.entry.Entry;
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.ErrorPrinter;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,7 +23,7 @@ public class Saver {
             }
             writer.close();
         } catch (IOException exception) {
-            Ui.errorMessagePrinter(exception);
+            ErrorPrinter.errorMessagePrinter(exception);
         }
     }
 }

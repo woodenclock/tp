@@ -5,7 +5,7 @@ import seedu.wildwatch.command.ByeCommand;
 import seedu.wildwatch.error.ErrorChecker;
 import seedu.wildwatch.error.ErrorHandler;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.LinePrinter;
 
 public class CommandHandler {
     public static boolean processCommand(String inputBuffer) {
@@ -22,8 +22,8 @@ public class CommandHandler {
     }
 
     public static void executeCommand(Command command) throws InvalidInputException {
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
         command.execute();
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
     }
 }

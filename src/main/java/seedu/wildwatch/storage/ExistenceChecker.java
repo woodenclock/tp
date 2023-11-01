@@ -1,7 +1,8 @@
 package seedu.wildwatch.storage;
 
 import java.io.File;
-import seedu.wildwatch.ui.Ui;
+
+import seedu.wildwatch.ui.FilePrinter;
 
 public class ExistenceChecker {
     /**
@@ -11,7 +12,7 @@ public class ExistenceChecker {
      */
     public static boolean checkFileExistence(String filePath) {
         System.out.print(System.lineSeparator());
-        Ui.checkingIfFileExistsMessagePrinter();
+        FilePrinter.checkingIfFileExistsMessagePrinter();
         assert filePath != null : "File path should not be null.";
         File file = new File(filePath);
 

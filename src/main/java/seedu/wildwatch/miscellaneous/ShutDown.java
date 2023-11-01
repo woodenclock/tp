@@ -1,20 +1,20 @@
 //@@woodenclock
 package seedu.wildwatch.miscellaneous;
 
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.LinePrinter;
 
 public class ShutDown {
     public static void shutDown() {
         //Program Ending
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
         System.out.println("Bye. Hope to see you again soon!");
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
     }
 
     public static void shutDownWithError() {
         //Program Ending
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
         System.out.println("Ending program due to error...");
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
     }
 }
