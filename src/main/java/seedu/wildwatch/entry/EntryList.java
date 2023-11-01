@@ -1,9 +1,8 @@
 package seedu.wildwatch.entry;
 
-import seedu.wildwatch.operation.storage.FileHandler;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
+import seedu.wildwatch.operation.storage.Saver;
 
 public class EntryList {
     private static ArrayList<Entry> entries = new ArrayList<>(); //Keeps track of all Entry instances made
@@ -57,6 +56,6 @@ public class EntryList {
     }
 
     public static void saveEntry() {
-        FileHandler.saver(entries);
+        Saver.saver(entries);
     }
 }

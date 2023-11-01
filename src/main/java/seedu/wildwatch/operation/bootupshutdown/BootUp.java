@@ -1,5 +1,7 @@
 //@@woodenclock
-package seedu.wildwatch.operation;
+package seedu.wildwatch.operation.bootupshutdown;
+
+import seedu.wildwatch.operation.Ui;
 
 public class BootUp {
     public static final String WELCOME_MESSAGE_1 =

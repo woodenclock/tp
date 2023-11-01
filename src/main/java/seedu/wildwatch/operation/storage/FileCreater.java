@@ -8,18 +8,13 @@ public class FileCreater {
     /**
      * Creates new file with filename specified by {@code FILE_PATH}.
      */
-    public static File createFile(String filePath) {
+    public static File createFile(String filePath) throws IOException {
         File file = new File(filePath);
-        try {
-            if (file.createNewFile()) {
-                Ui.createNewFileMessagePrinter();
-                return file;
-            } else {
-                Ui.fileCreationFailMessagePrinter();
-            }
-        } catch (IOException exception) {
-            Ui.errorMessagePrinter(exception);
+        if (file.createNewFile()) {
+            Ui.createNewFileMessagePrinter();
+            return file;
+        } else {
+            throw new IOException();
         }
-        return null;
     }
 }

@@ -4,18 +4,17 @@ import seedu.wildwatch.operation.error.InvalidInputErrorType;
 
 public class InvalidInputException extends Exception {
     private InvalidInputErrorType errorType;
-
     private String customMessage;
 
     public InvalidInputException(InvalidInputErrorType error) {
         super();
-        errorType = error;
-        customMessage = "";
+        this.errorType = error;
+        this.customMessage = "";
     }
 
     public InvalidInputException(String error) {
         super();
-        errorType = InvalidInputErrorType.CUSTOM;
+        this.errorType = InvalidInputErrorType.CUSTOM;
         this.customMessage = error;
     }
 
