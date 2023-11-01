@@ -65,11 +65,22 @@ public class ExportCommand extends Command {
 
         ArrayList<Entry> entries = EntryList.getArray();
 
+        ArrayList<String> columnsToInclude = getColumnsToInclude();
+        if (columnsToInclude.isEmpty()) {
+            throw new InvalidInputException("Please select at least one column to include in csv.");
+        }
+
+        String header = "id";
+        for (String column : columnsToInclude) {
+            header = String.join(",", header, column);
+        }
+
         try {
             FileWriter writer = new FileWriter(filename);
-            writer.write("id,date,species,name,remarks");
+
+            writer.write(header + "\n");
             for (int i = 0; i < EntryList.getArraySize(); i++) {
-                writer.write(EntryToStringConverter.toCSVString(entries.get(i), i+1));
+                writer.write(EntryToStringConverter.toCSVString(entries.get(i), i+1, columnsToInclude));
             }
             writer.close();
         } catch (IOException e) {
@@ -86,10 +97,22 @@ public class ExportCommand extends Command {
      * @return True if user allows file to be replaced, else false.
      */
     private boolean canReplaceFile(String filename) {
-        final String confirmationMessage =
-                String.format("%s already exists. Would you like to replace it? (Y/N)", filename);
         Scanner scanner = new Scanner(System.in);
 
+        final String confirmationMessage =
+                String.format("%s already exists. Would you like to replace it? (Y/N)", filename);
+
+        return doesUserApprove(scanner, confirmationMessage);
+    }
+
+    /**
+     * Reads user input in a loop until "Y" or "N" received.
+     *
+     * @param scanner Scanner used to read user input
+     * @param confirmationMessage Message to prompt user for input
+     * @return true if user inputs "Y", false if user inputs "N"
+     */
+    private boolean doesUserApprove(Scanner scanner, String confirmationMessage) {
         do {
             System.out.println(confirmationMessage);
             System.out.print(">> ");
@@ -102,9 +125,8 @@ public class ExportCommand extends Command {
                 return false;
             default:
                 System.out.println("Unrecognized input!"
-                        + "Please ensure you only respond with Y or N.");
+                        + " Please ensure that you only respond with Y or N.");
             }
-
         } while (true);
     }
 
@@ -120,5 +142,26 @@ public class ExportCommand extends Command {
         } catch (IOException e) {
             throw new InvalidInputException("Unable to create file.");
         }
+    }
+
+    private ArrayList<String> getColumnsToInclude() {
+        ArrayList<String> columnsToInclude = new ArrayList<>();
+
+        Scanner scanner = new Scanner(System.in);
+
+        final String[] columns = new String[] { "date", "species", "name", "remark" };
+
+        System.out.println("Please select the columns you would like to include in your csv:");
+
+        for (String column : columns) {
+            String confirmationMessage = String.format("Would you like to include %s in your csv? (Y/N)", column);
+
+            boolean shouldIncludeColumn = doesUserApprove(scanner, confirmationMessage);
+            if (shouldIncludeColumn) {
+                columnsToInclude.add(column);
+            }
+        }
+
+        return columnsToInclude;
     }
 }
