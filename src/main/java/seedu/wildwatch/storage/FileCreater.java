@@ -1,8 +1,9 @@
-package seedu.wildwatch.operation.storage;
+package seedu.wildwatch.storage;
 
 import java.io.File;
 import java.io.IOException;
-import seedu.wildwatch.operation.Ui;
+
+import seedu.wildwatch.ui.FilePrinter;
 
 public class FileCreater {
     /**
@@ -11,7 +12,7 @@ public class FileCreater {
     public static File createFile(String filePath) throws IOException {
         File file = new File(filePath);
         if (file.createNewFile()) {
-            Ui.createNewFileMessagePrinter();
+            FilePrinter.createNewFileMessagePrinter();
             return file;
         } else {
             throw new IOException();

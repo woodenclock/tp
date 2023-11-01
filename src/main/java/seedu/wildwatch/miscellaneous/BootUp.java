@@ -1,7 +1,7 @@
 //@@woodenclock
-package seedu.wildwatch.operation.bootupshutdown;
+package seedu.wildwatch.miscellaneous;
 
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.LinePrinter;
 
 public class BootUp {
     public static final String WELCOME_MESSAGE_1 =
@@ -25,14 +25,14 @@ public class BootUp {
             "    \\__/  \\__/ /__/     \\__\\  |__|      \\______||__|  |__|\n";
 
     public static void bootUpOne() {
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
         System.out.print(BootUp.LOGO);
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
         System.out.print(BootUp.WELCOME_MESSAGE_1);
     }
 
     public static void bootUpTwo() {
         System.out.print(BootUp.WELCOME_MESSAGE_2);
-        Ui.printHorizontalLines();
+        LinePrinter.printHorizontalLines();
     }
 }

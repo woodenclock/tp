@@ -3,7 +3,7 @@ package seedu.wildwatch.parser;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddFileStringCommand;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.DateHandler;
+import seedu.wildwatch.error.DateChecker;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -51,7 +51,7 @@ public class FileStringParser implements Parser<AddFileStringCommand> {
         }
 
         // Check that date is valid
-        if (!DateHandler.isDateValid(matcher.group("date"))) {
+        if (!DateChecker.isDateValid(matcher.group("date"))) {
             throw new InvalidInputException("Invalid entry found!\n" + input);
         }
     }

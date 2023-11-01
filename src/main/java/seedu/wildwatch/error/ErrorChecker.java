@@ -1,5 +1,5 @@
 //@@woodenclock
-package seedu.wildwatch.operation.error;
+package seedu.wildwatch.error;
 
 import java.util.Scanner;
 import java.util.logging.Level;

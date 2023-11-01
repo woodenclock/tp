@@ -1,4 +1,4 @@
-package seedu.wildwatch.operation.storage;
+package seedu.wildwatch.storage;
 
 import seedu.wildwatch.entry.Entry;
 

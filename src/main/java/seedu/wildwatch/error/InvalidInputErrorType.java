@@ -1,4 +1,4 @@
-package seedu.wildwatch.operation.error;
+package seedu.wildwatch.error;
 
 public enum InvalidInputErrorType {
     EMPTY_INPUT,

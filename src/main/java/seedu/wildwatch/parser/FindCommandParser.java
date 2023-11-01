@@ -2,7 +2,7 @@ package seedu.wildwatch.parser;
 
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.error.InvalidInputErrorType;
+import seedu.wildwatch.error.InvalidInputErrorType;
 
 public class FindCommandParser implements Parser<FindCommand>{
     public static final String COMMAND_WORD = "find";

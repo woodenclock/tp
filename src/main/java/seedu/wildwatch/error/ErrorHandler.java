@@ -1,11 +1,16 @@
-package seedu.wildwatch.operation.error;
+package seedu.wildwatch.error;
 
 import java.util.logging.Logger;
 
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.LinePrinter;
+import seedu.wildwatch.ui.ErrorPrinter;
+import seedu.wildwatch.ui.ListCommandPrinter;
+import seedu.wildwatch.ui.DeleteCommandPrinter;
+import seedu.wildwatch.ui.EmptyDescriptionPrinter;
+
 
 public class ErrorHandler {
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());
@@ -16,40 +21,40 @@ public class ErrorHandler {
         switch (exception.getError()) {
         case EMPTY_INPUT:
             LOGGER.warning("Received an empty input.");
-            Ui.emptyDescriptionMessagePrinter(null);
+            EmptyDescriptionPrinter.emptyDescriptionMessagePrinter(null);
             break;
         case EMPTY_FIND_INPUT:
             LOGGER.warning("Received an empty find input.");
-            Ui.emptyDescriptionMessagePrinter(FindCommand.COMMAND_WORD);
+            EmptyDescriptionPrinter.emptyDescriptionMessagePrinter(FindCommand.COMMAND_WORD);
             break;
         case EMPTY_LIST:
             LOGGER.info("List is empty.");
-            Ui.emptyListMessagePrinter();
+            ListCommandPrinter.emptyListMessagePrinter();
             validInput = true;
             break;
         case ENTRY_NOT_FOUND:
             LOGGER.warning("Queried entry not found.");
-            Ui.entryNotFoundMessagePrinter();
+            DeleteCommandPrinter.entryNotFoundMessagePrinter();
             validInput = true;
             break;
         case INVALID_DATE:
             LOGGER.warning("Date is invalid.");
-            Ui.invalidDateMessagePrinter();
+            ErrorPrinter.invalidDateMessagePrinter();
             break;
         case INVALID_INPUT:
             LOGGER.warning("Command is invalid.");
-            Ui.invalidInputMessagePrinter();
+            ErrorPrinter.invalidInputMessagePrinter();
             break;
         case CUSTOM:
             LOGGER.warning("Command is invalid.");
-            Ui.customInvalidInputMessagePrinter(exception.getCustomMessage());
+            ErrorPrinter.customInvalidInputMessagePrinter(exception.getCustomMessage());
             break;
         default:
-            Ui.invalidInputMessagePrinter();
+            ErrorPrinter.invalidInputMessagePrinter();
         }
         if (!validInput) {
             HelpCommand.printNeedHelpMessage();
-            Ui.printHorizontalLines();
+            LinePrinter.printHorizontalLines();
         }
     }
 }

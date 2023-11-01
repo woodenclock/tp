@@ -1,6 +1,6 @@
 package seedu.wildwatch.command;
 
-import seedu.wildwatch.operation.bootupshutdown.ShutDown;
+import seedu.wildwatch.miscellaneous.ShutDown;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

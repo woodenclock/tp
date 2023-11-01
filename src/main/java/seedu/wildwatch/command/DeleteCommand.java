@@ -1,7 +1,10 @@
 package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.LinePrinter;
+import seedu.wildwatch.ui.EntryPrinter;
+import seedu.wildwatch.ui.ListCommandPrinter;
+import seedu.wildwatch.ui.DeleteCommandPrinter;
 
 import java.util.Scanner;
 
@@ -23,20 +26,20 @@ public class DeleteCommand extends Command {
      */
     public void execute() {
         if (numberInput <= 0 || numberInput > EntryList.getArraySize()) {
-            Ui.entryNotFoundMessagePrinter();
+            DeleteCommandPrinter.entryNotFoundMessagePrinter();
         } else {
             Scanner scanner = new Scanner(System.in);
-            Ui.printEntry(numberInput-1);
-            Ui.entryDeletionConfirmationPrinter();
+            EntryPrinter.printEntry(numberInput-1);
+            DeleteCommandPrinter.entryDeletionConfirmationPrinter();
             String confirmation = scanner.nextLine().trim().toLowerCase();
 
             if (confirmation.equals("yes")) {
-                Ui.entryRemovedMessagePrinter();
+                DeleteCommandPrinter.entryRemovedMessagePrinter();
                 EntryList.deleteEntry(numberInput);
-                Ui.entryCountPrinter();
+                ListCommandPrinter.entryCountPrinter();
             } else {
-                Ui.printHorizontalLines();
-                Ui.entryNotDeletedMessagePrinter();
+                LinePrinter.printHorizontalLines();
+                DeleteCommandPrinter.entryNotDeletedMessagePrinter();
 
             }
         }

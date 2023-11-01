@@ -3,8 +3,9 @@ package seedu.wildwatch.command;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.Ui;
-import seedu.wildwatch.operation.error.InvalidInputErrorType;
+import seedu.wildwatch.ui.EditCommandPrinter;
+import seedu.wildwatch.ui.EntryPrinter;
+import seedu.wildwatch.error.InvalidInputErrorType;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -65,7 +66,7 @@ public class EditCommand extends Command {
         Entry updatedEntry = checkAndUpdateEntry(currentEntry, date, species, name, remark);
         EntryList.editEntry(index, updatedEntry);
 
-        Ui.entryEditedMessagePrinter();
-        Ui.printEntry(index);
+        EditCommandPrinter.entryEditedMessagePrinter();
+        EntryPrinter.printEntry(index);
     }
 }

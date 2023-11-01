@@ -2,7 +2,7 @@ package seedu.wildwatch.entry;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import seedu.wildwatch.operation.storage.Saver;
+import seedu.wildwatch.storage.Saver;
 
 public class EntryList {
     private static ArrayList<Entry> entries = new ArrayList<>(); //Keeps track of all Entry instances made

@@ -1,6 +1,6 @@
-package seedu.wildwatch.operation;
+package seedu.wildwatch.miscellaneous;
 
-import seedu.wildwatch.operation.bootupshutdown.ShutDown;
+import seedu.wildwatch.ui.ErrorPrinter;
 
 import java.util.logging.Logger;
 import java.util.logging.Handler;
@@ -29,7 +29,7 @@ public class LogHandler {
             rootLogger.addHandler(file);
         } catch (Exception exception) {
             LOGGER.warning("Queried entry not found.");
-            Ui.corruptLoggerMessagePrinter();
+            ErrorPrinter.corruptLoggerMessagePrinter();
             ShutDown.shutDownWithError();
             System.exit(0);
         }

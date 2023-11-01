@@ -4,7 +4,9 @@ import java.util.regex.Pattern;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.AddCommandPrinter;
+import seedu.wildwatch.ui.EntryPrinter;
+import seedu.wildwatch.ui.ListCommandPrinter;
 
 /**
  * Command class for adding entry to EntryList
@@ -30,9 +32,9 @@ public class AddCommand extends Command {
     public void execute() {
         EntryList.addEntry(newEntry);
 
-        Ui.entryAddedMessagePrinter();
-        Ui.printEntry(EntryList.getArraySize() - 1);
-        Ui.entryCountPrinter();
+        AddCommandPrinter.entryAddedMessagePrinter();
+        EntryPrinter.printEntry(EntryList.getArraySize() - 1);
+        ListCommandPrinter.entryCountPrinter();
     }
 
     @Override

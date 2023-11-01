@@ -7,7 +7,7 @@ import seedu.wildwatch.entry.Entry;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.error.InvalidInputErrorType;
+import seedu.wildwatch.error.InvalidInputErrorType;
 
 public class AddCommandParserTest {
     private final AddCommandParser parser = new AddCommandParser();

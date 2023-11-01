@@ -4,7 +4,7 @@ package seedu.wildwatch.command;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.SearchResultPrinter;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -51,6 +51,6 @@ public class FindCommand extends Command {
                 matchingEntries.add(entries.indexOf(entry));
             }
         }
-        Ui.findEntryMessagePrinter(hasMatch, matchingEntries);
+        SearchResultPrinter.findEntryMessagePrinter(hasMatch, matchingEntries);
     }
 }

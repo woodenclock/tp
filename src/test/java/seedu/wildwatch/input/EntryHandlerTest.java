@@ -1,11 +1,11 @@
-package seedu.wildwatch.operation;
+package seedu.wildwatch.input;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.error.ErrorChecker;
+import seedu.wildwatch.error.ErrorChecker;
 
 public class EntryHandlerTest {
 
