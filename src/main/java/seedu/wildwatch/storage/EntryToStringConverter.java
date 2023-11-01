@@ -24,4 +24,14 @@ public class EntryToStringConverter {
 
         return String.format("%s / %s / %s / %s", date, species, name, remark);
     }
+
+    public static String toCSVString(Entry entry, int id) {
+        assert entry != null : "Trying to convert a null entry to file string.";
+        String date = entry.getDate().format(STD_FORMAT);
+        String species = entry.getSpecies();
+        String name = entry.getName();
+        String remark = entry.getRemark();
+
+        return String.format("%d,%s,%s,%s,%s", id, date, species, name, remark);
+    }
 }
