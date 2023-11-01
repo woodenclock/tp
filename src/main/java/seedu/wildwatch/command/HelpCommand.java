@@ -101,6 +101,10 @@ public class HelpCommand extends Command {
 
     private String inputBuffer;
 
+    public HelpCommand(String inputBuffer) {
+        this.inputBuffer = inputBuffer;
+    }
+
     public static void printNeedHelpMessage() {
         System.out.println(needHelpPage);
     }
@@ -108,11 +112,6 @@ public class HelpCommand extends Command {
     public static String getHelpPage() {
         return helpPage;
     }
-
-    public HelpCommand(String inputBuffer) {
-        this.inputBuffer = inputBuffer;
-    }
-
 
     public void printMessageForCommand(String command) {
         switch(command) {
@@ -133,6 +132,8 @@ public class HelpCommand extends Command {
             break;
         case "full":
             System.out.println(helpPage);
+            break;
+        default:
             break;
         }
     }
