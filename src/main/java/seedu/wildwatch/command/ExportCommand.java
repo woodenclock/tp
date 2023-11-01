@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -25,6 +26,8 @@ public class ExportCommand extends Command {
             Pattern.compile("export(?:\\s+(?<filename>\\S+))?\\s*");
 
     public static final String DEFAULT_FILENAME = "WildWatch.csv";
+
+    private static final String[] ALL_COLUMNS = new String[] { "date", "species", "name", "remark" };
 
     private final String filename;
 
@@ -56,7 +59,7 @@ public class ExportCommand extends Command {
         if (file.exists()) {
             boolean canReplaceFile = canReplaceFile(filename);
             if (!canReplaceFile) {
-                System.out.println("Ignoring export command...");
+                System.out.println("Exiting export command...");
                 return;
             }
         } else {
@@ -67,7 +70,7 @@ public class ExportCommand extends Command {
 
         ArrayList<String> columnsToInclude = getColumnsToInclude();
         if (columnsToInclude.isEmpty()) {
-            throw new InvalidInputException("Please select at least one column to include in csv.");
+            throw new InvalidInputException("You need to select at least one column to include in the csv.");
         }
 
         String header = "id";
@@ -114,8 +117,8 @@ public class ExportCommand extends Command {
      */
     private boolean doesUserApprove(Scanner scanner, String confirmationMessage) {
         do {
-            System.out.println(confirmationMessage);
-            System.out.print(">> ");
+            System.out.print(confirmationMessage);
+            System.out.print(": ");
             String confirmation = scanner.nextLine().trim();
 
             switch (confirmation) {
@@ -133,9 +136,6 @@ public class ExportCommand extends Command {
     private void createFile() throws InvalidInputException {
 
         System.out.println("File does not exist.");
-        String createNewFileMessage =
-                String.format("Creating a new file %s", filename);
-        System.out.println(createNewFileMessage);
 
         try {
             FileCreater.createFile(filename);
@@ -149,11 +149,16 @@ public class ExportCommand extends Command {
 
         Scanner scanner = new Scanner(System.in);
 
-        final String[] columns = new String[] { "date", "species", "name", "remark" };
+        String includeAllColumnsMessage = "Would you like to include all columns? (Y/N)";
+        if (doesUserApprove(scanner, includeAllColumnsMessage)) {
+            Collections.addAll(columnsToInclude, ALL_COLUMNS);
+
+            return columnsToInclude;
+        }
 
         System.out.println("Please select the columns you would like to include in your csv:");
 
-        for (String column : columns) {
+        for (String column : ALL_COLUMNS) {
             String confirmationMessage = String.format("Would you like to include %s in your csv? (Y/N)", column);
 
             boolean shouldIncludeColumn = doesUserApprove(scanner, confirmationMessage);
