@@ -14,7 +14,6 @@ participant f as "EntryHandler"
 participant g as "HelpCommand"
 
 a->b: handleInput()
-activate b
 b->c: inputPromptPrinter()
 c-->b: return void
 b->c: inputRetriever()
@@ -22,10 +21,12 @@ c-->b: return inputBuffer
 b->d: log(..)
 d-->b: return void
 b->e: processCommand(inputBuffer)
-activate c
 deactivate b
 deactivate c
 e->f: handleEntry(inputBuffer)
+f->g: constructor HelpCommand(..)
+activate g
+deactivate g
 f-->e: return command
 e->e: executeCommand(command)
 e->c: printHorizontalLines()

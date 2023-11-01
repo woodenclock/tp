@@ -25,7 +25,7 @@ public class HelpCommandTest {
 
     @Test
     void testExecute() {
-        HelpCommand helpCommand = new HelpCommand();
+        HelpCommand helpCommand = new HelpCommand("");
         helpCommand.execute();
 
         // Define the expected help page content
@@ -65,6 +65,8 @@ public class HelpCommandTest {
                 "\n" +
                 "-------------------------HELP PAGE END---------------------------\n" +
                 "\n";
+
+        expectedHelpPage = HelpCommand.getHelpPage();
 
         // Normalize the line separators in the actual and expected output to ignore differences
         String actualOutput = mockOutput.toString().replace(System.lineSeparator(), "\n");
