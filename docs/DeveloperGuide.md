@@ -114,7 +114,7 @@ ____________________________________________________________
 
 ### System Architecture
 
-![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/7bdda637-1c7a-4358-a648-a9972184cd3d)
+![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/90309a3c-f784-4ffb-8eef-65735c05ec52)
 
 The **_Architecture Diagram_** shows a high-level overview of the architectural design of WildWatch.  
 Actual detailed implementation may differ from the architectural diagram, (e.g., `Parser` in the diagram encompasses both the `Parser` and `Error` packages)  
