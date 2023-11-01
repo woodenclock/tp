@@ -43,6 +43,7 @@ public class ErrorHandler {
         case INVALID_INPUT:
             LOGGER.warning("Command is invalid.");
             ErrorPrinter.customInvalidInputMessagePrinter(exception.getCustomMessage());
+            break;
         default:
             ErrorPrinter.invalidInputMessagePrinter();
         }
