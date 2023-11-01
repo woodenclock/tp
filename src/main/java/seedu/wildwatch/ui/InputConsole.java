@@ -2,7 +2,7 @@ package seedu.wildwatch.ui;
 
 import java.util.Scanner;
 
-public class InputReceiver {
+public class InputConsole {
     private static Scanner in = new Scanner(System.in);
 
     /**

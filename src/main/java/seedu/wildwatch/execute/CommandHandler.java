@@ -1,4 +1,4 @@
-package seedu.wildwatch.input;
+package seedu.wildwatch.execute;
 
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.ByeCommand;
