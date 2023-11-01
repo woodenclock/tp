@@ -12,12 +12,14 @@ import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.command.ByeCommand;
 import seedu.wildwatch.command.DeleteCommand;
+import seedu.wildwatch.command.ExportCommand;
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.parser.AddCommandParser;
 import seedu.wildwatch.parser.DeleteCommandParser;
+import seedu.wildwatch.parser.ExportCommandParser;
 import seedu.wildwatch.parser.FindCommandParser;
 
 /**
@@ -55,6 +57,9 @@ public class ErrorChecker {
         case SummaryCommand.COMMAND_WORD:
             LOGGER.log(Level.INFO, "Summary command was input: {0}", inputBuffer);
             return new SummaryCommand(inputBuffer);
+        case ExportCommand.COMMAND_WORD:
+            LOGGER.log(Level.INFO, "Export command was input: {0}", inputBuffer);
+            return new ExportCommandParser().parse(inputBuffer);
         case HelpCommand.COMMAND_WORD:
             LOGGER.log(Level.INFO, "Help command was input: {0}", inputBuffer);
             return new HelpCommand(inputBuffer);
