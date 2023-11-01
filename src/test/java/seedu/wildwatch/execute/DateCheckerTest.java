@@ -1,4 +1,4 @@
-package seedu.wildwatch.input;
+package seedu.wildwatch.execute;
 
 import org.junit.jupiter.api.Test;
 import seedu.wildwatch.error.DateChecker;

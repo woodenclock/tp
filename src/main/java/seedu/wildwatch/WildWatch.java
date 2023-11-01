@@ -3,7 +3,7 @@ package seedu.wildwatch;
 import seedu.wildwatch.miscellaneous.LogHandler;
 import seedu.wildwatch.miscellaneous.BootUp;
 import seedu.wildwatch.storage.FileHandler;
-import seedu.wildwatch.input.InputHandler;
+import seedu.wildwatch.execute.InputHandler;
 
 public class WildWatch {
     /**
