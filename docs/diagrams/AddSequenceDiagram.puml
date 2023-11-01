@@ -1,0 +1,40 @@
+@startuml
+
+box
+participant ":EntryHandler" as EntryHandler
+participant ":AddCommandParser" as AddCommandParser
+participant ":AddCommand" as AddCommand
+endbox
+
+-> EntryHandler : input
+activate EntryHandler
+
+create AddCommandParser
+EntryHandler -> AddCommandParser
+activate AddCommandParser
+
+AddCommandParser --> EntryHandler
+deactivate AddCommandParser
+
+EntryHandler -> AddCommandParser : parse(input)
+activate AddCommandParser
+
+AddCommandParser -> AddCommandParser : performChecks(input)
+activate AddCommandParser
+
+AddCommandParser -> AddCommandParser
+deactivate AddCommandParser
+
+create AddCommand
+AddCommandParser -> AddCommand
+activate AddCommand
+
+AddCommand --> AddCommandParser : a
+deactivate AddCommand
+
+AddCommandParser --> EntryHandler : a
+deactivate AddCommandParser
+
+<-- EntryHandler : a
+
+@enduml

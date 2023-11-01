@@ -127,6 +127,15 @@ WildWatch is comprised of 7 major components.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `FileHandler`: A class that saves and retrieves all the wildlife data from the local storage
 
+### Parser component 
+The `Parser` component is responsible for for parsing an input from the user, and returns an `XYZCommand` class. 
+
+### Command component 
+//TODO: incomplete
+For the diagram below, the command `add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper` has been substituted by `input`. 
+
+![](diagrams/AddSequenceDiagram.svg)
+
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
