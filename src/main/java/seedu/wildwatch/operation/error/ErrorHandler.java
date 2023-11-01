@@ -10,10 +10,14 @@ import seedu.wildwatch.operation.Ui;
 public class ErrorHandler {
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());
 
-    public static void handleInputError(InvalidInputException e) {
+    public static void handleInputError(InvalidInputException exception) {
         boolean validInput = false;
 
-        switch (e.getError()) {
+        switch (exception.getError()) {
+        case EMPTY_INPUT:
+            LOGGER.warning("Received an empty input.");
+            Ui.emptyDescriptionMessagePrinter(null);
+            break;
         case EMPTY_FIND_INPUT:
             LOGGER.warning("Received an empty find input.");
             Ui.emptyDescriptionMessagePrinter(FindCommand.COMMAND_WORD);
@@ -38,15 +42,14 @@ public class ErrorHandler {
             break;
         case CUSTOM:
             LOGGER.warning("Command is invalid.");
-            Ui.customInvalidInputMessagePrinter(e.getCustomMessage());
+            Ui.customInvalidInputMessagePrinter(exception.getCustomMessage());
             break;
         default:
             Ui.invalidInputMessagePrinter();
         }
-
         if (!validInput) {
-            Ui.printHorizontalLines();
             HelpCommand.printNeedHelpMessage();
+            Ui.printHorizontalLines();
         }
     }
 }

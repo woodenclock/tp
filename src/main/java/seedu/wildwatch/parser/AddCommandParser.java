@@ -1,13 +1,12 @@
 package seedu.wildwatch.parser;
 
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.operation.DateHandler;
 import seedu.wildwatch.operation.error.InvalidInputErrorType;
-
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 public class AddCommandParser implements Parser<AddCommand> {
 

@@ -9,13 +9,15 @@ import seedu.wildwatch.command.ByeCommand;
 public class InputHandler {
     private static final Logger LOGGER = Logger.getLogger(InputHandler.class.getName());
 
+    /**
+     * Runs the WildWatch by looping through the I/O process.
+     * If "bye" is received,
+     */
     public static void handleInput() {
         boolean loopFlag = true;
         while (loopFlag) {
             Ui.inputPromptPrinter();
             String inputBuffer = Ui.inputRetriever(); //Retrieves input of user
-            assert ((inputBuffer != null) && (!inputBuffer.trim().isEmpty())) :
-                    "inputBuffer should not be null or empty after reading input";
             LOGGER.log(Level.INFO, "Input received: {0}", inputBuffer);
             loopFlag = CommandHandler.processCommand(inputBuffer);
             EntryList.saveEntry();

@@ -1,7 +1,7 @@
 package seedu.wildwatch;
 
 import seedu.wildwatch.operation.LogHandler;
-import seedu.wildwatch.operation.BootUp;
+import seedu.wildwatch.operation.bootupshutdown.BootUp;
 import seedu.wildwatch.operation.storage.FileHandler;
 import seedu.wildwatch.operation.InputHandler;
 

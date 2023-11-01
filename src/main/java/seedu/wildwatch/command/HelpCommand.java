@@ -95,9 +95,7 @@ public class HelpCommand extends Command {
 
 
     private static final String needHelpPage =
-            "\n" +
-            "Please type \"help\" if you need help" +
-            "\n";
+            "Please type \"help\" if you need help.";
 
     private String inputBuffer;
 

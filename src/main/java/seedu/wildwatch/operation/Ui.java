@@ -140,7 +140,7 @@ public class Ui {
      * @param hasMatch
      * @param matchingTasks
      */
-    public static void findTaskMessagePrinter(boolean hasMatch, ArrayList<Integer> matchingTasks) {
+    public static void findEntryMessagePrinter(boolean hasMatch, ArrayList<Integer> matchingTasks) {
         if (!hasMatch) {
             System.out.println("No matching tasks found.");
         } else {

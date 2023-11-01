@@ -1,5 +1,7 @@
 package seedu.wildwatch.operation;
 
+import seedu.wildwatch.operation.bootupshutdown.ShutDown;
+
 import java.util.logging.Logger;
 import java.util.logging.Handler;
 import java.util.logging.FileHandler;
