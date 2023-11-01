@@ -118,7 +118,7 @@ ____________________________________________________________
 
 The **_Architecture Diagram_** shows a high-level overview of the architectural design of WildWatch.  
 Actual detailed implementation may differ from the architectural diagram.  
-(e.g., `Parser` in the diagram encompasses both the `Parser` and `Error` packages).  
+(e.g., `Parser` in the diagram encompasses the `Input`, `Error`, and `Parser` packages).  
   
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
