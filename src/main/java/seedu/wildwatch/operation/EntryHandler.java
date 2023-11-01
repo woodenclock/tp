@@ -49,7 +49,7 @@ public class EntryHandler {
         case SummaryCommand.COMMAND_WORD:
             return new SummaryCommand(inputBuffer);
         case HelpCommand.COMMAND_WORD:
-            return new HelpCommand();
+            return new HelpCommand(inputBuffer);
         case ByeCommand.COMMAND_WORD:
             return new ByeCommand();
         default:
