@@ -1,4 +1,3 @@
-//@@lctxct
 package seedu.wildwatch.error;
 
 import java.util.logging.Logger;
@@ -11,7 +10,6 @@ import seedu.wildwatch.ui.ErrorPrinter;
 import seedu.wildwatch.ui.ListCommandPrinter;
 import seedu.wildwatch.ui.DeleteCommandPrinter;
 import seedu.wildwatch.ui.EmptyDescriptionPrinter;
-
 
 public class ErrorHandler {
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());
@@ -44,12 +42,7 @@ public class ErrorHandler {
             break;
         case INVALID_INPUT:
             LOGGER.warning("Command is invalid.");
-            ErrorPrinter.invalidInputMessagePrinter();
-            break;
-        case CUSTOM:
-            LOGGER.warning("Command is invalid.");
             ErrorPrinter.customInvalidInputMessagePrinter(exception.getCustomMessage());
-            break;
         default:
             ErrorPrinter.invalidInputMessagePrinter();
         }
