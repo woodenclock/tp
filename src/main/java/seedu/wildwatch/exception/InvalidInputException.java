@@ -6,16 +6,17 @@ public class InvalidInputException extends Exception {
     private InvalidInputErrorType errorType;
     private String customMessage;
 
-    public InvalidInputException(InvalidInputErrorType error) {
-        super();
-        this.errorType = error;
-        this.customMessage = "";
+    public InvalidInputException(InvalidInputErrorType error, String message) {
+        errorType = error;
+        customMessage = message;
     }
 
-    public InvalidInputException(String error) {
-        super();
-        this.errorType = InvalidInputErrorType.CUSTOM;
-        this.customMessage = error;
+    public InvalidInputException(InvalidInputErrorType error) {
+        this(error, "Command is invalid.");
+    }
+
+    public InvalidInputException(String message) {
+        this(InvalidInputErrorType.INVALID_INPUT, message);
     }
 
     public InvalidInputErrorType getError() {
