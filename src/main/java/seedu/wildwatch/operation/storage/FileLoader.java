@@ -3,6 +3,7 @@ package seedu.wildwatch.operation.storage;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
+
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.parser.FileStringParser;
 
@@ -16,8 +17,7 @@ public class FileLoader {
         while (fileReader.hasNext()) {
             String lineOfFile = fileReader.nextLine();
 
-            // Creates new entry from line in file
-                new FileStringParser().parse(lineOfFile).execute();
+            new FileStringParser().parse(lineOfFile).execute(); // Creates new entry from line in file
         }
     }
 }

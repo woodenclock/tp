@@ -6,7 +6,7 @@ import seedu.wildwatch.operation.error.InvalidInputErrorType;
 
 public class FindCommandParser implements Parser<FindCommand>{
     public static final String COMMAND_WORD = "find";
-    private int NUMBER_OF_ALPHABETS_IN_FIND = 4;
+    private static final int NUMBER_OF_ALPHABETS_IN_FIND = 4;
 
     @Override
     public FindCommand parse(String input) throws InvalidInputException {
