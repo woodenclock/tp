@@ -1,4 +1,4 @@
-# WildWatch Developer Guide 🦏
+# WildWatch Developer Guide 🦣
 
 ## Table of Contents  
 - [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
@@ -116,8 +116,8 @@ ____________________________________________________________
 
 ![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/7bdda637-1c7a-4358-a648-a9972184cd3d)
 
-The **_Architecture Diagram_** shows the high-level architectural design of WildWatch.  
-Actual detailed implementation may differ from the architectural diagram.  
+The **_Architecture Diagram_** shows a high-level overview of the architectural design of WildWatch.  
+Actual detailed implementation may differ from the architectural diagram, (e.g., `Parser` in the diagram encompasses both the `Parser` and `Error` packages)  
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
 - `UI`: A class that receives input from, and prints output to the user.
