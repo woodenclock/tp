@@ -1,8 +1,8 @@
-package seedu.wildwatch.operation.storage;
+package seedu.wildwatch.storage;
 
 import java.io.File;
 import java.io.IOException;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.Ui;
 
 public class FileCreater {
     /**

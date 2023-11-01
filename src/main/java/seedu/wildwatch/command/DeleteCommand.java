@@ -1,7 +1,7 @@
 package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.Ui;
 
 import java.util.Scanner;
 

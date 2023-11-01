@@ -3,8 +3,8 @@ package seedu.wildwatch.command;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.Ui;
-import seedu.wildwatch.operation.error.InvalidInputErrorType;
+import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.error.InvalidInputErrorType;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

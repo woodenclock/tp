@@ -1,6 +1,6 @@
 package seedu.wildwatch.exception;
 
-import seedu.wildwatch.operation.error.InvalidInputErrorType;
+import seedu.wildwatch.error.InvalidInputErrorType;
 
 public class InvalidInputException extends Exception {
     private InvalidInputErrorType errorType;

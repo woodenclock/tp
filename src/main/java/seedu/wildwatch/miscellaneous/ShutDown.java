@@ -1,7 +1,7 @@
 //@@woodenclock
-package seedu.wildwatch.operation.bootupshutdown;
+package seedu.wildwatch.miscellaneous;
 
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.Ui;
 
 public class ShutDown {
     public static void shutDown() {

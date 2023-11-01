@@ -1,11 +1,11 @@
 //@@woodenclock
-package seedu.wildwatch.operation.storage;
+package seedu.wildwatch.storage;
 
 import seedu.wildwatch.command.ListCommand;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.bootupshutdown.BootUp;
-import seedu.wildwatch.operation.bootupshutdown.ShutDown;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.miscellaneous.BootUp;
+import seedu.wildwatch.miscellaneous.ShutDown;
+import seedu.wildwatch.ui.Ui;
 
 import java.io.File;
 import java.io.FileNotFoundException;

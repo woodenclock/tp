@@ -8,7 +8,7 @@ import java.util.Map;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.Ui;
 
 /**
  * Command class for `summary`

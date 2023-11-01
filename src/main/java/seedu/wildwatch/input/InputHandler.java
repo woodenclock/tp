@@ -1,10 +1,11 @@
 //@@woodenclock
-package seedu.wildwatch.operation;
+package seedu.wildwatch.input;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.command.ByeCommand;
+import seedu.wildwatch.ui.Ui;
 
 public class InputHandler {
     private static final Logger LOGGER = Logger.getLogger(InputHandler.class.getName());

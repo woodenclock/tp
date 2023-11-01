@@ -1,7 +1,7 @@
-package seedu.wildwatch.operation.storage;
+package seedu.wildwatch.storage;
 
 import seedu.wildwatch.entry.Entry;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.Ui;
 
 import java.io.FileWriter;
 import java.io.IOException;

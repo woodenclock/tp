@@ -1,4 +1,4 @@
-package seedu.wildwatch.operation;
+package seedu.wildwatch.ui;
 
 import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.command.DeleteCommand;

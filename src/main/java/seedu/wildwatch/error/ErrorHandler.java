@@ -1,11 +1,11 @@
-package seedu.wildwatch.operation.error;
+package seedu.wildwatch.error;
 
 import java.util.logging.Logger;
 
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.Ui;
 
 public class ErrorHandler {
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());

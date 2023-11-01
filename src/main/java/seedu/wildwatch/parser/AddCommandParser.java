@@ -5,8 +5,8 @@ import java.util.regex.Matcher;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.DateHandler;
-import seedu.wildwatch.operation.error.InvalidInputErrorType;
+import seedu.wildwatch.error.DateChecker;
+import seedu.wildwatch.error.InvalidInputErrorType;
 
 public class AddCommandParser implements Parser<AddCommand> {
 
@@ -77,7 +77,7 @@ public class AddCommandParser implements Parser<AddCommand> {
             throw new InvalidInputException("Date value cannot be empty.");
         }
         String date = matcher.group("date").trim();
-        if (!DateHandler.isDateValid(date)) {
+        if (!DateChecker.isDateValid(date)) {
             throw new InvalidInputException(InvalidInputErrorType.INVALID_DATE);
         }
     }

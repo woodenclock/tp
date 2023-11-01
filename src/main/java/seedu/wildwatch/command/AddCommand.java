@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.operation.Ui;
+import seedu.wildwatch.ui.Ui;
 
 /**
  * Command class for adding entry to EntryList

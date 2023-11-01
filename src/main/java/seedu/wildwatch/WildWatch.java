@@ -1,9 +1,9 @@
 package seedu.wildwatch;
 
-import seedu.wildwatch.operation.LogHandler;
-import seedu.wildwatch.operation.bootupshutdown.BootUp;
-import seedu.wildwatch.operation.storage.FileHandler;
-import seedu.wildwatch.operation.InputHandler;
+import seedu.wildwatch.miscellaneous.LogHandler;
+import seedu.wildwatch.miscellaneous.BootUp;
+import seedu.wildwatch.storage.FileHandler;
+import seedu.wildwatch.input.InputHandler;
 
 public class WildWatch {
     /**

@@ -1,10 +1,11 @@
-package seedu.wildwatch.operation;
+package seedu.wildwatch.input;
 
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.ByeCommand;
-import seedu.wildwatch.operation.error.ErrorChecker;
-import seedu.wildwatch.operation.error.ErrorHandler;
+import seedu.wildwatch.error.ErrorChecker;
+import seedu.wildwatch.error.ErrorHandler;
 import seedu.wildwatch.exception.InvalidInputException;
+import seedu.wildwatch.ui.Ui;
 
 public class CommandHandler {
     public static boolean processCommand(String inputBuffer) {

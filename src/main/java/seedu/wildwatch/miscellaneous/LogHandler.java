@@ -1,6 +1,6 @@
-package seedu.wildwatch.operation;
+package seedu.wildwatch.miscellaneous;
 
-import seedu.wildwatch.operation.bootupshutdown.ShutDown;
+import seedu.wildwatch.ui.Ui;
 
 import java.util.logging.Logger;
 import java.util.logging.Handler;

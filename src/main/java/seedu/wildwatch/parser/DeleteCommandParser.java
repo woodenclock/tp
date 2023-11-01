@@ -3,7 +3,7 @@ package seedu.wildwatch.parser;
 import seedu.wildwatch.command.DeleteCommand;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.operation.error.InvalidInputErrorType;
+import seedu.wildwatch.error.InvalidInputErrorType;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
