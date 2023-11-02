@@ -18,10 +18,10 @@ public class SummaryCommand extends Command {
     public static final String COMMAND_WORD = "summary";
 
     //TODO[PARSER]: REMOVE LATER
-    private String inputBuffer;
+    private String input;
 
-    public SummaryCommand(String inputBuffer) {
-        this.inputBuffer = inputBuffer;
+    public SummaryCommand(String input) {
+        this.input = input;
     }
 
     private static Map<String, List<Entry>> groupEntriesBySpecies(List<Entry> entries) {
@@ -57,7 +57,7 @@ public class SummaryCommand extends Command {
         return filteredMap;
     }
     public void execute() throws InvalidInputException {
-        String argument = inputBuffer.replace("summary","").trim();
+        String argument = input.replace("summary","").trim();
         String speciesName = argument;
         boolean hasArgument = !argument.isEmpty();
 

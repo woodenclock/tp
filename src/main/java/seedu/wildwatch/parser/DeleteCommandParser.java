@@ -34,7 +34,7 @@ public class DeleteCommandParser implements Parser<DeleteCommand> {
 
         final Matcher matcher = DELETE_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {
-            throw new InvalidInputException(InvalidInputErrorType.EMPTY_DELETE_INPUT);
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_INPUT);
         }
 
         // Check that index is a valid number
@@ -42,7 +42,7 @@ public class DeleteCommandParser implements Parser<DeleteCommand> {
         try {
             deleteIdx = Integer.parseInt(matcher.group("index"));
         } catch (NumberFormatException e) {
-            throw new InvalidInputException(InvalidInputErrorType.INVALID_DELETE_INDEX);
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_INDEX);
         }
 
         // Check that index is within bounds

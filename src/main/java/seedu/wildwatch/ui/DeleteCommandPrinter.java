@@ -19,7 +19,6 @@ public class DeleteCommandPrinter {
      * Prints out appropriate message when nth entry input by the user is not found.
      */
     public static void entryNotFoundMessagePrinter() {
-        LinePrinter.printHorizontalLines();
         System.out.println("OOPS!!! The entry number could not be found :-(");
     }
 }

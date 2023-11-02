@@ -17,13 +17,13 @@ a->b: handleInput()
 b->c: inputPromptPrinter()
 c-->b: return void
 b->c: inputRetriever()
-c-->b: return inputBuffer
+c-->b: return input
 b->d: log(..)
 d-->b: return void
-b->e: processCommand(inputBuffer)
+b->e: processCommand(input)
 deactivate b
 deactivate c
-e->f: handleEntry(inputBuffer)
+e->f: handleEntry(input)
 f->g: constructor HelpCommand(..)
 activate g
 deactivate g

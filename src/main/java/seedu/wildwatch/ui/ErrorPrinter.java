@@ -31,4 +31,8 @@ public class ErrorPrinter {
     public static void invalidDateMessagePrinter() {
         System.out.println("OOPS!!! Invalid Date input :-(");
     }
+
+    public static void invalidIndexMessagePrinter() {
+        System.out.println("OOPS!!! Invalid Index input :-(");
+    }
 }

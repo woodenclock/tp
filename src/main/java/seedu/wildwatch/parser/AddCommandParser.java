@@ -49,10 +49,9 @@ public class AddCommandParser implements Parser<AddCommand> {
      * @throws InvalidInputException thrown if the input does not adhere to command format.
      */
     private void performChecks(String input) throws InvalidInputException {
-
         final Matcher matcher = ADD_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {
-            throw new InvalidInputException("Invalid command format.");
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_INPUT);
         }
 
         checkDate(matcher);
