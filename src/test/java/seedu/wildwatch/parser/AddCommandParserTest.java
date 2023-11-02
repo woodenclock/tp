@@ -16,7 +16,8 @@ public class AddCommandParserTest {
     @Test
     public void parse_success() throws Exception {
         String input;
-        AddCommand expected, actual;
+        AddCommand expected;
+        AddCommand actual;
 
         // add command with remark
         input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper";
