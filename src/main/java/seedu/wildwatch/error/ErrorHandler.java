@@ -2,10 +2,10 @@ package seedu.wildwatch.error;
 
 import java.util.logging.Logger;
 
+import seedu.wildwatch.command.EditCommand;
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.ui.LinePrinter;
 import seedu.wildwatch.ui.ErrorPrinter;
 import seedu.wildwatch.ui.ListCommandPrinter;
 import seedu.wildwatch.ui.DeleteCommandPrinter;
@@ -18,9 +18,17 @@ public class ErrorHandler {
         boolean validInput = false;
 
         switch (exception.getError()) {
+        case CUSTOM:
+            LOGGER.warning("Command is invalid.");
+            ErrorPrinter.customInvalidInputMessagePrinter(exception.getCustomMessage());
+            break;
         case EMPTY_INPUT:
             LOGGER.warning("Received an empty input.");
             EmptyDescriptionPrinter.emptyDescriptionMessagePrinter(null);
+            break;
+        case EMPTY_EDIT_INPUT:
+            LOGGER.warning("Received an empty edit input.");
+            EmptyDescriptionPrinter.emptyDescriptionMessagePrinter(EditCommand.COMMAND_WORD);
             break;
         case EMPTY_FIND_INPUT:
             LOGGER.warning("Received an empty find input.");
@@ -40,16 +48,19 @@ public class ErrorHandler {
             LOGGER.warning("Date is invalid.");
             ErrorPrinter.invalidDateMessagePrinter();
             break;
+        case INVALID_INDEX:
+            LOGGER.warning("Index is invalid.");
+            ErrorPrinter.invalidIndexMessagePrinter();
+            break;
         case INVALID_INPUT:
             LOGGER.warning("Command is invalid.");
-            ErrorPrinter.customInvalidInputMessagePrinter(exception.getCustomMessage());
+            ErrorPrinter.invalidInputMessagePrinter();
             break;
         default:
             ErrorPrinter.invalidInputMessagePrinter();
         }
         if (!validInput) {
             HelpCommand.printNeedHelpMessage();
-            LinePrinter.printHorizontalLines();
         }
     }
 }

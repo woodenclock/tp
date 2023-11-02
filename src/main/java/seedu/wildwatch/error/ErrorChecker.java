@@ -19,6 +19,7 @@ import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.parser.AddCommandParser;
 import seedu.wildwatch.parser.DeleteCommandParser;
+import seedu.wildwatch.parser.EditCommandParser;
 import seedu.wildwatch.parser.ExportCommandParser;
 import seedu.wildwatch.parser.FindCommandParser;
 
@@ -28,10 +29,10 @@ import seedu.wildwatch.parser.FindCommandParser;
 public class ErrorChecker {
     private static final Logger LOGGER = Logger.getLogger(ErrorChecker.class.getName());
 
-    public static Command checkError(String inputBuffer) throws InvalidInputException {
+    public static Command checkError(String input) throws InvalidInputException {
 
-        LOGGER.log(Level.INFO, "Managing entry for input: {0}", inputBuffer);
-        Scanner bufferScanner = new Scanner(inputBuffer);     //Scanner for the buffer
+        LOGGER.log(Level.INFO, "Managing entry for input: {0}", input);
+        Scanner bufferScanner = new Scanner(input);     //Scanner for the buffer
         if (!bufferScanner.hasNext()) {
             throw new InvalidInputException(InvalidInputErrorType.EMPTY_INPUT);
         }
@@ -40,35 +41,35 @@ public class ErrorChecker {
         //Functionalities
         switch (firstWord) {
         case AddCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Add command was input: {0}", inputBuffer);
-            return new AddCommandParser().parse(inputBuffer);
+            LOGGER.log(Level.INFO, "Add command was input: {0}", input);
+            return new AddCommandParser().parse(input);
         case DeleteCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Delete command was input: {0}", inputBuffer);
-            return new DeleteCommandParser().parse(inputBuffer);
+            LOGGER.log(Level.INFO, "Delete command was input: {0}", input);
+            return new DeleteCommandParser().parse(input);
         case EditCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Edit command was input: {0}", inputBuffer);
-            return new EditCommand(inputBuffer);
+            LOGGER.log(Level.INFO, "Edit command was input: {0}", input);
+            return new EditCommandParser().parse(input);
         case FindCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Find command was input: {0}", inputBuffer);
-            return new FindCommandParser().parse(inputBuffer);
+            LOGGER.log(Level.INFO, "Find command was input: {0}", input);
+            return new FindCommandParser().parse(input);
         case ListCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "List command was input: {0}", inputBuffer);
+            LOGGER.log(Level.INFO, "List command was input: {0}", input);
             return new ListCommand();
         case SummaryCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Summary command was input: {0}", inputBuffer);
-            return new SummaryCommand(inputBuffer);
+            LOGGER.log(Level.INFO, "Summary command was input: {0}", input);
+            return new SummaryCommand(input);
         case ExportCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Export command was input: {0}", inputBuffer);
-            return new ExportCommandParser().parse(inputBuffer);
+            LOGGER.log(Level.INFO, "Export command was input: {0}", input);
+            return new ExportCommandParser().parse(input);
         case HelpCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Help command was input: {0}", inputBuffer);
-            return new HelpCommand(inputBuffer);
+            LOGGER.log(Level.INFO, "Help command was input: {0}", input);
+            return new HelpCommand(input);
         case ByeCommand.COMMAND_WORD:
-            LOGGER.log(Level.INFO, "Exit command was input: {0}", inputBuffer);
+            LOGGER.log(Level.INFO, "Exit command was input: {0}", input);
             return new ByeCommand();
         default:
-            LOGGER.log(Level.WARNING, "Unknown input received: {0}. Throwing exception.", inputBuffer);
-            throw new InvalidInputException(InvalidInputErrorType.UNKNOWN_INPUT);
+            LOGGER.log(Level.WARNING, "Invalid input received: {0}. Throwing exception.", input);
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_INPUT);
         }
     }
 }

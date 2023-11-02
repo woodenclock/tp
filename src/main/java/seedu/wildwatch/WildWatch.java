@@ -14,5 +14,6 @@ public class WildWatch {
         BootUp.bootUpOne();
         FileHandler.handleFile(); //FileHandler takes on
         InputHandler.handleInput();
+
     }
 }

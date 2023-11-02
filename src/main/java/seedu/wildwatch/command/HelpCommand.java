@@ -97,10 +97,10 @@ public class HelpCommand extends Command {
     private static final String needHelpPage =
             "Please type \"help\" if you need help.";
 
-    private String inputBuffer;
+    private String input;
 
-    public HelpCommand(String inputBuffer) {
-        this.inputBuffer = inputBuffer;
+    public HelpCommand(String input) {
+        this.input = input;
     }
 
     public static void printNeedHelpMessage() {
@@ -139,13 +139,13 @@ public class HelpCommand extends Command {
      * Prints out help page
      */
     public void execute() {
-        if( inputBuffer.isEmpty() ) {
+        if( input.isEmpty() ) {
             System.out.println("No worries, I'm here to help!");
             System.out.println(helpPage);
             return;
         }
 
-        String argument = inputBuffer.replace("help", "").trim();
+        String argument = input.replace("help", "").trim();
         if( argument.isEmpty() ) {
             // print short version
             System.out.println("No worries, I'm here to help!");

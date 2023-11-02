@@ -30,7 +30,7 @@ public class FileHandler {
                 FilePrinter.noFileMessagePrinter();
             } catch (InvalidInputException e) {
                 FilePrinter.corruptFileMessagePrinter();
-                ShutDown.shutDown();
+                ShutDown.shutDownWithError();
                 System.exit(0);
             }
         } else {  // File does not exist
@@ -39,7 +39,7 @@ public class FileHandler {
                 openedFile = FileCreater.createFile(FILE_PATH);
             } catch (IOException exception) {
                 FilePrinter.fileCreationFailMessagePrinter();
-                ShutDown.shutDown();
+                ShutDown.shutDownWithError();
                 System.exit(0);
             }
             assert openedFile.exists() : "File was supposed to be created but it doesn't exist.";

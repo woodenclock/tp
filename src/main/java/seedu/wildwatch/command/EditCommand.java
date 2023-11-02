@@ -20,9 +20,10 @@ public class EditCommand extends Command {
                     + "( S/(?<species>[^/]+))?"
                     + "( N/(?<name>[^/]+))?"
                     + "(?: R/(?<remark>[^/]+))?");
-    private String inputBuffer;
-    public EditCommand(String inputBuffer) {
-        this.inputBuffer = inputBuffer;
+    private String input;
+
+    public EditCommand(String input) {
+        this.input = input;
     }
 
     public Entry checkAndUpdateEntry(Entry entry, String date, String species, String name, String remark) {
@@ -44,13 +45,13 @@ public class EditCommand extends Command {
         }
         return entry;
     }
+
     public void execute() throws InvalidInputException {
-
-        final Matcher matcher = EDIT_ENTRY_COMMAND_FORMAT.matcher(this.inputBuffer);
-
+        final Matcher matcher = EDIT_ENTRY_COMMAND_FORMAT.matcher(input);
         if (!matcher.matches()) {
-            throw new InvalidInputException(InvalidInputErrorType.INVALID_EDIT_INPUT);
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_INPUT);
         }
+
         final String indexStr = matcher.group("index").trim();
         final String date = matcher.group("date");
         final String species = matcher.group("species");
