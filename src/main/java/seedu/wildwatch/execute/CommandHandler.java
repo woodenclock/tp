@@ -2,14 +2,14 @@ package seedu.wildwatch.execute;
 
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.ByeCommand;
-import seedu.wildwatch.error.ErrorChecker;
+import seedu.wildwatch.error.Router;
 import seedu.wildwatch.error.ErrorHandler;
 import seedu.wildwatch.exception.InvalidInputException;
 
 public class CommandHandler {
     public static boolean processCommand(String input) {
         try {
-            Command command = ErrorChecker.checkError(input); //Checks if the input command is valid
+            Command command = Router.route(input); //Checks if the input command is valid
             if (command instanceof ByeCommand) {
                 return false;
             }

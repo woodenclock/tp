@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.EditCommand;
 import seedu.wildwatch.entry.EntryList;
+import seedu.wildwatch.error.DateChecker;
 import seedu.wildwatch.error.InvalidInputErrorType;
 import seedu.wildwatch.exception.InvalidInputException;
 
@@ -42,7 +43,9 @@ public class EditCommandParser {
         }
 
         checkIndex(matcher);
-
+        if (!(matcher.group("date") == null)) {
+            checkDate(matcher);
+        }
 
         //Checks if there is any change to edit
         if ((matcher.group("date") == null) && (matcher.group("species") == null) &&
@@ -60,6 +63,13 @@ public class EditCommandParser {
         }
         if ((matcher.group("index") == null) || editIdx < 1 || editIdx > EntryList.getArraySize()) {
             throw new InvalidInputException(InvalidInputErrorType.ENTRY_NOT_FOUND);
+        }
+    }
+
+    private void checkDate(Matcher matcher) throws InvalidInputException {
+        String dateValue = matcher.group("date");
+        if (!DateChecker.isDateValid(dateValue)) {
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_DATE);
         }
     }
 }

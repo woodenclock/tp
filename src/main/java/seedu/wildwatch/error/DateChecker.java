@@ -12,7 +12,6 @@ public class DateChecker {
         if (DATE_PATTERN.matcher(date).matches()) {
             return true;
         }
-
         return false;
     }
 }
