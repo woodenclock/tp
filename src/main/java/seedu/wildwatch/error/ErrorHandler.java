@@ -11,7 +11,6 @@ import seedu.wildwatch.ui.ListCommandPrinter;
 import seedu.wildwatch.ui.DeleteCommandPrinter;
 import seedu.wildwatch.ui.EmptyDescriptionPrinter;
 
-
 public class ErrorHandler {
     private static final Logger LOGGER = Logger.getLogger(ErrorHandler.class.getName());
 

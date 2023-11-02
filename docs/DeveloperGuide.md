@@ -1,11 +1,10 @@
-# WildWatch Developer Guide 🦏
+# WildWatch Developer Guide 🦣
 
 ## Table of Contents  
-- [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
+- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#introduction)
     - [Purpose](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#purpose)
     - [Audience](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#audience)
     - [How to use the Developer Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#how-to-use-the-developer-guide)
-- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#introduction)
 - [Design & Implementation](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#design--implementation)
 - [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope)
   - [Target User Profile](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#target-user-profile)
@@ -15,15 +14,7 @@
 - [Manual Testing](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#manual-testing)
 - [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary)
 - [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary)
-
---------------------------------------------------------------------------------------------------------------------------------------
-
-## Acknowledgements  
-[woodenclock](https://github.com/woodenclock/ip.git) - Reference  
-[AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
-Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch!  
-
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+- [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -58,6 +49,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuid
 | Symbol         | Meaning                                                     |
 | -------------- |------------------------------------------------------------ |
 | ❗ IMPORTANT   | These are important instructions that you should follow.   |
+| ✏ Note   | These are important details that you should take note of.   |
 | ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
 
@@ -114,10 +106,12 @@ ____________________________________________________________
 
 ### System Architecture
 
-![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/7bdda637-1c7a-4358-a648-a9972184cd3d)
+![System Architecture](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/90309a3c-f784-4ffb-8eef-65735c05ec52)
 
-The **_Architecture Diagram_** shows the high-level architectural design of WildWatch.  
+The **_Architecture Diagram_** above shows a high-level overview of the architectural design of WildWatch.  
 Actual detailed implementation may differ from the architectural diagram.  
+(e.g., `Parser` in the diagram encompasses the `Input`, `Error`, and `Parser` packages).  
+  
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
 - `UI`: A class that receives input from, and prints output to the user.
@@ -127,14 +121,18 @@ WildWatch is comprised of 7 major components.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `FileHandler`: A class that saves and retrieves all the wildlife data from the local storage
 
+![Architecture Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6bea5165-aa78-4b3e-baf0-2e9ced109161)  
+
+The **_Generic Sequence Diagram_** above shows a shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
+> ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
+
+
+
 ### Parser component 
 The `Parser` component is responsible for for parsing an input from the user, and returns an `XYZCommand` class. 
 
-### Command component 
-//TODO: incomplete
-For the diagram below, the command `add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper` has been substituted by `input`. 
-
-![](diagrams/AddSequenceDiagram.svg)
+### Command component
+![](images/AddSequenceDiagram.png)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
@@ -206,6 +204,15 @@ Since clerks are already accustomed to typing and working with a computer, this 
 ## Glossary
 
 * *glossary item* - Definition
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Acknowledgements  
+[woodenclock](https://github.com/woodenclock/ip.git) - Reference  
+[AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
+Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch!  
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 

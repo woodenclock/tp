@@ -7,11 +7,14 @@
 - [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-)
 - [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-)
     - [Adding Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#1-adding-entries-add): `add`
+        -  [Standard Mode](#11-standard-mode)
+        -  [Interactive Mode](#12-interactive-mode-add-i)
     - [Deleting Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#2-deleting-entries-delete): `delete`
     - [Listing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#3-listing-entries-list): `list`
     - [Editing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#4-editing-entries-edit): `edit`
     - [Summarizing Entries](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#5-summarizing-entries-summary): `summary`
-    - [Getting Help](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#6-getting-help--help): `help` 
+    - [Exporting Entries](#6-exporting-your-entries-export): `export`
+    - [Getting Help](#7-getting-help--help): `help` 
 - [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-)
 - [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-)
 - [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-)
@@ -81,15 +84,26 @@ Some example commands you can try:
 ### 1. Adding Entries: `add`
 Adds a new entry to the system.
 
+#### 1.1 Standard Mode 
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
+
 `<date>` should be in the format **DD-MM-YY**
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-  
-  
+
+#### 1.2 Interactive Mode: `add i/`
+If you're prone to forgetting fields to include in the `add` command, have no fear, we've got your back! You may choose to use the `add i/` command instead, which triggers the interactive add mode. 
+It helpfully prompts you for data each step of the way, and notifies you when you've left a mandatory field blank, so you don't have to worry about getting it wrong!
+
+Format: `add i/`
+
+![image](https://github.com/lctxct/tp/assets/70379887/21db0b5d-1f76-40b0-a73d-92fbc5204b04)
+
+[⬆ Back to top](#table-of-contents)
+
 ### 2. Deleting Entries: `delete`
 Deletes an entry. 
 
@@ -105,7 +119,6 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-  
   
 ### 3. Listing Entries: `list`
 Shows a list of all entries of wildlife in the WildWatch so far.
@@ -158,9 +171,21 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
-  
+
+### 6. Exporting your entries: `export` 
+Maybe you need to share the entries you've collected with someone else. In that case, we also provide the option for you to export your data as a Comma Separated Values (CSV) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
+
+Format: `export <FILENAME>`
+
+`<FILENAME>` is optional. However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV. If unspecified, your data will be written to the default file `WildWatch.csv`. 
+
+We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. 
+
+![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
+
+[⬆ Back to top](#table-of-contents)
     
-### 6. Getting Help : `help`
+### 7. Getting Help : `help`
 Shows the user how to use all the commands.
 
 Format: `help`
@@ -188,14 +213,16 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 
 ## Command Summary 🐱
 
-| Action         | Format                                                     |
-| -------------- |------------------------------------------------------------|
-| Getting Help   | `help`                                                     |
-| Add Entries    | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
-| Delete Entries | `delete <INDEX>`                                           |
-| Edit Entries | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`   |
-| Summarizing Entries | `summary <SPECIES>`                                   |
-| List Entries   | `list`                                                     |
+| Action                    | Format                                                     |
+| ------------------------- | ---------------------------------------------------------- |
+| Getting Help              | `help`                                                     |
+| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
+| Add Entries (interactive) | `add i/`                                                   |
+| Delete Entries            | `delete <INDEX>`                                           |
+| Edit Entries              | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>` |
+| Summarizing Entries       | `summary <SPECIES>`                                        |
+| List Entries              | `list`                                                     |
+| Export Entries            | `export <FILENAME>`                                        |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 

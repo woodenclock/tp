@@ -1,45 +1,141 @@
+//@@lctxct
 package seedu.wildwatch.parser;
 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.error.DateChecker;
 import seedu.wildwatch.error.InvalidInputErrorType;
 
+import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 public class AddCommandParser implements Parser<AddCommand> {
 
-    private static final Pattern ADD_ENTRY_COMMAND_FORMAT_CHECK =
+
+    private static final String[] ENTRY_ITEMS = new String[] { "date", "species", "name", "remark" };
+
+    private static final Pattern ADD_DEFAULT_COMMAND_FORMAT_CHECK =
             Pattern.compile("add"
                     + "\\s*(?<dprefix> D/)?\\s*(?<date>[^/]+)?"
                     + "\\s*(?<sprefix> S/)?\\s*(?<species>[^/]+)?"
                     + "\\s*(?<nprefix> N/)?\\s*(?<name>[^/]+)?"
                     + "\\s*(?: R/(?<remark>[^/]+))?");
 
+    private String date;
+    private String species;
+    private String name;
+    private String remark = null;
+
     @Override
     public AddCommand parse(String input) throws InvalidInputException {
-        performChecks(input);
 
-        final Matcher matcher = AddCommand.ADD_ENTRY_COMMAND_FORMAT.matcher(input);
-        boolean isMatch = matcher.matches();
-
-        assert isMatch : "Command should match format.";
-
-        final String date = matcher.group("date").trim();
-        final String species = matcher.group("species").trim();
-        final String name = matcher.group("name").trim();
-        String remark = matcher.group("remark");
-
-        if (remark == null) {
-            remark = "";
+        final Matcher matcherInteractive = AddCommand.ADD_INTERACTIVE_COMMAND_FORMAT.matcher(input);
+        if (matcherInteractive.matches()) {
+            handleInteractive();
         } else {
-            remark = remark.trim();
+            // Default case
+            performChecks(input);
+
+            final Matcher matcherDefault = AddCommand.ADD_DEFAULT_COMMAND_FORMAT.matcher(input);
+            boolean isMatch = matcherDefault.matches();
+
+            assert isMatch : "Command should match format.";
+
+            date = matcherDefault.group("date").trim();
+            species = matcherDefault.group("species").trim();
+            name = matcherDefault.group("name").trim();
+            remark = matcherDefault.group("remark");
+
+            if (remark == null) {
+                remark = "";
+            } else {
+                remark = remark.trim();
+            }
         }
 
         Entry newEntry = new Entry(date, species, name, remark);
 
         return new AddCommand(newEntry);
+    }
+
+    /**
+     * Handle interactive add command, which prompts user for each item required
+     * in an entry.
+     */
+    private void handleInteractive() throws InvalidInputException {
+        Scanner scanner = new Scanner(System.in);
+        String input;
+
+        for (String item : ENTRY_ITEMS) {
+            String promptMessage = String.format("Please input the %s you would like to set, or q/ to quit.", item);
+            if (item.equals("remark")) {
+                promptMessage += "\n(Hit Enter to leave this field blank)";
+            }
+
+            input = getItem(scanner, promptMessage, item);
+
+            switch (item) {
+            case "date":
+                date = input;
+                break;
+            case "species":
+                species = input;
+                break;
+            case "name":
+                name = input;
+                break;
+            case "remark":
+                remark = input;
+                break;
+            default:
+            }
+        }
+    }
+
+    private String getItem(Scanner scanner, String promptMessage, String item) throws InvalidInputException {
+        String inputBuffer;
+        boolean isValid = false;
+
+        do {
+            System.out.print(promptMessage);
+            System.out.println(": ");
+
+
+            inputBuffer = scanner.nextLine().trim();
+            isValid = true;
+
+            // check if user q/uits early
+            if (inputBuffer.equals("q/")) {
+                throw new InvalidInputException("Exited add command");
+            }
+
+            // check that fields are not empty
+            if (!item.equals("remark")) {
+                if (inputBuffer.isEmpty()) {
+                    isValid = false;
+                    System.out.println("Field cannot be left blank.");
+                }
+            }
+
+            // if date, check validity of date
+            if (item.equals("date")) {
+                if (!DateChecker.isDateValid(inputBuffer)) {
+                    isValid = false;
+                    System.out.println("Please key in a valid date.");
+                }
+            }
+
+            // check that no /
+            if (inputBuffer.contains("/")) {
+                isValid = false;
+                System.out.println("Your input should not contain /.");
+            }
+
+        } while (!isValid);
+
+        return inputBuffer;
     }
 
     /**
@@ -49,7 +145,7 @@ public class AddCommandParser implements Parser<AddCommand> {
      * @throws InvalidInputException thrown if the input does not adhere to command format.
      */
     private void performChecks(String input) throws InvalidInputException {
-        final Matcher matcher = ADD_ENTRY_COMMAND_FORMAT_CHECK.matcher(input);
+        final Matcher matcher = ADD_DEFAULT_COMMAND_FORMAT_CHECK.matcher(input);
         if (!matcher.matches()) {
             throw new InvalidInputException(InvalidInputErrorType.INVALID_INPUT);
         }

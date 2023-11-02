@@ -2,8 +2,6 @@ package seedu.wildwatch.parser;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.EditCommand;
 import seedu.wildwatch.entry.EntryList;
@@ -22,7 +20,7 @@ public class EditCommandParser {
     public Command parse(String input) throws InvalidInputException {
         performChecks(input);
 
-        final Matcher matcher = AddCommand.ADD_ENTRY_COMMAND_FORMAT.matcher(input);
+        final Matcher matcher = EditCommand.EDIT_ENTRY_COMMAND_FORMAT.matcher(input);
         boolean isMatch = matcher.matches();
         assert isMatch : "Command should match format.";
 

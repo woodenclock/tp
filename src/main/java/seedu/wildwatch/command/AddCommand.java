@@ -1,3 +1,4 @@
+//@@lctxct
 package seedu.wildwatch.command;
 
 import java.util.regex.Pattern;
@@ -15,12 +16,15 @@ public class AddCommand extends Command {
 
     public static final String COMMAND_WORD = "add";
 
-    public static final Pattern ADD_ENTRY_COMMAND_FORMAT =
+    public static final Pattern ADD_DEFAULT_COMMAND_FORMAT =
             Pattern.compile("add"
                     + "\\s* D/\\s*(?<date>[^/]+)"
                     + "\\s* S/\\s*(?<species>[^/]+)"
                     + "\\s* N/\\s*(?<name>[^/]+)"
                     + "\\s*(?: R/\\s*(?<remark>[^/]+)\\s*)?");
+
+    public static final Pattern ADD_INTERACTIVE_COMMAND_FORMAT =
+            Pattern.compile("add\\s+i/\\s*");
 
     private final Entry newEntry;
 

@@ -9,5 +9,5 @@ public enum InvalidInputErrorType {
     ENTRY_NOT_FOUND,
     INVALID_DATE,
     INVALID_INDEX,
-    INVALID_INPUT,
+    INVALID_INPUT
 }
