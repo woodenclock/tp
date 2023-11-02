@@ -131,11 +131,8 @@ The **_Generic Sequence Diagram_** above shows a shows how the components in the
 ### Parser component 
 The `Parser` component is responsible for for parsing an input from the user, and returns an `XYZCommand` class. 
 
-### Command component 
-//TODO: incomplete
-For the diagram below, the command `add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper` has been substituted by `input`. 
-
-![](diagrams/AddSequenceDiagram.svg)
+### Command component
+![](images/AddSequenceDiagram.png)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
