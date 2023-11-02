@@ -43,7 +43,9 @@ public class EditCommandParser {
         }
 
         checkIndex(matcher);
-        checkDate(matcher);
+        if (!(matcher.group("date") == null)) {
+            checkDate(matcher);
+        }
 
         //Checks if there is any change to edit
         if ((matcher.group("date") == null) && (matcher.group("species") == null) &&
