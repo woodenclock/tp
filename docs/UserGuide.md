@@ -102,6 +102,7 @@ Format: `add i/`
 
 ![image](https://github.com/lctxct/tp/assets/70379887/21db0b5d-1f76-40b0-a73d-92fbc5204b04)
 
+[⬆ Back to top](#table-of-contents)
 
 ### 2. Deleting Entries: `delete`
 Deletes an entry. 
@@ -118,7 +119,6 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-  
   
 ### 3. Listing Entries: `list`
 Shows a list of all entries of wildlife in the WildWatch so far.
