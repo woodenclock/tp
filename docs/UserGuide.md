@@ -183,6 +183,7 @@ We also guide you through the process of selecting the columns that you want to 
 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
+[⬆ Back to top](#table-of-contents)
     
 ### 7. Getting Help : `help`
 Shows the user how to use all the commands.
