@@ -71,7 +71,7 @@ public class AddCommandParser implements Parser<AddCommand> {
         for (String item : ENTRY_ITEMS) {
             String promptMessage = String.format("Please input the %s you would like to set, or q/ to quit.", item);
             if (item.equals("remark")) {
-                promptMessage += "(Hit Enter to leave this field blank)";
+                promptMessage += "\n(Hit Enter to leave this field blank)";
             }
 
             input = getItem(scanner, promptMessage, item);
