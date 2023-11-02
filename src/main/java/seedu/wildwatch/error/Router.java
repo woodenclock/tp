@@ -26,10 +26,10 @@ import seedu.wildwatch.parser.FindCommandParser;
 /**
  * Identifies the input command and sends it to the corresponding parser.
  */
-public class ErrorChecker {
-    private static final Logger LOGGER = Logger.getLogger(ErrorChecker.class.getName());
+public class Router {
+    private static final Logger LOGGER = Logger.getLogger(Router.class.getName());
 
-    public static Command checkError(String input) throws InvalidInputException {
+    public static Command route (String input) throws InvalidInputException {
 
         LOGGER.log(Level.INFO, "Managing entry for input: {0}", input);
         Scanner bufferScanner = new Scanner(input);     //Scanner for the buffer
