@@ -107,7 +107,7 @@ public class AddCommandParser implements Parser<AddCommand> {
             isValid = true;
 
             // check if user q/uits early
-            if (inputBuffer.contains("q/")) {
+            if (inputBuffer.equals("q/")) {
                 throw new InvalidInputException("Exited add command");
             }
 
@@ -128,9 +128,9 @@ public class AddCommandParser implements Parser<AddCommand> {
             }
 
             // check that no /
-            if (item.contains("/")) {
+            if (inputBuffer.contains("/")) {
                 isValid = false;
-                System.out.println("Your input should not contain \"\\\".");
+                System.out.println("Your input should not contain /.");
             }
 
         } while (!isValid);
