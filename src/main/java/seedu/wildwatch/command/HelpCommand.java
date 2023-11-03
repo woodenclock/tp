@@ -107,10 +107,20 @@ public class HelpCommand extends Command {
         System.out.println(needHelpPage);
     }
 
+    /**
+     * Print specific help message based on the command specified
+     *
+     * @return String helpPage
+     */
     public static String getHelpPage() {
         return helpPage;
     }
 
+    /**
+     * Print specific help message based on the command specified
+     *
+     * @param command command
+     */
     public void printMessageForCommand(String command) {
         switch(command) {
         case "add":
@@ -137,6 +147,7 @@ public class HelpCommand extends Command {
     }
     /**
      * Prints out help page
+     *
      */
     public void execute() {
         if( input.isEmpty() ) {
