@@ -9,14 +9,14 @@
 - [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#quick-start-)
 - [Design & Implementation](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#design--implementation-)
 - [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope-)
-  - [Target User Profile](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#target-user-profile)
-  - [Value Proposition](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#value-proposition)
-- [User Story](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#user-stories)
-- [Non-Funtional Requirements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#non-functional-requirements)
-- [Manual Testing](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#manual-testing)
-- [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary)
-- [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary)
-- [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements)
+    - [Target User Profile](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#target-user-profile)
+    - [Value Proposition](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#value-proposition)
+- [User Stories](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#user-stories-)
+- [Non-Funtional Requirements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#non-functional-requirements-)
+- [Manual Testing](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#manual-testing-)
+- [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary-)
+- [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-)
+- [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements-)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -142,7 +142,6 @@ The `Parser` component is responsible for for parsing an input from the user, an
 
 ## Product scope 🦁
 
-
 ### Target user profile
 
 Target user profile for WildWatch is the clerks working in wildlife reserves, who manages the wildlife data.
@@ -178,9 +177,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-## Non-Functional Requirements
+## Non-Functional Requirements 🐯
 
 {Give non-functional requirements}
 
@@ -188,8 +185,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-
-## Manual Testing
+## Manual Testing 🐼
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
@@ -197,21 +193,24 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Command Summary
+## Command Summary 🐱
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Glossary
+## Glossary 🐨
+We are here to help you with terminologies used in the user guide, that may not be familiar to you.
 
-* *glossary item* - Definition
+| Terminology    | Meaning                                                     |
+| -------------- |------------------------------------------------------------|
+| Command Line Interface   | A way to communicate with your computer using texts. |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Acknowledgements  
+## Acknowledgements 🐻‍❄️
 [woodenclock](https://github.com/woodenclock/ip.git) - Reference  
 [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
 Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch!  
