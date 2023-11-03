@@ -17,11 +17,7 @@ import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.parser.AddCommandParser;
-import seedu.wildwatch.parser.DeleteCommandParser;
-import seedu.wildwatch.parser.EditCommandParser;
-import seedu.wildwatch.parser.ExportCommandParser;
-import seedu.wildwatch.parser.FindCommandParser;
+import seedu.wildwatch.parser.*;
 
 /**
  * Identifies the input command and sends it to the corresponding parser.
@@ -57,7 +53,7 @@ public class Router {
             return new ListCommand();
         case SummaryCommand.COMMAND_WORD:
             LOGGER.log(Level.INFO, "Summary command was input: {0}", input);
-            return new SummaryCommand(input);
+            return new SummaryCommandParser().parse(input);
         case ExportCommand.COMMAND_WORD:
             LOGGER.log(Level.INFO, "Export command was input: {0}", input);
             return new ExportCommandParser().parse(input);

@@ -17,13 +17,18 @@ public class SummaryCommand extends Command {
 
     public static final String COMMAND_WORD = "summary";
 
-    //TODO[PARSER]: REMOVE LATER
-    private String input;
+    private String speciesName;
 
-    public SummaryCommand(String input) {
-        this.input = input;
+    public SummaryCommand(String speciesName) {
+        this.speciesName = speciesName;
     }
 
+    /**
+     * Group the wildlife entries by their species
+     *
+     * @param entries
+     * @return A map of the wildlife entries grouped by their species
+     */
     private static Map<String, List<Entry>> groupEntriesBySpecies(List<Entry> entries) {
 
         Map<String, List<Entry>> map = new HashMap<String, List<Entry>>();
@@ -40,6 +45,13 @@ public class SummaryCommand extends Command {
         }
         return map;
     }
+
+    /**
+     * Group a set of wildlife entries by their name
+     *
+     * @param filteredEntries
+     * @return A map of filteredEntries grouped by their name
+     */
     private static Map<String, List<Entry>> groupSpecieByName(List<Entry> filteredEntries) {
         Map<String, List<Entry>> filteredMap = new HashMap<String, List<Entry>>();
 
@@ -57,9 +69,7 @@ public class SummaryCommand extends Command {
         return filteredMap;
     }
     public void execute() throws InvalidInputException {
-        String argument = input.replace("summary","").trim();
-        String speciesName = argument;
-        boolean hasArgument = !argument.isEmpty();
+        boolean hasArgument = !this.speciesName.isEmpty();
 
         ArrayList<Entry> entries = EntryList.getArray();
         // Group entries by .species attribute
