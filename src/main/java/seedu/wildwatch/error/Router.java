@@ -17,7 +17,12 @@ import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.parser.*;
+import seedu.wildwatch.parser.SummaryCommandParser;
+import seedu.wildwatch.parser.AddCommandParser;
+import seedu.wildwatch.parser.DeleteCommandParser;
+import seedu.wildwatch.parser.EditCommandParser;
+import seedu.wildwatch.parser.ExportCommandParser;
+import seedu.wildwatch.parser.FindCommandParser;
 
 /**
  * Identifies the input command and sends it to the corresponding parser.

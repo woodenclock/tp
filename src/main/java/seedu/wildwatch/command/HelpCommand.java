@@ -119,8 +119,7 @@ public class HelpCommand extends Command {
     /**
      * Print specific help message based on the command specified
      *
-     * @param command
-     * @return void
+     * @param command command
      */
     public void printMessageForCommand(String command) {
         switch(command) {
