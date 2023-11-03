@@ -1,12 +1,14 @@
 # WildWatch Developer Guide 🦣
 
 ## Table of Contents  
-- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#introduction)
+- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#introduction-)
     - [Purpose](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#purpose)
     - [Audience](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#audience)
     - [How to use the Developer Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#how-to-use-the-developer-guide)
+    - [Legend](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#legend)
+- [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#quick-start-)
 - [Design & Implementation](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#design--implementation-)
-- [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope)
+- [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope-)
   - [Target User Profile](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#target-user-profile)
   - [Value Proposition](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#value-proposition)
 - [User Story](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#user-stories)
@@ -138,7 +140,7 @@ The `Parser` component is responsible for for parsing an input from the user, an
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Product scope
+## Product scope 🦁
 
 
 ### Target user profile
@@ -162,7 +164,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## User Stories
+## User Stories 🦊
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
