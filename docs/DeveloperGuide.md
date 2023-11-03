@@ -210,7 +210,7 @@ We are here to help you with terminologies used in the user guide, that may not 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## Acknowledgements 🐻‍❄️
+## Acknowledgements 🐶
 [woodenclock](https://github.com/woodenclock/ip.git) - Reference  
 [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
 Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch!  
