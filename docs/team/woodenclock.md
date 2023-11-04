@@ -1,7 +1,10 @@
 # Lee Sungmin's Project Portfolio Page 🦈
   
-## Table of Contents 
-- [Overview](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#overview)
+## Table of Contents  
+- [Overview](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#overview)  
+- [Summary of Contribution](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#summary-of-contributions)  
+    - [Code Contributed](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#code-contributed)  
+    - [Enhancements implemented](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#enhancements-implemented)  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
   
