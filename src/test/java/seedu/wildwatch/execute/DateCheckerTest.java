@@ -2,7 +2,6 @@ package seedu.wildwatch.execute;
 
 import org.junit.jupiter.api.Test;
 import seedu.wildwatch.error.DateChecker;
-import seedu.wildwatch.ui.LinePrinter;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
