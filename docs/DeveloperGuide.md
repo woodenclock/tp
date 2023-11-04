@@ -38,7 +38,7 @@ No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/t
 - Lost among the pages?  
 Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents) to look for the right pages.  
 - Need help with the functionalities?  
-Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#features-) page for detailed guidance.  
+Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.  
 - Do you have a question for us?  
 Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#faq-) page.  
 - Do you want a concise summary of all functionalities?  
