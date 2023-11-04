@@ -1,3 +1,4 @@
+//@@woodenclock
 package seedu.wildwatch.storage;
 
 import seedu.wildwatch.entry.Entry;
@@ -25,6 +26,7 @@ public class EntryToStringConverter {
 
         return String.format("%s / %s / %s / %s", date, species, name, remark);
     }
+    //@@woodenclock
 
     public static String toCSVString(Entry entry, int id, ArrayList<String> columns) {
         assert entry != null : "Trying to convert a null entry to file string.";
