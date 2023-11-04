@@ -19,4 +19,7 @@ Its main job is to store and present animal data, this would make your job so mu
 
 ### Code Contributed
 To view the codes that I have contributed to the team project WildWatch, click [here](https://nus-cs2113-ay2324s1.github.io/tp-dashboard/?search=woodenclock&breakdown=true).  
-
+  
+### Enhancements implemented  
+1. Organizing all classes into their repective packages (e.g., `ui`, `execute`, etc).
+2. 
