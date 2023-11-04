@@ -40,7 +40,7 @@ Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/Deve
 - Need help with the functionalities?  
 Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.  
 - Do you have a question for us?  
-Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#faq-) page.  
+Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page in the User Guide.  
 - Do you want a concise summary of all functionalities?  
 Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
