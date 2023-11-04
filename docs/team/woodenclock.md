@@ -35,8 +35,12 @@ To view the codes that I have contributed to the team project WildWatch, click [
 9. Created `EmptyDescriptionPrinter`, `EntryPrinter`, `ErrorPrinter`, `FilePrinter`, `InputConsole`, `LinePrinter`, `ListCommandPrinter`, `SearchResultPrinter` classes in Ui Package.
   
 ### Contributions to User Guide  
-1. Created `Table of Contents`, ensured all links are working.
-2. Created Into
+1. Created `Table of Contents` Section, ensured all links are working.  
+2. Created `Intoduction` Section, which includes Welcome Message, Description, How to use UG, and Legend.  
+3. Created `Quick Start` Section, which guides new comers on how to get WildWatch up and running.
+4. Created `Listing Entries` Sub-Section.
+5. Created `FAQ` Section.
+6. Created `Glossary` Section. 
   
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#table-of-contents)  
   
