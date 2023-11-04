@@ -145,7 +145,7 @@ The `Parser` component is responsible for for parsing an input from the user, an
 ### Target user profile
 
 Target user profile for WildWatch is the clerks working in wildlife reserves, who manages the wildlife data.
-Since our program is interacted through the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary), someone who can type fast will definitely benefit from WildWatch.
+Since our program is interacted through the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-), someone who can type fast will definitely benefit from WildWatch.
 This would significantly boost one's productivity.
 Since clerks are already accustomed to typing and working with a computer, this program would be ideal for this user profile.
 
