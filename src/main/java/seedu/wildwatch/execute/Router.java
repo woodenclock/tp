@@ -1,5 +1,5 @@
 //@@woodenclock
-package seedu.wildwatch.error;
+package seedu.wildwatch.execute;
 
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -16,6 +16,7 @@ import seedu.wildwatch.command.ExportCommand;
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 
+import seedu.wildwatch.error.InvalidInputErrorType;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.parser.SummaryCommandParser;
 import seedu.wildwatch.parser.AddCommandParser;
