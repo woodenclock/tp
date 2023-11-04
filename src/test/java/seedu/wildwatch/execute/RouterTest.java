@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 import seedu.wildwatch.exception.InvalidInputException;
 
-public class EntryHandlerTest {
+public class RouterTest {
 
     @BeforeEach
     public void setUp() {

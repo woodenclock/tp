@@ -7,7 +7,7 @@ import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.command.ByeCommand;
 import seedu.wildwatch.ui.InputConsole;
 import seedu.wildwatch.ui.LinePrinter;
-import seedu.wildwatch.ui.Ui;
+import seedu.wildwatch.ui.InputPromptPrinter;
 
 public class InputHandler {
     private static final Logger LOGGER = Logger.getLogger(InputHandler.class.getName());
@@ -19,7 +19,7 @@ public class InputHandler {
     public static void handleInput() {
         boolean loopFlag = true;
         while (loopFlag) {
-            Ui.inputPromptPrinter();
+            InputPromptPrinter.inputPromptPrinter();
             String input = InputConsole.inputRetriever(); //Retrieves input of user
             if (!input.equals("bye")) {
                 LinePrinter.printHorizontalLines();

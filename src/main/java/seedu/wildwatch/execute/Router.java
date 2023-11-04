@@ -33,7 +33,7 @@ public class Router {
 
     public static Command route (String input) throws InvalidInputException {
 
-        LOGGER.log(Level.INFO, "Managing entry for input: {0}", input);
+        LOGGER.log(Level.INFO, "Routing entry for input: {0}", input);
         Scanner bufferScanner = new Scanner(input);     //Scanner for the buffer
         if (!bufferScanner.hasNext()) {
             throw new InvalidInputException(InvalidInputErrorType.EMPTY_INPUT);
