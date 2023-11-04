@@ -92,8 +92,6 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
-
 #### 1.2 Interactive Mode: `add i/`
 If you're prone to forgetting fields to include in the `add` command, have no fear, we've got your back! You may choose to use the `add i/` command instead, which triggers the interactive add mode. 
 It helpfully prompts you for data each step of the way, and notifies you when you've left a mandatory field blank, so you don't have to worry about getting it wrong!
