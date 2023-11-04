@@ -37,10 +37,16 @@ To view the codes that I have contributed to the team project WildWatch, click [
 ### Contributions to User Guide  
 1. Created `Table of Contents` Section, ensured all links are working.  
 2. Created `Intoduction` Section, which includes Welcome Message, Description, How to use UG, and Legend.  
+3. Created `Quick Start` Section, which guides new comers on how to get WildWatch up and running.  
+4. Created `Listing Entries` Sub-Section.  
+5. Created `FAQ` Section.  
+6. Created `Glossary` Section.  
+
+### Contributions to Developer Guide  
+1. Created `Table of Contents` Section, ensured all links are working.  
+2. Created `Intoduction` Section, which includes Welcome Message, Description, Purpose, Audience, and Legend.  
 3. Created `Quick Start` Section, which guides new comers on how to get WildWatch up and running.
-4. Created `Listing Entries` Sub-Section.
-5. Created `FAQ` Section.
-6. Created `Glossary` Section. 
+4. Created `System Architecture`, `Architecture Diagram`, `General Sequence Diagram` and their respective descriptions.  
   
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#table-of-contents)  
   
