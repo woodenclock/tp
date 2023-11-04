@@ -1,52 +1,59 @@
 package seedu.wildwatch.execute;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+
+import seedu.wildwatch.command.AddCommand;
+import seedu.wildwatch.command.Command;
+import seedu.wildwatch.command.DeleteCommand;
+import seedu.wildwatch.command.ListCommand;
+import seedu.wildwatch.entry.Entry;
+import seedu.wildwatch.exception.InvalidInputException;
+
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import seedu.wildwatch.exception.InvalidInputException;
+import static seedu.wildwatch.entry.EntryList.addEntry;
+import static seedu.wildwatch.entry.EntryList.clearEntry;
 
 public class RouterTest {
 
+    static final String ADD_INPUT = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
+
     @BeforeEach
     public void setUp() {
-        // Set up necessary mocks, initial data, etc.
+        clearEntry();
+        addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
     }
 
     @Test
-    public void testAddEntryFromFile() {
-        String input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
-        assertDoesNotThrow(() -> Router.route(input));
+    public void route_addCommand_returnsAddCommandInstance() {
+        Command result = assertDoesNotThrow(() -> Router.route(ADD_INPUT));
+        assertTrue(result instanceof AddCommand);
     }
 
     @Test
-    public void testAddEntryNotFromFile() {
-        String input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
-        assertDoesNotThrow(() -> Router.route(input));
+    public void route_deleteCommandWithValidIndex_returnsDeleteCommandInstance() {
+        Command result = assertDoesNotThrow(() -> Router.route("delete 1"));
+        assertTrue(result instanceof DeleteCommand);
     }
 
     @Test
-    public void testDeleteEntryWithValidNumber() {
-        CommandHandler.processCommand("add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper");
-        String input = "delete 1"; // 1 is a valid entry number.
-        assertDoesNotThrow(() -> Router.route(input));
-    }
-
-    @Test
-    public void testDeleteEntryWithInvalidNumber() {
+    public void route_deleteCommandWithInvalidIndex_throwsInvalidInputException() {
         String input = "delete -5"; // Negative numbers should be invalid.
         assertThrows(InvalidInputException.class, () -> Router.route(input));
     }
 
     @Test
-    public void testListEntry() {
+    public void route_listCommand_returnsListCommandInstance() {
         String input = "list";
-        assertDoesNotThrow(() -> Router.route(input));
+        Command result = assertDoesNotThrow(() -> Router.route(input));
+        assertTrue(result instanceof ListCommand);
     }
 
     @Test
-    public void testInvalidCommand() {
+    public void route_invalidCommandInput_throwsInvalidInputException() {
         String input = "invalidCommand";
         assertThrows(InvalidInputException.class, () -> Router.route(input));
     }

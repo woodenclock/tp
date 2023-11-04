@@ -31,7 +31,7 @@ import seedu.wildwatch.parser.FindCommandParser;
 public class Router {
     private static final Logger LOGGER = Logger.getLogger(Router.class.getName());
 
-    public static Command route (String input) throws InvalidInputException {
+    public static Command route(String input) throws InvalidInputException {
 
         LOGGER.log(Level.INFO, "Routing entry for input: {0}", input);
         Scanner bufferScanner = new Scanner(input);     //Scanner for the buffer
