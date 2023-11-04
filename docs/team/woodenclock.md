@@ -25,14 +25,18 @@ To view the codes that I have contributed to the team project WildWatch, click [
   
 ### Enhancements implemented  
 1. Organizing all class files into their repective packages (e.g., `ui`, `execute`, etc).  
-2. Created List, Find, Bye classes in Command Package.  
-3. Created the Entry and EntryList classes in Entry Package.  
-4. Created DateChecker and ErrorHandler (skeleton was enhanced by [Cai Ting](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/lctxct.html)) classes in Error Package.  
-5. Created InputHandler and CommandHandler classes in Execute Package.  
-6. Created BootUp, ShutDown, and LogHandler classes in Miscellaneous Package.  
-7. Created EditCommandParser and FindCommandParser classes in Miscellaneous Package.  
-8. Created ExistenceChecker, FileCreater, FileHandler, FileLoader, Saver, and EntryToStingConverter (half) classes in Storage Package.  
-9. Created EmptyDescriptionPrinter, EntryPrinter, ErrorPrinter, FilePrinter, InputConsole, LinePrinter, ListCommandPrinter, SearchResultPrinter classes in Ui Package.  
+2. Created `List`, `Find`, `Bye` classes in `Command Package`.  
+3. Created the `Entry` and `EntryList` classes in `Entry Package`.  
+4. Created `DateChecker` and `ErrorHandler` (skeleton was enhanced by [Cai Ting](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/lctxct.html)) classes in Error Package.  
+5. Created `InputHandler` and `CommandHandler` classes in Execute Package.  
+6. Created `BootUp`, `ShutDown`, and `LogHandler` classes in Miscellaneous Package.  
+7. Created `EditCommandParser` and `FindCommandParser` classes in Miscellaneous Package.  
+8. Created `ExistenceChecker`, `FileCreater`, `FileHandler`, `FileLoader`, `Saver`, and `EntryToStingConverter` (half) classes in Storage Package.  
+9. Created `EmptyDescriptionPrinter`, `EntryPrinter`, `ErrorPrinter`, `FilePrinter`, `InputConsole`, `LinePrinter`, `ListCommandPrinter`, `SearchResultPrinter` classes in Ui Package.
+  
+### Contributions to User Guide  
+1. Created `Table of Contents`, ensured all links are working.
+2. Created Into
   
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#table-of-contents)  
   
