@@ -1,4 +1,4 @@
-# Lee Sungmin's Portfolio
+# Lee Sungmin's Project Portfolio Page 🦈
 
 ## Project: WildWatch
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
