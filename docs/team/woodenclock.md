@@ -49,7 +49,17 @@ To view the codes that I have contributed to the team project WildWatch, click [
 4. Created `System Architecture`, `Architecture Diagram`, `General Sequence Diagram` Sub-Sections and their respective descriptions.  
 5. Created `Product Scope` Section, which described the `Target User Profile` and `Value Proposition`.
 6. Created `Glossary` and `Acknowledgement` Sections.
-  
+
+### Contributions to Team-Based Tasks  
+1. Set up GitHub team organization and upstream repository.  
+2. Set up foundational codes, on which WildWatch first got up and running.
+3. Set up and maintained `Issue Tracker`, gave constructive feedbacks to Pull Requests, reconciled merge conflicts.
+4. Managed creation and release of `WildWatch.jar` artefacts.  
+
+### Contributions in Reviews/Mentoring  
+1. Constructive comments, reviews, visual aids were given in the [`Pull Request`](https://github.com/AY2324S1-CS2113T-W11-2/tp/pulls?page=3&q=is%3Apr+is%3Aclosed).
+
+
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#table-of-contents)  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
