@@ -22,7 +22,8 @@
 
 ## Introduction 🐻
 
-Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary).  
+Welcome aboard fellow animal lover! We are really excited to have you here! 😉    
+Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-).  
 Its main job is to store and present animal data required in everyday operations of the wildlife reserve.  
 
 ### Purpose
