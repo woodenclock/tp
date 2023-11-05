@@ -1,3 +1,4 @@
+//@@woodenclock
 package seedu.wildwatch.entry;
 
 import org.junit.jupiter.api.Test;

@@ -1,3 +1,4 @@
+//@@woodenclock
 package seedu.wildwatch.command;
 
 import org.junit.jupiter.api.AfterEach;
@@ -8,6 +9,8 @@ import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -15,10 +18,13 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class EditCommandTest {
+    private final PrintStream originalOut = System.out;
+    private final ByteArrayOutputStream mockOutput = new ByteArrayOutputStream();
 
     @BeforeEach
     void setUp() {
         // Set up the EntryList with one entry for editing
+        System.setOut(new PrintStream(mockOutput));
         EntryList.clearEntryList();
         Entry initialEntry = new Entry("01-01-21", "Lion", "Leo", "The leader of the pride");
         EntryList.addEntry(initialEntry);
@@ -27,6 +33,7 @@ class EditCommandTest {
     @AfterEach
     void tearDown() {
         EntryList.clearEntryList();
+        System.setOut(originalOut);
     }
 
     @Test
