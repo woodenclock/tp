@@ -135,19 +135,25 @@ The `Main` component, residing as a method in the `WildWatch` class, which is th
 ![Main Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2745b29a-da1d-423e-b460-10f65dbc8e0d)  
   
 ### UI Package  
-The UI components can be found within the UI package.  
+The `UI` components can be found within the `UI` package.  
 It prompts and reads commands from the user and sends the command to `Execute` package to be executed.  
 Lastly, it prints an output message upon completion of the command, to show the success of failure of the command execution.  
   
-![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)
+![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)  
   
 ### Parser Package 
-The `Parser` component is responsible for parsing an input from the user, and returns an `XYZCommand` class. 
+The `Parser` components can be found within the `Parser` package.  
+It is responsible for parsing the input String of the user, and returning an appropriate `XYZCommand` class.  
+If the input is invalid, it throws exceptions to the `Error` package for error handling.  
+  
+![Parser Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1c8a8ae1-a14d-427f-8ecd-aa5038fb4fc7)
 
-### Command Package
-![](images/AddSequenceDiagram.png)
+  
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+### Command Package  
+![](images/AddSequenceDiagram.png)  
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
