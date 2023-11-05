@@ -17,7 +17,7 @@ public class EditCommandParser {
                     + "\\s*(?<dprefix> D/)?\\s*(?<date>[^/]+)?"
                     + "\\s*(?<sprefix> S/)?\\s*(?<species>[^/]+)?"
                     + "\\s*(?<nprefix> N/)?\\s*(?<name>[^/]+)?"
-                    + "\\s*(?: R/(?<remark>[^/]+))?");
+                    + "\\s*(?: R/(?<remark>[^/]*))?");
 
     public Command parse(String input) throws InvalidInputException {
         performChecks(input);

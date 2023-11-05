@@ -19,7 +19,7 @@ public class EditCommand extends Command {
                     + "( D/(?<date>[^/]+))?"
                     + "( S/(?<species>[^/]+))?"
                     + "( N/(?<name>[^/]+))?"
-                    + "(?: R/(?<remark>[^/]+))?");
+                    + "(?: R/(?<remark>[^/]*))?");
     private String input;
 
     public EditCommand(String input) {
