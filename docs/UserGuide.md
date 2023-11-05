@@ -80,7 +80,7 @@ Some example commands you can try:
 > ❗ IMPORTANT  
 > * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
 > * E.g., `delete <INDEX>` should be `delete 2`  
-> * Anything between curly brackets `{ }` are optional blocks that may or may not be filled up by the user.  
+> * Anything between curly brackets `{ }` are optional [blocks](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) that may or may not be filled up by the user.  
 > * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
   
   
@@ -144,17 +144,17 @@ Example:
   
   
 ### 4. Editing Entries: `edit`
-Edits an entry in the program.
-
-Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
+Edits an entry in the program.  
+  
+Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
   
 >❗ IMPORTANT
 >`<DATE>` should be in the format **DD-MM-YY**
-
-> ✏ Note
 > `I/<INDEX>` argument is required.  
+  
+> ✏ Note  
 > `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, only 1 needs to be filled up.  
-
+  
 Example:
 ```
 edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
@@ -192,9 +192,12 @@ Example:
 ### 6. Exporting your entries: `export` 
 Maybe you need to share the entries you've collected with someone else. In that case, we also provide the option for you to export your data as a Comma Separated Values (CSV) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
 
-Format: `export <FILENAME>`
+Format: `export {<FILENAME>}`
 
-`<FILENAME>` is optional. However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV. If unspecified, your data will be written to the default file `WildWatch.csv`. 
+> ✏ Note  
+> `<FILENAME>` here is optional.  
+> However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV.  
+> If unspecified, your data will be written to the default file `WildWatch.csv`.   
 
 We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. 
 
@@ -234,13 +237,13 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 | Action                    | Format                                                     |
 | ------------------------- | ---------------------------------------------------------- |
 | Getting Help              | `help`                                                     |
-| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
+| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`            |
 | Add Entries (interactive) | `add i/`                                                   |
 | Delete Entries            | `delete <INDEX>`                                           |
-| Edit Entries              | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>` |
-| Summarizing Entries       | `summary <SPECIES>`                                        |
+| Edit Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
+| Summarizing Entries       | `summary {<SPECIES>}`                                        |
 | List Entries              | `list`                                                     |
-| Export Entries            | `export <FILENAME>`                                        |
+| Export Entries            | `export {<FILENAME>}`                                        |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
@@ -252,5 +255,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
+| Block | A part of a command. |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
