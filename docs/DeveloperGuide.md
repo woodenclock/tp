@@ -22,7 +22,8 @@
 
 ## Introduction 🐻
 
-Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary).  
+Welcome aboard fellow animal lover! We are really excited to have you here! 😉    
+Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-).  
 Its main job is to store and present animal data required in everyday operations of the wildlife reserve.  
 
 ### Purpose
@@ -38,9 +39,9 @@ No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/t
 - Lost among the pages?  
 Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents) to look for the right pages.  
 - Need help with the functionalities?  
-Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#features-) page for detailed guidance.  
+Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.  
 - Do you have a question for us?  
-Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#faq-) page.  
+Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page in the User Guide.  
 - Do you want a concise summary of all functionalities?  
 Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
@@ -145,7 +146,7 @@ The `Parser` component is responsible for for parsing an input from the user, an
 ### Target user profile
 
 Target user profile for WildWatch is the clerks working in wildlife reserves, who manages the wildlife data.
-Since our program is interacted through the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary), someone who can type fast will definitely benefit from WildWatch.
+Since our program is interacted through the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-), someone who can type fast will definitely benefit from WildWatch.
 This would significantly boost one's productivity.
 Since clerks are already accustomed to typing and working with a computer, this program would be ideal for this user profile.
 
