@@ -123,9 +123,9 @@ WildWatch is comprised of 7 major components.
 - `EntryList`: A class that stores all the wildlife data, while the program is running.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `Storage`: A class that saves and retrieves all the wildlife data from the local storage
-
-![Architecture Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6bea5165-aa78-4b3e-baf0-2e9ced109161)  
-
+  
+![General Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6cef0c5a-c924-4f20-bf82-3ccee9eb61c0)  
+ 
 The **_Generic Sequence Diagram_** above shows a shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
 > ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
 
