@@ -7,6 +7,22 @@ import seedu.wildwatch.storage.Saver;
 public class EntryList {
     private static ArrayList<Entry> entries = new ArrayList<>(); //Keeps track of all Entry instances made
 
+    public static void addEntry(Entry newEntry) {
+        entries.add(newEntry);
+    }
+
+    public static void clearEntryList(){
+        entries.clear();
+    }
+
+    public static void deleteEntry(int numberInput){
+        entries.remove(numberInput - 1);
+    }
+
+    public static void editEntry(int nthEntry, Entry updatedEntry) {
+        entries.set(nthEntry, updatedEntry);
+    }
+
     public static ArrayList<Entry> getArray() {
         return entries;
     }
@@ -15,24 +31,8 @@ public class EntryList {
         return entries.size();
     }
 
-    public static void addEntry(Entry newEntry) {
-        entries.add(newEntry);
-    }
-
-    public static void deleteEntry(int numberInput){
-        entries.remove(numberInput - 1);
-    }
-
-    public static void clearEntryList(){
-        entries.clear();
-    }
-
     public static Entry getEntry(int nthEntry) {
         return entries.get(nthEntry);
-    }
-
-    public static void editEntry(int nthEntry, Entry updatedEntry) {
-        entries.set(nthEntry, updatedEntry);
     }
 
     public static LocalDate getEntryDate(int nthEntry) {
@@ -56,6 +56,6 @@ public class EntryList {
     }
 
     public static void saveEntry() {
-        Saver.saver(entries);
+        Saver.save(entries);
     }
 }

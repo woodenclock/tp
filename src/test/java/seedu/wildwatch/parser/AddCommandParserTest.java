@@ -81,13 +81,13 @@ public class AddCommandParserTest {
         // D/ prefix is not present
         final String testInput1 = "add S/Annam Leaf Turtle N/Ariel R/Injured left flipper";
         InvalidInputException exception1 = assertThrows(InvalidInputException.class, () -> parser.parse(testInput1));
-        assertEquals(exception1.getError(), InvalidInputErrorType.INVALID_INPUT);
+        assertEquals(exception1.getError(), InvalidInputErrorType.CUSTOM);
         assertEquals(exception1.getCustomMessage(), "D/ is not defined");
 
         // date is not specified
         final String testInput2 = "add D/ S/Annam Leaf Turtle N/Ariel R/Injured left flipper";
         InvalidInputException exception2 = assertThrows(InvalidInputException.class, () -> parser.parse(testInput2));
-        assertEquals(exception2.getError(), InvalidInputErrorType.INVALID_INPUT);
+        assertEquals(exception2.getError(), InvalidInputErrorType.CUSTOM);
         assertEquals(exception2.getCustomMessage(), "Date value cannot be empty.");
 
         // date is not in a correct format
@@ -99,25 +99,25 @@ public class AddCommandParserTest {
         // S/ prefix is not present
         final String testInput4 = "add D/02-03-23 N/Ariel R/Injured left flipper";
         InvalidInputException exception4 = assertThrows(InvalidInputException.class, () -> parser.parse(testInput4));
-        assertEquals(exception4.getError(), InvalidInputErrorType.INVALID_INPUT);
+        assertEquals(exception4.getError(), InvalidInputErrorType.CUSTOM);
         assertEquals(exception4.getCustomMessage(), "S/ is not defined");
 
         // species is not specified
         final String testInput5 = "add D/02-03-23 S/ N/Ariel R/Injured left flipper";
         InvalidInputException exception5 = assertThrows(InvalidInputException.class, () -> parser.parse(testInput5));
-        assertEquals(exception5.getError(), InvalidInputErrorType.INVALID_INPUT);
+        assertEquals(exception5.getError(), InvalidInputErrorType.CUSTOM);
         assertEquals(exception5.getCustomMessage(), "Species is not defined.");
 
         // N/ prefix is not present
         final String testInput6 = "add D/02-03-23 S/Annam Leaf Turtle R/Injured left flipper";
         InvalidInputException exception6 = assertThrows(InvalidInputException.class, () -> parser.parse(testInput6));
-        assertEquals(exception6.getError(), InvalidInputErrorType.INVALID_INPUT);
+        assertEquals(exception6.getError(), InvalidInputErrorType.CUSTOM);
         assertEquals(exception6.getCustomMessage(), "N/ is not defined");
 
         // name is not specified
         final String testInput7 = "add D/02-03-23 S/Annam Leaf Turtle N/ R/Injured left flipper";
         InvalidInputException exception7 = assertThrows(InvalidInputException.class, () -> parser.parse(testInput7));
-        assertEquals(exception7.getError(), InvalidInputErrorType.INVALID_INPUT);
+        assertEquals(exception7.getError(), InvalidInputErrorType.CUSTOM);
         assertEquals(exception7.getCustomMessage(), "Name is not defined");
 
     }

@@ -1,5 +1,6 @@
 package seedu.wildwatch.execute;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -23,8 +24,15 @@ public class RouterTest {
 
     @BeforeEach
     public void setUp() {
+        // This is executed before each test.
         clearEntryList();
         addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
+    }
+
+    @AfterEach
+    public void tearDown() {
+        // This is executed after each test.
+        clearEntryList();
     }
 
     @Test
