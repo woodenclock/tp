@@ -46,6 +46,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
  Symbol         | Meaning
  -------------- |------------------------------------------------------------
  ❗ IMPORTANT   | These are important instructions that you should follow.  
+ ✏ Note   | These are important details that you should take note of.   
  ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
@@ -76,23 +77,28 @@ Some example commands you can try:
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features 🦊
-> ❗ IMPORTANT
-> * Capitalized words between angle brackets `< >` are information to be written appropriately by the user.
-> * E.g., `delete <INDEX>` should be `delete 2`
+> ❗ IMPORTANT  
+> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
+> * E.g., `delete <INDEX>` should be `delete 2`  
+> * Anything between curly brackets `{ }` are optional blocks that may or may not be filled up by the user.  
+> * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
   
   
 ### 1. Adding Entries: `add`
 Adds a new entry to the system.
 
 #### 1.1 Standard Mode 
-Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
+Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
 
-`<date>` should be in the format **DD-MM-YY**
+`<DATE>` should be in the format **DD-MM-YY**
 
 Examples:
 * `add D/02-03-23 S/Annam Leaf Turtle N/Ariel`
-* `add D/02-03-23 S/Low Land Gorilla N/Strong One R/Aggressive`
+* `add D/02-03-23 S/Low Land Gorilla N/Strong One {R/Aggressive}`
 
+> ✏ Note  
+> `R/<REMARKS>` here is optional, meaning they may be left as blank.  
+  
 Expected output:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
 
@@ -109,7 +115,7 @@ Format: `add i/`
 ### 2. Deleting Entries: `delete`
 Deletes an entry. 
 
-Format: `delete INDEX`
+Format: `delete <INDEX>`
 Deletes the entry at the specified INDEX. 
 The index refers to the index number shown in the displayed entry list.
 
@@ -138,8 +144,8 @@ Example:
 ### 4. Editing Entries: `edit`
 Edits an entry in the system.
 
-Format: `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
-`<date>` should be in the format **DD-MM-YY**
+Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
+`<DATE>` should be in the format **DD-MM-YY**
 
 `I/<INDEX>` argument is required.
 
@@ -165,10 +171,12 @@ ____________________________________________________________
 ### 5. Summarizing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system by the species type.
 
-Format: `summary <SPECIES>`
-
-`<SPECIES>` argument is optional. When specified, it will show a summary of the wildlife recorded for the specified species.
-
+Format: `summary {<SPECIES>}`
+  
+> ✏ Note  
+> `<SPECIES>` here is optional.  
+> When specified, it will show a summary of the wildlife recorded for the specified species.  
+  
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
