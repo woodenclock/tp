@@ -97,7 +97,7 @@ Examples:
 * `add D/02-03-23 S/Low Land Gorilla N/Strong One {R/Aggressive}`
 
 > ✏ Note  
-> `R/<REMARKS>` here is optional, meaning they may be left as blank.  
+> `R/<REMARKS>` here is optional, meaning it may be left as blank.  
   
 Expected output:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
@@ -111,7 +111,8 @@ Format: `add i/`
 ![image](https://github.com/lctxct/tp/assets/70379887/21db0b5d-1f76-40b0-a73d-92fbc5204b04)
 
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 ### 2. Deleting Entries: `delete`
 Deletes an entry. 
 
@@ -127,6 +128,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+  
   
 ### 3. Listing Entries: `list`
 Shows a list of all entries of wildlife in the WildWatch so far.
@@ -147,7 +149,9 @@ Edits an entry in the system.
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
 `<DATE>` should be in the format **DD-MM-YY**
 
-`I/<INDEX>` argument is required.
+> ✏ Note
+> `I/<INDEX>` argument is required.  
+> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, only 1 needs to be filled up.  
 
 Example:
 ```
@@ -181,7 +185,8 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
-
+  
+  
 ### 6. Exporting your entries: `export` 
 Maybe you need to share the entries you've collected with someone else. In that case, we also provide the option for you to export your data as a Comma Separated Values (CSV) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
 
@@ -194,6 +199,7 @@ We also guide you through the process of selecting the columns that you want to 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
 [⬆ Back to top](#table-of-contents)
+  
     
 ### 7. Getting Help : `help`
 Shows the user how to use all the commands.
