@@ -58,7 +58,7 @@ public class EditCommand extends Command {
         final String name = matcher.group("name");
         final String remark = matcher.group("remark");
         int index = Integer.parseInt(indexStr);
-        if( index <= 0 ) {
+        if( index <= 0 || index > EntryList.getArraySize()) {
             throw new InvalidInputException(InvalidInputErrorType.ENTRY_NOT_FOUND);
         }
         index -= 1; // EntryList is 0 based.
