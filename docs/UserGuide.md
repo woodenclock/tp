@@ -86,16 +86,17 @@ Some example commands you can try:
   
 ### 1. Adding Entries: `add`
 Adds a new entry to the system.
-
+  
 #### 1.1 Standard Mode 
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
-
-`<DATE>` should be in the format **DD-MM-YY**
-
+  
+> ❗ IMPORTANT
+> `<DATE>` should be in the format **DD-MM-YY**
+  
 Examples:
 * `add D/02-03-23 S/Annam Leaf Turtle N/Ariel`
 * `add D/02-03-23 S/Low Land Gorilla N/Strong One {R/Aggressive}`
-
+  
 > ✏ Note  
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.  
   
