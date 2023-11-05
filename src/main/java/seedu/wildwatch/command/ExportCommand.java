@@ -3,6 +3,7 @@ package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
+import seedu.wildwatch.error.FilenameChecker;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.storage.EntryToStringConverter;
 import seedu.wildwatch.storage.FileCreater;
@@ -29,7 +30,7 @@ public class ExportCommand extends Command {
 
     private static final String[] ALL_COLUMNS = new String[] { "date", "species", "name", "remark" };
 
-    private final String filename;
+    private String filename;
 
     /**
      * Constructs a new {@code ExportCommand}.
@@ -55,14 +56,17 @@ public class ExportCommand extends Command {
             throw new InvalidInputException("No entries to write to csv.");
         }
 
+        boolean canReplaceFile = false;
         File file = new File(filename);
-        if (file.exists()) {
-            boolean canReplaceFile = canReplaceFile(filename);
+        do {
+            canReplaceFile = canReplaceFile(filename);
             if (!canReplaceFile) {
-                System.out.println("Exiting export command...");
-                return;
+                filename = getNewFilename();
+                file = new File(filename);
             }
-        } else {
+        } while (file.exists() && !canReplaceFile);
+
+        if (!file.exists()) {
             createFile();
         }
 
@@ -90,7 +94,37 @@ public class ExportCommand extends Command {
             throw new InvalidInputException("Error writing to file.");
         }
 
-        System.out.printf("%s has been written to!%n", filename);
+        System.out.printf("Export to CSV completed successfully."
+                + " Your data has been successfully saved to %s.\n", filename);
+    }
+
+    private String getNewFilename() throws InvalidInputException {
+        String newFilename;
+        Scanner scanner = new Scanner(System.in);
+
+        String specifyNewFilenamePrompt = "Would you like to specify a new filename? (Y/N)";
+        if (!(doesUserApprove(scanner, specifyNewFilenamePrompt))) {
+            throw new InvalidInputException("Exiting export command...");
+        }
+
+        boolean isValidFilename = false;
+        do {
+            System.out.println("What would you like to name your new file?");
+            System.out.println("Input a new filename, or q/ to quit: ");
+
+            newFilename = scanner.nextLine().trim();
+
+            if (newFilename.equals("q/")) {
+                throw new InvalidInputException("Exiting export command...");
+            }
+
+            isValidFilename = FilenameChecker.isValidCsvFilenameChecker(newFilename);
+            if (!isValidFilename) {
+                System.out.print("Filename is invalid! ");
+            }
+        } while (!isValidFilename);
+
+        return newFilename;
     }
 
     /**
