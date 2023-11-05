@@ -79,9 +79,10 @@ Some example commands you can try:
 ## Features 🦊
 > ❗ IMPORTANT  
 > * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
-> * E.g., `delete <INDEX>` should be `delete 2`  
+>     * E.g., `delete <INDEX>` should be `delete 2`  
 > * Anything between curly brackets `{ }` are optional [blocks](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) that may or may not be filled up by the user.  
-> * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
+>     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.
+> * Do be mindful that <DATE> cannot be a date in the future
   
   
 ### 1. Adding Entries: `add`
