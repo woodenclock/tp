@@ -87,7 +87,7 @@ public class ExportCommand extends Command {
 
             writer.write(header + "\n");
             for (int i = 0; i < EntryList.getArraySize(); i++) {
-                writer.write(EntryToStringConverter.toCSVString(entries.get(i), i+1, columnsToInclude));
+                writer.write(EntryToStringConverter.toCsvString(entries.get(i), i+1, columnsToInclude));
             }
             writer.close();
         } catch (IOException e) {
