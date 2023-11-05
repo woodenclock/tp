@@ -1,6 +1,7 @@
 package seedu.wildwatch.error;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 import java.util.logging.Logger;
 
