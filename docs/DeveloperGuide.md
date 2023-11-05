@@ -129,15 +129,20 @@ WildWatch is comprised of 7 major components.
 The **_Generic Sequence Diagram_** above shows a shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
 > ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
 
-### Main component  
-The `Main` component, represented in `WildWatch` class, which is the only class without a package, is the entry point of the program.  
+### Main Component  
+The `Main` component, residing as a method in the `WildWatch` class, which is the only class without a package, is the entry point of the program.  
   
 ![Main Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2745b29a-da1d-423e-b460-10f65dbc8e0d)  
   
-### Parser component 
-The `Parser` component is responsible for for parsing an input from the user, and returns an `XYZCommand` class. 
+### UI Package  
+The UI components can be found within the UI package.  
+It prompts and reads commands from the user and sends the command to `Execute` package to be executed.  
+Lastly, it prints an output message upon completion of the command, to show the success of failure of the command execution.  
 
-### Command component
+### Parser Package 
+The `Parser` component is responsible for parsing an input from the user, and returns an `XYZCommand` class. 
+
+### Command Package
 ![](images/AddSequenceDiagram.png)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
