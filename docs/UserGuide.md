@@ -46,6 +46,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
  Symbol         | Meaning
  -------------- |------------------------------------------------------------
  ❗ IMPORTANT   | These are important instructions that you should follow.  
+ ✏ Note   | These are important details that you should take note of.   
  ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
@@ -76,23 +77,29 @@ Some example commands you can try:
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features 🦊
-> ❗ IMPORTANT
-> * Capitalized words between angle brackets `< >` are information to be written appropriately by the user.
-> * E.g., `delete <INDEX>` should be `delete 2`
+> ❗ IMPORTANT  
+> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
+> * E.g., `delete <INDEX>` should be `delete 2`  
+> * Anything between curly brackets `{ }` are optional [blocks](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) that may or may not be filled up by the user.  
+> * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
   
   
 ### 1. Adding Entries: `add`
 Adds a new entry to the system.
-
+  
 #### 1.1 Standard Mode 
-Format: `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
-
-`<date>` should be in the format **DD-MM-YY**
-
+Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
+  
+> ❗ IMPORTANT
+> `<DATE>` should be in the format **DD-MM-YY**
+  
+> ✏ Note  
+> `R/<REMARKS>` here is optional, meaning it may be left as blank.
+  
 Examples:
 * `add D/02-03-23 S/Annam Leaf Turtle N/Ariel`
-* `add D/02-03-23 S/Low Land Gorilla N/Strong One R/Aggressive`
-
+* `add D/02-03-23 S/Low Land Gorilla N/Strong One {R/Aggressive}`
+  
 Expected output:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
 
@@ -105,27 +112,28 @@ Format: `add i/`
 ![image](https://github.com/lctxct/tp/assets/70379887/21db0b5d-1f76-40b0-a73d-92fbc5204b04)
 
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 ### 2. Deleting Entries: `delete`
-Deletes an entry. 
-
-Format: `delete INDEX`
-Deletes the entry at the specified INDEX. 
-The index refers to the index number shown in the displayed entry list.
-
->❗ IMPORTANT
-> * Index must be a positive integer 1, 2, 3, ...
-> * Deleted items may not be recoverable
+Deletes an entry of the specified INDEX. 
+The index refers to the index number shown in the displayed entry list.  
+  
+Format: `delete <INDEX>`  
+   
+>❗ IMPORTANT  
+> * Index must be a positive integer 1, 2, 3, ...  
+> * Deleted items may not be recoverable  
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
   
+  
 ### 3. Listing Entries: `list`
 Shows a list of all entries of wildlife in the WildWatch so far.
 Shows useful information about each entry.
-Information such as the species, name, age, gender, size, remarks are shown together.
+Information such as the date, species, name, remarks are shown together.
 
 Format: `list` 
 
@@ -136,13 +144,17 @@ Example:
   
   
 ### 4. Editing Entries: `edit`
-Edits an entry in the system.
-
-Format: `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`
-`<date>` should be in the format **DD-MM-YY**
-
-`I/<INDEX>` argument is required.
-
+Edits an entry in the program.  
+  
+Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
+  
+>❗ IMPORTANT
+>`<DATE>` should be in the format **DD-MM-YY**
+> `I/<INDEX>` argument is required.  
+  
+> ✏ Note  
+> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, only 1 needs to be filled up.  
+  
 Example:
 ```
 edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
@@ -165,27 +177,34 @@ ____________________________________________________________
 ### 5. Summarizing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system by the species type.
 
-Format: `summary <SPECIES>`
-
-`<SPECIES>` argument is optional. When specified, it will show a summary of the wildlife recorded for the specified species.
-
+Format: `summary {<SPECIES>}`
+  
+> ✏ Note  
+> `<SPECIES>` here is optional.  
+> When specified, it will show a summary of the wildlife recorded for the specified species.  
+  
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
-
+  
+  
 ### 6. Exporting your entries: `export` 
 Maybe you need to share the entries you've collected with someone else. In that case, we also provide the option for you to export your data as a Comma Separated Values (CSV) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
 
-Format: `export <FILENAME>`
+Format: `export {<FILENAME>}`
 
-`<FILENAME>` is optional. However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV. If unspecified, your data will be written to the default file `WildWatch.csv`. 
+> ✏ Note  
+> `<FILENAME>` here is optional.  
+> However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV.  
+> If unspecified, your data will be written to the default file `WildWatch.csv`.   
 
 We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. 
 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
 [⬆ Back to top](#table-of-contents)
+  
     
 ### 7. Getting Help : `help`
 Shows the user how to use all the commands.
@@ -218,13 +237,13 @@ Great! Please contact [Min](https://github.com/woodenclock), your help is greatl
 | Action                    | Format                                                     |
 | ------------------------- | ---------------------------------------------------------- |
 | Getting Help              | `help`                                                     |
-| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>`            |
+| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`            |
 | Add Entries (interactive) | `add i/`                                                   |
 | Delete Entries            | `delete <INDEX>`                                           |
-| Edit Entries              | `edit I/<INDEX> D/<DATE> S/<SPECIES> N/<NAME> R/<REMARKS>` |
-| Summarizing Entries       | `summary <SPECIES>`                                        |
+| Edit Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
+| Summarizing Entries       | `summary {<SPECIES>}`                                        |
 | List Entries              | `list`                                                     |
-| Export Entries            | `export <FILENAME>`                                        |
+| Export Entries            | `export {<FILENAME>}`                                        |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
@@ -236,5 +255,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
+| Block | A part of a command. |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)

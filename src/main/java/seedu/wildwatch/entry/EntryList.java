@@ -58,4 +58,14 @@ public class EntryList {
     public static void saveEntry() {
         Saver.save(entries);
     }
+
+    public static boolean hasSpecie(String specieName) {
+        for(int i=0;i < entries.size();i++) {
+            Entry entry = entries.get(i);
+            if( entry.getSpecies().equals(specieName) ) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
