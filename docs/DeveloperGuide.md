@@ -138,7 +138,9 @@ The `Main` component, residing as a method in the `WildWatch` class, which is th
 The UI components can be found within the UI package.  
 It prompts and reads commands from the user and sends the command to `Execute` package to be executed.  
 Lastly, it prints an output message upon completion of the command, to show the success of failure of the command execution.  
-
+  
+![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)
+  
 ### Parser Package 
 The `Parser` component is responsible for parsing an input from the user, and returns an `XYZCommand` class. 
 
