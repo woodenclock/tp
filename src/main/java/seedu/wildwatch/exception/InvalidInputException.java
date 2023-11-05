@@ -16,7 +16,7 @@ public class InvalidInputException extends Exception {
     }
 
     public InvalidInputException(String message) {
-        this(InvalidInputErrorType.INVALID_INPUT, message);
+        this(InvalidInputErrorType.CUSTOM, message);
     }
 
     public InvalidInputErrorType getError() {
