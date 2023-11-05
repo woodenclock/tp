@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import static seedu.wildwatch.entry.EntryList.addEntry;
-import static seedu.wildwatch.entry.EntryList.clearEntry;
+import static seedu.wildwatch.entry.EntryList.clearEntryList;
 
 import seedu.wildwatch.entry.Entry;
 
@@ -30,7 +30,7 @@ class ListCommandTest {
 
     @Test
     void listEntry() {
-        clearEntry();
+        clearEntryList();
         addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
         addEntry(new Entry("28-10-23", "Tiger", "Tigger", "This is Tigger."));
 
@@ -51,7 +51,7 @@ class ListCommandTest {
 
     @Test
     void listEntryWithZeroEntry() {
-        clearEntry();
+        clearEntryList();
         ListCommand.listEntry();
         String consoleOutput = mockOutput.toString();
         String expectedOutput = "Now you have 0 entries in the list."

@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import static seedu.wildwatch.entry.EntryList.addEntry;
-import static seedu.wildwatch.entry.EntryList.clearEntry;
+import static seedu.wildwatch.entry.EntryList.clearEntryList;
 
 public class RouterTest {
 
@@ -23,7 +23,7 @@ public class RouterTest {
 
     @BeforeEach
     public void setUp() {
-        clearEntry();
+        clearEntryList();
         addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
     }
 
