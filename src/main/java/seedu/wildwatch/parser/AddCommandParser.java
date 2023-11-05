@@ -21,7 +21,7 @@ public class AddCommandParser implements Parser<AddCommand> {
                     + "\\s*(?<dprefix> D/)?\\s*(?<date>[^/]+)?"
                     + "\\s*(?<sprefix> S/)?\\s*(?<species>[^/]+)?"
                     + "\\s*(?<nprefix> N/)?\\s*(?<name>[^/]+)?"
-                    + "\\s*(?: R/(?<remark>[^/]+))?");
+                    + "\\s*(?: R/(?<remark>.*))?");
 
     private String date;
     private String species;

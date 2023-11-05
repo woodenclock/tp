@@ -21,7 +21,7 @@ public class AddCommand extends Command {
                     + "\\s* D/\\s*(?<date>[^/]+)"
                     + "\\s* S/\\s*(?<species>[^/]+)"
                     + "\\s* N/\\s*(?<name>[^/]+)"
-                    + "\\s*(?: R/\\s*(?<remark>[^/]+)\\s*)?");
+                    + "\\s*(?: R/\\s*(?<remark>.*)\\s*)?");
 
     public static final Pattern ADD_INTERACTIVE_COMMAND_FORMAT =
             Pattern.compile("add\\s+i/\\s*");
