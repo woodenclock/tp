@@ -2,10 +2,11 @@
 package seedu.wildwatch.parser;
 
 import seedu.wildwatch.command.ExportCommand;
+import seedu.wildwatch.error.FilenameChecker;
 import seedu.wildwatch.error.InvalidInputErrorType;
 import seedu.wildwatch.exception.InvalidInputException;
 
-import java.util.regex.Pattern;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 
 /**
@@ -13,8 +14,6 @@ import java.util.regex.Matcher;
  * proceeding {@code export} keyword.
  */
 public class ExportCommandParser implements Parser<ExportCommand> {
-
-    private static final Pattern FILENAME_FORMAT = Pattern.compile("\\w+.csv");
 
     @Override
     public ExportCommand parse(String input) throws InvalidInputException {
@@ -29,24 +28,24 @@ public class ExportCommandParser implements Parser<ExportCommand> {
             return new ExportCommand();
         }
 
-        if (checkFilenameValid(filename)) {
-            return new ExportCommand(filename);
+        Scanner scanner = new Scanner(System.in);
+
+        // Keep prompting until user provides a valid filename or decides to exit
+        while (!FilenameChecker.isValidCsvFilenameChecker(filename)) {
+            System.out.println("Filename is invalid!");
+            System.out.println("Please provide a valid filename, or leave input blank to default to WildWatch.csv.");
+            System.out.print("You may also type q/ to exit command: ");
+            filename = scanner.nextLine().trim();
+
+            if (filename.equals("q/")) {
+                throw new InvalidInputException("Exiting export command...");
+            }
+
+            if (filename.isEmpty()) {
+                return new ExportCommand();
+            }
         }
 
-        System.out.println("Filename is invalid. Using default filename...");
-
-        return new ExportCommand();
+        return new ExportCommand(filename);
     }
-
-    /**
-     * Checks if filename is in the format {@code [a-zA-Z0-9_].csv}.
-     *
-     * @param filename Input to test
-     * @return true if filename is valid, else false
-     */
-    private boolean checkFilenameValid(String filename) {
-        final Matcher matcher = FILENAME_FORMAT.matcher(filename);
-        return matcher.matches();
-    }
-
 }
