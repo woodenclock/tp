@@ -10,6 +10,8 @@ import java.util.ArrayList;
 public class EntryToStringConverter {
     private static final DateTimeFormatter STD_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yy");
 
+    private static final DateTimeFormatter CSV_DATE_FORMAT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
     /**
      * Returns String that is in the format to be written to file.
      *
@@ -28,13 +30,13 @@ public class EntryToStringConverter {
     }
     //@@woodenclock
 
-    public static String toCSVString(Entry entry, int id, ArrayList<String> columns) {
+    public static String toCsvString(Entry entry, int id, ArrayList<String> columns) {
         assert entry != null : "Trying to convert a null entry to file string.";
 
         String items = String.format("%d", id);
 
         if (columns.contains("date")) {
-            String date = entry.getDate().format(STD_FORMAT);
+            String date = entry.getDate().format(CSV_DATE_FORMAT);
             items = String.join(",", items, date);
         }
 

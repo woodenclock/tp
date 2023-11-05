@@ -113,7 +113,7 @@ ____________________________________________________________
 
 The **_Architecture Diagram_** above shows a high-level overview of the architectural design of WildWatch.  
 Actual detailed implementation may differ from the architectural diagram.  
-(e.g., `Parser` in the diagram encompasses the `Input`, `Error`, and `Parser` packages).  
+(e.g., `Parser` in the diagram encompasses the `Execute`, `Error`, and `Parser` packages).  
   
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
@@ -123,21 +123,37 @@ WildWatch is comprised of 7 major components.
 - `EntryList`: A class that stores all the wildlife data, while the program is running.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `Storage`: A class that saves and retrieves all the wildlife data from the local storage
-
-![Architecture Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6bea5165-aa78-4b3e-baf0-2e9ced109161)  
-
+  
+![General Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6cef0c5a-c924-4f20-bf82-3ccee9eb61c0)  
+ 
 The **_Generic Sequence Diagram_** above shows a shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
 > ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
 
+### Main Component  
+The `Main` component, residing as a method in the `WildWatch` class, which is the only class without a package, is the entry point of the program.  
+  
+![Main Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2745b29a-da1d-423e-b460-10f65dbc8e0d)  
+  
+### UI Package  
+The `UI` components can be found within the `UI` package.  
+It prompts and reads commands from the user and sends the command to `Execute` package to be executed.  
+Lastly, it prints an output message upon completion of the command, to show the success of failure of the command execution.  
+  
+![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)  
+  
+### Parser Package 
+The `Parser` components can be found within the `Parser` package.  
+It is responsible for parsing the input String of the user, and returning an appropriate `XYZCommand` class.  
+If the input is invalid, it throws exceptions to the `Error` package for error handling.  
+  
+![Parser Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1c8a8ae1-a14d-427f-8ecd-aa5038fb4fc7)
 
+  
 
-### Parser component 
-The `Parser` component is responsible for for parsing an input from the user, and returns an `XYZCommand` class. 
+### Command Package  
+![](images/AddSequenceDiagram.png)  
 
-### Command component
-![](images/AddSequenceDiagram.png)
-
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
