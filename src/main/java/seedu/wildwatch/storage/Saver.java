@@ -15,7 +15,7 @@ public class Saver {
      * Manages the storage of tasks in a file.
      * Write each task in the desired format to the file.
      */
-    public static void saver(ArrayList<Entry> entries) {
+    public static void save(ArrayList<Entry> entries) {
         assert entries != null : "Trying to save a null list of entries.";
         try {
             FileWriter writer = new FileWriter(FILE_PATH);

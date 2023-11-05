@@ -5,6 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.AfterEach;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -12,17 +16,21 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Test class for AddCommand.
  */
 public class AddCommandTest {
-
     private Entry testEntry;
     private AddCommand thisAddCommand;
+    private final ByteArrayOutputStream mockOutput = new ByteArrayOutputStream();
+    private final PrintStream originalOut = System.out;
+
 
     @BeforeEach
     public void setUp() {
+        System.setOut(new PrintStream(mockOutput));
+
         // Reset the EntryList to ensure it's empty before each test
         EntryList.clearEntryList();
 
         // Create a test entry to be used in the tests
-        testEntry = new Entry("02-03-23", "Annam Leaf Turtle", "Ariel_2", "Injured left flipper");
+        testEntry = new Entry("02-03-23", "Annam Leaf Turtle", "Ariel", "Injured left flipper");
 
         // Create the AddCommand with the test entry
         thisAddCommand = new AddCommand(testEntry);
@@ -30,6 +38,8 @@ public class AddCommandTest {
 
     @AfterEach
     public void tearDown() {
+        System.setOut(originalOut);
+
         // Clear the EntryList after each test to avoid side effects on other tests
         EntryList.clearEntryList();
     }

@@ -33,19 +33,24 @@ public class Entry {
     public String getRemark() {
         return remark;
     }
+
     public void setDate(String date) {
         DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("dd-MM-yy");
         this.date = LocalDate.parse(date, inputFormat);
     }
+
     public void setSpecies(String species) {
         this.species = species;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public void setRemark(String remark) {
         this.remark = remark;
     }
+    //@@woodenclock
 
     /**
      * Returns true if both entries have the same value for each field.
