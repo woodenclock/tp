@@ -93,12 +93,12 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
 > ❗ IMPORTANT
 > `<DATE>` should be in the format **DD-MM-YY**
   
+> ✏ Note  
+> `R/<REMARKS>` here is optional, meaning it may be left as blank.
+  
 Examples:
 * `add D/02-03-23 S/Annam Leaf Turtle N/Ariel`
 * `add D/02-03-23 S/Low Land Gorilla N/Strong One {R/Aggressive}`
-  
-> ✏ Note  
-> `R/<REMARKS>` here is optional, meaning it may be left as blank.  
   
 Expected output:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
@@ -115,15 +115,14 @@ Format: `add i/`
   
   
 ### 2. Deleting Entries: `delete`
-Deletes an entry. 
-
-Format: `delete <INDEX>`
-Deletes the entry at the specified INDEX. 
-The index refers to the index number shown in the displayed entry list.
-
->❗ IMPORTANT
-> * Index must be a positive integer 1, 2, 3, ...
-> * Deleted items may not be recoverable
+Deletes an entry of the specified INDEX. 
+The index refers to the index number shown in the displayed entry list.  
+  
+Format: `delete <INDEX>`  
+   
+>❗ IMPORTANT  
+> * Index must be a positive integer 1, 2, 3, ...  
+> * Deleted items may not be recoverable  
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
@@ -134,7 +133,7 @@ Example:
 ### 3. Listing Entries: `list`
 Shows a list of all entries of wildlife in the WildWatch so far.
 Shows useful information about each entry.
-Information such as the species, name, age, gender, size, remarks are shown together.
+Information such as the date, species, name, remarks are shown together.
 
 Format: `list` 
 
@@ -145,10 +144,12 @@ Example:
   
   
 ### 4. Editing Entries: `edit`
-Edits an entry in the system.
+Edits an entry in the program.
 
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
-`<DATE>` should be in the format **DD-MM-YY**
+  
+>❗ IMPORTANT
+>`<DATE>` should be in the format **DD-MM-YY**
 
 > ✏ Note
 > `I/<INDEX>` argument is required.  
