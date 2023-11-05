@@ -62,6 +62,17 @@ public class AddCommandParserTest {
 
         actual = parser.parse(input);
         assertEquals(actual, expected);
+
+        // add command with remark tag specified but left blank
+        input = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/";
+        expected = new AddCommand(
+                new Entry("02-03-23",
+                        "Annam Leaf Turtle",
+                        "Ariel",
+                        ""));
+
+        actual = parser.parse(input);
+        assertEquals(actual, expected);
     }
 
     @Test
