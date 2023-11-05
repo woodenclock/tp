@@ -131,6 +131,7 @@ The **_Generic Sequence Diagram_** above shows a shows how the components in the
 
 ### Main component  
 The `Main` component, represented in `WildWatch` class, which is the only class without a package, is the entry point of the program.  
+  
 ![Main Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2745b29a-da1d-423e-b460-10f65dbc8e0d)  
   
 ### Parser component 
