@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import static seedu.wildwatch.entry.EntryList.addEntry;
-import static seedu.wildwatch.entry.EntryList.clearEntry;
+import static seedu.wildwatch.entry.EntryList.clearEntryList;
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 
@@ -37,7 +37,7 @@ public class DeleteCommandTest {
 
     @Test
     void testExecuteConfirmation() {
-        clearEntry();
+        clearEntryList();
         addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
 
         // Prepare user input "yes" for confirmation
@@ -56,7 +56,7 @@ public class DeleteCommandTest {
 
     @Test
     void testExecuteCancellation() {
-        clearEntry();
+        clearEntryList();
         addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
 
         // Prepare user input "no" for cancellation
@@ -75,7 +75,7 @@ public class DeleteCommandTest {
 
     @Test
     public void testDeleteCommandWithInvalidIndex(){
-        clearEntry();
+        clearEntryList();
         addEntry(new Entry("09-11-23", "Lion", "Simba", "This is Simba"));
 
         DeleteCommand deleteCommand = new DeleteCommand(2);

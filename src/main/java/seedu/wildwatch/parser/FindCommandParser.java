@@ -12,9 +12,9 @@ public class FindCommandParser implements Parser<FindCommand>{
     public FindCommand parse(String input) throws InvalidInputException {
         String matchingWord = input.substring(input.indexOf(COMMAND_WORD)
                 + NUMBER_OF_ALPHABETS_IN_FIND).trim();
-        if (matchingWord == null || matchingWord.isEmpty()) {
+        if (matchingWord.isEmpty()) {
             throw new InvalidInputException(InvalidInputErrorType.EMPTY_FIND_INPUT);
         }
-        return new FindCommand(matchingWord); //Note the "find" is removed here
+        return new FindCommand(matchingWord); //Note the "find" is removed from the String here
     }
 }

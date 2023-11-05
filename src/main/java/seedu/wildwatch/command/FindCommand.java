@@ -10,6 +10,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  * Handles the "find" command to search for tasks that contain a specific keyword.
@@ -32,6 +33,7 @@ public class FindCommand extends Command {
 
         LocalDate inputDate = null;
         try {
+            //Is the user finding a date?
             inputDate = LocalDate.parse(input, DateTimeFormatter.ofPattern("dd-MM-yy"));
         } catch (DateTimeParseException exception) {
             // matchingWord is not a date
@@ -52,5 +54,25 @@ public class FindCommand extends Command {
             }
         }
         SearchResultPrinter.findEntryMessagePrinter(hasMatch, matchingEntries);
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+
+        // instanceof handles nulls
+        if (!(other instanceof FindCommand)) {
+            return false;
+        }
+
+        FindCommand otherFindCommand = (FindCommand) other;
+        return Objects.equals(this.input, otherFindCommand.input);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(input);
     }
 }

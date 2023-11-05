@@ -2,7 +2,6 @@ package seedu.wildwatch.execute;
 
 import seedu.wildwatch.command.Command;
 import seedu.wildwatch.command.ByeCommand;
-import seedu.wildwatch.error.Router;
 import seedu.wildwatch.error.ErrorHandler;
 import seedu.wildwatch.exception.InvalidInputException;
 

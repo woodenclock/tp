@@ -1,5 +1,5 @@
 //@@woodenclock
-package seedu.wildwatch.error;
+package seedu.wildwatch.execute;
 
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -16,6 +16,7 @@ import seedu.wildwatch.command.ExportCommand;
 import seedu.wildwatch.command.FindCommand;
 import seedu.wildwatch.command.HelpCommand;
 
+import seedu.wildwatch.error.InvalidInputErrorType;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.parser.SummaryCommandParser;
 import seedu.wildwatch.parser.AddCommandParser;
@@ -30,9 +31,9 @@ import seedu.wildwatch.parser.FindCommandParser;
 public class Router {
     private static final Logger LOGGER = Logger.getLogger(Router.class.getName());
 
-    public static Command route (String input) throws InvalidInputException {
+    public static Command route(String input) throws InvalidInputException {
 
-        LOGGER.log(Level.INFO, "Managing entry for input: {0}", input);
+        LOGGER.log(Level.INFO, "Routing entry for input: {0}", input);
         Scanner bufferScanner = new Scanner(input);     //Scanner for the buffer
         if (!bufferScanner.hasNext()) {
             throw new InvalidInputException(InvalidInputErrorType.EMPTY_INPUT);

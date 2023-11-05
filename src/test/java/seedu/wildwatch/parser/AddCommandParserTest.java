@@ -1,8 +1,8 @@
 package seedu.wildwatch.parser;
 
 import org.junit.jupiter.api.Test;
-import seedu.wildwatch.command.AddCommand;
 import seedu.wildwatch.entry.Entry;
+import seedu.wildwatch.command.AddCommand;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

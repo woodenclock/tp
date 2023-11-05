@@ -23,7 +23,7 @@ public class EntryList {
         entries.remove(numberInput - 1);
     }
 
-    public static void clearEntry(){
+    public static void clearEntryList(){
         entries.clear();
     }
 
