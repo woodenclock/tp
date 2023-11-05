@@ -90,7 +90,8 @@ public class ExportCommand extends Command {
             throw new InvalidInputException("Error writing to file.");
         }
 
-        System.out.printf("%s has been written to!%n", filename);
+        System.out.printf("Export to CSV completed successfully."
+                + " Your data has been successfully saved to %s.\n", filename);
     }
 
     /**
