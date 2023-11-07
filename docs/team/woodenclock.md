@@ -73,7 +73,8 @@ To view the codes that I have contributed to the team project WildWatch, click [
   
   
 ### Contributions in Reviews/Mentoring  
-1. Constructive comments, reviews, visual aids were given in the [`Pull Request`](https://github.com/AY2324S1-CS2113T-W11-2/tp/pulls?page=3&q=is%3Apr+is%3Aclosed).
+1. Constructive comments and reviews were given in the [`Pull Request`](https://github.com/AY2324S1-CS2113T-W11-2/tp/pulls?page=3&q=is%3Apr+is%3Aclosed).
+2. When giving the feedbacks, [visual aids]() were also attached, to better facilitate the message sent across
 
    
 [⬆ Back to top](#table-of-contents)  
