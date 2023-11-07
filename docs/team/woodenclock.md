@@ -9,7 +9,6 @@
     - [Contributions to Developer Guide](#contributions-to-developer-guide)
     - [Contributions to Team-Based Tasks](#contributions-to-team-based-tasks)
     - [Contributions in Reviews/Mentoring](#contributions-to-user-guide)
-    - [Contributions beyond the Project Team](#contributions-beyond-the-project-team)  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
   
@@ -79,6 +78,4 @@ To view the codes that I have contributed to the team project WildWatch, click [
    
 [⬆ Back to top](#table-of-contents)  
   
-
-### Contributions beyond  
 --------------------------------------------------------------------------------------------------------------------------------------  
