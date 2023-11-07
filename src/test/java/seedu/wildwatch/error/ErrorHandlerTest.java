@@ -12,11 +12,11 @@ import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 
 import seedu.wildwatch.exception.InvalidInputException;
-import seedu.wildwatch.ui.ErrorPrinter;
-import seedu.wildwatch.ui.ListCommandPrinter;
+import seedu.wildwatch.command.HelpCommand;
 import seedu.wildwatch.ui.DeleteCommandPrinter;
 import seedu.wildwatch.ui.EmptyDescriptionPrinter;
-import seedu.wildwatch.command.HelpCommand;
+import seedu.wildwatch.ui.ErrorPrinter;
+import seedu.wildwatch.ui.ListCommandPrinter;
 
 class ErrorHandlerTest {
     private MockedStatic<Logger> mockedLogger;
