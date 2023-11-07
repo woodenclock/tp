@@ -37,7 +37,7 @@ public class AddCommand extends Command {
         EntryList.addEntry(newEntry);
 
         AddCommandPrinter.entryAddedMessagePrinter();
-        EntryPrinter.printEntry(EntryList.getArraySize() - 1);
+        EntryPrinter.printEntry(EntryList.getArraySize()-1);
         ListCommandPrinter.entryCountPrinter();
     }
 

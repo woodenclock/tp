@@ -48,7 +48,7 @@ class EntryListTest {
     @Test
     public void deleteEntry_singleEntry_entryRemoved() {
         EntryList.addEntry(entry1);
-        EntryList.deleteEntry(1);
+        EntryList.deleteEntry(0);
         assertTrue(EntryList.isArrayEmpty(), "EntryList should be empty after deleting the entry.");
     }
 
