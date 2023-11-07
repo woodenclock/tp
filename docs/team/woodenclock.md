@@ -14,7 +14,7 @@ Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve 
 The purpose of this user guide is to familiarize you with the program and help you when you face a problem using it.  
 Its main job is to store and present animal data, this would make your job so much more convenient!  
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#table-of-contents)  
+[⬆ Back to top](#table-of-contents)  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
 
@@ -60,6 +60,6 @@ To view the codes that I have contributed to the team project WildWatch, click [
 1. Constructive comments, reviews, visual aids were given in the [`Pull Request`](https://github.com/AY2324S1-CS2113T-W11-2/tp/pulls?page=3&q=is%3Apr+is%3Aclosed).
 
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#table-of-contents)  
+[⬆ Back to top](#table-of-contents)  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
