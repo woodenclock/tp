@@ -12,9 +12,10 @@
     - [Deleting Entries](#2-deleting-entries-delete): `delete`
     - [Listing Entries](#3-listing-entries-list): `list`
     - [Editing Entries](#4-editing-entries-edit): `edit`
-    - [Summarizing Entries](#5-summarizing-entries-summary): `summary`
-    - [Exporting Entries](#6-exporting-your-entries-export): `export`
-    - [Getting Help](#7-getting-help--help): `help` 
+    - [Finding Entries](#5-finding-entries-find): `find`
+    - [Summarizing Entries](#6-summarizing-entries-summary): `summary`
+    - [Exporting Entries](#7-exporting-your-entries-export): `export`
+    - [Getting Help](#8-getting-help--help): `help` 
 - [FAQ](#faq-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
