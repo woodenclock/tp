@@ -182,7 +182,7 @@ Finds all the entries that match the the search word.
 Format: `find <SEARCH>`
 
 > ✏ Note  
-> `<SEARCH>` here could be the full-date (**DD-MM-YY**), or part of the name, species, remark.
+> `<SEARCH>` here could be the full-date (**DD-MM-YY**), or part of the name, the species, or the remark.
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/495c8fb4-d720-4d25-8c14-3cc8f0f40a0d)
