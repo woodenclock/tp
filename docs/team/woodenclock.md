@@ -81,3 +81,8 @@ To view the codes that I have contributed to the team project WildWatch, click [
 [⬆ Back to top](#table-of-contents)  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
+  
+### Contributions to Developer Guide (Extracts)
+
+
+### Contributions to Developer Guide (Extracts)
