@@ -175,7 +175,16 @@ ____________________________________________________________
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
   
   
-### 5. Summarizing Entries: `summary`
+### 5. Finding entries: `find`  
+Finds all the entries that match the the search word.  
+
+
+
+
+[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+   
+   
+### 6. Summarizing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system by the species type.
 
 Format: `summary {<SPECIES>}`
@@ -190,7 +199,7 @@ Example:
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
   
   
-### 6. Exporting your entries: `export` 
+### 7. Exporting your entries: `export` 
 Maybe you need to share the entries you've collected with someone else. In that case, we also provide the option for you to export your data as a Comma Separated Values (CSV) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
 
 Format: `export {<FILENAME>}`
@@ -207,7 +216,7 @@ We also guide you through the process of selecting the columns that you want to 
 [⬆ Back to top](#table-of-contents)
   
     
-### 7. Getting Help : `help`
+### 8. Getting Help : `help`
 Shows the user how to use all the commands.
 
 Format: `help`
