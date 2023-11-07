@@ -37,6 +37,7 @@ To view the codes that I have contributed to the team project WildWatch, click [
 7. Created `EditCommandParser` and `FindCommandParser` classes in Miscellaneous Package.  
 8. Created `ExistenceChecker`, `FileCreater`, `FileHandler`, `FileLoader`, `Saver`, and `EntryToStingConverter` (half) classes in Storage Package.  
 9. Created `EmptyDescriptionPrinter`, `EntryPrinter`, `ErrorPrinter`, `FilePrinter`, `InputConsole`, `LinePrinter`, `ListCommandPrinter`, `SearchResultPrinter` classes in Ui Package.
+10. Updated README.md page from Duke to WildWatch appropriately.  
   
 [⬆ Back to top](#table-of-contents)  
   
