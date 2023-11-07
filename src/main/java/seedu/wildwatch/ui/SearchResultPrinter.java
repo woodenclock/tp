@@ -17,7 +17,7 @@ public class SearchResultPrinter {
             System.out.println("Here are the matching tasks in your list:");
             for (int i = 0; i < matchingTasks.size(); i++) {
                 System.out.print((i) + ".");
-                EntryPrinter.printEntry(matchingTasks.get(i+1));
+                EntryPrinter.printEntry(matchingTasks.get(i));
             }
         }
     }

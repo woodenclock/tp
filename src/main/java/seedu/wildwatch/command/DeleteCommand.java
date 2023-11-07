@@ -1,7 +1,7 @@
 package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.EntryList;
-import seedu.wildwatch.exception.InvalidInputException;
+import seedu.wildwatch.miscellaneous.ShutDown;
 import seedu.wildwatch.ui.LinePrinter;
 import seedu.wildwatch.ui.EntryPrinter;
 import seedu.wildwatch.ui.ListCommandPrinter;
@@ -51,6 +51,10 @@ public class DeleteCommand extends Command {
                 LinePrinter.printHorizontalLines();
                 DeleteCommandPrinter.entryNotDeletedMessagePrinter();
                 return;
+            }
+            if (confirmation.equals("bye")) {
+                ShutDown.shutDown();
+                System.exit(0);
             }
         }
         LinePrinter.printHorizontalLines();
