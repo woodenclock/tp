@@ -70,26 +70,37 @@ public class HelpCommand extends Command {
                     "       summary Annam Leaf Turtle\n" +
                     "_________________________________________________________________\n";
 
+    private static final String byeCommandMessage =
+            "\n" +
+                    "_________________________________________________________________\n" +
+                    "7.  To exit the program\n" +
+                    "     Format: bye\n" +
+                    "     Examples: \n" +
+                    "       bye \n" +
+                    "_________________________________________________________________\n";
+
     private static final String helpPage =
-                    "\n" +
-                    "---------------------------HELP PAGE-----------------------------\n"+
+            "\n" +
+                    "---------------------------HELP PAGE-----------------------------\n" +
                     helpCommandMessage +
                     addCommandMessage +
                     listCommandMessage +
                     deleteCommandMessage +
                     editCommandMessage +
                     summaryCommandMessage +
+                    byeCommandMessage +
                     "\n" +
                     "-------------------------HELP PAGE END---------------------------\n";
 
     private static final String helpPageShort =
-                    "\n" +
-                    "---------------------------HELP PAGE (short)-----------------------------\n"+
+            "\n" +
+                    "---------------------------HELP PAGE (short)-----------------------------\n" +
                     "add: add D/DATE S/SPECIES N/NAME R/REMARKS\n" +
                     "list: list\n" +
                     "delete: delete INDEX\n" +
                     "edit: edit I/INDEX D/DATE S/SPECIES N/NAME R/REMARKS\n" +
-                    "summary: summary SPECIES" +
+                    "summary: summary SPECIES\n" +
+                    "bye: exits the program" +
                     "\n" +
                     "-------------------------HELP PAGE (short) END---------------------------\n";
 
@@ -122,42 +133,45 @@ public class HelpCommand extends Command {
      * @param command command
      */
     public void printMessageForCommand(String command) {
-        switch(command) {
-        case "add":
-            System.out.println(addCommandMessage);
-            break;
-        case "list":
-            System.out.println(listCommandMessage);
-            break;
-        case "delete":
-            System.out.println(deleteCommandMessage);
-            break;
-        case "edit":
-            System.out.println(editCommandMessage);
-            break;
-        case "summary":
-            System.out.println(summaryCommandMessage);
-            break;
-        case "full":
-            System.out.println(helpPage);
-            break;
-        default:
-            break;
+        switch (command) {
+            case "add":
+                System.out.println(addCommandMessage);
+                break;
+            case "list":
+                System.out.println(listCommandMessage);
+                break;
+            case "delete":
+                System.out.println(deleteCommandMessage);
+                break;
+            case "edit":
+                System.out.println(editCommandMessage);
+                break;
+            case "summary":
+                System.out.println(summaryCommandMessage);
+                break;
+            case "bye":
+                System.out.println(byeCommandMessage);
+                break;
+            case "full":
+                System.out.println(helpPage);
+                break;
+            default:
+                break;
         }
     }
+
     /**
      * Prints out help page
-     *
      */
     public void execute() {
-        if( input.isEmpty() ) {
+        if (input.isEmpty()) {
             System.out.println("No worries, I'm here to help!");
             System.out.println(helpPage);
             return;
         }
 
         String argument = input.replace("help", "").trim();
-        if( argument.isEmpty() ) {
+        if (argument.isEmpty()) {
             // print short version
             System.out.println("No worries, I'm here to help!");
             System.out.println(helpPageShort);
