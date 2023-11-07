@@ -204,7 +204,60 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 ## Manual Testing 🐼
 
-{Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+### Launching the App
+1. Download the latest JAR file from our release page [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases)
+2. Double-click the JAR file to run the app
+
+### Getting help
+1. Run the `help` command by typing `help` and hitting the `Enter` key on your keyboard
+
+### Adding a Wildlife Entry
+1. Run the following command `add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+
+Expected: Wildlife recorded successfully added
+
+2. Run the following command `add D/02-03-23`
+
+Expected: No new recorded added.
+
+### Listing Wildlife Entries
+1. Run the following command `list`
+
+Expected: All wildlife records shown
+
+
+### Editing a Wildlife Entry
+1. Run the following command `edit I/1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+
+Expected: Successfully edited the wildlife record
+3. Run the following command `edit I/-1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+
+Expected: Failed to edit as -1 is not a valid index
+
+
+### Deleting a Wildlife Entry
+1. Run the following command `delete 1`
+
+Expected: Successfully deleted the first record
+
+2. Run the following command `delete 0`
+
+Expected: Failed to delete a record as 0 is an invalid record
+
+### Getting a summary of the wildlife data
+1. Run the following command `summary`
+Expected: A summary of the wildlife record is displayed
+
+### Exporting wildlife data to a local file
+1. Run the following command `export myobservations.csv`
+
+Expected: You will be prompted with further questions
+
+### Exiting the app
+1. Run the `bye` command
+
+Expected: The app stops
+
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
