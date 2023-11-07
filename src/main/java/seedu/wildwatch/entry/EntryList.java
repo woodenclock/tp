@@ -16,7 +16,7 @@ public class EntryList {
     }
 
     public static void deleteEntry(int numberInput){
-        entries.remove(numberInput - 1);
+        entries.remove(numberInput);
     }
 
     public static void editEntry(int nthEntry, Entry updatedEntry) {

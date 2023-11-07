@@ -6,8 +6,9 @@ public class DeleteCommandPrinter {
         System.out.println("The entry has been deleted.");
     }
 
-    public static void entryDeletionConfirmationPrinter() {
+    public static void entryDeletionConfirmationPrinter(int i) {
         System.out.println("Are you sure you want to delete this entry? (yes/no): ");
+        System.out.println("You have " + (5-i) + " number of tries left.");
         LinePrinter.printHorizontalLines();
     }
 
