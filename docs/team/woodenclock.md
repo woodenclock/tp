@@ -1,10 +1,13 @@
 # Lee Sungmin's Project Portfolio Page 🦈
   
 ## Table of Contents  
-- [Overview](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#overview)  
-- [Summary of Contribution](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#summary-of-contributions)  
-    - [Code Contributed](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#code-contributed)  
-    - [Enhancements implemented](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/woodenclock.html#enhancements-implemented)  
+- [Overview](#overview)  
+- [Summary of Contribution](#summary-of-contributions)  
+    - [Code Contributed](#code-contributed)   
+    - [Enhancements Implemented](#enhancements-implemented)  
+    - [Contributions to User Guide](#contributions-to-user-guide)
+    - [Contributions to Developer Guide](#contributions-to-developer-guide)
+    - [Contributions to Team-Based Tasks](#contributions-to-team-based-tasks)  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
   
@@ -23,7 +26,7 @@ Its main job is to store and present animal data, this would make your job so mu
 ### Code Contributed
 To view the codes that I have contributed to the team project WildWatch, click [here](https://nus-cs2113-ay2324s1.github.io/tp-dashboard/?search=woodenclock&breakdown=true).  
   
-### Enhancements implemented  
+### Enhancements Implemented  
 1. Organizing all class files into their repective packages (e.g., `ui`, `execute`, etc).  
 2. Created `List`, `Find`, `Bye` classes in `Command Package`.  
 3. Created the `Entry` and `EntryList` classes in `Entry Package`.  
