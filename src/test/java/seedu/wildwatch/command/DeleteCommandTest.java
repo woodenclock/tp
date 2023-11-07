@@ -19,21 +19,21 @@ import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.entry.EntryList;
 
 public class DeleteCommandTest {
-    private final PrintStream originalOut = System.out;
+    private final PrintStream standardOut = System.out;
     private final ByteArrayOutputStream mockOutput = new ByteArrayOutputStream();
-    private InputStream originalIn;
+    private InputStream standardIn;
     private ByteArrayInputStream mockInput;
 
     @BeforeEach
     void redirectSystemOut() {
         System.setOut(new PrintStream(mockOutput));
-        originalIn = System.in;
+        standardIn = System.in;
     }
 
     @AfterEach
     void restoreSystemOut() {
-        System.setOut(originalOut);
-        System.setIn(originalIn);
+        System.setOut(standardOut);
+        System.setIn(standardIn);
     }
 
     @Test

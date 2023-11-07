@@ -9,8 +9,7 @@ import java.io.InputStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class InputConsoleTest {
-    private final InputStream systemIn = System.in;
-    private ByteArrayInputStream testIn;
+    private final InputStream originalIn = System.in;
 
     @BeforeEach
     public void setUpInput() {
@@ -19,12 +18,12 @@ public class InputConsoleTest {
     @AfterEach
     public void restoreSystemInput() {
         // After a test runs, restore System.in to its original source.
-        System.setIn(systemIn);
+        System.setIn(originalIn);
     }
 
     private void provideInput(String data) {
-        testIn = new ByteArrayInputStream(data.getBytes());
-        System.setIn(testIn);
+        ByteArrayInputStream mockInput = new ByteArrayInputStream(data.getBytes());
+        System.setIn(mockInput);
     }
 
     @Test
