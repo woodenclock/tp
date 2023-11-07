@@ -179,9 +179,15 @@ ____________________________________________________________
 ### 5. Finding entries: `find`  
 Finds all the entries that match the the search word.  
 
+Format: `find <SEARCH>`
 
+> ✏ Note  
+> `<SEARCH>` here could be the full-date (**DD-MM-YY**), or part of the name, species, remark.
 
-
+Example:  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/495c8fb4-d720-4d25-8c14-3cc8f0f40a0d)
+  
+  
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
    
    
