@@ -151,6 +151,7 @@ public class HelpCommand extends Command {
                 break;
             case "bye":
                 System.out.println(byeCommandMessage);
+                break;
             case "full":
                 System.out.println(helpPage);
                 break;
