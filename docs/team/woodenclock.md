@@ -7,7 +7,7 @@
     - [Enhancements Implemented](#enhancements-implemented)  
     - [Contributions to User Guide](#contributions-to-user-guide)  
     - [Contributions to Developer Guide](#contributions-to-developer-guide)
-    - [Contributions to Team-Based Tasks](#contributions-to-team-based-tasks)
+    - [Contributions to Team-Based Tasks](#contributions-in-reviewsmentoring)
     - [Contributions in Reviews/Mentoring](#contributions-to-user-guide)
   
 --------------------------------------------------------------------------------------------------------------------------------------  
