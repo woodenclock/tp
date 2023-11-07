@@ -224,6 +224,14 @@ Format: `help` `help add` `help delete`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)
 
+
+### 9. Exit : `bye`
+To close and save the program.
+
+Format: `bye`
+
+
+
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -288,16 +296,17 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 
 ## Command Summary 🐱
 
-| Action                    | Format                                                     |
-| ------------------------- | ---------------------------------------------------------- |
-| Getting Help              | `help`                                                     |
-| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`            |
-| Add Entries (interactive) | `add i/`                                                   |
-| Delete Entries            | `delete <INDEX>`                                           |
+| Action                    | Format                                                             |
+|---------------------------|--------------------------------------------------------------------|
+| Getting Help              | `help`                                                             |
+| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
+| Add Entries (interactive) | `add i/`                                                           |
+| Delete Entries            | `delete <INDEX>`                                                   |
 | Edit Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
-| Summarizing Entries       | `summary {<SPECIES>}`                                        |
-| List Entries              | `list`                                                     |
-| Export Entries            | `export {<FILENAME>}`                                        |
+| Summarizing Entries       | `summary {<SPECIES>}`                                              |
+| List Entries              | `list`                                                             |
+| Export Entries            | `export {<FILENAME>}`                                              |
+| Exit                      | `bye`                                                              |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
 
