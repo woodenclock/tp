@@ -217,9 +217,9 @@ We also guide you through the process of selecting the columns that you want to 
   
     
 ### 8. Getting Help : `help`
-Shows the user how to use all the commands.
+Shows the user how to use all the commands. Additionally, users can also specify which command they need help with.
 
-Format: `help`
+Format: `help` `help add` `help delete`
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)
