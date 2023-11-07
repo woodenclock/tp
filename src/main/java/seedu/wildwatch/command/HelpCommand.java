@@ -165,6 +165,7 @@ public class HelpCommand extends Command {
                 break;
             case "export":
                 System.out.println(exportCommandMessage);
+                break;
             case "bye":
                 System.out.println(byeCommandMessage);
                 break;
