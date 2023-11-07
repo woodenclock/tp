@@ -64,7 +64,7 @@ public class HelpCommand extends Command {
                     "6.  To show a summary\n" +
                     "     Format: summary SPECIES\n" +
                     "       Note:\n" +
-                    "           - SPECIES argument is optional:\n" +
+                    "           - SPECIES argument is optional\n" +
                     "     Examples: \n" +
                     "       summary \n" +
                     "       summary Annam Leaf Turtle\n" +
@@ -73,12 +73,24 @@ public class HelpCommand extends Command {
     private static final String byeCommandMessage =
             "\n" +
                     "_________________________________________________________________\n" +
-                    "7.  To exit the program\n" +
+                    "8.  To exit the program\n" +
                     "     Format: bye\n" +
                     "     Examples: \n" +
                     "       bye \n" +
                     "_________________________________________________________________\n";
 
+    private static final String exportCommandMessage =
+            "\n" +
+                    "_________________________________________________________________\n" +
+                    "7.  To export wildlife data\n" +
+                    "     Format: export FILENAME\n" +
+                    "       Note:\n" +
+                    "           - FILENAME argument is optional\n" +
+                    "           - FILENAME argument if specified should end with a .csv extension\n" +
+                    "     Examples: \n" +
+                    "       summary \n" +
+                    "       summary Annam Leaf Turtle\n" +
+                    "_________________________________________________________________\n";
     private static final String helpPage =
             "\n" +
                     "---------------------------HELP PAGE-----------------------------\n" +
@@ -88,6 +100,7 @@ public class HelpCommand extends Command {
                     deleteCommandMessage +
                     editCommandMessage +
                     summaryCommandMessage +
+                    exportCommandMessage +
                     byeCommandMessage +
                     "\n" +
                     "-------------------------HELP PAGE END---------------------------\n";
@@ -100,7 +113,8 @@ public class HelpCommand extends Command {
                     "delete: delete INDEX\n" +
                     "edit: edit I/INDEX D/DATE S/SPECIES N/NAME R/REMARKS\n" +
                     "summary: summary SPECIES\n" +
-                    "bye: exits the program" +
+                    "export: export FILENAME\n" +
+                    "bye: exits the program\n" +
                     "\n" +
                     "-------------------------HELP PAGE (short) END---------------------------\n";
 
@@ -149,6 +163,8 @@ public class HelpCommand extends Command {
             case "summary":
                 System.out.println(summaryCommandMessage);
                 break;
+            case "export":
+                System.out.println(exportCommandMessage);
             case "bye":
                 System.out.println(byeCommandMessage);
                 break;
