@@ -148,32 +148,32 @@ public class HelpCommand extends Command {
      */
     public void printMessageForCommand(String command) {
         switch (command) {
-            case "add":
-                System.out.println(addCommandMessage);
-                break;
-            case "list":
-                System.out.println(listCommandMessage);
-                break;
-            case "delete":
-                System.out.println(deleteCommandMessage);
-                break;
-            case "edit":
-                System.out.println(editCommandMessage);
-                break;
-            case "summary":
-                System.out.println(summaryCommandMessage);
-                break;
-            case "export":
-                System.out.println(exportCommandMessage);
-                break;
-            case "bye":
-                System.out.println(byeCommandMessage);
-                break;
-            case "full":
-                System.out.println(helpPage);
-                break;
-            default:
-                break;
+        case "add":
+            System.out.println(addCommandMessage);
+            break;
+        case "list":
+            System.out.println(listCommandMessage);
+            break;
+        case "delete":
+            System.out.println(deleteCommandMessage);
+            break;
+        case "edit":
+            System.out.println(editCommandMessage);
+            break;
+        case "summary":
+            System.out.println(summaryCommandMessage);
+            break;
+        case "export":
+            System.out.println(exportCommandMessage);
+            break;
+        case "bye":
+            System.out.println(byeCommandMessage);
+            break;
+        case "full":
+            System.out.println(helpPage);
+            break;
+        default:
+            break;
         }
     }
 
