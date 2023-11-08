@@ -76,7 +76,7 @@ public class EntryList {
      * Enforce uniqueness of (date, species, name) combination.g
      *
      * @param newEntry Entry to check
-     * @return -1 if entry is not in list, index of duplicate otherwise
+     * @return -1 if entry is not in list, 1-index of duplicate otherwise
      */
     public static int checkEntryExists(Entry newEntry) {
         final LocalDate date = newEntry.getDate();
@@ -93,16 +93,6 @@ public class EntryList {
         }
 
         return -1;
-    }
-
-    public static String getEntryString(int nthEntry) {
-        return String.format("%d.Date: [%s] | Species: [%s] | Name: [%s] | Remark: [%s]\n",
-                nthEntry,
-                getEntryDate(nthEntry).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")),
-                getEntrySpecies(nthEntry),
-                getEntryName(nthEntry),
-                getEntryRemark(nthEntry)
-        );
     }
 }
 
