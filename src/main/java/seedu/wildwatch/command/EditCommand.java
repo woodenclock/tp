@@ -7,6 +7,7 @@ import seedu.wildwatch.ui.EditCommandPrinter;
 import seedu.wildwatch.ui.EntryPrinter;
 import seedu.wildwatch.error.InvalidInputErrorType;
 
+import java.time.format.DateTimeFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,7 +27,12 @@ public class EditCommand extends Command {
         this.input = input;
     }
 
-    public Entry checkAndUpdateEntry(Entry entry, String date, String species, String name, String remark) {
+    public Entry checkAndUpdateEntry(Entry entry, String date, String species, String name, String remark, int index) throws InvalidInputException {
+        // Check for duplicate entry
+        if (checkDuplicateEntry(entry, date, species, name, index)) {
+            throw new InvalidInputException("Edit produces a duplicate entry!");
+        }
+
         if( date != null && !date.isEmpty() ) {
             date = date.trim();
             entry.setDate(date);
@@ -64,10 +70,38 @@ public class EditCommand extends Command {
         index -= 1; // EntryList is 0 based.
         //System.out.println(indexStr + " " + date + " " + species + " " + name + " " + remark);
         Entry currentEntry = EntryList.getEntry(index);
-        Entry updatedEntry = checkAndUpdateEntry(currentEntry, date, species, name, remark);
+        Entry updatedEntry = checkAndUpdateEntry(currentEntry, date, species, name, remark, index);
         EntryList.editEntry(index, updatedEntry);
 
         EditCommandPrinter.entryEditedMessagePrinter();
         EntryPrinter.printEntry(index);
+    }
+
+    private boolean checkDuplicateEntry(Entry entry, String date, String species, String name, int index) {
+        String newDate = date;
+        String newName = name;
+        String newSpecies = species;
+
+        if (date == null || date.isEmpty()) {
+            newDate = entry.getDate().format(DateTimeFormatter.ofPattern("dd-MM-yy"));
+        }
+
+        if (name == null || name.isEmpty()) {
+            newName = entry.getName();
+        }
+
+        if (species == null || species.isEmpty()) {
+            newSpecies = entry.getSpecies();
+        }
+
+        Entry newEntry = new Entry(newDate, newSpecies, newName, "");
+
+        int duplicateEntryIndex = EntryList.checkEntryExists(newEntry);
+        if (duplicateEntryIndex != -1 && duplicateEntryIndex != index+1) {
+            // Entry is a duplicate
+            return true;
+        }
+
+        return false;
     }
 }
