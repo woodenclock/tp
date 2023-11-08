@@ -1,4 +1,4 @@
-# WildWatch User Guide 🦏
+# WildWatch User Guide 🐘
 
 ## Table of Contents 
 - [Introduction](#introduction-)
@@ -16,7 +16,8 @@
     - [Summarizing Entries](#6-summarizing-entries-summary): `summary`
     - [Exporting Entries](#7-exporting-your-entries-export): `export`
     - [Getting Help](#8-getting-help--help): `help`
-    - [Exit](#9-exit--bye)): `bye`
+    - [Exit](#9-exit--bye): `bye`
+    - [Saving the Entries](#10-saving-the-entries)
 - [FAQ](#faq-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
@@ -44,7 +45,6 @@ Head to the [Command Summary](#command-summary-) page for a summary of all comma
 Head to the [Glossary](#glossary-) page for its meaning.  
 
 ### Legend
-
  Symbol         | Meaning
  -------------- |------------------------------------------------------------
  ❗ IMPORTANT   | These are important instructions that you should follow.  
@@ -53,7 +53,8 @@ Head to the [Glossary](#glossary-) page for its meaning.
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Quick Start 🐵
@@ -74,8 +75,9 @@ Some example commands you can try:
 
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/c110856f-dd16-4c5c-8205-446d86425ddb)
 
-[⬆ Back to top](#table-of-contents)
-
+[⬆ Back to top](#table-of-contents)  
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features 🦊
@@ -86,33 +88,32 @@ Some example commands you can try:
 >     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.
 > * Do be mindful that <DATE> cannot be a date in the future
   
-  
 ### 1. Adding Entries: `add`
-Adds a new entry to the system.
+Adds a new entry to the WildWatch program.
   
 #### 1.1 Standard Mode 
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
   
 > ❗ IMPORTANT
-> `<DATE>` should be in the format **DD-MM-YY**
+> `<DATE>` should be in the format **DD-MM-YYYY**
   
 > ✏ Note  
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
   
-Examples:
+Example:
 * `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel`
 * `add D/02-03-2023 S/Low Land Gorilla N/Strong One R/Aggressive`
   
-Expected output:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
 #### 1.2 Interactive Mode: `add i/`
 If you're prone to forgetting fields to include in the `add` command, have no fear, we've got your back! You may choose to use the `add i/` command instead, which triggers the interactive add mode. 
 It helpfully prompts you for data each step of the way, and notifies you when you've left a mandatory field blank, so you don't have to worry about getting it wrong!
 
 Format: `add i/`
-
-![image](https://github.com/lctxct/tp/assets/70379887/21db0b5d-1f76-40b0-a73d-92fbc5204b04)
+  
+Example:  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
   
@@ -125,10 +126,10 @@ Format: `delete <INDEX>`
    
 >❗ IMPORTANT  
 > * Index must be a positive integer 1, 2, 3, ...  
-> * Deleted items may not be recoverable  
+> * Deleted items are not be recoverable  
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)  
 
 [⬆ Back to top](#table-of-contents)
   
@@ -152,27 +153,14 @@ Edits an entry in the program.
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
   
 >❗ IMPORTANT
->`<DATE>` should be in the format **DD-MM-YY**
+>`<DATE>` should be in the format **DD-MM-YYYY**
 > `I/<INDEX>` argument is required.  
   
 > ✏ Note  
-> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, only 1 needs to be filled up.  
+> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, but at least 1 needs to be filled up.  
   
-Example:
-```
-edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
-____________________________________________________________
-The following entry has been edited:
-Date: [02-04-2024] | Species: [Annam Leaf Turtle] | Name: [Javier] | Remark: [Injured right flipper]
-____________________________________________________________
-```
-```
-edit I/1 S/Green Leaf Turtle
-____________________________________________________________
-The following entry has been edited:
-Date: [02-03-2023] | Species: [Green Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
-____________________________________________________________
-```
+Example:  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/93d3f7ce-f714-4149-953d-703d6d58c671)  
 
 [⬆ Back to top](#table-of-contents)
   
@@ -183,11 +171,10 @@ Finds all the entries that match the the search word.
 Format: `find <SEARCH>`
 
 > ✏ Note  
-> `<SEARCH>` here could be the full-date (**DD-MM-YY**), or part of the name, the species, or the remark.
+> `<SEARCH>` here could be the full-date (**DD-MM-YYYY**), or part of the name, the species, or the remark.
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/495c8fb4-d720-4d25-8c14-3cc8f0f40a0d)
-  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b77bd98a-6ea3-4378-aef2-bd436794b246)    
   
 [⬆ Back to top](#table-of-contents)
    
@@ -222,7 +209,7 @@ We also guide you through the process of selecting the columns that you want to 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
 [⬆ Back to top](#table-of-contents)
-  
+   
     
 ### 8. Getting Help : `help`
 Shows the user how to use all the commands. Additionally, users can also specify which command they need help with.
@@ -232,29 +219,31 @@ Format: `help` `help add` `help delete`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)
 
-
+[⬆ Back to top](#table-of-contents)
+  
+  
 ### 9. Exit : `bye`
 To close and save the program.
 
 Format: `bye`
 
-
 [⬆ Back to top](#table-of-contents)
+  
+  
+### 10. Saving the Entries
 
-
-### 10. Saving the Tasklist
-
-Tasklist data are saved in the hard disk automatically after every valid command changes the data. 
+Data of the entries are saved in the local memory automatically after every valid command changes the data. 
 There is no need to save manually.
 
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## FAQ 🦁
   
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
-> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-2023` in **DD-MM-YY** format.  
+> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-2023` in **DD-MM-YYYY** format.  
   
   
 > **Q**: Can I add photos or other media to the entries?  
@@ -281,7 +270,7 @@ We value your feedback, and opening an issue on our GitHub repository is a great
 ### Step-by-Step Instructions:
 
 1. **Visit the GitHub Repository**
-  - In your web browser, navigate to our GitHub repository. The URL is [https://github.com/AY2324S1-CS2113T-W11-2/tp](https://github.com/AY2324S1-CS2113T-W11-2/tp).
+  - In your web browser, navigate to our [GitHub repository](https://github.com/AY2324S1-CS2113T-W11-2/tp).  
 
 2. **Sign in to GitHub**
   - If you don't have a GitHub account, you'll need to create one. If you already have an account, sign in to GitHub.
@@ -317,7 +306,6 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 
 | Action                    | Format                                                             |
 |---------------------------|--------------------------------------------------------------------|
-| Getting Help              | `help`                                                             |
 | Adding Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
 | Adding Entries (interactive) | `add i/`                                                           |
 | Deleting Entries            | `delete <INDEX>`                                                   |
@@ -326,6 +314,7 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Summarizing Entries       | `summary {<SPECIES>}`                                              |
 | Listing Entries              | `list`                                                             |
 | Exporting Entries            | `export {<FILENAME>}`                                              |
+| Getting Help              | `help`                                                             |
 | Exit                      | `bye`                                                              |
 
 [⬆ Back to top](#table-of-contents)
