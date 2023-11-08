@@ -1,4 +1,4 @@
-# WildWatch User Guide 🦏
+# WildWatch User Guide 🐘
 
 ## Table of Contents 
 - [Introduction](#introduction-)
