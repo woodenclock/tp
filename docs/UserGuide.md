@@ -217,17 +217,13 @@ Shows the user how to use all the commands. Additionally, users can also specify
 Format: `help` `help add` `help delete`
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)
-
-[⬆ Back to top](#table-of-contents)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)  
   
   
 ### 9. Exit : `bye`
 To close and save the program.
 
 Format: `bye`
-
-[⬆ Back to top](#table-of-contents)
   
   
 ### 10. Saving the Entries
