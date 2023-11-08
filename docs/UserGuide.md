@@ -257,21 +257,21 @@ There is no need to save manually.
 > **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
   
   
-> **Q**: Can I add photos or other media to the entries?
+> **Q**: Can I add photos or other media to the entries?  
 > **A**: Currently, WildWatch only supports text-based entries. You can add descriptions, but it does not support adding photos or media directly.
   
   
-> **Q**: I accidentally deleted an entry. Is there a way to recover it?
+> **Q**: I accidentally deleted an entry. Is there a way to recover it?  
 > **A**: Unfortunately, deleted entries are not recoverable, so it's important to be careful when using the delete command.
   
   
-> **Q**: I made a mistake while adding an entry. How can I edit or correct it?
+> **Q**: I made a mistake while adding an entry. How can I edit or correct it?  
 > **A**: You can edit an entry using the edit command.
 > Just specify the index of the entry you want to edit and provide the updated information.
 > For example, you can use `edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Javier R/Injured left flipper` to edit the first entry.  
   
   
-> **Q**: I found a bug! What do I do?  
+> **Q**: I found a bug! What do I do?    
 > **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
   
   
