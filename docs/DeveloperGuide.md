@@ -215,7 +215,9 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 ## Non-Functional Requirements 🐯
 
-{Give non-functional requirements}
+1. Should be portable and working on any mainstream OS as long as it has Java 11 or above installed.
+2. Should be able to hold up to 1000 wildlife records without a noticeable drop in performance for typical usage.
+3. The average user who is familiar with typing on a keyboard should accomplish their tasks faster with WildWatch than a typical GUI app
 
 [⬆ Back to top](#table-of-contents)
 
