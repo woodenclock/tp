@@ -188,7 +188,8 @@ Since clerks are already accustomed to typing and working with a computer, this 
 |v1.0|zoo clerk|add an animal entry|record the animals in the zoo, and refer to them afterwards|
 |v1.0|zoo clerk|delete an animal entry|remove redundant or invalid animal entry|
 |v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
-|v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
+|v2.0|zoo clerk|find an entry item by name|locate the entry I want, without having to go through the entire list|
+|v2.0|zoo clerk|find a to-do item by name|locate a to-do without having to go through the entire list|
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
@@ -204,66 +205,26 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 ## Manual Testing 🐼
 
-### Launching the App
-1. Download the latest JAR file from our release page [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases)
-2. Double-click the JAR file to run the app
-
-### Getting help
-1. Run the `help` command by typing `help` and hitting the `Enter` key on your keyboard
-
-### Adding a Wildlife Entry
-1. Run the following command `add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
-
-Expected: Wildlife recorded successfully added
-
-2. Run the following command `add D/02-03-23`
-
-Expected: No new recorded added.
-
-### Listing Wildlife Entries
-1. Run the following command `list`
-
-Expected: All wildlife records shown
-
-
-### Editing a Wildlife Entry
-1. Run the following command `edit I/1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
-
-Expected: Successfully edited the wildlife record
-3. Run the following command `edit I/-1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
-
-Expected: Failed to edit as -1 is not a valid index
-
-
-### Deleting a Wildlife Entry
-1. Run the following command `delete 1`
-
-Expected: Successfully deleted the first record
-
-2. Run the following command `delete 0`
-
-Expected: Failed to delete a record as 0 is an invalid record
-
-### Getting a summary of the wildlife data
-1. Run the following command `summary`
-Expected: A summary of the wildlife record is displayed
-
-### Exporting wildlife data to a local file
-1. Run the following command `export myobservations.csv`
-
-Expected: You will be prompted with further questions
-
-### Exiting the app
-1. Run the `bye` command
-
-Expected: The app stops
-
+{Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Command Summary 🐱
+
+| Action                    | Format                                                             |
+|---------------------------|--------------------------------------------------------------------|
+| Getting Help              | `help`                                                             |
+| Adding Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
+| Adding Entries (interactive) | `add i/`                                                           |
+| Deleting Entries            | `delete <INDEX>`                                                   |
+| Finding Entries            | `find <SEARCH>`
+| Editing Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
+| Summarizing Entries       | `summary {<SPECIES>}`                                              |
+| Listing Entries              | `list`                                                             |
+| Exporting Entries            | `export {<FILENAME>}`                                              |
+| Exit                      | `bye`                                                              |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
