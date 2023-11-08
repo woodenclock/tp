@@ -209,7 +209,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 |v1.0|zoo clerk|add an animal entry|record the animals in the zoo, and refer to them afterwards|
 |v1.0|zoo clerk|delete an animal entry|remove redundant or invalid animal entry|
 |v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
-|v1.0|zoo clerk|have a exit command|close the program safely|
+|v1.0|zoo clerk|have an exit command|close the program safely|
 |v2.0|zoo clerk|find an entry item by name|locate the entry I want, without having to go through the entire list|
 |v2.0|zoo clerk|edit a command|change the entry contents to reflect the changes in the zoo|
 |v2.0|zoo clerk|see a summary of all entries|have an idea of the entries at a glance|
@@ -251,8 +251,8 @@ Expected: No new recorded added.
 1. Run the following command `list`
 
 Expected: All wildlife records shown
-
-
+  
+  
 ### Editing a Wildlife Entry
 1. Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 
@@ -260,8 +260,8 @@ Expected: Successfully edited the wildlife record
 3. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 
 Expected: Failed to edit as -1 is not a valid index
-
-
+  
+  
 ### Deleting a Wildlife Entry
 1. Run the following command `delete 1`
 
@@ -270,17 +270,20 @@ Expected: Successfully deleted the first record
 2. Run the following command `delete 0`
 
 Expected: Failed to delete a record as 0 is an invalid record
-
+  
+  
 ### Getting a summary of the wildlife data
 1. Run the following command `summary`
 
 Expected: A summary of the wildlife record is displayed
-
+  
+  
 ### Exporting wildlife data to a local file
 1. Run the following command `export myobservations.csv`
 
 Expected: You will be prompted with further questions
-
+  
+  
 ### Exiting the app
 1. Run the `bye` command
 
