@@ -270,7 +270,7 @@ We value your feedback, and opening an issue on our GitHub repository is a great
 ### Step-by-Step Instructions:
 
 1. **Visit the GitHub Repository**
-  - In your web browser, navigate to our GitHub repository. The URL is [https://github.com/AY2324S1-CS2113T-W11-2/tp](https://github.com/AY2324S1-CS2113T-W11-2/tp).
+  - In your web browser, navigate to our [GitHub repository](https://github.com/AY2324S1-CS2113T-W11-2/tp).  
 
 2. **Sign in to GitHub**
   - If you don't have a GitHub account, you'll need to create one. If you already have an account, sign in to GitHub.
