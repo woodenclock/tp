@@ -70,15 +70,6 @@ public class HelpCommand extends Command {
                     "       summary Annam Leaf Turtle\n" +
                     "_________________________________________________________________\n";
 
-    private static final String byeCommandMessage =
-            "\n" +
-                    "_________________________________________________________________\n" +
-                    "8.  To exit the program\n" +
-                    "     Format: bye\n" +
-                    "     Examples: \n" +
-                    "       bye \n" +
-                    "_________________________________________________________________\n";
-
     private static final String exportCommandMessage =
             "\n" +
                     "_________________________________________________________________\n" +
@@ -91,6 +82,27 @@ public class HelpCommand extends Command {
                     "       summary \n" +
                     "       summary Annam Leaf Turtle\n" +
                     "_________________________________________________________________\n";
+
+    private static final String findCommandMessage =
+            "\n" +
+                    "_________________________________________________________________\n" +
+                    "8.  To find wildlife entries\n" +
+                    "     Format: find SEARCH\n" +
+                    "       Note:\n" +
+                    "           - SEARCH argument could contain the species, name, date, or remarks.\n" +
+                    "     Examples: \n" +
+                    "       find Annam Leaf Turtle\n" +
+                    "_________________________________________________________________\n";
+
+    private static final String byeCommandMessage =
+            "\n" +
+                    "_________________________________________________________________\n" +
+                    "9.  To exit the program\n" +
+                    "     Format: bye\n" +
+                    "     Examples: \n" +
+                    "       bye \n" +
+                    "_________________________________________________________________\n";
+
     private static final String helpPage =
             "\n" +
                     "---------------------------HELP PAGE-----------------------------\n" +
@@ -101,6 +113,7 @@ public class HelpCommand extends Command {
                     editCommandMessage +
                     summaryCommandMessage +
                     exportCommandMessage +
+                    findCommandMessage +
                     byeCommandMessage +
                     "\n" +
                     "-------------------------HELP PAGE END---------------------------\n";
@@ -114,6 +127,7 @@ public class HelpCommand extends Command {
                     "edit: edit I/INDEX D/DATE S/SPECIES N/NAME R/REMARKS\n" +
                     "summary: summary SPECIES\n" +
                     "export: export FILENAME\n" +
+                    "find: find SEARCH\n" +
                     "bye: exits the program\n" +
                     "\n" +
                     "-------------------------HELP PAGE (short) END---------------------------\n";
@@ -165,6 +179,9 @@ public class HelpCommand extends Command {
             break;
         case "export":
             System.out.println(exportCommandMessage);
+            break;
+        case "find":
+            System.out.println(findCommandMessage);
             break;
         case "bye":
             System.out.println(byeCommandMessage);
