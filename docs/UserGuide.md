@@ -17,6 +17,7 @@
     - [Exporting Entries](#7-exporting-your-entries-export): `export`
     - [Getting Help](#8-getting-help--help): `help`
     - [Exit](#9-exit--bye): `bye`
+    - [Saving the Entries](#10-saving-the-entries)
 - [FAQ](#faq-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
@@ -229,7 +230,7 @@ Format: `bye`
 [⬆ Back to top](#table-of-contents)
   
   
-### 10. Saving the Tasklist
+### 10. Saving the Entries
 
 Tasklist data are saved in the hard disk automatically after every valid command changes the data. 
 There is no need to save manually.
