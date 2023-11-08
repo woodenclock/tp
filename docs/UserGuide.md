@@ -309,10 +309,10 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Adding Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
 | Adding Entries (interactive) | `add i/`                                                           |
 | Deleting Entries            | `delete <INDEX>`                                                   |
+| Listing Entries              | `list`                                                             |
 | Finding Entries            | `find <SEARCH>`
 | Editing Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
 | Summarizing Entries       | `summary {<SPECIES>}`                                              |
-| Listing Entries              | `list`                                                             |
 | Exporting Entries            | `export {<FILENAME>}`                                              |
 | Getting Help              | `help`                                                             |
 | Exit                      | `bye`                                                              |
