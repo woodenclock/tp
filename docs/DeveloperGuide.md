@@ -157,11 +157,17 @@ The `Command` components can be found within the `Command` package.
 
 ### EntryList Package  
 The `EntryList` class can be found within the `Entry` package.  
+It is resposible for storing all the entry data in an static `ArrayList` class.   
+It is responsible for "getting" and "setting" values of individual `Entry` objects.  
 
 [⬆ Back to top](#table-of-contents)  
 
 ### Entry Package  
 The `Entry` class can be found within the `Entry` package.  
+Each `Entry` object holds the data of a single animal entry, residing in the static `ArrayList` maintained by `EntryList` class.  
+
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ee46913d-dfc5-4fd5-85ef-53bb03546085)
+The class diagram above shows the relationship beteen the `Entry`, `EntryList`, and `ArrayList` classes.
 
 [⬆ Back to top](#table-of-contents)  
 
