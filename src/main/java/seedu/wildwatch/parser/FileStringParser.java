@@ -7,7 +7,6 @@ import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.error.InvalidInputErrorType;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.error.DateChecker;
-import seedu.wildwatch.ui.EntryPrinter;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;

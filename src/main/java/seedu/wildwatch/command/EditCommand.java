@@ -27,7 +27,8 @@ public class EditCommand extends Command {
         this.input = input;
     }
 
-    public Entry checkAndUpdateEntry(Entry entry, String date, String species, String name, String remark, int index) throws InvalidInputException {
+    public Entry checkAndUpdateEntry(Entry entry, String date, String species, String name, String remark, int index)
+            throws InvalidInputException {
         // Check for duplicate entry
         if (checkDuplicateEntry(entry, date, species, name, index)) {
             throw new InvalidInputException("Edit produces a duplicate entry!");
