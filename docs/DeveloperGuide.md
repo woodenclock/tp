@@ -1,29 +1,29 @@
 # WildWatch Developer Guide 🐘
 
 ## Table of Contents  
-- [Introduction](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#introduction-)
-    - [Purpose](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#purpose)
-    - [Audience](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#audience)
-    - [How to use the Developer Guide](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#how-to-use-the-developer-guide)
-    - [Legend](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#legend)
-- [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#quick-start-)
-- [Design & Implementation](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#design--implementation-)
-- [Product Scope](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#product-scope-)
-    - [Target User Profile](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#target-user-profile)
-    - [Value Proposition](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#value-proposition)
-- [User Stories](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#user-stories-)
-- [Non-Funtional Requirements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#non-functional-requirements-)
-- [Manual Testing](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#manual-testing-)
-- [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary-)
-- [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-)
-- [Acknowledgements](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#acknowledgements-)
+- [Introduction](#introduction-)
+    - [Purpose](#purpose)
+    - [Audience](#audience)
+    - [How to use the Developer Guide](#how-to-use-the-developer-guide)
+    - [Legend](#legend)
+- [Quick Start](#quick-start-)
+- [Design & Implementation](#design--implementation-)
+- [Product Scope](#product-scope-)
+    - [Target User Profile](#target-user-profile)
+    - [Value Proposition](#value-proposition)
+- [User Stories](#user-stories-)
+- [Non-Funtional Requirements](#non-functional-requirements-)
+- [Manual Testing](#manual-testing-)
+- [Command Summary](#command-summary-)
+- [Glossary](#glossary-)
+- [Acknowledgements](#acknowledgements-)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Introduction 🐻
 
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉    
-Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-).  
+Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](#glossary-).  
 Its main job is to store and present animal data required in everyday operations of the wildlife reserve.  
 
 ### Purpose
@@ -35,17 +35,17 @@ The intended audience for this document are developers who would like to look un
 
 ### How to use the Developer Guide  
 - Are you new here?  
-No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#quick-start-) page.
+No worries, head to the [Quick Start](#quick-start-) page.
 - Lost among the pages?  
-Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents) to look for the right pages.  
+Head to the [Table of Contents](#table-of-contents) to look for the right pages.  
 - Need help with the functionalities?  
 Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.  
 - Do you have a question for us?  
 Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page in the User Guide.  
 - Do you want a concise summary of all functionalities?  
-Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#command-summary-) page for a summary of all commands.
+Head to the [Command Summary](#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
-Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-) page for its meaning.  
+Head to the [Glossary](#glossary-) page for its meaning.  
 
 ### Legend
 
@@ -56,7 +56,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuid
 | ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ ____________________________________________________________
 >>> 
 ```
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -153,7 +153,7 @@ The **_Parser Class Diagram_** below shows how `Execute`, `Parser`, `Error`, `Co
 The `Command` components can be found within the `Command` package.  
 ![Command Sequence Diagram](images/AddSequenceDiagram.png)  
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)  
+[⬆ Back to top](#table-of-contents)  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -162,7 +162,7 @@ The `Command` components can be found within the `Command` package.
 ### Target user profile
 
 Target user profile for WildWatch is the clerks working in wildlife reserves, who manages the wildlife data.
-Since our program is interacted through the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#glossary-), someone who can type fast will definitely benefit from WildWatch.
+Since our program is interacted through the [Command Line Interface (CLI)](#glossary-), someone who can type fast will definitely benefit from WildWatch.
 This would significantly boost one's productivity.
 Since clerks are already accustomed to typing and working with a computer, this program would be ideal for this user profile.
 
@@ -176,7 +176,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 - **Eco-Friendly**: Transition from paper to digital and contribute to a greener planet. Not only does this transition reduce clutter and the risk of loss, but it also significantly diminishes your carbon footprint.
 - **Cost-Effective**: Eliminate the recurring costs of paper, printing, and storage. With our solution, you'll experience a noticeable reduction in operational expenses while benefiting from advanced data management capabilities.
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -194,7 +194,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 |v2.0|zoo clerk|see a summary of all entries|have an idea of the entries at a glance|
 |v2.1|zoo clerk|export the entries|easily move my data from one place to another|
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -202,7 +202,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 {Give non-functional requirements}
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -210,7 +210,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -229,7 +229,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 | Exporting Entries            | `export {<FILENAME>}`                                              |
 | Exit                      | `bye`                                                              |
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -240,7 +240,7 @@ We are here to help you with terminologies used in the user guide, that may not 
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -249,6 +249,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) - Reference  
 Meet the [people](https://ay2324s1-cs2113t-w11-2.github.io/tp/AboutUs.html) behind WildWatch!  
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
