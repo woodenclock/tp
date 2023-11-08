@@ -52,6 +52,11 @@ public class Entry {
     }
     //@@woodenclock
 
+    public String entryString() {
+        return String.format("Date: [%s] | Species: [%s] | Name: [%s] | Remark: [%s]",
+                getDate().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")), getSpecies(), getName(), getRemark());
+    }
+
     /**
      * Returns true if both entries have the same value for each field.
      */

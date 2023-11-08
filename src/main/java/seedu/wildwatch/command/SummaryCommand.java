@@ -79,7 +79,13 @@ public class SummaryCommand extends Command {
             SummaryCommandPrinter.printSummaryNameMessage(speciesName);
             List<Entry> filteredEntries = map.get(speciesName);
             Map<String, List<Entry>> filteredMap = groupSpecieByName(filteredEntries);
-            filteredMap.forEach((key, value) -> System.out.println(key + " - (" + value.size() + ")"));
+            filteredMap.forEach((key, value) -> {
+                System.out.println(key + " - (" + value.size() + ")");
+                for (Entry v : value) {
+                    System.out.println(v.entryString());
+                }
+            });
+
         } else {
             SummaryCommandPrinter.printSummarySpecieMessage();
             map.forEach((key, value) -> System.out.println(key + " - (" + value.size() + ")"));
