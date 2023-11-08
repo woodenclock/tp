@@ -101,7 +101,7 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
   
 Examples:
 * `add D/02-03-23 S/Annam Leaf Turtle N/Ariel`
-* `add D/02-03-23 S/Low Land Gorilla N/Strong One {R/Aggressive}`
+* `add D/02-03-23 S/Low Land Gorilla N/Strong One R/Aggressive`
   
 Expected output:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
