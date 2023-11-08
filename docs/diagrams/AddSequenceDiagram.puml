@@ -33,13 +33,13 @@ create AddCommand
 AddCommandParser -> AddCommand : AddCommand(entry)
 activate AddCommand
 
-AddCommand --> AddCommandParser : a
+AddCommand --> AddCommandParser : command
 deactivate AddCommand
 
-AddCommandParser --> EntryHandler : a
+AddCommandParser --> EntryHandler : command
 deactivate AddCommandParser
 
-EntryHandler --> CommandHandler : a
+EntryHandler --> CommandHandler : command
 deactivate EntryHandler
 
 CommandHandler -> CommandHandler : executeCommand(command)

@@ -8,4 +8,7 @@
 !define ENTRYLIST_COLOR #4472C4
 !define UI_COLOR #7030A0
 !define LOCALSTORAGE_COLOR #000000
+
+hide footbox
+
 @enduml
