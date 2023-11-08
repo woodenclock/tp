@@ -188,8 +188,11 @@ Since clerks are already accustomed to typing and working with a computer, this 
 |v1.0|zoo clerk|add an animal entry|record the animals in the zoo, and refer to them afterwards|
 |v1.0|zoo clerk|delete an animal entry|remove redundant or invalid animal entry|
 |v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
+|v1.0|zoo clerk|have a exit command|close the program safely|
 |v2.0|zoo clerk|find an entry item by name|locate the entry I want, without having to go through the entire list|
-|v2.0|zoo clerk|find a to-do item by name|locate a to-do without having to go through the entire list|
+|v2.0|zoo clerk|edit a command|change the entry contents to reflect the changes in the zoo|
+|v2.0|zoo clerk|see a summary of all entries|have an idea of the entries at a glance|
+|v2.1|zoo clerk|export the entries|easily move my data from one place to another|
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/DeveloperGuide.html#table-of-contents)
 
