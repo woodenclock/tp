@@ -55,7 +55,14 @@ Head to the [Glossary](#glossary-) page for its meaning.
 | ✏ Note   | These are important details that you should take note of.   |
 | ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
-
+   
+> ❗ IMPORTANT     
+> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.    
+>     * E.g., `delete <INDEX>` should be `delete 2`    
+> * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.    
+>     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.   
+> * Do be mindful that <DATE> cannot be a date in the future   
+    
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
