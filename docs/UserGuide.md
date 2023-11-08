@@ -232,7 +232,7 @@ Format: `bye`
   
 ### 10. Saving the Entries
 
-Tasklist data are saved in the hard disk automatically after every valid command changes the data. 
+Data of the entries are saved in the local memory automatically after every valid command changes the data. 
 There is no need to save manually.
 
 [⬆ Back to top](#table-of-contents)
