@@ -159,20 +159,7 @@ Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
 > `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, only 1 needs to be filled up.  
   
 Example:
-```
-edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
-____________________________________________________________
-The following entry has been edited:
-Date: [02-04-2024] | Species: [Annam Leaf Turtle] | Name: [Javier] | Remark: [Injured right flipper]
-____________________________________________________________
-```
-```
-edit I/1 S/Green Leaf Turtle
-____________________________________________________________
-The following entry has been edited:
-Date: [02-03-2023] | Species: [Green Leaf Turtle] | Name: [Ariel] | Remark: [Injured left flipper]
-____________________________________________________________
-```
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/93d3f7ce-f714-4149-953d-703d6d58c671)  
 
 [⬆ Back to top](#table-of-contents)
   
@@ -186,8 +173,7 @@ Format: `find <SEARCH>`
 > `<SEARCH>` here could be the full-date (**DD-MM-YYYY**), or part of the name, the species, or the remark.
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/495c8fb4-d720-4d25-8c14-3cc8f0f40a0d)
-  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b77bd98a-6ea3-4378-aef2-bd436794b246)    
   
 [⬆ Back to top](#table-of-contents)
    
