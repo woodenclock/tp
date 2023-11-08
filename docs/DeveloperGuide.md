@@ -232,8 +232,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 ## Manual Testing 🐼
 
 ### Launching the App
-1. Download the latest JAR file from our release page [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases)
-2. Double-click the JAR file to run the app
+1. Refer to the [Quick Start](#quick-start-) section to get WildWatch set up and running.
 
 ### Getting help
 1. Run the `help` command by typing `help` and hitting the `Enter` key on your keyboard
