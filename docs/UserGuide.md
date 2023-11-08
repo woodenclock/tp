@@ -126,7 +126,7 @@ Format: `delete <INDEX>`
    
 >❗ IMPORTANT  
 > * Index must be a positive integer 1, 2, 3, ...  
-> * Deleted items may not be recoverable  
+> * Deleted items are not be recoverable  
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)  
@@ -159,7 +159,7 @@ Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
 > ✏ Note  
 > `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, only 1 needs to be filled up.  
   
-Example:
+Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/93d3f7ce-f714-4149-953d-703d6d58c671)  
 
 [⬆ Back to top](#table-of-contents)
