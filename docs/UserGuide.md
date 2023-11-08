@@ -25,23 +25,23 @@
   
 ## Introduction 🐻
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
-Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-).  
+Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](#glossary-).  
 The purpose of this user guide is to familiarize you with the program and help you when you face a problem using it.  
 Its main job is to store and present animal data, this would make your job so much more convenient!
 
 ### How to use the User Guide  
 - Are you new here?  
-No worries, head to the [Quick Start](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#quick-start-) page, and you will be up and running in no time!  
+No worries, head to the [Quick Start](#quick-start-) page, and you will be up and running in no time!  
 - Lost among the pages?  
-Head to the [Table of Contents](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents) to look for the right pages.  
+Head to the [Table of Contents](#table-of-contents) to look for the right pages.  
 - Need help with the functionalities?  
-Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page for detailed guidance.  
+Head to the [Features](#features-) page for detailed guidance.  
 - Do you have a question for us?  
-Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page.  
+Head to the [FAQ](#faq-) page.  
 - Do you want a concise summary of all functionalities?  
-Head to the [Command Summary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#command-summary-) page for a summary of all commands.
+Head to the [Command Summary](#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
-Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) page for its meaning.  
+Head to the [Glossary](#glossary-) page for its meaning.  
 
 ### Legend
 
@@ -52,7 +52,7 @@ Head to the [Glossary](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.htm
  ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -74,7 +74,7 @@ Some example commands you can try:
 
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/c110856f-dd16-4c5c-8205-446d86425ddb)
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -82,7 +82,7 @@ Some example commands you can try:
 > ❗ IMPORTANT  
 > * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
 >     * E.g., `delete <INDEX>` should be `delete 2`  
-> * Anything between curly brackets `{ }` are optional [blocks](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#glossary-) that may or may not be filled up by the user.  
+> * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.  
 >     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.
 > * Do be mindful that <DATE> cannot be a date in the future
   
@@ -130,7 +130,7 @@ Format: `delete <INDEX>`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
   
   
 ### 3. Listing Entries: `list`
@@ -143,7 +143,7 @@ Format: `list`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ef21314f-fb23-4bd6-bcfd-fddfa8fb0330)
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
   
   
 ### 4. Editing Entries: `edit`
@@ -174,7 +174,7 @@ Date: [02-03-2023] | Species: [Green Leaf Turtle] | Name: [Ariel] | Remark: [Inj
 ____________________________________________________________
 ```
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
   
   
 ### 5. Finding entries: `find`  
@@ -189,7 +189,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/495c8fb4-d720-4d25-8c14-3cc8f0f40a0d)
   
   
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
    
    
 ### 6. Summarizing Entries: `summary`
@@ -204,7 +204,7 @@ Format: `summary {<SPECIES>}`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)  
+[⬆ Back to top](#table-of-contents)  
   
   
 ### 7. Exporting your entries: `export` 
@@ -239,8 +239,15 @@ To close and save the program.
 Format: `bye`
 
 
+[⬆ Back to top](#table-of-contents)
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+
+### 10. Saving the Tasklist
+
+Tasklist data are saved in the hard disk automatically after every valid command changes the data. 
+There is no need to save manually.
+
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -298,7 +305,7 @@ Alternatively, you can do the following steps below to report an issue with our 
 Thank you for contributing to the improvement of our program. Your feedback is highly appreciated! 🙏
 
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -317,7 +324,7 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Exporting Entries            | `export {<FILENAME>}`                                              |
 | Exit                      | `bye`                                                              |
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -329,4 +336,4 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Command Line Interface   | A way to communicate with your computer using texts. |
 | Block | A section of a command. |
 
-[⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
+[⬆ Back to top](#table-of-contents)
