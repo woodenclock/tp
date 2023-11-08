@@ -94,7 +94,7 @@ Adds a new entry to the system.
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
   
 > ❗ IMPORTANT
-> `<DATE>` should be in the format **DD-MM-YY**
+> `<DATE>` should be in the format **DD-MM-YYYY**
   
 > ✏ Note  
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
@@ -152,7 +152,7 @@ Edits an entry in the program.
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
   
 >❗ IMPORTANT
->`<DATE>` should be in the format **DD-MM-YY**
+>`<DATE>` should be in the format **DD-MM-YYYY**
 > `I/<INDEX>` argument is required.  
   
 > ✏ Note  
@@ -183,7 +183,7 @@ Finds all the entries that match the the search word.
 Format: `find <SEARCH>`
 
 > ✏ Note  
-> `<SEARCH>` here could be the full-date (**DD-MM-YY**), or part of the name, the species, or the remark.
+> `<SEARCH>` here could be the full-date (**DD-MM-YYYY**), or part of the name, the species, or the remark.
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/495c8fb4-d720-4d25-8c14-3cc8f0f40a0d)
@@ -254,7 +254,7 @@ There is no need to save manually.
 ## FAQ 🦁
   
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
-> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-2023` in **DD-MM-YY** format.  
+> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-2023` in **DD-MM-YYYY** format.  
   
   
 > **Q**: Can I add photos or other media to the entries?  
