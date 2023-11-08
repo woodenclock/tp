@@ -44,7 +44,6 @@ Head to the [Command Summary](#command-summary-) page for a summary of all comma
 Head to the [Glossary](#glossary-) page for its meaning.  
 
 ### Legend
-
  Symbol         | Meaning
  -------------- |------------------------------------------------------------
  ❗ IMPORTANT   | These are important instructions that you should follow.  
@@ -53,7 +52,8 @@ Head to the [Glossary](#glossary-) page for its meaning.
  🐵 🦊 🦁      | Your cute animal friends pop up to let you know that you have reached a new section.
 
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Quick Start 🐵
@@ -74,8 +74,9 @@ Some example commands you can try:
 
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/c110856f-dd16-4c5c-8205-446d86425ddb)
 
-[⬆ Back to top](#table-of-contents)
-
+[⬆ Back to top](#table-of-contents)  
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features 🦊
@@ -86,9 +87,8 @@ Some example commands you can try:
 >     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.
 > * Do be mindful that <DATE> cannot be a date in the future
   
-  
 ### 1. Adding Entries: `add`
-Adds a new entry to the system.
+Adds a new entry to the WildWatch program.
   
 #### 1.1 Standard Mode 
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
@@ -99,11 +99,10 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
 > ✏ Note  
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
   
-Examples:
+Example:
 * `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel`
 * `add D/02-03-2023 S/Low Land Gorilla N/Strong One R/Aggressive`
   
-Expected output:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
 #### 1.2 Interactive Mode: `add i/`
@@ -111,7 +110,8 @@ If you're prone to forgetting fields to include in the `add` command, have no fe
 It helpfully prompts you for data each step of the way, and notifies you when you've left a mandatory field blank, so you don't have to worry about getting it wrong!
 
 Format: `add i/`
-
+  
+Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
@@ -218,23 +218,25 @@ Format: `help` `help add` `help delete`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)
 
-
+[⬆ Back to top](#table-of-contents)
+  
+  
 ### 9. Exit : `bye`
 To close and save the program.
 
 Format: `bye`
 
-
 [⬆ Back to top](#table-of-contents)
-
-
+  
+  
 ### 10. Saving the Tasklist
 
 Tasklist data are saved in the hard disk automatically after every valid command changes the data. 
 There is no need to save manually.
 
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## FAQ 🦁
