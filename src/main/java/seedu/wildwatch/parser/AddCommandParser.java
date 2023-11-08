@@ -59,11 +59,12 @@ public class AddCommandParser implements Parser<AddCommand> {
         Entry newEntry = new Entry(date, species, name, remark);
 
         // Check that entry is not a duplicate
-        if (EntryList.checkEntryExists(newEntry)) {
+        int duplicateEntryIdx = EntryList.checkEntryExists(newEntry);
+        if (duplicateEntryIdx != -1) {
             throw new InvalidInputException("Entry already exists! "
                     + "Note that you can only add one entry per animal in a day.\n"
-                    + "Use the edit command instead if you would like to modify remarks, "
-                    + "or delete the existing entry first.");
+                    + "\t" + EntryList.getEntryString(duplicateEntryIdx-1)
+                    + "Use the edit command or delete the existing entry first.");
         }
 
         return new AddCommand(newEntry);

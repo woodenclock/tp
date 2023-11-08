@@ -1,6 +1,7 @@
 package seedu.wildwatch.entry;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import seedu.wildwatch.storage.Saver;
 
@@ -75,9 +76,9 @@ public class EntryList {
      * Enforce uniqueness of (date, species, name) combination.g
      *
      * @param newEntry Entry to check
-     * @return true if entry already exists, false otherwise
+     * @return -1 if entry is not in list, index of duplicate otherwise
      */
-    public static boolean checkEntryExists(Entry newEntry) {
+    public static int checkEntryExists(Entry newEntry) {
         final LocalDate date = newEntry.getDate();
         final String species = newEntry.getSpecies();
         final String name = newEntry.getName();
@@ -87,10 +88,22 @@ public class EntryList {
             if (entry.getDate().equals(date)
                     && entry.getSpecies().equals(species)
                     && entry.getName().equals(name)) {
-                return true;
+                return i+1;
             }
         }
 
-        return false;
+        return -1;
+    }
+
+    public static String getEntryString(int nthEntry) {
+        return String.format("%d.Date: [%s] | Species: [%s] | Name: [%s] | Remark: [%s]\n",
+                nthEntry,
+                getEntryDate(nthEntry).format(DateTimeFormatter.ofPattern("dd-MM-yyyy")),
+                getEntrySpecies(nthEntry),
+                getEntryName(nthEntry),
+                getEntryRemark(nthEntry)
+        );
     }
 }
+
+
