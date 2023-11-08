@@ -18,7 +18,7 @@ public class HelpCommand extends Command {
             "\n" +
                     "_________________________________________________________________\n" +
                     "2.  To add a new wildlife\n" +
-                    "     Format: add D/DATE S/SPECIES N/NAME R/REMARKS\n" +
+                    "     Format: add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}\n" +
                     "       DATE should be in the format DD-MM-YYYY\n" +
                     "     Examples: \n" +
                     "       add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n";
@@ -35,7 +35,7 @@ public class HelpCommand extends Command {
             "\n" +
                     "_________________________________________________________________\n" +
                     "4.  To delete a wildlife\n" +
-                    "     Format: delete INDEX\n" +
+                    "     Format: delete <INDEX>\n" +
                     "       The index refers to the index number shown in the displayed observation list.\n" +
                     "       Note:\n" +
                     "           - The index must be a positive integer:\n" +
@@ -49,7 +49,7 @@ public class HelpCommand extends Command {
             "\n" +
                     "_________________________________________________________________\n" +
                     "5.  To edit a wildlife\n" +
-                    "     Format: edit I/INDEX D/DATE S/SPECIES N/NAME R/REMARKS\n" +
+                    "     Format: edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}\n" +
                     "       The index refers to the index number shown in the displayed observation list.\n" +
                     "       Note:\n" +
                     "           - The index must be a positive integer:\n" +
@@ -62,7 +62,7 @@ public class HelpCommand extends Command {
             "\n" +
                     "_________________________________________________________________\n" +
                     "6.  To show a summary\n" +
-                    "     Format: summary SPECIES\n" +
+                    "     Format: summary <SPECIES>\n" +
                     "       Note:\n" +
                     "           - SPECIES argument is optional\n" +
                     "     Examples: \n" +
@@ -74,7 +74,7 @@ public class HelpCommand extends Command {
             "\n" +
                     "_________________________________________________________________\n" +
                     "7.  To export wildlife data\n" +
-                    "     Format: export FILENAME\n" +
+                    "     Format: export {<FILENAME>}\n" +
                     "       Note:\n" +
                     "           - FILENAME argument is optional\n" +
                     "           - FILENAME argument if specified should end with a .csv extension\n" +
@@ -87,7 +87,7 @@ public class HelpCommand extends Command {
             "\n" +
                     "_________________________________________________________________\n" +
                     "8.  To find wildlife entries\n" +
-                    "     Format: find SEARCH\n" +
+                    "     Format: find <SEARCH>\n" +
                     "       Note:\n" +
                     "           - SEARCH argument could contain the species, name, date, or remarks.\n" +
                     "     Examples: \n" +
@@ -121,14 +121,15 @@ public class HelpCommand extends Command {
     private static final String helpPageShort =
             "\n" +
                     "---------------------------HELP PAGE (short)-----------------------------\n" +
-                    "add: add D/DATE S/SPECIES N/NAME R/REMARKS\n" +
-                    "list: list\n" +
-                    "delete: delete INDEX\n" +
-                    "edit: edit I/INDEX D/DATE S/SPECIES N/NAME R/REMARKS\n" +
-                    "summary: summary SPECIES\n" +
-                    "export: export FILENAME\n" +
-                    "find: find SEARCH\n" +
-                    "bye: exits the program\n" +
+                    "Adding Entries: add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}\n" +
+                    "Adding Entries (Interactive): add i/\n" +
+                    "Deleting Entries: delete INDEX\n" +
+                    "Listing Entries: list\n" +
+                    "Finding Entries: find <SEARCH>\n" +
+                    "Editing Entries: edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}\n" +
+                    "Summarizing Entries: summary {<SPECIES>}\n" +
+                    "Exporting Entries: export {<FILENAME>}\n" +
+                    "Exit: bye\n" +
                     "\n" +
                     "-------------------------HELP PAGE (short) END---------------------------\n";
 
