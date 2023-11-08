@@ -19,9 +19,9 @@ public class HelpCommand extends Command {
                     "_________________________________________________________________\n" +
                     "2.  To add a new wildlife\n" +
                     "     Format: add D/DATE S/SPECIES N/NAME R/REMARKS\n" +
-                    "       DATE should be in the format DD-MM-YY\n" +
+                    "       DATE should be in the format DD-MM-YYYY\n" +
                     "     Examples: \n" +
-                    "       add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n";
+                    "       add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n";
 
     private static final String listCommandMessage =
             "\n" +
@@ -55,7 +55,7 @@ public class HelpCommand extends Command {
                     "           - The index must be a positive integer:\n" +
                     "           - DATE, SPECIES, NAME, REMARKS arguments are optional.\n" +
                     "     Examples: \n" +
-                    "       edit I/1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n" +
+                    "       edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n" +
                     "_________________________________________________________________\n";
 
     private static final String summaryCommandMessage =

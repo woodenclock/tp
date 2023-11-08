@@ -239,11 +239,11 @@ Since clerks are already accustomed to typing and working with a computer, this 
 1. Run the `help` command by typing `help` and hitting the `Enter` key on your keyboard
 
 ### Adding a Wildlife Entry
-1. Run the following command `add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+1. Run the following command `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 
 Expected: Wildlife recorded successfully added
 
-2. Run the following command `add D/02-03-23`
+2. Run the following command `add D/02-03-2023`
 
 Expected: No new recorded added.
 
@@ -254,10 +254,10 @@ Expected: All wildlife records shown
 
 
 ### Editing a Wildlife Entry
-1. Run the following command `edit I/1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+1. Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 
 Expected: Successfully edited the wildlife record
-3. Run the following command `edit I/-1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+3. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 
 Expected: Failed to edit as -1 is not a valid index
 

@@ -100,8 +100,8 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
   
 Examples:
-* `add D/02-03-23 S/Annam Leaf Turtle N/Ariel`
-* `add D/02-03-23 S/Low Land Gorilla N/Strong One R/Aggressive`
+* `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel`
+* `add D/02-03-2023 S/Low Land Gorilla N/Strong One R/Aggressive`
   
 Expected output:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
@@ -254,7 +254,7 @@ There is no need to save manually.
 ## FAQ 🦁
   
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
-> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
+> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-2023` in **DD-MM-YY** format.  
   
   
 > **Q**: Can I add photos or other media to the entries?  

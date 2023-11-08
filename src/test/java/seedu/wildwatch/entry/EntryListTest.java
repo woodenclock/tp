@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class EntryListTest {
 
-    private final Entry entry1 = new Entry("02-03-23", "Annam Leaf Turtle", "Ariel",
+    private final Entry entry1 = new Entry("02-03-2023", "Annam Leaf Turtle", "Ariel",
             "Injured left flipper");
-    private final Entry entry2 = new Entry("04-04-23", "Bengal Tiger", "Rajah",
+    private final Entry entry2 = new Entry("04-04-2023", "Bengal Tiger", "Rajah",
             "Missing canine tooth");
 
     @BeforeEach

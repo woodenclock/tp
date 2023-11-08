@@ -31,8 +31,8 @@ class ListCommandTest {
     @Test
     void listEntry() {
         clearEntryList();
-        addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
-        addEntry(new Entry("28-10-23", "Tiger", "Tigger", "This is Tigger."));
+        addEntry(new Entry("28-10-2023", "Lion", "Simba", "This is Simba."));
+        addEntry(new Entry("28-10-2023", "Tiger", "Tigger", "This is Tigger."));
 
         ListCommand.listEntry();
         String consoleOutput = mockOutput.toString();
