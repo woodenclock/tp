@@ -63,7 +63,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-3. Copy the file to the folder you want to use as the home folder for your WildWatch.
+3. Copy the file to the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
@@ -217,17 +217,13 @@ Shows the user how to use all the commands. Additionally, users can also specify
 Format: `help` `help add` `help delete`
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)
-
-[⬆ Back to top](#table-of-contents)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)  
   
   
 ### 9. Exit : `bye`
 To close and save the program.
 
 Format: `bye`
-
-[⬆ Back to top](#table-of-contents)
   
   
 ### 10. Saving the Entries
@@ -309,10 +305,10 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Adding Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
 | Adding Entries (interactive) | `add i/`                                                           |
 | Deleting Entries            | `delete <INDEX>`                                                   |
+| Listing Entries              | `list`                                                             |
 | Finding Entries            | `find <SEARCH>`
 | Editing Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
 | Summarizing Entries       | `summary {<SPECIES>}`                                              |
-| Listing Entries              | `list`                                                             |
 | Exporting Entries            | `export {<FILENAME>}`                                              |
 | Getting Help              | `help`                                                             |
 | Exit                      | `bye`                                                              |
@@ -327,6 +323,7 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
+| Home Folder | Folder in which your program resides |
 | Block | A section of a command. |
 
 [⬆ Back to top](#table-of-contents)
