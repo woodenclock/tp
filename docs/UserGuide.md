@@ -104,7 +104,7 @@ Examples:
 * `add D/02-03-2023 S/Low Land Gorilla N/Strong One R/Aggressive`
   
 Expected output:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/db83c0d5-5ba6-4db7-9f57-bb86b4f4cc07)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
 #### 1.2 Interactive Mode: `add i/`
 If you're prone to forgetting fields to include in the `add` command, have no fear, we've got your back! You may choose to use the `add i/` command instead, which triggers the interactive add mode. 
@@ -112,7 +112,7 @@ It helpfully prompts you for data each step of the way, and notifies you when yo
 
 Format: `add i/`
 
-![image](https://github.com/lctxct/tp/assets/70379887/21db0b5d-1f76-40b0-a73d-92fbc5204b04)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
   
@@ -128,7 +128,7 @@ Format: `delete <INDEX>`
 > * Deleted items may not be recoverable  
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)  
 
 [⬆ Back to top](#table-of-contents)
   
