@@ -252,28 +252,32 @@ There is no need to save manually.
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## FAQ 🦁
-
+  
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
 
-Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
-
+> **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-23` in **DD-MM-YY** format.  
+  
 > **Q**: Can I add photos or other media to the entries?
 
-Currently, WildWatch only supports text-based entries. You can add descriptions, but it does not support adding photos or media directly.
-
+> **A**: Currently, WildWatch only supports text-based entries. You can add descriptions, but it does not support adding photos or media directly.
+  
 > **Q**: I accidentally deleted an entry. Is there a way to recover it?
 
-Unfortunately, deleted entries are not recoverable, so it's important to be careful when using the delete command.
-
+> **A**: Unfortunately, deleted entries are not recoverable, so it's important to be careful when using the delete command.
+  
 > **Q**: I made a mistake while adding an entry. How can I edit or correct it?
 
-You can edit an entry using the edit command. Just specify the index of the entry you want to edit and provide the updated
-information. For example, you can use edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Javier R/Injured left flipper to edit the first entry.
+> **A**: You can edit an entry using the edit command.
+> Just specify the index of the entry you want to edit and provide the updated information.
+> For example, you can use `edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Javier R/Injured left flipper` to edit the first entry.  
+  
 > **Q**: I found a bug! What do I do?  
 
-Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
+> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
 
-Alternatively, you can do the following steps below to report an issue with our program. We value your feedback, and opening an issue on our GitHub repository is a great way to help us identify and address problems.
+Alternatively, you can do the following steps below to report an issue with our program.   
+We value your feedback, and opening an issue on our GitHub repository is a great way to help us identify and address problems.
+  
 ### Step-by-Step Instructions:
 
 1. **Visit the GitHub Repository**
@@ -282,16 +286,16 @@ Alternatively, you can do the following steps below to report an issue with our 
 2. **Sign in to GitHub**
   - If you don't have a GitHub account, you'll need to create one. If you already have an account, sign in to GitHub.
 
-3. **Go to the "Issues" Tab**
+3. **Go to the `Issues` Tab**
   - Once you're signed in, go to the "Issues" tab of our GitHub repository. It's usually located in the menu bar near the top of the page.
 
-4. **Open a New Issue**
+4. **Open a `New Issue`**
   - Click on the "New Issue" button to create a new issue.
 
 5. **Describe the Issue**
   - In the issue creation page, you'll find a text box for the issue title and a larger text box for the issue description. Fill in the following details:
-    - Title: A concise and descriptive title for the issue.
-    - Description: Provide a detailed description of the issue. Include steps to reproduce the problem if applicable.
+      - Title: A concise and descriptive title for the issue.
+      - Description: Provide a detailed description of the issue. Include steps to reproduce the problem if applicable.
 
 6. **Add Labels and Milestones (if needed)**
   - You can optionally add labels and milestones to categorize the issue. This can help us prioritize and address the issue more effectively.
