@@ -157,7 +157,7 @@ Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
 > `I/<INDEX>` argument is required.  
   
 > ✏ Note  
-> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, only 1 needs to be filled up.  
+> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, but at least 1 needs to be filled up.  
   
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/93d3f7ce-f714-4149-953d-703d6d58c671)  
@@ -306,7 +306,6 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 
 | Action                    | Format                                                             |
 |---------------------------|--------------------------------------------------------------------|
-| Getting Help              | `help`                                                             |
 | Adding Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
 | Adding Entries (interactive) | `add i/`                                                           |
 | Deleting Entries            | `delete <INDEX>`                                                   |
@@ -315,6 +314,7 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Summarizing Entries       | `summary {<SPECIES>}`                                              |
 | Listing Entries              | `list`                                                             |
 | Exporting Entries            | `export {<FILENAME>}`                                              |
+| Getting Help              | `help`                                                             |
 | Exit                      | `bye`                                                              |
 
 [⬆ Back to top](#table-of-contents)
