@@ -15,7 +15,8 @@
     - [Finding Entries](#5-finding-entries-find): `find`
     - [Summarizing Entries](#6-summarizing-entries-summary): `summary`
     - [Exporting Entries](#7-exporting-your-entries-export): `export`
-    - [Getting Help](#8-getting-help--help): `help` 
+    - [Getting Help](#8-getting-help--help): `help`
+    - [Exit](#9-exit--bye)): `bye`
 - [FAQ](#faq-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
