@@ -112,7 +112,7 @@ It helpfully prompts you for data each step of the way, and notifies you when yo
 
 Format: `add i/`
   
-Example:
+Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
@@ -209,7 +209,7 @@ We also guide you through the process of selecting the columns that you want to 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
 [⬆ Back to top](#table-of-contents)
-  
+   
     
 ### 8. Getting Help : `help`
 Shows the user how to use all the commands. Additionally, users can also specify which command they need help with.
