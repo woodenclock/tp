@@ -306,13 +306,14 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Action                    | Format                                                             |
 |---------------------------|--------------------------------------------------------------------|
 | Getting Help              | `help`                                                             |
-| Add Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
-| Add Entries (interactive) | `add i/`                                                           |
-| Delete Entries            | `delete <INDEX>`                                                   |
-| Edit Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
+| Adding Entries               | `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`                  |
+| Adding Entries (interactive) | `add i/`                                                           |
+| Deleting Entries            | `delete <INDEX>`                                                   |
+| Finding Entries            | `find <SEARCH>`
+| Editing Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
 | Summarizing Entries       | `summary {<SPECIES>}`                                              |
-| List Entries              | `list`                                                             |
-| Export Entries            | `export {<FILENAME>}`                                              |
+| Listing Entries              | `list`                                                             |
+| Exporting Entries            | `export {<FILENAME>}`                                              |
 | Exit                      | `bye`                                                              |
 
 [⬆ Back to top](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#table-of-contents)
