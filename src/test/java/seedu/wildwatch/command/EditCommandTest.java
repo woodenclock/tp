@@ -26,7 +26,7 @@ class EditCommandTest {
         // Set up the EntryList with one entry for editing
         System.setOut(new PrintStream(mockOutput));
         EntryList.clearEntryList();
-        Entry initialEntry = new Entry("01-01-21", "Lion", "Leo", "The leader of the pride");
+        Entry initialEntry = new Entry("01-01-2021", "Lion", "Leo", "The leader of the pride");
         EntryList.addEntry(initialEntry);
     }
 
@@ -39,7 +39,7 @@ class EditCommandTest {
     @Test
     void execute_validEditChangesEntry() {
         // Simulate input for editing the first entry's date
-        String input = "edit I/1 D/02-02-21";
+        String input = "edit I/1 D/02-02-2021";
         LocalDate thisDate = LocalDate.parse("2021-02-02");
         EditCommand editCommand = new EditCommand(input);
         System.out.println("Array size is: " + EntryList.getArraySize());
@@ -52,7 +52,7 @@ class EditCommandTest {
 
     @Test
     void execute_invalidIndex_throwsInvalidInputException() {
-        String input = "edit I/-1 D/02-02-21"; // Index -1 does not exist
+        String input = "edit I/-1 D/02-02-2021"; // Index -1 does not exist
         EditCommand editCommand = new EditCommand(input);
 
         assertThrows(InvalidInputException.class, () -> editCommand.execute());
@@ -61,7 +61,7 @@ class EditCommandTest {
     @Test
     void execute_invalidInputFormat_throwsInvalidInputException() {
         // Simulate input with invalid format (missing index)
-        String input = "edit D/02-02-21";
+        String input = "edit D/02-02-2021";
         EditCommand editCommand = new EditCommand(input);
 
         assertThrows(InvalidInputException.class, () -> editCommand.execute());

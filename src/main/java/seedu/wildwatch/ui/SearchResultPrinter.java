@@ -16,7 +16,7 @@ public class SearchResultPrinter {
         } else {
             System.out.println("Here are the matching entries in your list:");
             for (int i = 0; i < matchingEntries.size(); i++) {
-                System.out.print((i) + ".");
+                System.out.print((i+1) + ".");
                 EntryPrinter.printEntry(matchingEntries.get(i));
             }
         }

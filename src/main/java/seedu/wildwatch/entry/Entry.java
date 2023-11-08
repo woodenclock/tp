@@ -11,7 +11,7 @@ public class Entry {
     private String remark;
 
     public Entry(String date, String species, String name, String remark) {
-        DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("dd-MM-yy");
+        DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         this.date = LocalDate.parse(date, inputFormat);
         this.species = species;
         this.name = name;
@@ -35,7 +35,7 @@ public class Entry {
     }
 
     public void setDate(String date) {
-        DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("dd-MM-yy");
+        DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         this.date = LocalDate.parse(date, inputFormat);
     }
 

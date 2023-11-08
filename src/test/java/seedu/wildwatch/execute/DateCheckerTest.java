@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class DateCheckerTest {
     @Test
     public void testDateHandler() {
-        assertTrue(DateChecker.isDateValid("09-11-23"));
-        assertFalse(DateChecker.isDateValid("9-11-23"));
-        assertFalse(DateChecker.isDateValid("99-11-23"));
+        assertTrue(DateChecker.isDateValid("09-11-2023"));
+        assertFalse(DateChecker.isDateValid("9-11-2023"));
+        assertFalse(DateChecker.isDateValid("99-11-2023"));
     }
 }

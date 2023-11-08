@@ -39,7 +39,7 @@ public class DeleteCommandTest {
     @Test
     void testExecuteConfirmation() {
         clearEntryList();
-        addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
+        addEntry(new Entry("28-10-2023", "Lion", "Simba", "This is Simba."));
 
         // Prepare user input "yes" for confirmation
         mockInput = new ByteArrayInputStream("yes\n".getBytes());
@@ -58,7 +58,7 @@ public class DeleteCommandTest {
     @Test
     void testExecuteCancellation() {
         clearEntryList();
-        addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
+        addEntry(new Entry("28-10-2023", "Lion", "Simba", "This is Simba."));
 
         // Prepare user input "no" for cancellation
         mockInput = new ByteArrayInputStream("no\n".getBytes());
@@ -77,7 +77,7 @@ public class DeleteCommandTest {
     @Test
     public void testDeleteCommandWithInvalidIndex(){
         clearEntryList();
-        addEntry(new Entry("09-11-23", "Lion", "Simba", "This is Simba"));
+        addEntry(new Entry("09-11-2023", "Lion", "Simba", "This is Simba"));
 
         DeleteCommand deleteCommand = new DeleteCommand(2);
         deleteCommand.execute();
