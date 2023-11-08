@@ -66,7 +66,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-3. Copy the file to the folder you want to use as the home folder for your WildWatch.
+3. Move the file to the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
@@ -255,10 +255,9 @@ Expected: All wildlife records shown
   
 ### Editing a Wildlife Entry
 1. Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
-
 Expected: Successfully edited the wildlife record
-3. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 
+3. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 Expected: Failed to edit as -1 is not a valid index
   
   
@@ -287,7 +286,8 @@ Expected: You will be prompted with further questions
 ### Exiting the app
 1. Run the `bye` command
 
-Expected: The app stops
+Expected: The app stops  
+  
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -317,6 +317,7 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
+| Home Folder | Folder in which your program resides |
 
 [⬆ Back to top](#table-of-contents)
 
