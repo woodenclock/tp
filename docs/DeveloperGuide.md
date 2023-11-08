@@ -155,6 +155,23 @@ The `Command` components can be found within the `Command` package.
 
 [⬆ Back to top](#table-of-contents)  
 
+### EntryList Package  
+The `EntryList` class can be found within the `Entry` package.  
+
+[⬆ Back to top](#table-of-contents)  
+
+### Entry Package  
+The `Entry` class can be found within the `Entry` package.  
+![Command Sequence Diagram](images/AddSequenceDiagram.png)  
+
+[⬆ Back to top](#table-of-contents)  
+
+### Storage Package  
+The `Storage` components can be found within the `Storage` package.  
+![Command Sequence Diagram](images/AddSequenceDiagram.png)  
+
+[⬆ Back to top](#table-of-contents)  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Product scope 🦁
