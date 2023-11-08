@@ -22,7 +22,7 @@ public class FileHandler {
             try {
                 FileLoader.loadFile(openedFile); // Loads entries from file
                 assert openedFile != null : "Trying to read from a non-initialized file.";
-                FilePrinter.taskLoadedMessagePrinter();
+                FilePrinter.entriesLoadedMessagePrinter();
 
                 // Lists entries loaded from file
                 ListCommand.listEntry();

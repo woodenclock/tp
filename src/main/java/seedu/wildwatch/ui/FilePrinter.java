@@ -45,9 +45,9 @@ public class FilePrinter {
     }
 
     /**
-     * Prints out appropriate message when tasks are loaded
+     * Prints out appropriate message when entries are loaded
      */
-    public static void taskLoadedMessagePrinter() {
+    public static void entriesLoadedMessagePrinter() {
         System.out.println("These are entries loaded from before: ");
     }
 }

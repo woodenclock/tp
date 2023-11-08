@@ -8,16 +8,16 @@ public class SearchResultPrinter {
      * If no match, prints out appropriate message that there was no match found.
      *
      * @param hasMatch
-     * @param matchingTasks
+     * @param matchingEntries
      */
-    public static void findEntryMessagePrinter(boolean hasMatch, ArrayList<Integer> matchingTasks) {
+    public static void findEntryMessagePrinter(boolean hasMatch, ArrayList<Integer> matchingEntries) {
         if (!hasMatch) {
-            System.out.println("No matching tasks found.");
+            System.out.println("No matching entries found.");
         } else {
-            System.out.println("Here are the matching tasks in your list:");
-            for (int i = 0; i < matchingTasks.size(); i++) {
+            System.out.println("Here are the matching entries in your list:");
+            for (int i = 0; i < matchingEntries.size(); i++) {
                 System.out.print((i) + ".");
-                EntryPrinter.printEntry(matchingTasks.get(i));
+                EntryPrinter.printEntry(matchingEntries.get(i));
             }
         }
     }
