@@ -1,4 +1,4 @@
-# WildWatch Developer Guide 🦣
+# WildWatch Developer Guide 🦒
 
 ## Table of Contents  
 - [Introduction](#introduction-)
