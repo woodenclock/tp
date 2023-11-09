@@ -96,8 +96,8 @@ Adds a new entry to the WildWatch program.
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
   
 > ❗ IMPORTANT
-> `<DATE>` should be in the format **DD-MM-YYYY**
-> The Date, Species, Name, Remarks fields have to be filled up in that order.
+> `<DATE>` should be in the format **DD-MM-YYYY**  
+> The Date, Species, Name, Remarks fields have to be filled up in that order.  
   
 > ✏ Note  
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
@@ -155,8 +155,8 @@ Edits an entry in the program.
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
   
 >❗ IMPORTANT
->`<DATE>` should be in the format **DD-MM-YYYY**
-> `I/<INDEX>` argument is required.
+>`<DATE>` should be in the format **DD-MM-YYYY**  
+> `I/<INDEX>` argument is required.  
 > The Date, Species, Name, Remarks fields have to be filled up in that order.
   
 > ✏ Note  
