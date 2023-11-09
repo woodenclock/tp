@@ -261,9 +261,11 @@ Expected: All wildlife records shown
   
 ### Editing a Wildlife Entry
 1. Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+
 Expected: Successfully edited the wildlife record
 
-3. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+2. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+
 Expected: Failed to edit as -1 is not a valid index
   
   
