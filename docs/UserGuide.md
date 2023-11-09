@@ -82,7 +82,7 @@ Some example commands you can try:
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features 🦊
-> ❗ IMPORTANT  
+> ❗ IMPORTANT    
 > * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
 >     * E.g., `delete <INDEX>` should be `delete 2`  
 > * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.  
@@ -95,11 +95,11 @@ Adds a new entry to the WildWatch program.
 #### 1.1 Standard Mode 
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
   
-> ❗ IMPORTANT
+> ❗ IMPORTANT  
 > `<DATE>` should be in the format **DD-MM-YYYY**  
 > The Date, Species, Name, Remarks fields have to be filled up in that order.  
   
-> ✏ Note  
+> ✏ Note    
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
   
 Example:
@@ -126,7 +126,7 @@ The index refers to the index number shown in the displayed entry list.
   
 Format: `delete <INDEX>`  
    
->❗ IMPORTANT  
+>❗ IMPORTANT    
 > * Index must be a positive integer 1, 2, 3, ...  
 > * Deleted items are not recoverable  
 
@@ -153,8 +153,8 @@ Example:
 Edits an entry in the program.  
   
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
-  
->❗ IMPORTANT
+   
+>❗ IMPORTANT  
 >`<DATE>` should be in the format **DD-MM-YYYY**  
 > `I/<INDEX>` argument is required.  
 > The Date, Species, Name, Remarks fields have to be filled up in that order.
