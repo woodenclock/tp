@@ -14,10 +14,10 @@
     - [Editing Entries](#4-editing-entries-edit): `edit`
     - [Finding Entries](#5-finding-entries-find): `find`
     - [Summarizing Entries](#6-summarizing-entries-summary): `summary`
-    - [Exporting Entries](#7-exporting-your-entries-export): `export`
+    - [Exporting Entries](#7-exporting-entries-export): `export`
     - [Getting Help](#8-getting-help--help): `help`
-    - [Exit](#9-exit--bye): `bye`
-    - [Saving the Entries](#10-saving-the-entries)
+    - [Exiting](#9-exiting--bye): `bye`
+    - [Saving Entries](#10-saving-entries)
 - [FAQ](#faq-)
 - [Bug Reporting](#bug-reporting-)
 - [Command Summary](#command-summary-)
@@ -169,7 +169,7 @@ Example:
 [⬆ Back to top](#table-of-contents)
   
   
-### 5. Finding entries: `find`  
+### 5. Finding Entries: `find`  
 Finds all the entries that match the search word.  
 
 Format: `find <SEARCH>`
@@ -198,7 +198,7 @@ Example:
 [⬆ Back to top](#table-of-contents)  
   
   
-### 7. Exporting your entries: `export` 
+### 7. Exporting Entries: `export` 
 Do you need to share the entries you've collected with someone else? No worries, we have your back!     
 We provide a convenient functionality for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
 
@@ -225,13 +225,13 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)  
   
   
-### 9. Exit : `bye`
+### 9. Exiting : `bye`
 To close and save the program.
 
 Format: `bye`
   
   
-### 10. Saving the Entries
+### 10. Saving Entries
 
 Data of the entries are saved in the local memory automatically after every valid command changes the data. 
 There is no need to save manually.
