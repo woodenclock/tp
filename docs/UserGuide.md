@@ -19,6 +19,7 @@
     - [Exit](#9-exit--bye): `bye`
     - [Saving the Entries](#10-saving-the-entries)
 - [FAQ](#faq-)
+- [Bug Reporting](#bug-reporting-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
     
@@ -250,16 +251,16 @@ There is no need to save manually.
 > **A**: Unfortunately, deleted entries are not recoverable, so it's important to be careful when using the delete command.
   
   
-> **Q**: I made a mistake while adding an entry. How can I edit or correct it?  
-> **A**: You can edit an entry using the edit command.
-> Just specify the index of the entry you want to edit and provide the updated information.
-> For example, you can use `edit I/1 D/02-03-24 S/Annam Leaf Turtle N/Javier R/Injured left flipper` to edit the first entry.  
+> **Q**: I made a mistake while adding an entry, can I edit or correct it?  
+> **A**: Sure thing! You can edit an entry using the edit command. Simply specify the index of the entry you want to edit and provide the updated information. For example, you can use `edit I/1 D/02-03-2024` to edit the date of the first entry.  
   
   
 > **Q**: I found a bug! What do I do?    
 > **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
   
-  
+--------------------------------------------------------------------------------------------------------------------------------------
+### Bug Reporting 🐝
+
 Alternatively, you can do the following steps below to report an issue with our program.   
 We value your feedback, and opening an issue on our GitHub repository is a great way to help us identify and address problems.
   
