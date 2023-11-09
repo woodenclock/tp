@@ -54,7 +54,7 @@ class ListCommandTest {
         clearEntryList();
         ListCommand.listEntry();
         String consoleOutput = mockOutput.toString();
-        String expectedOutput = "Now you have 0 entries in the list."
+        String expectedOutput = "Now you have no entries in the list."
                 + "\n";
         consoleOutput = consoleOutput.replace(System.lineSeparator(), "\n");
         assertEquals(expectedOutput, consoleOutput);

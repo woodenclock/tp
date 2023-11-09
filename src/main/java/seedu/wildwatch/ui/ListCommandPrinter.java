@@ -15,6 +15,12 @@ public class ListCommandPrinter {
     }
 
     public static void entryCountPrinter() {
-        System.out.println("Now you have " + (EntryList.getArraySize()) + " entries in the list.");
+        if (EntryList.getArraySize() == 0) {
+            System.out.println("Now you have no entries in the list.");
+        } else if (EntryList.getArraySize() == 1) {
+            System.out.println("Now you have 1 entry in the list.");
+        } else {
+            System.out.println("Now you have " + (EntryList.getArraySize()) + " entries in the list.");
+        }
     }
 }
