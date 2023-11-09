@@ -196,7 +196,8 @@ Example:
   
   
 ### 7. Exporting your entries: `export` 
-Maybe you need to share the entries you've collected with someone else. In that case, we also provide the option for you to export your data as a Comma Separated Values (CSV) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
+Do you need to share the entries you've collected with someone else? No worries, we have your back!     
+We provide a convenient functionality for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
 
 Format: `export {<FILENAME>}`
 
@@ -326,5 +327,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Command Line Interface   | A way to communicate with your computer using texts. |
 | Home Folder | Folder in which your program resides |
 | Block | A section of a command. |
+| Comma-Separated Value | A file format that allows data to be saved in tabular format |
 
 [⬆ Back to top](#table-of-contents)
