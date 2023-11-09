@@ -236,65 +236,55 @@ Since clerks are already accustomed to typing and working with a computer, this 
 
 ## Manual Testing 🐼
 
-### Launching the App
-1. Refer to the [Quick Start](#quick-start-) section to get WildWatch set up and running.
+### 1. Launching the App  
+- Refer to the [Quick Start](#quick-start-) section to get WildWatch set up and running.  
 
-### Getting help
-1. Run the `help` command by typing `help` and hitting the `Enter` key on your keyboard
+### 2. Getting help  
+- Run the `help` command by typing `help` and hitting the `Enter` key on your keyboard.  
 
-### Adding a Wildlife Entry
-1. Run the following command `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+### 3. Adding a Wildlife Entry  
+- Run the following command `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`.  
+Expected: Wildlife recorded successfully added.  
 
-Expected: Wildlife recorded successfully added
-
-2. Run the following command `add D/02-03-2023`
-
-Expected: No new recorded added.
-
-### Listing Wildlife Entries
-1. Run the following command `list`
-
-Expected: All wildlife records shown
+- Run the following command `add D/02-03-2023`.  
+Expected: No new recorded added.  
+ 
+### 4. Listing Wildlife Entries  
+- Run the following command `list`.  
+Expected: All wildlife records shown.  
   
   
-### Editing a Wildlife Entry
-1. Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+### 5. Editing a Wildlife Entry   
+- Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`.   
+Expected: Successfully edited the wildlife record.    
 
-Expected: Successfully edited the wildlife record
-
-2. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
-
-Expected: Failed to edit as -1 is not a valid index
+- Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`.   
+Expected: Failed to edit as -1 is not a valid index.   
   
   
-### Deleting a Wildlife Entry
-1. Run the following command `delete 1`
+### 6. Deleting a Wildlife Entry  
+- Run the following command `delete 1`.      
+Expected: Successfully deleted the first record.    
 
-Expected: Successfully deleted the first record
-
-2. Run the following command `delete 0`
-
-Expected: Failed to delete a record as 0 is an invalid record
+- Run the following command `delete 0`.    
+Expected: Failed to delete a record as 0 is an invalid record.   
   
   
-### Getting a summary of the wildlife data
-1. Run the following command `summary`
-
-Expected: A summary of the wildlife record is displayed
+### 7. Getting a summary of the wildlife data
+- Run the following command `summary`.    
+Expected: A summary of the wildlife record is displayed.  
   
   
-### Exporting wildlife data to a local file
-1. Run the following command `export myobservations.csv`
-
-Expected: You will be prompted with further questions
+### 8. Exporting wildlife data to a local file
+- Run the following command `export myobservations.csv`.    
+Expected: You will be prompted with further questions.  
+   
   
+### 9. Exiting the app
+1. Run the `bye` command.  
+Expected: The app stops.     
   
-### Exiting the app
-1. Run the `bye` command
-
-Expected: The app stops  
-  
-[⬆ Back to top](#table-of-contents)
+[⬆ Back to top](#table-of-contents)   
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
