@@ -46,7 +46,7 @@ Head to the [Command Summary](#command-summary-) page for a summary of all comma
 Head to the [Glossary](#glossary-) page for its meaning.  
    
 ### Legend  
- | Symbol | Meaning |
+ | Symbol       | Meaning |
  |--------------|------------------------------------------------------------|
  |❗ IMPORTANT | These are important instructions that you should follow. |
  | ✏ Note | These are important details that you should take note of. |
@@ -322,7 +322,7 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 We are here to help you with terminologies used in the user guide, that may not be familiar to you.
 
 | Terminology    | Meaning                                                     |
-| ---------------|------------------------------------------------------------|
+|---------------|------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
 | Home Folder | Folder in which your program resides |
 | Block | A section of a command. |
