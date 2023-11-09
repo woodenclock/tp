@@ -97,6 +97,7 @@ Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
   
 > ❗ IMPORTANT
 > `<DATE>` should be in the format **DD-MM-YYYY**
+> The Date, Species, Name, Remarks fields have to be filled up in that order.
   
 > ✏ Note  
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
@@ -155,7 +156,8 @@ Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
   
 >❗ IMPORTANT
 >`<DATE>` should be in the format **DD-MM-YYYY**
-> `I/<INDEX>` argument is required.  
+> `I/<INDEX>` argument is required.
+> The Date, Species, Name, Remarks fields have to be filled up in that order.
   
 > ✏ Note  
 > `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, but at least 1 needs to be filled up.  
