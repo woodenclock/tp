@@ -63,7 +63,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
 >     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.   
 > * Do be mindful that <DATE> cannot be a date in the future   
     
-[⬆ Back to top](#table-of-contents)
+[⬆ Back to top](#table-of-contents)  
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -135,7 +135,9 @@ WildWatch is comprised of 7 major components.
  
 The **_Generic Sequence Diagram_** above shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
 > ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
-
+  
+[⬆ Back to top](#table-of-contents)  
+  
 ### Main Component  
 The `Main` component, residing as a method in the `WildWatch` class, which is the only class without a package, is the entry point of the program.  
   
@@ -154,35 +156,31 @@ It is responsible for parsing the input String of the user, and returning an app
 If the input is invalid, it throws exceptions to the `Error` package for error handling.  
 The **_Parser Class Diagram_** below shows how `Execute`, `Parser`, `Error`, `Command` classes of their respective packages work together.  
   
-![Parser Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1c8a8ae1-a14d-427f-8ecd-aa5038fb4fc7)
+![Parser Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1c8a8ae1-a14d-427f-8ecd-aa5038fb4fc7)  
+  
+[⬆ Back to top](#table-of-contents)
   
 ### Command Package  
 The `Command` components can be found within the `Command` package.  
 ![Command Sequence Diagram](images/AddSequenceDiagram.png)  
-
-[⬆ Back to top](#table-of-contents)  
 
 ### EntryList Package  
 The `EntryList` class can be found within the `Entry` package.  
 It is resposible for storing all the entry data in an static `ArrayList` class.   
 It is responsible for "getting" and "setting" values of individual `Entry` objects.  
 
-[⬆ Back to top](#table-of-contents)  
-
 ### Entry Package  
 The `Entry` class can be found within the `Entry` package.  
 Each `Entry` object holds the data of a single animal entry, residing in the static `ArrayList` maintained by `EntryList` class.  
 
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ee46913d-dfc5-4fd5-85ef-53bb03546085)  
-The class diagram above shows the relationship beteen the `Entry`, `EntryList`, and `ArrayList` classes.
-
-[⬆ Back to top](#table-of-contents)  
-
-### Storage Package  
-The `Storage` components can be found within the `Storage` package.  
-
-[⬆ Back to top](#table-of-contents)  
-  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ee46913d-dfc5-4fd5-85ef-53bb03546085)    
+The class diagram above shows the relationship beteen the `Entry`, `EntryList`, and `ArrayList` classes.  
+   
+### Storage Package   
+The `Storage` components can be found within the `Storage` package.   
+   
+[⬆ Back to top](#table-of-contents)   
+    
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Product scope 🦁
