@@ -68,4 +68,31 @@ public class EntryList {
         }
         return false;
     }
+
+    /**
+     * Checks if the combination of (date, species, name) from a new entry
+     * {@code newEntry} is already present in any of the entries in {@code EntryList}.
+     * Enforce uniqueness of (date, species, name) combination.g
+     *
+     * @param newEntry Entry to check
+     * @return -1 if entry is not in list, 1-index of duplicate otherwise
+     */
+    public static int checkEntryExists(Entry newEntry) {
+        final LocalDate date = newEntry.getDate();
+        final String species = newEntry.getSpecies();
+        final String name = newEntry.getName();
+
+        for (int i = 0; i < entries.size(); i++) {
+            Entry entry = entries.get(i);
+            if (entry.getDate().equals(date)
+                    && entry.getSpecies().equals(species)
+                    && entry.getName().equals(name)) {
+                return i+1;
+            }
+        }
+
+        return -1;
+    }
 }
+
+

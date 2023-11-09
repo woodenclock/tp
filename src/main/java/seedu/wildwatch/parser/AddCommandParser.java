@@ -3,6 +3,7 @@ package seedu.wildwatch.parser;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddCommand;
+import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.error.DateChecker;
 import seedu.wildwatch.error.InvalidInputErrorType;
@@ -56,6 +57,14 @@ public class AddCommandParser implements Parser<AddCommand> {
         }
 
         Entry newEntry = new Entry(date, species, name, remark);
+
+        // Check that entry is not a duplicate
+        int duplicateEntryIdx = EntryList.checkEntryExists(newEntry);
+        if (duplicateEntryIdx != -1) {
+            throw new InvalidInputException("Entry already exists! "
+                    + "Note that you can only add one entry per animal in a day.\n"
+                    + "Use the edit command or delete the existing entry first.");
+        }
 
         return new AddCommand(newEntry);
     }

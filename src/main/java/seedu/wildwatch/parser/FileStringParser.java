@@ -3,6 +3,7 @@ package seedu.wildwatch.parser;
 
 import seedu.wildwatch.entry.Entry;
 import seedu.wildwatch.command.AddFileStringCommand;
+import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.error.InvalidInputErrorType;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.error.DateChecker;
@@ -34,6 +35,11 @@ public class FileStringParser implements Parser<AddFileStringCommand> {
         final String remark = matcher.group("remark").trim();
 
         Entry newEntry = new Entry(date, species, name, remark);
+
+        int existingEntryIdx = EntryList.checkEntryExists(newEntry);
+        if (existingEntryIdx != -1) {
+            throw new InvalidInputException(InvalidInputErrorType.INVALID_INPUT);
+        }
 
         return new AddFileStringCommand(newEntry);
     }
