@@ -46,12 +46,12 @@ Head to the [Command Summary](#command-summary-) page for a summary of all comma
 Head to the [Glossary](#glossary-) page for its meaning.  
    
 ### Legend  
-| Symbol         | Meaning                                                                 |
-|----------------|-------------------------------------------------------------------------|
-| ❗ IMPORTANT    | These are important instructions that you should follow.                |
-| ✏ Note         | These are important details that you should take note of.               |
-| ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.                      |
-| 🐵 🦊 🦁       | Your cute animal friends pop up to let you know that you have reached a new section. |
+Symbol         | Meaning
+----------------|-------------------------------------------------------------------------
+❗ IMPORTANT    | These are important instructions that you should follow.
+✏ Note         | These are important details that you should take note of.
+⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
+🐵 🦊 🦁       | Your cute animal friends pop up to let you know that you have reached a new section. |
 
    
 [⬆ Back to top](#table-of-contents)  
