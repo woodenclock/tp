@@ -34,7 +34,7 @@ public class FindCommand extends Command {
         LocalDate inputDate = null;
         try {
             //Is the user finding a date?
-            inputDate = LocalDate.parse(input, DateTimeFormatter.ofPattern("dd-MM-yy"));
+            inputDate = LocalDate.parse(input, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         } catch (DateTimeParseException exception) {
             // matchingWord is not a date
         }

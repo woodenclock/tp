@@ -21,13 +21,13 @@ import static seedu.wildwatch.entry.EntryList.clearEntryList;
 
 public class RouterTest {
 
-    static final String ADD_INPUT = "add D/02-03-23 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
+    static final String ADD_INPUT = "add D/02-03-2023 S/Annam Leaf Turtle N/Ariel_2 R/Injured left flipper";
 
     @BeforeEach
     public void setUp() {
         // This is executed before each test.
         clearEntryList();
-        addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
+        addEntry(new Entry("28-10-2023", "Lion", "Simba", "This is Simba."));
     }
 
     @AfterEach

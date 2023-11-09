@@ -1,4 +1,4 @@
-# WildWatch Developer Guide 🐘
+# WildWatch Developer Guide 🦒
 
 ## Table of Contents  
 - [Introduction](#introduction-)
@@ -55,7 +55,14 @@ Head to the [Glossary](#glossary-) page for its meaning.
 | ✏ Note   | These are important details that you should take note of.   |
 | ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.         |
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
-
+   
+> ❗ IMPORTANT     
+> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.    
+>     * E.g., `delete <INDEX>` should be `delete 2`    
+> * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.    
+>     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.   
+> * Do be mindful that <DATE> cannot be a date in the future   
+    
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -66,7 +73,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-3. Copy the file to the folder you want to use as the home folder for your WildWatch.
+3. Move the file to the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
@@ -157,11 +164,17 @@ The `Command` components can be found within the `Command` package.
 
 ### EntryList Package  
 The `EntryList` class can be found within the `Entry` package.  
+It is resposible for storing all the entry data in an static `ArrayList` class.   
+It is responsible for "getting" and "setting" values of individual `Entry` objects.  
 
 [⬆ Back to top](#table-of-contents)  
 
 ### Entry Package  
 The `Entry` class can be found within the `Entry` package.  
+Each `Entry` object holds the data of a single animal entry, residing in the static `ArrayList` maintained by `EntryList` class.  
+
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ee46913d-dfc5-4fd5-85ef-53bb03546085)  
+The class diagram above shows the relationship beteen the `Entry`, `EntryList`, and `ArrayList` classes.
 
 [⬆ Back to top](#table-of-contents)  
 
@@ -203,7 +216,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 |v1.0|zoo clerk|add an animal entry|record the animals in the zoo, and refer to them afterwards|
 |v1.0|zoo clerk|delete an animal entry|remove redundant or invalid animal entry|
 |v1.0|zoo clerk|list all the entries|see what entries I have entered previously, and refer to them|
-|v1.0|zoo clerk|have a exit command|close the program safely|
+|v1.0|zoo clerk|have an exit command|close the program safely|
 |v2.0|zoo clerk|find an entry item by name|locate the entry I want, without having to go through the entire list|
 |v2.0|zoo clerk|edit a command|change the entry contents to reflect the changes in the zoo|
 |v2.0|zoo clerk|see a summary of all entries|have an idea of the entries at a glance|
@@ -226,18 +239,17 @@ Since clerks are already accustomed to typing and working with a computer, this 
 ## Manual Testing 🐼
 
 ### Launching the App
-1. Download the latest JAR file from our release page [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases)
-2. Double-click the JAR file to run the app
+1. Refer to the [Quick Start](#quick-start-) section to get WildWatch set up and running.
 
 ### Getting help
 1. Run the `help` command by typing `help` and hitting the `Enter` key on your keyboard
 
 ### Adding a Wildlife Entry
-1. Run the following command `add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
+1. Run the following command `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 
 Expected: Wildlife recorded successfully added
 
-2. Run the following command `add D/02-03-23`
+2. Run the following command `add D/02-03-2023`
 
 Expected: No new recorded added.
 
@@ -245,18 +257,16 @@ Expected: No new recorded added.
 1. Run the following command `list`
 
 Expected: All wildlife records shown
-
-
+  
+  
 ### Editing a Wildlife Entry
-1. Run the following command `edit I/1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
-
+1. Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 Expected: Successfully edited the wildlife record
 
-2. Run the following command `edit I/-1 D/02-03-23 S/Annam Leaf Turtle N/Ariel R/looks healthy`
-
+3. Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`
 Expected: Failed to edit as -1 is not a valid index
-
-
+  
+  
 ### Deleting a Wildlife Entry
 1. Run the following command `delete 1`
 
@@ -265,21 +275,25 @@ Expected: Successfully deleted the first record
 2. Run the following command `delete 0`
 
 Expected: Failed to delete a record as 0 is an invalid record
-
+  
+  
 ### Getting a summary of the wildlife data
 1. Run the following command `summary`
 
 Expected: A summary of the wildlife record is displayed
-
+  
+  
 ### Exporting wildlife data to a local file
 1. Run the following command `export myobservations.csv`
 
 Expected: You will be prompted with further questions
-
+  
+  
 ### Exiting the app
 1. Run the `bye` command
 
-Expected: The app stops
+Expected: The app stops  
+  
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -309,6 +323,7 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
+| Home Folder | Folder in which your program resides |
 
 [⬆ Back to top](#table-of-contents)
 

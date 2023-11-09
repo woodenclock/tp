@@ -31,8 +31,8 @@ class ListCommandTest {
     @Test
     void listEntry() {
         clearEntryList();
-        addEntry(new Entry("28-10-23", "Lion", "Simba", "This is Simba."));
-        addEntry(new Entry("28-10-23", "Tiger", "Tigger", "This is Tigger."));
+        addEntry(new Entry("28-10-2023", "Lion", "Simba", "This is Simba."));
+        addEntry(new Entry("28-10-2023", "Tiger", "Tigger", "This is Tigger."));
 
         ListCommand.listEntry();
         String consoleOutput = mockOutput.toString();
@@ -54,7 +54,7 @@ class ListCommandTest {
         clearEntryList();
         ListCommand.listEntry();
         String consoleOutput = mockOutput.toString();
-        String expectedOutput = "Now you have 0 entries in the list."
+        String expectedOutput = "Now you have no entries in the list."
                 + "\n";
         consoleOutput = consoleOutput.replace(System.lineSeparator(), "\n");
         assertEquals(expectedOutput, consoleOutput);

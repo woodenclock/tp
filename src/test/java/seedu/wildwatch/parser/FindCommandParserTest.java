@@ -19,8 +19,8 @@ public class FindCommandParserTest {
         FindCommand actual;
 
         // finding a date
-        input = "find 02-15-23";
-        expected = new FindCommand("02-15-23");
+        input = "find 02-15-2023";
+        expected = new FindCommand("02-15-2023");
 
         actual = parser.parse(input);
         assertEquals(actual, expected);

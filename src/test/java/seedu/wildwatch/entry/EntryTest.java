@@ -14,7 +14,7 @@ class EntryTest {
 
     @BeforeEach
     void setUp() {
-        entry = new Entry("01-01-20", "Lion", "Simba", "King of the Jungle");
+        entry = new Entry("01-01-2020", "Lion", "Simba", "King of the Jungle");
     }
 
     @Test
@@ -36,7 +36,7 @@ class EntryTest {
 
     @Test
     void setters_whenCalled_updateValues() {
-        entry.setDate("02-02-20");
+        entry.setDate("02-02-2020");
         entry.setSpecies("Elephant");
         entry.setName("Dumbo");
         entry.setRemark("Loves to fly");
@@ -49,14 +49,14 @@ class EntryTest {
 
     @Test
     void equals_differentEntries_returnsFalse() {
-        Entry anotherEntry = new Entry("01-01-20", "Tiger", "Shere Khan",
+        Entry anotherEntry = new Entry("01-01-2020", "Tiger", "Shere Khan",
                 "Lurks in the shadows");
         assertFalse(entry.equals(anotherEntry));
     }
 
     @Test
     void equals_sameEntries_returnsTrue() {
-        Entry sameEntry = new Entry("01-01-20", "Lion", "Simba", "King of the Jungle");
+        Entry sameEntry = new Entry("01-01-2020", "Lion", "Simba", "King of the Jungle");
         assertTrue(entry.equals(sameEntry));
     }
 }

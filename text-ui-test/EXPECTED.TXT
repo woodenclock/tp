@@ -47,7 +47,7 @@ ____________________________________________________________
      Format: add D/DATE S/SPECIES N/NAME R/REMARKS
        DATE should be in the format DD-MM-YY
      Examples:
-       add D/02-03-23 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
+       add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/Injured left flipper
        add D/10-11-20 S/Bali Myna N/Myna_1 R/ S/Malayan Water Monitor N/Monitor_1 R/Aggressive
     ____________________________________________________________
 

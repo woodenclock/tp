@@ -30,7 +30,7 @@ public class AddCommandTest {
         EntryList.clearEntryList();
 
         // Create a test entry to be used in the tests
-        testEntry = new Entry("02-03-23", "Annam Leaf Turtle", "Ariel", "Injured left flipper");
+        testEntry = new Entry("02-03-2023", "Annam Leaf Turtle", "Ariel", "Injured left flipper");
 
         // Create the AddCommand with the test entry
         thisAddCommand = new AddCommand(testEntry);
