@@ -126,7 +126,7 @@ Format: `delete <INDEX>`
    
 >❗ IMPORTANT  
 > * Index must be a positive integer 1, 2, 3, ...  
-> * Deleted items are not be recoverable  
+> * Deleted items are not recoverable  
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)  
@@ -166,7 +166,7 @@ Example:
   
   
 ### 5. Finding entries: `find`  
-Finds all the entries that match the the search word.  
+Finds all the entries that match the search word.  
 
 Format: `find <SEARCH>`
 
