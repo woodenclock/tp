@@ -256,7 +256,7 @@ There is no need to save manually.
   
   
 > **Q**: I found a bug! What do I do?    
-> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated!
+> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated! Alternatively, you may refer to our [Bug Reporting](#bug-reporting-) section to report the bug yourself!
   
 --------------------------------------------------------------------------------------------------------------------------------------
 ### Bug Reporting 🐝
