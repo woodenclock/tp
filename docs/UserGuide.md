@@ -47,7 +47,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
    
 ### Legend
 Symbol | Meaning
----------- | ----------
+------------ | ------------
 ❗ IMPORTANT    | These are important instructions that you should follow.
 ✏ Note         | These are important details that you should take note of.
 ⬆ Back to top  | Click to scroll back up to the `Table of Contents`.
