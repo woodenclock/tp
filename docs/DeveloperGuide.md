@@ -12,7 +12,7 @@
     - [Target User Profile](#target-user-profile)
     - [Value Proposition](#value-proposition)
 - [User Stories](#user-stories-)
-- [Non-Funtional Requirements](#non-functional-requirements-)
+- [Non-Functional Requirements](#non-functional-requirements-)
 - [Manual Testing](#manual-testing-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
@@ -125,7 +125,7 @@ Actual detailed implementation may differ from the architectural diagram.
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
 - `UI`: A class that receives input from, and prints output to the user.
-- `Parser`: A class that processes and interpretes the input command of the user.
+- `Parser`: A class that processes and interprets the input command of the user.
 - `Command`: A set of classes that does specific task according to the command of the user.
 - `EntryList`: A class that stores all the wildlife data, while the program is running.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
