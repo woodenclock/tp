@@ -84,7 +84,7 @@ public class EditCommand extends Command {
         String newSpecies = species;
 
         if (date == null || date.isEmpty()) {
-            newDate = entry.getDate().format(DateTimeFormatter.ofPattern("dd-MM-yy"));
+            newDate = entry.getDate().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         }
 
         if (name == null || name.isEmpty()) {

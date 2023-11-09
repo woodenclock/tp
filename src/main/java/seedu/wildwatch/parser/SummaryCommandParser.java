@@ -14,9 +14,9 @@ public class SummaryCommandParser implements Parser<SummaryCommand> {
         // speciesName can be blank - i.e. no argument specified
         if( !speciesName.isEmpty() ) {
             // if there is an argument specified, check if it
-            boolean hasSpecie = EntryList.hasSpecies(speciesName);
-            if( !hasSpecie ) {
-                throw new InvalidInputException("Specie does not exists !");
+            boolean hasSpecies = EntryList.hasSpecies(speciesName);
+            if( !hasSpecies ) {
+                throw new InvalidInputException("Species does not exists !");
             }
         }
         return new SummaryCommand(speciesName);
