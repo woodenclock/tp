@@ -34,10 +34,10 @@ public class SummaryCommand extends Command {
         Map<String, List<Entry>> map = new HashMap<String, List<Entry>>();
         for (Entry entry : entries) {
             String key = entry.getSpecies();
-            if(map.containsKey(key)){
+            if (map.containsKey(key)){
                 List<Entry> list = map.get(key);
                 list.add(entry);
-            }else{
+            } else {
                 List<Entry> list = new ArrayList<Entry>();
                 list.add(entry);
                 map.put(key, list);
@@ -57,10 +57,10 @@ public class SummaryCommand extends Command {
 
         for (Entry entry : filteredEntries) {
             String key = entry.getName();
-            if(filteredMap.containsKey(key)){
+            if (filteredMap.containsKey(key)) {
                 List<Entry> list = filteredMap.get(key);
                 list.add(entry);
-            }else{
+            } else {
                 List<Entry> list = new ArrayList<Entry>();
                 list.add(entry);
                 filteredMap.put(key, list);
@@ -68,6 +68,7 @@ public class SummaryCommand extends Command {
         }
         return filteredMap;
     }
+
     public void execute() throws InvalidInputException {
         boolean hasArgument = !this.speciesName.isEmpty();
 
@@ -75,7 +76,7 @@ public class SummaryCommand extends Command {
         // Group entries by .species attribute
         Map<String, List<Entry>> map = groupEntriesBySpecies(entries);
         // change message based on whether `summary` or `summary <species>`
-        if( hasArgument ) {
+        if (hasArgument) {
             SummaryCommandPrinter.printSummaryNameMessage(speciesName);
             List<Entry> filteredEntries = map.get(speciesName);
             Map<String, List<Entry>> filteredMap = groupSpecieByName(filteredEntries);
