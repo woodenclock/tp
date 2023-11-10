@@ -144,9 +144,9 @@ Example:
   
   
 ### 3. Listing Entries: `list`
-Shows a list of all entries of wildlife in the WildWatch so far.
-Shows useful information about each entry.
-Information such as the date, species, name, remarks are shown together.
+Shows a list of all entries of wildlife in the WildWatch so far.  
+Shows useful information about each entry.  
+Information such as the date, species, name, remarks are shown together.  
 
 Format: `list` 
 
