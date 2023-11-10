@@ -128,7 +128,7 @@ Example:
   
 ### 2. Deleting Entries: `delete`
 Deletes an entry of the specified INDEX. 
-The index refers to the index number shown in the displayed entry list.  
+The index refers to the index number shown in the displayed entry [list](#3-listing-entries-list).  
   
 Format: `delete <INDEX>`  
    
