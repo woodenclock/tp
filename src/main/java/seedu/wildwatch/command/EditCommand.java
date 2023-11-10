@@ -27,6 +27,18 @@ public class EditCommand extends Command {
         this.input = input;
     }
 
+    /**
+     * Returns the updated entry, that contains information as stated in edit command input.
+     *
+     * @param entry
+     * @param date
+     * @param species
+     * @param name
+     * @param remark
+     * @param index
+     * @return Entry
+     * @throws InvalidInputException
+     */
     public Entry checkAndUpdateEntry(Entry entry, String date, String species, String name, String remark, int index)
             throws InvalidInputException {
         // Check for duplicate entry
@@ -53,6 +65,13 @@ public class EditCommand extends Command {
         return entry;
     }
 
+    /**
+     * Executes the edit command.
+     * Matches the input with the command format.
+     * Checks if the index input is valid.
+     *
+     * @throws InvalidInputException
+     */
     public void execute() throws InvalidInputException {
         final Matcher matcher = EDIT_ENTRY_COMMAND_FORMAT.matcher(input);
         if (!matcher.matches()) {
@@ -78,6 +97,16 @@ public class EditCommand extends Command {
         EntryPrinter.printEntry(index);
     }
 
+    /**
+     * Returns a boolean value on whether there is already an entry of the same day, species, name.
+     *
+     * @param entry
+     * @param date
+     * @param species
+     * @param name
+     * @param index
+     * @return
+     */
     private boolean checkDuplicateEntry(Entry entry, String date, String species, String name, int index) {
         String newDate = date;
         String newName = name;
