@@ -1,4 +1,3 @@
-//@@lctxct
 package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.Entry;
@@ -58,21 +57,20 @@ public class ExportCommand extends Command {
             throw new InvalidInputException("No entries to write to csv.");
         }
 
-        if (ExistenceChecker.checkFileExistence(filename)) {
+        boolean fileExists = ExistenceChecker.checkFileExistence(filename);
+
+        if (fileExists) {
             FilePrinter.fileExistMessagePrinter();
             boolean canReplaceFile = canReplaceFile();
-            if (!canReplaceFile) {
-                getNewFilename();
-                createFile();
-            } else {
-                new File(filename).delete();
-                createFile();
-            }
+            createFileAccordingly(canReplaceFile);
         } else {
             FilePrinter.noFileMessagePrinter();
             System.out.print(System.lineSeparator());
-            getNewFilename();
-            createFile();
+            if (filename.equals(DEFAULT_FILENAME)) {
+                createFileAccordingly(false);
+            } else {
+                createFile();
+            }
         }
 
         ArrayList<Entry> entries = EntryList.getArray();
@@ -103,7 +101,17 @@ public class ExportCommand extends Command {
         FilePrinter.csvCreationSuccess(filename);
     }
 
-    
+    private void createFileAccordingly(boolean canReplaceFile) throws InvalidInputException {
+        if (!canReplaceFile) {
+            getNewFilename();
+            createFile();
+        } else {
+            new File(filename).delete();
+            createFile();
+        }
+    }
+
+
     private void getNewFilename() throws InvalidInputException {
         File file;
         boolean fileExists = false;
