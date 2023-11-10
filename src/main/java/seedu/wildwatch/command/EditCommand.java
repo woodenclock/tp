@@ -102,7 +102,6 @@ public class EditCommand extends Command {
             // Entry is a duplicate
             return true;
         }
-
         return false;
     }
 }
