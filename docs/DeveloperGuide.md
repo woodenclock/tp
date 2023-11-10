@@ -70,18 +70,17 @@ Head to the [Glossary](#glossary-) page for its meaning.
 
 ## Quick Start 🐵
 
-1. Ensure you have Java 11 or above installed in your Computer. (What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
+1. Ensure you have Java 11 or above installed in your Computer. (How do I install [Java 11](https://www.oracle.com/java/technologies/downloads/#java11)? What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-3. Move the file to the folder you want to use as the [home folder](#glossary-) for your WildWatch.
+3. Copy the file into the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
-4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
+4. Open a [command terminal](https://www.freecodecamp.org/news/command-line-for-beginners/), `cd` into the home folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
 
-5. Type commands beside `>>>` below the horizontal line and press `Enter` to execute it. Some example commands you can try:
-- `help` : Shows the help page.  
-- `bye` : Exits the program.  
+5. Type commands  beside `>>>` and press `Enter` to execute it.   
+(e.g. typing `help` and pressing `Enter` will show the help page).  
 
 ```
 ____________________________________________________________
@@ -183,6 +182,7 @@ The `Storage` components can be found within the `Storage` package.
 [⬆ Back to top](#table-of-contents)   
     
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Product scope 🦁
 
@@ -206,6 +206,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## User Stories 🦊
 
@@ -234,6 +235,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Manual Testing 🐼
 
@@ -288,6 +290,7 @@ Expected: The app stops.
 [⬆ Back to top](#table-of-contents)   
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Command Summary 🐻‍❄️
 
