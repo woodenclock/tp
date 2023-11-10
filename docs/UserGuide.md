@@ -240,9 +240,9 @@ Format: `help {<COMMAND>}`
 > * It may be one of the following: `add`, `delete`, `list`, `edit`, `find`, `summary`, `export`, `bye`, `full`.
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/86dff05d-057a-4989-bcc0-d234b9b1b3ce)  
   
-
+  
   
 ### 9. Exiting : `bye`
 To close and save the program.
