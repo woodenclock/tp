@@ -62,11 +62,10 @@ Head to the [Glossary](#glossary-) page for its meaning.
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
    
 > ❗ IMPORTANT     
-> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.    
->     * E.g., `delete <INDEX>` should be `delete 2`    
-> * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.    
->     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.   
-> * Do be mindful that <DATE> cannot be a date in the future   
+> * Capitalized words between angle brackets `< >` is a field to be filled up appropriately by the user.    
+>     * E.g., `delete <INDEX>` should be `delete 2`  
+> * Anything between curly brackets `{ }` is an optional field that may or may not be filled up by the user.  
+>     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.    
     
 [⬆ Back to top](#table-of-contents)  
 
