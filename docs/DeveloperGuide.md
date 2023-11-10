@@ -19,6 +19,7 @@
 - [Acknowledgements](#acknowledgements-)
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Introduction 🐻
 
@@ -33,19 +34,25 @@ For a detailed guide on how to use the program and explanations on the individua
 ### Audience
 The intended audience for this document are developers who would like to look under the hood and understand how WildWatch works, and are looking to introduce new functionalities into WildWatch.
 
-### How to use the Developer Guide  
-- Are you new here?  
-No worries, head to the [Quick Start](#quick-start-) page.
-- Lost among the pages?  
-Head to the [Table of Contents](#table-of-contents) to look for the right pages.  
-- Need help with the functionalities?  
-Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.  
+### How to use the Developer Guide   
+- Are you new here?     
+No worries, head to the [Quick Start](#quick-start-) page.   
+- Lost among the pages?    
+Head to the [Table of Contents](#table-of-contents) to look for the right pages.     
+- Need help with the functionalities?    
+Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.    
 - Do you have a question for us?  
-Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page in the User Guide.  
-- Do you want a concise summary of all functionalities?  
-Head to the [Command Summary](#command-summary-) page for a summary of all commands.
-- Not sure what that word meant?  
-Head to the [Glossary](#glossary-) page for its meaning.  
+Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page in the User Guide.
+- Do you have a bug to report?   
+Head to the [Bug Reporting](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#bug-reporting-) page in the User Guide.   
+- Do you want a concise summary of all functionalities?   
+Head to the [Command Summary](#command-summary-) page for a summary of all commands.   
+- Not sure what that word meant?    
+Head to the [Glossary](#glossary-) page for its meaning.
+
+[⬆ Back to top](#table-of-contents)  
+
+<div style="page-break-after: always;"></div>
 
 ### Legend
 
@@ -57,30 +64,29 @@ Head to the [Glossary](#glossary-) page for its meaning.
 | 🐵 🦊 🦁      | Animals indicate you have reached a new section.            |
    
 > ❗ IMPORTANT     
-> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.    
->     * E.g., `delete <INDEX>` should be `delete 2`    
-> * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.    
->     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.   
-> * Do be mindful that <DATE> cannot be a date in the future   
+> * Capitalized words between angle brackets `< >` is a field to be filled up appropriately by the user.    
+>     * E.g., `delete <INDEX>` should be `delete 2`  
+> * Anything between curly brackets `{ }` is an optional field that may or may not be filled up by the user.  
+>     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.    
     
 [⬆ Back to top](#table-of-contents)  
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Quick Start 🐵
 
-1. Ensure you have Java 11 or above installed in your Computer. (What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
+1. Ensure you have Java 11 or above installed in your Computer. (How do I install [Java 11](https://www.oracle.com/java/technologies/downloads/#java11)? What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-3. Move the file to the folder you want to use as the [home folder](#glossary-) for your WildWatch.
+3. Copy the file into the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
-4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
+4. Open a [command terminal](https://www.freecodecamp.org/news/command-line-for-beginners/), `cd` into the home folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
 
-5. Type commands beside `>>>` below the horizontal line and press `Enter` to execute it. Some example commands you can try:
-- `help` : Shows the help page.  
-- `bye` : Exits the program.  
+5. Type commands  beside `>>>` and press `Enter` to execute it.   
+(e.g. typing `help` and pressing `Enter` will show the help page).  
 
 ```
 ____________________________________________________________
@@ -111,6 +117,7 @@ ____________________________________________________________
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Design & Implementation 🐸
 
@@ -130,25 +137,33 @@ WildWatch is comprised of 7 major components.
 - `EntryList`: A class that stores all the wildlife data, while the program is running.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `Storage`: A class that saves and retrieves all the wildlife data from the local storage
+
+[⬆ Back to top](#table-of-contents)  
   
 ![General Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6cef0c5a-c924-4f20-bf82-3ccee9eb61c0)  
  
 The **_Generic Sequence Diagram_** above shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
 > ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
   
-[⬆ Back to top](#table-of-contents)  
-  
 ### Main Component  
 The `Main` component, residing as a method in the `WildWatch` class, which is the only class without a package, is the entry point of the program.  
   
 ![Main Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2745b29a-da1d-423e-b460-10f65dbc8e0d)  
+
+[⬆ Back to top](#table-of-contents)  
+
+<div style="page-break-after: always;"></div>
   
 ### UI Package  
 The `UI` components can be found within the `UI` package.  
 It prompts and reads commands from the user and sends the command to `Execute` package to be executed.  
 Lastly, it prints an output message upon completion of the command, to show the success of failure of the command execution.  
   
-![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)  
+![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)
+
+[⬆ Back to top](#table-of-contents)  
+
+<div style="page-break-after: always;"></div>
   
 ### Parser Package 
 The `Parser` components can be found within the `Parser` package.  
@@ -159,6 +174,8 @@ The **_Parser Class Diagram_** below shows how `Execute`, `Parser`, `Error`, `Co
 ![Parser Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1c8a8ae1-a14d-427f-8ecd-aa5038fb4fc7)  
   
 [⬆ Back to top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
   
 ### Command Package  
 The `Command` components can be found within the `Command` package.  
@@ -168,6 +185,10 @@ The `Command` components can be found within the `Command` package.
 The `EntryList` class can be found within the `Entry` package.  
 It is resposible for storing all the entry data in an static `ArrayList` class.   
 It is responsible for "getting" and "setting" values of individual `Entry` objects.  
+
+[⬆ Back to top](#table-of-contents)  
+
+<div style="page-break-after: always;"></div>
 
 ### Entry Package  
 The `Entry` class can be found within the `Entry` package.  
@@ -182,6 +203,7 @@ The `Storage` components can be found within the `Storage` package.
 [⬆ Back to top](#table-of-contents)   
     
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Product scope 🦁
 
@@ -205,6 +227,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## User Stories 🦊
 
@@ -220,7 +243,6 @@ Since clerks are already accustomed to typing and working with a computer, this 
 |v2.0|zoo clerk|see a summary of all entries|have an idea of the entries at a glance|
 |v2.1|zoo clerk|export the entries|easily move my data from one place to another|
 
-[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -233,6 +255,7 @@ Since clerks are already accustomed to typing and working with a computer, this 
 [⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Manual Testing 🐼
 
@@ -287,6 +310,7 @@ Expected: The app stops.
 [⬆ Back to top](#table-of-contents)   
 
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Command Summary 🐻‍❄️
 
@@ -313,7 +337,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
-| Block | A section of a command. |
 | Home Folder | Folder in which your program resides |
 
 [⬆ Back to top](#table-of-contents)
