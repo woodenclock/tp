@@ -193,12 +193,9 @@ Format: `find <SEARCH>`
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b77bd98a-6ea3-4378-aef2-bd436794b246)    
-  
-[⬆ Back to top](#table-of-contents)
-
+    
+    
    
-
-<div style="page-break-after: always;"></div>   
 ### 6. Summarizing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system by the species type.
 
@@ -250,8 +247,6 @@ Format: `help {<COMMAND>}`
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/86dff05d-057a-4989-bcc0-d234b9b1b3ce)  
-
-[⬆ Back to top](#table-of-contents)  
   
   
   
@@ -291,10 +286,12 @@ Now, you can use the WildWatch with a peace of mind!
 > **A**: Sure thing! You can edit an entry using the edit command. Simply specify the index of the entry you want to edit and provide the updated information. For example, you can use `edit I/1 D/02-03-2024` to edit the date of the first entry.  
   
   
-> **Q**: I found a bug! What do I do?    
-> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated! Alternatively, you may refer to our [Bug Reporting](#bug-reporting-) section to report the bug yourself!
-  
-  
+> **Q**: I found a bug! What do I do?     
+> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated! Alternatively, you may refer to our [Bug Reporting](#bug-reporting-) section to report the bug yourself!   
+    
+[⬆ Back to top](#table-of-contents)  
+    
+   
 --------------------------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
@@ -353,8 +350,6 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Exporting Entries            | `export {<FILENAME>}`                                              |
 | Getting Help              | `help {<COMMAND>}`                                                  |
 | Exit                      | `bye`                                                              |
-
-[⬆ Back to top](#table-of-contents)
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -367,5 +362,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Command Line Interface   | A way to communicate with your computer using texts. |
 | Home Folder | Folder in which your program resides |
 | Comma-Separated Value | A file format that allows data to be saved in tabular format |
-
+   
 [⬆ Back to top](#table-of-contents)
+  
