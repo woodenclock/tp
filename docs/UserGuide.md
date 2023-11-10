@@ -91,7 +91,6 @@ You should see the welcome screen as the diagram below.
 > * Anything between curly brackets `{ }` is an optional field that may or may not be filled up by the user.  
 >     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
 
-
   
 ### 1. Adding Entries: `add`
 Adds a new wildlife entry to the WildWatch program.
@@ -117,7 +116,6 @@ Example:
 [⬆ Back to top](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
-
 #### 1.2 Interactive Mode: `add i/`
 Did you forget the fields to in the `add` command? Fear not, we've got your back!   
 Simply type `add i/`, which triggers the interactive mode for the `add` command.   
