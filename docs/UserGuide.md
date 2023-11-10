@@ -113,6 +113,8 @@ Example:
   
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
+<div style="page-break-after: always;"></div>
+
 #### 1.2 Interactive Mode: `add i/`
 Did you forget the fields to in the `add` command? Fear not, we've got your back!   
 Simply type `add i/`, which triggers the interactive mode for the `add` command.   
