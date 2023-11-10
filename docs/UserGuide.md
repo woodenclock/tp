@@ -61,7 +61,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
 
 ## Quick Start 🐵
 
-1. Ensure you have Java 11 or above installed in your Computer. (What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
+1. Ensure you have Java 11 or above installed in your Computer. (How do I install [Java 11](https://www.oracle.com/java/technologies/downloads/#java11)? What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
@@ -84,21 +84,20 @@ Some example commands you can try:
 
 ## Features 🦊
 > ❗ IMPORTANT    
-> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
+> * Capitalized words between angle brackets `< >` is a field to be filled up appropriately by the user.  
 >     * E.g., `delete <INDEX>` should be `delete 2`  
-> * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.  
->     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.
-> * Do be mindful that <DATE> cannot be a date in the future
+> * Anything between curly brackets `{ }` is an optional field that may or may not be filled up by the user.  
+>     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
   
 ### 1. Adding Entries: `add`
-Adds a new entry to the WildWatch program.
+Adds a new wildlife entry to the WildWatch program.
   
 #### 1.1 Standard Mode 
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
   
 > ❗ IMPORTANT  
-> `<DATE>` should be in the format **DD-MM-YYYY**  
-> The Date, Species, Name, Remarks fields have to be filled up in that order.  
+> `<DATE>` has to be in the format **DD-MM-YYYY**  
+> The fields have to be filled in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 > ✏ Note    
 > `R/<REMARKS>` here is optional, meaning it may be left as blank.
@@ -156,9 +155,9 @@ Edits an entry in the program.
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
    
 >❗ IMPORTANT  
->`<DATE>` should be in the format **DD-MM-YYYY**  
+>`<DATE>` has to be in the format **DD-MM-YYYY**  
 > `I/<INDEX>` argument is required.  
-> The Date, Species, Name, Remarks fields have to be filled up in that order.
+> The fields have to be filled in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 > ✏ Note  
 > `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, but at least 1 needs to be filled up.  
