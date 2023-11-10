@@ -49,8 +49,8 @@ Head to the [Glossary](#glossary-) page for its meaning.
 
 | Symbol | Meaning |
 | ------------ | ------------ |
-|❗ IMPORTANT | These are important instructions that you should follow. |
-| ✏ Note | These are important details that you should take note of. |
+|❗ IMPORTANT | These are important instructions that you should follow, failure to do so may be fatal. |
+| ✏ Note | These are important details that you should take note of, failure to do so may not be fatal. |
 | ⬆ Back to top | Click to scroll back up to the `Table of Contents`. |
 | 🐵 🦊 🦁 | Your cute animal friends pop up to let you know that you have reached a new section. |
 
@@ -88,19 +88,23 @@ Some example commands you can try:
 >     * E.g., `delete <INDEX>` should be `delete 2`  
 > * Anything between curly brackets `{ }` is an optional field that may or may not be filled up by the user.  
 >     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
+
+
   
 ### 1. Adding Entries: `add`
 Adds a new wildlife entry to the WildWatch program.
   
-#### 1.1 Standard Mode 
-Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
-  
 > ❗ IMPORTANT  
 > `<DATE>` has to be in the format **DD-MM-YYYY**  
-> The fields have to be filled in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 > ✏ Note    
-> `R/<REMARKS>` here is optional, meaning it may be left as blank.
+> `R/<REMARKS>` here is optional, meaning it may be left as blank.  
+    
+#### 1.1 Standard Mode 
+Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
+
+> ❗ IMPORTANT  
+> The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 Example:
 * `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel`
@@ -109,8 +113,9 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
 #### 1.2 Interactive Mode: `add i/`
-If you're prone to forgetting fields to include in the `add` command, have no fear, we've got your back! You may choose to use the `add i/` command instead, which triggers the interactive add mode. 
-It helpfully prompts you for data each step of the way, and notifies you when you've left a mandatory field blank, so you don't have to worry about getting it wrong!
+Did you forget the fields to in the `add` command? Fear not, we've got your back!   
+You may choose to type in `add i/` command instead, which triggers the interactive add mode.   
+It helpfully prompts you for data each step of the way, and notifies you when you've left a mandatory field blank, so you don't have to worry about getting it wrong!   
 
 Format: `add i/`
   
@@ -118,6 +123,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
+
   
   
 ### 2. Deleting Entries: `delete`
@@ -134,6 +140,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)  
 
 [⬆ Back to top](#table-of-contents)
+
   
   
 ### 3. Listing Entries: `list`
@@ -147,6 +154,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ef21314f-fb23-4bd6-bcfd-fddfa8fb0330)
 
 [⬆ Back to top](#table-of-contents)
+
   
   
 ### 4. Editing Entries: `edit`
@@ -157,15 +165,16 @@ Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`
 >❗ IMPORTANT  
 >`<DATE>` has to be in the format **DD-MM-YYYY**  
 > `I/<INDEX>` argument is required.  
-> The fields have to be filled in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
+> The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 > ✏ Note  
-> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, but at least 1 needs to be filled up.  
+> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` fields are optional, but at least 1 needs to be filled up.  
   
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/93d3f7ce-f714-4149-953d-703d6d58c671)  
 
 [⬆ Back to top](#table-of-contents)
+
   
   
 ### 5. Finding Entries: `find`  
@@ -180,6 +189,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b77bd98a-6ea3-4378-aef2-bd436794b246)    
   
 [⬆ Back to top](#table-of-contents)
+
    
    
 ### 6. Summarizing Entries: `summary`
@@ -195,6 +205,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
 [⬆ Back to top](#table-of-contents)  
+
   
   
 ### 7. Exporting Entries: `export` 
@@ -213,6 +224,7 @@ We also guide you through the process of selecting the columns that you want to 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
 [⬆ Back to top](#table-of-contents)
+
    
     
 ### 8. Getting Help : `help`
@@ -223,11 +235,13 @@ Format: `help` `help add` `help delete`
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)  
   
+
   
 ### 9. Exiting : `bye`
 To close and save the program.
 
 Format: `bye`
+
   
   
 ### 10. Saving Entries
@@ -328,7 +342,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 |---------------|------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
 | Home Folder | Folder in which your program resides |
-| Block | A section of a command. |
 | Comma-Separated Value | A file format that allows data to be saved in tabular format |
 
 [⬆ Back to top](#table-of-contents)
