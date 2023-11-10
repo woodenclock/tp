@@ -46,7 +46,7 @@ Head to the [FAQ](#faq-) page.
 Head to the [Command Summary](#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
 Head to the [Glossary](#glossary-) page for its meaning.  
-   
+
 ### Legend
 
 | Symbol | Meaning |
