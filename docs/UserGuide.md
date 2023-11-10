@@ -65,7 +65,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-3. Copy the file to the folder you want to use as the [home folder](#glossary-) for your WildWatch.
+3. Copy the file into the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
 4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
