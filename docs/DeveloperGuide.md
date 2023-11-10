@@ -322,7 +322,6 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Terminology    | Meaning                                                     |
 | -------------- |------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
-| Block | A section of a command. |
 | Home Folder | Folder in which your program resides |
 
 [⬆ Back to top](#table-of-contents)
