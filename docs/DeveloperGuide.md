@@ -48,7 +48,9 @@ Head to the [Bug Reporting](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuid
 - Do you want a concise summary of all functionalities?   
 Head to the [Command Summary](#command-summary-) page for a summary of all commands.   
 - Not sure what that word meant?    
-Head to the [Glossary](#glossary-) page for its meaning.    
+Head to the [Glossary](#glossary-) page for its meaning.
+
+[⬆ Back to top](#table-of-contents)  
 
 <div style="page-break-after: always;"></div>
 
