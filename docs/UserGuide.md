@@ -115,7 +115,7 @@ Example:
 #### 1.2 Interactive Mode: `add i/`
 Did you forget the fields to in the `add` command? Fear not, we've got your back!   
 Simply type `add i/`, which triggers the interactive mode for the `add` command.   
-It helpfully prompts you each step of the way, and notifies you when a mandatory field is left blank, so you don't have to worry about getting it wrong!   
+It will prompt you each step of the way, notifying you if a mandatory field is left blank, so you don't have to worry about getting it wrong!   
 
 Format: `add i/`
   
