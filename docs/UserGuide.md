@@ -22,8 +22,10 @@
 - [Bug Reporting](#bug-reporting-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
+
     
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
   
 ## Introduction 🐻
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
@@ -49,8 +51,8 @@ Head to the [Glossary](#glossary-) page for its meaning.
 
 | Symbol | Meaning |
 | ------------ | ------------ |
-|❗ IMPORTANT | These are important instructions that you should follow. |
-| ✏ Note | These are important details that you should take note of. |
+|❗ IMPORTANT | These are important instructions that you should follow, failure to do so may be fatal. |
+| ✏ Note | These are important details that you should take note of, failure to do so may not be fatal. |
 | ⬆ Back to top | Click to scroll back up to the `Table of Contents`. |
 | 🐵 🦊 🦁 | Your cute animal friends pop up to let you know that you have reached a new section. |
 
@@ -58,50 +60,52 @@ Head to the [Glossary](#glossary-) page for its meaning.
   
     
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Quick Start 🐵
 
-1. Ensure you have Java 11 or above installed in your Computer. (What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
+1. Ensure you have Java 11 or above installed in your Computer. (How do I install [Java 11](https://www.oracle.com/java/technologies/downloads/#java11)? What is my [Java version](https://www.java.com/en/download/help/version_manual.html)?)
    
 2. Download the latest `WildWatch.jar` from [here](https://github.com/AY2324S1-CS2113T-W11-2/tp/releases).
 
-3. Copy the file to the folder you want to use as the [home folder](#glossary-) for your WildWatch.
+3. Copy the file into the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
-4. Open a command terminal, `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
+4. Open a [command terminal](https://www.freecodecamp.org/news/command-line-for-beginners/), `cd` into the home folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
 
-5. Type commands  beside `>>>` and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
-Some example commands you can try:
-- `list` : Lists all entries.  
-- `bye` : Exits the program.  
+5. Type commands  beside `>>>` and press `Enter` to execute it.   
+(e.g. typing `help` and pressing `Enter` will show the help page).      
 
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/c110856f-dd16-4c5c-8205-446d86425ddb)
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/c110856f-dd16-4c5c-8205-446d86425ddb)   
 
 [⬆ Back to top](#table-of-contents)  
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Features 🦊
 > ❗ IMPORTANT    
-> * Capitalized words between angle brackets `< >` are information to be filled up appropriately by the user.  
+> * Capitalized words between angle brackets `< >` is a field to be filled up appropriately by the user.  
 >     * E.g., `delete <INDEX>` should be `delete 2`  
-> * Anything between curly brackets `{ }` are optional [blocks](#glossary-) that may or may not be filled up by the user.  
->     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.
-> * Do be mindful that <DATE> cannot be a date in the future
+> * Anything between curly brackets `{ }` is an optional field that may or may not be filled up by the user.  
+>     * E.g., `summary {<SPECIES>}` could be `summary lion` or `summary`.  
+
   
 ### 1. Adding Entries: `add`
-Adds a new entry to the WildWatch program.
-  
-#### 1.1 Standard Mode 
-Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
+Adds a new wildlife entry to the WildWatch program.
   
 > ❗ IMPORTANT  
-> `<DATE>` should be in the format **DD-MM-YYYY**  
-> The Date, Species, Name, Remarks fields have to be filled up in that order.  
+> * `<DATE>` has to be in the format **DD-MM-YYYY**  
   
 > ✏ Note    
-> `R/<REMARKS>` here is optional, meaning it may be left as blank.
+> * `R/<REMARKS>` here is optional, meaning it may be left as blank.  
+    
+#### 1.1 Standard Mode 
+Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
+
+> ❗ IMPORTANT  
+> * The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 Example:
 * `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel`
@@ -109,9 +113,12 @@ Example:
   
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
+[⬆ Back to top](#table-of-contents)
+   
 #### 1.2 Interactive Mode: `add i/`
-If you're prone to forgetting fields to include in the `add` command, have no fear, we've got your back! You may choose to use the `add i/` command instead, which triggers the interactive add mode. 
-It helpfully prompts you for data each step of the way, and notifies you when you've left a mandatory field blank, so you don't have to worry about getting it wrong!
+Did you forget the fields to in the `add` command? Fear not, we've got your back!   
+Simply type `add i/`, which triggers the interactive mode for the `add` command.   
+It will prompt you each step of the way, notifying you if a mandatory field is left blank, so you don't have to worry about getting it wrong!   
 
 Format: `add i/`
   
@@ -119,11 +126,13 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
+
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 2. Deleting Entries: `delete`
 Deletes an entry of the specified INDEX. 
-The index refers to the index number shown in the displayed entry list.  
+The index refers to the index number shown in the displayed [entry list](#3-listing-entries-list).  
   
 Format: `delete <INDEX>`  
    
@@ -133,14 +142,13 @@ Format: `delete <INDEX>`
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)  
-
-[⬆ Back to top](#table-of-contents)
+  
   
   
 ### 3. Listing Entries: `list`
-Shows a list of all entries of wildlife in the WildWatch so far.
-Shows useful information about each entry.
-Information such as the date, species, name, remarks are shown together.
+Shows a list of all entries of the wildlife in WildWatch so far.  
+Shows useful information about each entry.  
+This include information such as the date, species, name, and remarks.  
 
 Format: `list` 
 
@@ -148,40 +156,43 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ef21314f-fb23-4bd6-bcfd-fddfa8fb0330)
 
 [⬆ Back to top](#table-of-contents)
+
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 4. Editing Entries: `edit`
 Edits an entry in the program.  
   
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
    
 >❗ IMPORTANT  
->`<DATE>` should be in the format **DD-MM-YYYY**  
-> `I/<INDEX>` argument is required.  
-> The Date, Species, Name, Remarks fields have to be filled up in that order.
+> * `<DATE>` has to be in the format **DD-MM-YYYY**  
+> * `I/<INDEX>` argument is required.  
+> * The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 > ✏ Note  
-> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` blocks are optional, but at least 1 needs to be filled up.  
+> * `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` fields are optional, but at least 1 needs to be filled up.  
   
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/93d3f7ce-f714-4149-953d-703d6d58c671)  
 
 [⬆ Back to top](#table-of-contents)
+
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 5. Finding Entries: `find`  
 Finds all the entries that match the search word.  
 
 Format: `find <SEARCH>`
 
 > ✏ Note  
-> `<SEARCH>` here could be the full-date (**DD-MM-YYYY**), or part of the name, the species, or the remark.
+> * `<SEARCH>` here could be the full-date (**DD-MM-YYYY**), or part of the name, the species, or the remark.
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b77bd98a-6ea3-4378-aef2-bd436794b246)    
-  
-[⬆ Back to top](#table-of-contents)
-   
+    
+    
    
 ### 6. Summarizing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system by the species type.
@@ -189,60 +200,73 @@ Shows a summary of all wildlife in the WildWatch system by the species type.
 Format: `summary {<SPECIES>}`
   
 > ✏ Note  
-> `<SPECIES>` here is optional.  
-> When specified, it will show a summary of the wildlife recorded for the specified species.  
+> * `<SPECIES>` here is optional.  
+> * When specified, it will show a summary of the wildlife recorded for the specified species.  
   
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
 
 [⬆ Back to top](#table-of-contents)  
+
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 7. Exporting Entries: `export` 
 Do you need to share the entries you've collected with someone else? No worries, we have your back!     
-We provide a convenient functionality for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
+We provide a convenient way for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file.    
+CSV files can be imported into universally-used tools like Microsoft Excel, allowing you to share your data and insights effortlessly.   
 
 Format: `export {<FILENAME>}`
 
 > ✏ Note  
-> `<FILENAME>` here is optional.  
-> However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV.  
-> If unspecified, your data will be written to the default file `WildWatch.csv`.   
+> * `<FILENAME>` here is optional.   
+> * However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV file.  
+> * If unspecified, your data will be written to the default file `WildWatch.csv`.   
 
-We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. 
+We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data.  
+This would come in really handy!👍    
 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
 [⬆ Back to top](#table-of-contents)
-   
-    
-### 8. Getting Help : `help`
-Shows the user how to use all the commands. Additionally, users can also specify which command they need help with.
 
-Format: `help` `help add` `help delete`
+   
+
+<div style="page-break-after: always;"></div>    
+### 8. Getting Help : `help`
+The help page shows a brief overview on how to use all the commands.    
+Additionally, you can also specify a command to view the datailed help page.    
+
+Format: `help {<COMMAND>}`
+
+> ✏ Note  
+> * `<COMMAND>` here is optional.
+> * It may be one of the following: `add`, `delete`, `list`, `edit`, `find`, `summary`, `export`, `bye`, `full`.
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/86dff05d-057a-4989-bcc0-d234b9b1b3ce)  
+  
   
   
 ### 9. Exiting : `bye`
 To close and save the program.
 
 Format: `bye`
-  
-  
+     
+    
+    
 ### 10. Saving Entries
 
-Data of the entries are saved in the local memory automatically after every valid command changes the data. 
-There is no need to save manually.
+Data of the entries are saved in the local storage automatically.   
+Now, you can use the WildWatch with a peace of mind!  
 
 [⬆ Back to top](#table-of-contents)
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
-
-## FAQ 🦁
   
+## FAQ 🦁
+   
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
 > **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-2023` in **DD-MM-YYYY** format.  
   
@@ -259,13 +283,18 @@ There is no need to save manually.
 > **A**: Sure thing! You can edit an entry using the edit command. Simply specify the index of the entry you want to edit and provide the updated information. For example, you can use `edit I/1 D/02-03-2024` to edit the date of the first entry.  
   
   
-> **Q**: I found a bug! What do I do?    
-> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated! Alternatively, you may refer to our [Bug Reporting](#bug-reporting-) section to report the bug yourself!
-  
+> **Q**: I found a bug! What do I do?     
+> **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated! Alternatively, you may refer to our [Bug Reporting](#bug-reporting-) section to report the bug yourself!   
+    
+[⬆ Back to top](#table-of-contents)  
+    
+   
 --------------------------------------------------------------------------------------------------------------------------------------
-### Bug Reporting 🐝
+<div style="page-break-after: always;"></div>
 
-Alternatively, you can do the following steps below to report an issue with our program.   
+## Bug Reporting 🐝
+
+You can do the following steps below to report an issue with our program.   
 We value your feedback, and opening an issue on our GitHub repository is a great way to help us identify and address problems.
   
 ### Step-by-Step Instructions:
@@ -298,12 +327,13 @@ We value your feedback, and opening an issue on our GitHub repository is a great
 
 Thank you for contributing to the improvement of our program. Your feedback is highly appreciated! 🙏
 
-
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
-## Command Summary 🐱
+## Command Summary 🐯
 
 | Action                    | Format                                                             |
 |---------------------------|--------------------------------------------------------------------|
@@ -315,11 +345,10 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Editing Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
 | Summarizing Entries       | `summary {<SPECIES>}`                                              |
 | Exporting Entries            | `export {<FILENAME>}`                                              |
-| Getting Help              | `help`                                                             |
+| Getting Help              | `help {<COMMAND>}`                                                  |
 | Exit                      | `bye`                                                              |
-
-[⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary 🐨
@@ -329,7 +358,8 @@ We are here to help you with terminologies used in the user guide, that may not 
 |---------------|------------------------------------------------------------|
 | Command Line Interface   | A way to communicate with your computer using texts. |
 | Home Folder | Folder in which your program resides |
-| Block | A section of a command. |
 | Comma-Separated Value | A file format that allows data to be saved in tabular format |
-
+   
 [⬆ Back to top](#table-of-contents)
+  
+--------------------------------------------------------------------------------------------------------------------------------------
