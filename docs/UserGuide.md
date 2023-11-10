@@ -120,6 +120,7 @@ It will prompt you each step of the way, notifying you if a mandatory field is l
 Format: `add i/`
   
 Example:  
+  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
