@@ -292,9 +292,9 @@ Expected: Successfully deleted the first record.
 - Run the following command `delete 0`.    
 Expected: Failed to delete a record as 0 is an invalid record.
 
-<div style="page-break-after: always;"></div>
+[⬆ Back to top](#table-of-contents)
 
-[⬆ Back to top](#table-of-contents)   
+<div style="page-break-after: always;"></div>   
   
   
 ### 7. Getting a summary of the wildlife data
