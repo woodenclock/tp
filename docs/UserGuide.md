@@ -210,16 +210,18 @@ Example:
   
 ### 7. Exporting Entries: `export` 
 Do you need to share the entries you've collected with someone else? No worries, we have your back!     
-We provide a convenient functionality for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file. CSV files can be recognized and imported into universally-used tools such as Microsoft Excel, allowing you to share your data and insights with others. 
+We provide a convenient way for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file.    
+CSV files can be imported into universally-used tools like Microsoft Excel, allowing you to share your data and insights effortlessly.   
 
 Format: `export {<FILENAME>}`
 
 > ✏ Note  
-> * `<FILENAME>` here is optional.  
-> * However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV.  
+> * `<FILENAME>` here is optional.   
+> * However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV file.  
 > * If unspecified, your data will be written to the default file `WildWatch.csv`.   
 
-We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. 
+We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data.  
+This would come in really handy!👍    
 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
@@ -228,9 +230,14 @@ We also guide you through the process of selecting the columns that you want to 
    
     
 ### 8. Getting Help : `help`
-Shows the user how to use all the commands. Additionally, users can also specify which command they need help with.
+The help page shows a brief overview on how to use all the commands.    
+Additionally, you can also specify a command to view the datailed help page.    
 
-Format: `help` `help add` `help delete`
+Format: `help {<COMMAND>}`
+
+> ✏ Note  
+> * `<COMMAND>` here is optional.
+> * It may be one of the following: `add`, `delete`, `list`, `edit`, `find`, `summary`, `export`, `bye`, `full`.
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2e76abd5-64bc-4739-ab6e-cc57b243900b)  
@@ -241,13 +248,13 @@ Example:
 To close and save the program.
 
 Format: `bye`
-
-  
-  
+     
+    
+    
 ### 10. Saving Entries
 
-Data of the entries are saved in the local memory automatically after every valid command changes the data. 
-There is no need to save manually.
+Data of the entries are saved in the local storage automatically.   
+Now, you can use the WildWatch with a peace of mind!  
 
 [⬆ Back to top](#table-of-contents)
   
