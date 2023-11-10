@@ -34,21 +34,21 @@ For a detailed guide on how to use the program and explanations on the individua
 ### Audience
 The intended audience for this document are developers who would like to look under the hood and understand how WildWatch works, and are looking to introduce new functionalities into WildWatch.
 
-### How to use the Developer Guide  
-- Are you new here?  
-No worries, head to the [Quick Start](#quick-start-) page.
-- Lost among the pages?  
-Head to the [Table of Contents](#table-of-contents) to look for the right pages.  
-- Need help with the functionalities?  
-Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.  
+### How to use the Developer Guide   
+- Are you new here?     
+No worries, head to the [Quick Start](#quick-start-) page.   
+- Lost among the pages?    
+Head to the [Table of Contents](#table-of-contents) to look for the right pages.     
+- Need help with the functionalities?    
+Head to the [Features](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#features-) page in the User Guide for detailed guidance.    
 - Do you have a question for us?  
 Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq-) page in the User Guide.
-- Do you have a bug to report?
-Head to the [Bug Reporting](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#bug-reporting-) page in the User Guide.
-- Do you want a concise summary of all functionalities?  
-Head to the [Command Summary](#command-summary-) page for a summary of all commands.
-- Not sure what that word meant?  
-Head to the [Glossary](#glossary-) page for its meaning.
+- Do you have a bug to report?   
+Head to the [Bug Reporting](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#bug-reporting-) page in the User Guide.   
+- Do you want a concise summary of all functionalities?   
+Head to the [Command Summary](#command-summary-) page for a summary of all commands.   
+- Not sure what that word meant?    
+Head to the [Glossary](#glossary-) page for its meaning.    
 
 <div style="page-break-after: always;"></div>
 
