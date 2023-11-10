@@ -284,7 +284,7 @@ Now, you can use the WildWatch with a peace of mind!
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
-### Bug Reporting 🐝
+## Bug Reporting 🐝
 
 You can do the following steps below to report an issue with our program.   
 We value your feedback, and opening an issue on our GitHub repository is a great way to help us identify and address problems.
