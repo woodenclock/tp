@@ -114,8 +114,7 @@ Example:
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
 [⬆ Back to top](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
+   
 #### 1.2 Interactive Mode: `add i/`
 Did you forget the fields to in the `add` command? Fear not, we've got your back!   
 Simply type `add i/`, which triggers the interactive mode for the `add` command.   
@@ -265,10 +264,9 @@ Now, you can use the WildWatch with a peace of mind!
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
-<div style="page-break-after: always;"></div>
-
-## FAQ 🦁
   
+## FAQ 🦁
+   
 > **Q**: Why do I get the `OOPS!!! Invalid Date input :-(` error?  
 > **A**: Ensure the day, month, year is separated by `-` e.g., `23-05-2023` in **DD-MM-YYYY** format.  
   
