@@ -128,7 +128,8 @@ Example:
 [⬆ Back to top](#table-of-contents)
 
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 2. Deleting Entries: `delete`
 Deletes an entry of the specified INDEX. 
 The index refers to the index number shown in the displayed [entry list](#3-listing-entries-list).  
@@ -159,7 +160,8 @@ Example:
 [⬆ Back to top](#table-of-contents)
 
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 4. Editing Entries: `edit`
 Edits an entry in the program.  
   
@@ -179,7 +181,8 @@ Example:
 [⬆ Back to top](#table-of-contents)
 
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 5. Finding Entries: `find`  
 Finds all the entries that match the search word.  
 
@@ -194,7 +197,8 @@ Example:
 [⬆ Back to top](#table-of-contents)
 
    
-   
+
+<div style="page-break-after: always;"></div>   
 ### 6. Summarizing Entries: `summary`
 Shows a summary of all wildlife in the WildWatch system by the species type.
 
@@ -210,7 +214,8 @@ Example:
 [⬆ Back to top](#table-of-contents)  
 
   
-  
+
+<div style="page-break-after: always;"></div>  
 ### 7. Exporting Entries: `export` 
 Do you need to share the entries you've collected with someone else? No worries, we have your back!     
 We provide a convenient way for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file.    
@@ -231,7 +236,8 @@ This would come in really handy!👍
 [⬆ Back to top](#table-of-contents)
 
    
-    
+
+<div style="page-break-after: always;"></div>    
 ### 8. Getting Help : `help`
 The help page shows a brief overview on how to use all the commands.    
 Additionally, you can also specify a command to view the datailed help page.    
