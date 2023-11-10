@@ -22,8 +22,10 @@
 - [Bug Reporting](#bug-reporting-)
 - [Command Summary](#command-summary-)
 - [Glossary](#glossary-)
+
     
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
   
 ## Introduction 🐻
 Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
@@ -58,6 +60,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
   
     
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Quick Start 🐵
 
@@ -81,6 +84,7 @@ Some example commands you can try:
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Features 🦊
 > ❗ IMPORTANT    
@@ -262,6 +266,7 @@ Now, you can use the WildWatch with a peace of mind!
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## FAQ 🦁
   
@@ -286,6 +291,8 @@ Now, you can use the WildWatch with a peace of mind!
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 ## Bug Reporting 🐝
 
 You can do the following steps below to report an issue with our program.   
@@ -325,6 +332,7 @@ Thank you for contributing to the improvement of our program. Your feedback is h
   
   
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Command Summary 🐱
 
