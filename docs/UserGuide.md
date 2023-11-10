@@ -333,7 +333,7 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 --------------------------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-## Command Summary 🐱
+## Command Summary 🐯
 
 | Action                    | Format                                                             |
 |---------------------------|--------------------------------------------------------------------|
