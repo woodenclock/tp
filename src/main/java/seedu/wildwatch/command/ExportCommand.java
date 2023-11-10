@@ -33,6 +33,7 @@ public class ExportCommand extends Command {
     private static final String[] ALL_COLUMNS = new String[] { "date", "species", "name", "remark" };
 
     private String filename;
+    private boolean isFilenameSpecified;
 
     /**
      * Constructs a new {@code ExportCommand}.
@@ -41,6 +42,7 @@ public class ExportCommand extends Command {
      */
     public ExportCommand(String file) {
         filename = file;
+        isFilenameSpecified = true;
     }
 
     /**
@@ -49,6 +51,7 @@ public class ExportCommand extends Command {
      */
     public ExportCommand() {
         this(DEFAULT_FILENAME);
+        isFilenameSpecified = false;
     }
 
     @Override
@@ -66,7 +69,7 @@ public class ExportCommand extends Command {
         } else {
             FilePrinter.noFileMessagePrinter();
             System.out.print(System.lineSeparator());
-            if (filename.equals(DEFAULT_FILENAME)) {
+            if (!isFilenameSpecified) {
                 createFileAccordingly(false);
             } else {
                 createFile();
