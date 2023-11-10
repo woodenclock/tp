@@ -137,18 +137,20 @@ WildWatch is comprised of 7 major components.
 - `EntryList`: A class that stores all the wildlife data, while the program is running.
 - `Entry`: A class that stores individual wildlife data, while the program is running.
 - `Storage`: A class that saves and retrieves all the wildlife data from the local storage
+
+[⬆ Back to top](#table-of-contents)  
   
 ![General Sequence Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6cef0c5a-c924-4f20-bf82-3ccee9eb61c0)  
  
 The **_Generic Sequence Diagram_** above shows how the components in the architecture interact with each other for a generic command input in WildWatch.  
 > ✏ Note: `Command` here is a placeholder, and will be replaced by actual commands. e.g., `ListCommand`.
   
-[⬆ Back to top](#table-of-contents)  
-  
 ### Main Component  
 The `Main` component, residing as a method in the `WildWatch` class, which is the only class without a package, is the entry point of the program.  
   
 ![Main Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2745b29a-da1d-423e-b460-10f65dbc8e0d)  
+
+<div style="page-break-after: always;"></div>
   
 ### UI Package  
 The `UI` components can be found within the `UI` package.  
@@ -166,6 +168,8 @@ The **_Parser Class Diagram_** below shows how `Execute`, `Parser`, `Error`, `Co
 ![Parser Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/1c8a8ae1-a14d-427f-8ecd-aa5038fb4fc7)  
   
 [⬆ Back to top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
   
 ### Command Package  
 The `Command` components can be found within the `Command` package.  
@@ -175,6 +179,8 @@ The `Command` components can be found within the `Command` package.
 The `EntryList` class can be found within the `Entry` package.  
 It is resposible for storing all the entry data in an static `ArrayList` class.   
 It is responsible for "getting" and "setting" values of individual `Entry` objects.  
+
+<div style="page-break-after: always;"></div>
 
 ### Entry Package  
 The `Entry` class can be found within the `Entry` package.  
