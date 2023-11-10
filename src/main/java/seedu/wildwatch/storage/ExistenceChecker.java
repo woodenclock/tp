@@ -11,12 +11,11 @@ public class ExistenceChecker {
      *
      * @return true if file exists; false if not.
      */
-    public static boolean checkFileExistence(String filePath) {
-        System.out.print(System.lineSeparator());
-        FilePrinter.checkingIfFileExistsMessagePrinter();
-        assert filePath != null : "File path should not be null.";
-        File file = new File(filePath);
+    public static boolean checkFileExistence(String filename) {
+        assert filename != null : "File path should not be null.";
 
+        FilePrinter.checkingIfFileExistsMessagePrinter(filename);
+        File file = new File(filename);
         if (!file.exists()) {
             return false;
         } else {

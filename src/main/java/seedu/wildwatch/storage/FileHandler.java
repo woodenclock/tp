@@ -12,13 +12,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class FileHandler {
-    private static final String FILE_PATH = "./WildWatch.txt";
+    private static final String FILE_NAME = "WildWatch.txt";
     private static File openedFile; //File to save the entries
 
     public static void handleFile() {
-        if (ExistenceChecker.checkFileExistence(FILE_PATH)) {
+        if (ExistenceChecker.checkFileExistence(FILE_NAME)) {
             FilePrinter.fileExistMessagePrinter();
-            openedFile = new File(FILE_PATH);
+            FilePrinter.openingFileMessagePrinter();
+            openedFile = new File(FILE_NAME);
             try {
                 FileLoader.loadFile(openedFile); // Loads entries from file
                 assert openedFile != null : "Trying to read from a non-initialized file.";
@@ -36,7 +37,7 @@ public class FileHandler {
         } else {  // File does not exist
             FilePrinter.noFileMessagePrinter();
             try {
-                openedFile = FileCreater.createFile(FILE_PATH);
+                openedFile = FileCreator.createFile(FILE_NAME);
             } catch (IOException exception) {
                 FilePrinter.fileCreationFailMessagePrinter();
                 ShutDown.shutDownWithError();

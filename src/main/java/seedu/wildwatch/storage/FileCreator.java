@@ -6,14 +6,14 @@ import java.io.IOException;
 
 import seedu.wildwatch.ui.FilePrinter;
 
-public class FileCreater {
+public class FileCreator {
     /**
      * Creates new file with filename specified by {@code FILE_PATH}.
      */
-    public static File createFile(String filePath) throws IOException {
-        File file = new File(filePath);
+    public static File createFile(String filename) throws IOException {
+        File file = new File(filename);
         if (file.createNewFile()) {
-            FilePrinter.createNewFileMessagePrinter();
+            FilePrinter.createNewFileMessagePrinter(filename);
             return file;
         } else {
             throw new IOException();

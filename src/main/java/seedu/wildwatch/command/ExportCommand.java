@@ -1,4 +1,3 @@
-//@@lctxct
 package seedu.wildwatch.command;
 
 import seedu.wildwatch.entry.Entry;
@@ -6,7 +5,10 @@ import seedu.wildwatch.entry.EntryList;
 import seedu.wildwatch.error.FilenameChecker;
 import seedu.wildwatch.exception.InvalidInputException;
 import seedu.wildwatch.storage.EntryToStringConverter;
-import seedu.wildwatch.storage.FileCreater;
+import seedu.wildwatch.storage.ExistenceChecker;
+import seedu.wildwatch.storage.FileCreator;
+import seedu.wildwatch.ui.FilePrinter;
+import seedu.wildwatch.ui.LinePrinter;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -31,6 +33,7 @@ public class ExportCommand extends Command {
     private static final String[] ALL_COLUMNS = new String[] { "date", "species", "name", "remark" };
 
     private String filename;
+    private boolean isFilenameSpecified;
 
     /**
      * Constructs a new {@code ExportCommand}.
@@ -39,6 +42,7 @@ public class ExportCommand extends Command {
      */
     public ExportCommand(String file) {
         filename = file;
+        isFilenameSpecified = true;
     }
 
     /**
@@ -47,27 +51,29 @@ public class ExportCommand extends Command {
      */
     public ExportCommand() {
         this(DEFAULT_FILENAME);
+        isFilenameSpecified = false;
     }
 
     @Override
     public void execute() throws InvalidInputException {
-
         if (EntryList.isArrayEmpty()) {
             throw new InvalidInputException("No entries to write to csv.");
         }
 
-        boolean canReplaceFile = false;
-        File file = new File(filename);
-        do {
-            canReplaceFile = canReplaceFile(filename);
-            if (!canReplaceFile) {
-                filename = getNewFilename();
-                file = new File(filename);
-            }
-        } while (file.exists() && !canReplaceFile);
+        boolean fileExists = ExistenceChecker.checkFileExistence(filename);
 
-        if (!file.exists()) {
-            createFile();
+        if (fileExists) {
+            FilePrinter.fileExistMessagePrinter();
+            boolean canReplaceFile = canReplaceFile();
+            createFileAccordingly(canReplaceFile);
+        } else {
+            FilePrinter.noFileMessagePrinter();
+            System.out.print(System.lineSeparator());
+            if (!isFilenameSpecified) {
+                createFileAccordingly(false);
+            } else {
+                createFile();
+            }
         }
 
         ArrayList<Entry> entries = EntryList.getArray();
@@ -94,33 +100,56 @@ public class ExportCommand extends Command {
             throw new InvalidInputException("Error writing to file.");
         }
 
-        System.out.printf("Export to CSV completed successfully."
-                + " Your data has been successfully saved to %s.\n", filename);
+        FilePrinter.updateFileMessagePrinter();
+        FilePrinter.csvCreationSuccess(filename);
     }
 
-    private String getNewFilename() throws InvalidInputException {
+    private void createFileAccordingly(boolean canReplaceFile) throws InvalidInputException {
+        if (!canReplaceFile) {
+            getNewFilename();
+            createFile();
+        } else {
+            new File(filename).delete();
+            createFile();
+        }
+    }
+
+
+    private void getNewFilename() throws InvalidInputException {
+        File file;
+        boolean fileExists = false;
+        do {
+            filename = setNewFilename();
+            LinePrinter.printHorizontalLines();
+            file = new File(filename);
+            fileExists = file.exists();
+            if (fileExists) {
+                FilePrinter.fileAlreadyExistsMessagePrinter();
+                System.out.print(System.lineSeparator());
+            }
+        } while (fileExists);
+    }
+
+    private String setNewFilename() throws InvalidInputException {
         String newFilename;
         Scanner scanner = new Scanner(System.in);
 
-        String specifyNewFilenamePrompt = "Would you like to specify a new filename? (Y/N)";
-        if (!(doesUserApprove(scanner, specifyNewFilenamePrompt))) {
-            throw new InvalidInputException("Exiting export command...");
-        }
-
         boolean isValidFilename = false;
         do {
-            System.out.println("What would you like to name your new file?");
-            System.out.println("Input a new filename, or q/ to quit: ");
+            FilePrinter.newFilenamePromptPrinterOne();
+            FilePrinter.newFilenamePromptPrinterTwo();
+            LinePrinter.printHorizontalLines();
 
             newFilename = scanner.nextLine().trim();
 
             if (newFilename.equals("q/")) {
+                LinePrinter.printHorizontalLines();
                 throw new InvalidInputException("Exiting export command...");
             }
 
             isValidFilename = FilenameChecker.isValidCsvFilenameChecker(newFilename);
             if (!isValidFilename) {
-                System.out.print("Filename is invalid! ");
+                FilePrinter.invalidFilenameMessagePrinter();
             }
         } while (!isValidFilename);
 
@@ -133,9 +162,8 @@ public class ExportCommand extends Command {
      *
      * @return True if user allows file to be replaced, else false.
      */
-    private boolean canReplaceFile(String filename) {
+    private boolean canReplaceFile() {
         Scanner scanner = new Scanner(System.in);
-
         final String confirmationMessage =
                 String.format("%s already exists. Would you like to replace it? (Y/N)", filename);
 
@@ -155,24 +183,23 @@ public class ExportCommand extends Command {
             System.out.print(": ");
             String confirmation = scanner.nextLine().trim();
 
-            switch (confirmation) {
-            case "Y":
+            switch (confirmation.toLowerCase()) {
+            case ("y"):
+                LinePrinter.printHorizontalLines();
                 return true;
-            case "N":
+            case "n":
+                LinePrinter.printHorizontalLines();
                 return false;
             default:
-                System.out.println("Unrecognized input!"
-                        + " Please ensure that you only respond with Y or N.");
+                LinePrinter.printHorizontalLines();
+                FilePrinter.unrecognizedInputMessagePrinter();
             }
         } while (true);
     }
 
     private void createFile() throws InvalidInputException {
-
-        System.out.println("File does not exist.");
-
         try {
-            FileCreater.createFile(filename);
+            FileCreator.createFile(filename);
         } catch (IOException e) {
             throw new InvalidInputException("Unable to create file.");
         }
@@ -190,7 +217,7 @@ public class ExportCommand extends Command {
             return columnsToInclude;
         }
 
-        System.out.println("Please select the columns you would like to include in your csv:");
+        FilePrinter.selectColumnMessagePrinter();
 
         for (String column : ALL_COLUMNS) {
             String confirmationMessage = String.format("Would you like to include %s in your csv? (Y/N)", column);
