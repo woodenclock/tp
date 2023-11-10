@@ -46,7 +46,9 @@ Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq
 - Do you want a concise summary of all functionalities?  
 Head to the [Command Summary](#command-summary-) page for a summary of all commands.
 - Not sure what that word meant?  
-Head to the [Glossary](#glossary-) page for its meaning.  
+Head to the [Glossary](#glossary-) page for its meaning.
+
+<div style="page-break-after: always;"></div>
 
 ### Legend
 
