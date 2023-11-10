@@ -67,7 +67,7 @@ Head to the [Glossary](#glossary-) page for its meaning.
 
 3. Copy the file into the folder you want to use as the [home folder](#glossary-) for your WildWatch.
 
-4. Open a [command terminal](https://www.freecodecamp.org/news/command-line-for-beginners/), `cd` into the folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
+4. Open a [command terminal](https://www.freecodecamp.org/news/command-line-for-beginners/), `cd` into the home folder you put the jar file in, and run the following command: `java -jar WildWatch.jar`.
 You should see the welcome screen as the diagram below.
 
 5. Type commands  beside `>>>` and press `Enter` to execute it. (e.g. typing `help` and pressing `Enter` will show the help page).
