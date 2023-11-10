@@ -141,7 +141,7 @@ Format: `delete <INDEX>`
 > * Deleted items are not recoverable  
 
 Example:  
-![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/6c43700c-909b-490e-b497-ef370664ff9e)  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/587e450e-9219-4a42-b005-2b52e8c93de2)    
   
   
   
