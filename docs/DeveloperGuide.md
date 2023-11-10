@@ -331,9 +331,8 @@ Expected: The app stops.
 | Exporting Entries            | `export {<FILENAME>}`                                              |
 | Exit                      | `bye`                                                              |
 
-[⬆ Back to top](#table-of-contents)
-
 --------------------------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Glossary 🐨
 We are here to help you with terminologies used in the user guide, that may not be familiar to you.
@@ -343,9 +342,8 @@ We are here to help you with terminologies used in the user guide, that may not 
 | Command Line Interface   | A way to communicate with your computer using texts. |
 | Home Folder | Folder in which your program resides |
 
-[⬆ Back to top](#table-of-contents)
-
 --------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Acknowledgements 🐺
 Reference - [woodenclock](https://github.com/woodenclock/ip.git)  
