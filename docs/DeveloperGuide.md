@@ -290,7 +290,11 @@ Expected: Failed to edit as -1 is not a valid index.
 Expected: Successfully deleted the first record.    
 
 - Run the following command `delete 0`.    
-Expected: Failed to delete a record as 0 is an invalid record.   
+Expected: Failed to delete a record as 0 is an invalid record.
+
+<div style="page-break-after: always;"></div>
+
+[⬆ Back to top](#table-of-contents)   
   
   
 ### 7. Getting a summary of the wildlife data
