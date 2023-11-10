@@ -331,6 +331,8 @@ Expected: The app stops.
 | Exporting Entries            | `export {<FILENAME>}`                                              |
 | Exit                      | `bye`                                                              |
 
+[⬆ Back to top](#table-of-contents)
+
 --------------------------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
