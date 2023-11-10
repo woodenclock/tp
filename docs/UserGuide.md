@@ -223,8 +223,7 @@ Format: `export {<FILENAME>}`
 > * However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV file.  
 > * If unspecified, your data will be written to the default file `WildWatch.csv`.   
 
-We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data.  
-This would come in really handy!👍    
+We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. This would come in really handy!👍    
 
 ![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
 
