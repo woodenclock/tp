@@ -150,6 +150,8 @@ The `Main` component, residing as a method in the `WildWatch` class, which is th
   
 ![Main Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/2745b29a-da1d-423e-b460-10f65dbc8e0d)  
 
+[⬆ Back to top](#table-of-contents)  
+
 <div style="page-break-after: always;"></div>
   
 ### UI Package  
@@ -157,7 +159,11 @@ The `UI` components can be found within the `UI` package.
 It prompts and reads commands from the user and sends the command to `Execute` package to be executed.  
 Lastly, it prints an output message upon completion of the command, to show the success of failure of the command execution.  
   
-![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)  
+![UI Class Diagram](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d44324ea-ca0a-4094-8082-32ddafc7e694)
+
+[⬆ Back to top](#table-of-contents)  
+
+<div style="page-break-after: always;"></div>
   
 ### Parser Package 
 The `Parser` components can be found within the `Parser` package.  
@@ -179,6 +185,8 @@ The `Command` components can be found within the `Command` package.
 The `EntryList` class can be found within the `Entry` package.  
 It is resposible for storing all the entry data in an static `ArrayList` class.   
 It is responsible for "getting" and "setting" values of individual `Entry` objects.  
+
+[⬆ Back to top](#table-of-contents)  
 
 <div style="page-break-after: always;"></div>
 
@@ -235,7 +243,6 @@ Since clerks are already accustomed to typing and working with a computer, this 
 |v2.0|zoo clerk|see a summary of all entries|have an idea of the entries at a glance|
 |v2.1|zoo clerk|export the entries|easily move my data from one place to another|
 
-[⬆ Back to top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
