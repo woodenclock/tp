@@ -95,16 +95,16 @@ Some example commands you can try:
 Adds a new wildlife entry to the WildWatch program.
   
 > ❗ IMPORTANT  
-> `<DATE>` has to be in the format **DD-MM-YYYY**  
+> * `<DATE>` has to be in the format **DD-MM-YYYY**  
   
 > ✏ Note    
-> `R/<REMARKS>` here is optional, meaning it may be left as blank.  
+> * `R/<REMARKS>` here is optional, meaning it may be left as blank.  
     
 #### 1.1 Standard Mode 
 Format: `add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}`
 
 > ❗ IMPORTANT  
-> The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
+> * The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 Example:
 * `add D/02-03-2023 S/Annam Leaf Turtle N/Ariel`
@@ -120,7 +120,6 @@ It will prompt you each step of the way, notifying you if a mandatory field is l
 Format: `add i/`
   
 Example:  
-  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b255477f-fc2c-437c-a954-5b4c71945c26)  
 
 [⬆ Back to top](#table-of-contents)
@@ -145,9 +144,9 @@ Example:
   
   
 ### 3. Listing Entries: `list`
-Shows a list of all entries of wildlife in the WildWatch so far.  
+Shows a list of all entries of the wildlife in WildWatch so far.  
 Shows useful information about each entry.  
-Information such as the date, species, name, remarks are shown together.  
+This include information such as the date, species, name, and remarks.  
 
 Format: `list` 
 
@@ -164,12 +163,12 @@ Edits an entry in the program.
 Format: `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}`  
    
 >❗ IMPORTANT  
->`<DATE>` has to be in the format **DD-MM-YYYY**  
-> `I/<INDEX>` argument is required.  
-> The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
+> * `<DATE>` has to be in the format **DD-MM-YYYY**  
+> * `I/<INDEX>` argument is required.  
+> * The fields must be filled up in the following order: `<DATE>`, `<SPECIES>`, `<NAME>`, `<REMARKS>`.  
   
 > ✏ Note  
-> `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` fields are optional, but at least 1 needs to be filled up.  
+> * `D/<DATE>` `S/<SPECIES>` `N/<NAME>` `R/<REMARKS>` fields are optional, but at least 1 needs to be filled up.  
   
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/93d3f7ce-f714-4149-953d-703d6d58c671)  
@@ -184,7 +183,7 @@ Finds all the entries that match the search word.
 Format: `find <SEARCH>`
 
 > ✏ Note  
-> `<SEARCH>` here could be the full-date (**DD-MM-YYYY**), or part of the name, the species, or the remark.
+> * `<SEARCH>` here could be the full-date (**DD-MM-YYYY**), or part of the name, the species, or the remark.
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/b77bd98a-6ea3-4378-aef2-bd436794b246)    
@@ -199,8 +198,8 @@ Shows a summary of all wildlife in the WildWatch system by the species type.
 Format: `summary {<SPECIES>}`
   
 > ✏ Note  
-> `<SPECIES>` here is optional.  
-> When specified, it will show a summary of the wildlife recorded for the specified species.  
+> * `<SPECIES>` here is optional.  
+> * When specified, it will show a summary of the wildlife recorded for the specified species.  
   
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/4a089c9f-ef0a-4c57-96a1-48479614ac9c)
@@ -216,9 +215,9 @@ We provide a convenient functionality for you to export your data as a [Comma Se
 Format: `export {<FILENAME>}`
 
 > ✏ Note  
-> `<FILENAME>` here is optional.  
-> However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV.  
-> If unspecified, your data will be written to the default file `WildWatch.csv`.   
+> * `<FILENAME>` here is optional.  
+> * However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV.  
+> * If unspecified, your data will be written to the default file `WildWatch.csv`.   
 
 We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. 
 
@@ -276,6 +275,7 @@ There is no need to save manually.
 > **Q**: I found a bug! What do I do?    
 > **A**: Great! Please contact [Min](https://github.com/woodenclock), your help is greatly appreciated! Alternatively, you may refer to our [Bug Reporting](#bug-reporting-) section to report the bug yourself!
   
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 ### Bug Reporting 🐝
 
@@ -312,9 +312,9 @@ We value your feedback, and opening an issue on our GitHub repository is a great
 
 Thank you for contributing to the improvement of our program. Your feedback is highly appreciated! 🙏
 
-
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Command Summary 🐱
@@ -333,7 +333,8 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Exit                      | `bye`                                                              |
 
 [⬆ Back to top](#table-of-contents)
-
+  
+  
 --------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary 🐨
