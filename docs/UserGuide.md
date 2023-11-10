@@ -225,7 +225,8 @@ Format: `export {<FILENAME>}`
 
 We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. This would come in really handy!👍    
 
-![image](https://github.com/lctxct/tp/assets/70379887/bf1d866f-3003-4deb-818a-e1023fb9813c)
+Example:  
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/e423b685-2b61-4e90-aee0-821fc4c44659)  
 
 [⬆ Back to top](#table-of-contents)
 
