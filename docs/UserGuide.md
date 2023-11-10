@@ -279,7 +279,7 @@ There is no need to save manually.
 --------------------------------------------------------------------------------------------------------------------------------------
 ### Bug Reporting 🐝
 
-Alternatively, you can do the following steps below to report an issue with our program.   
+You can do the following steps below to report an issue with our program.   
 We value your feedback, and opening an issue on our GitHub repository is a great way to help us identify and address problems.
   
 ### Step-by-Step Instructions:
