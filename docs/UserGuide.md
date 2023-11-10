@@ -338,7 +338,7 @@ Thank you for contributing to the improvement of our program. Your feedback is h
 | Editing Entries              | `edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}` |
 | Summarizing Entries       | `summary {<SPECIES>}`                                              |
 | Exporting Entries            | `export {<FILENAME>}`                                              |
-| Getting Help              | `help`                                                             |
+| Getting Help              | `help {<COMMAND>}`                                                  |
 | Exit                      | `bye`                                                              |
 
 [⬆ Back to top](#table-of-contents)
