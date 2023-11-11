@@ -179,7 +179,9 @@ The **_Parser Class Diagram_** below shows how `Execute`, `Parser`, `Error`, `Co
   
 ### Command Package  
 The `Command` components can be found within the `Command` package.  
+
 ![Command Sequence Diagram](images/AddSequenceDiagram.png)  
+The above sequence diagram depicts how WildWatch executes an `add` command.  
 
 ### EntryList Package  
 The `EntryList` class can be found within the `Entry` package.  
