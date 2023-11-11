@@ -31,15 +31,17 @@ To view the codes that I have contributed to the team project WildWatch, click [
 
 ### Enhancements Implemented  
 1. Organizing all class files into their repective packages (e.g., `ui`, `execute`, etc).  
-2. Created `List`, `Find`, `Bye` classes in `Command Package`.  
-3. Created the `Entry` and `EntryList` classes in `Entry Package`.  
-4. Created `DateChecker` and `ErrorHandler` (skeleton was enhanced by [Cai Ting](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/lctxct.html)) classes in Error Package.  
-5. Created `InputHandler` and `CommandHandler` classes in Execute Package.  
-6. Created `BootUp`, `ShutDown`, and `LogHandler` classes in Miscellaneous Package.  
-7. Created `EditCommandParser` and `FindCommandParser` classes in Miscellaneous Package.  
-8. Created `ExistenceChecker`, `FileCreater`, `FileHandler`, `FileLoader`, `Saver`, and `EntryToStingConverter` (half) classes in Storage Package.  
-9. Created `EmptyDescriptionPrinter`, `EntryPrinter`, `ErrorPrinter`, `FilePrinter`, `InputConsole`, `LinePrinter`, `ListCommandPrinter`, `SearchResultPrinter` classes in Ui Package.
-10. Updated README.md page from Duke to WildWatch appropriately.  
+2. Created `List`, `Find`, and `Bye` classes in `Command Package`.
+3. Enhanced `Export`, `Summary`, `Help` classes in `Command Package` to be more robust and user-friendly.  
+4. Created the `Entry` and `EntryList` classes in `Entry Package`.  
+5. Created `DateChecker` and `ErrorHandler` (skeleton was enhanced by [Cai Ting](https://ay2324s1-cs2113t-w11-2.github.io/tp/team/lctxct.html)) classes in Error Package.  
+6. Created `InputHandler` and `CommandHandler` classes in `Execute Package`.  
+7. Created `BootUp`, `ShutDown`, and `LogHandler` classes in `Miscellaneous Package`.  
+8. Created `EditCommandParser`, `ListCommandParser` and `FindCommandParser` classes in `Parser Package`.
+9. Enhanced `SummaryCommandParser` class in `Parser Package` to be case-insensitive.  
+10. Created `ExistenceChecker`, `FileCreater`, `FileHandler`, `FileLoader`, `Saver`, and `EntryToStingConverter` (half) classes in `Storage Package`.  
+11. Created `EmptyDescriptionPrinter`, `EntryPrinter`, `ErrorPrinter`, `FilePrinter`, `InputConsole`, `LinePrinter`, `ListCommandPrinter`, `SearchResultPrinter` classes in `Ui Package`.
+12. Updated README.md page from Duke to WildWatch appropriately.  
   
 [⬆ Back to top](#table-of-contents)  
   
