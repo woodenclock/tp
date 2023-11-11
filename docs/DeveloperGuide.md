@@ -318,7 +318,7 @@ Expected: You will be prompted with further questions.
   
 ### 9. Exiting the app
 1. Run the `bye` command.  
-Expected: The app stops.     
+Expected: WildWatch program terminates.       
   
 [⬆ Back to top](#table-of-contents)   
 
