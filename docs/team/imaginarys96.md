@@ -30,15 +30,10 @@ To view the codes that I have contributed to the team project WildWatch, click [
 <div style="page-break-after: always;"></div>
 
 ### Enhancements Implemented
-1. Created the following Command classes
-   1. HelpCommand
-   2. SummaryCommand
-   3. EditCommand
-2. Created the following Parser classes
-    1. EditCommandParser
-   2. SummaryCommandParser
+1. Created the following Command classes: `HelpCommand`, `SummaryCommand`, `EditCommand`
+2. Created the following Parser classes: `EditCommandParser`, `SummaryCommandParser`
 3. Created certain functions in the `EntryList` class.
-4. Created or modified tests cases such as HelpCommandTest and SummaryCommandTest.
+4. Created or modified tests cases such as `HelpCommandTest` and `SummaryCommandTest`.
 
 [⬆ Back to top](#table-of-contents)
 
@@ -73,6 +68,5 @@ To view the codes that I have contributed to the team project WildWatch, click [
 --------------------------------------------------------------------------------------------------------------------------------------  
 
 ### Contributions to Developer Guide (Extracts)
-
 
 ### Contributions to Developer Guide (Extracts)
