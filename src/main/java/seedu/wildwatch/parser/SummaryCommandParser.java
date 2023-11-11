@@ -10,7 +10,7 @@ public class SummaryCommandParser implements Parser<SummaryCommand> {
 
     @Override
     public SummaryCommand parse(String input) throws InvalidInputException {
-        String speciesName = getArgumentFromInput(input);
+        String speciesName = getArgumentFromInput(input).toLowerCase();
         // speciesName can be blank - i.e. no argument specified
         if( !speciesName.isEmpty() ) {
             // if there is an argument specified, check if it
