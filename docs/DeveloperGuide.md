@@ -199,6 +199,7 @@ Each `Entry` object holds the data of a single animal entry, residing in the sta
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ee46913d-dfc5-4fd5-85ef-53bb03546085)    
 The class diagram above shows the relationship beteen the `Entry`, `EntryList`, and `ArrayList` classes.  
 
+[⬆ Back to top](#table-of-contents)  
 <div style="page-break-after: always;"></div>
    
 ### Storage Package   
