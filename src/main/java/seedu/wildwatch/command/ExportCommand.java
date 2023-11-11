@@ -33,7 +33,6 @@ public class ExportCommand extends Command {
     private static final String[] ALL_COLUMNS = new String[] { "date", "species", "name", "remark" };
 
     private String filename;
-    private boolean isFilenameSpecified;
 
     /**
      * Constructs a new {@code ExportCommand}.
@@ -42,7 +41,6 @@ public class ExportCommand extends Command {
      */
     public ExportCommand(String file) {
         filename = file;
-        isFilenameSpecified = true;
     }
 
     /**
@@ -51,7 +49,6 @@ public class ExportCommand extends Command {
      */
     public ExportCommand() {
         this(DEFAULT_FILENAME);
-        isFilenameSpecified = false;
     }
 
     @Override
@@ -66,14 +63,10 @@ public class ExportCommand extends Command {
             FilePrinter.fileExistMessagePrinter();
             boolean canReplaceFile = canReplaceFile();
             createFileAccordingly(canReplaceFile);
-        } else {
+        } else { //File does not exist
             FilePrinter.noFileMessagePrinter();
             System.out.print(System.lineSeparator());
-            if (!isFilenameSpecified) {
-                createFileAccordingly(false);
-            } else {
-                createFile();
-            }
+            createFile();
         }
 
         ArrayList<Entry> entries = EntryList.getArray();
@@ -102,6 +95,14 @@ public class ExportCommand extends Command {
 
         FilePrinter.updateFileMessagePrinter();
         FilePrinter.csvCreationSuccess(filename);
+    }
+
+    private void createFile() throws InvalidInputException {
+        try {
+            FileCreator.createFile(filename);
+        } catch (IOException e) {
+            throw new InvalidInputException("Unable to create file.");
+        }
     }
 
     private void createFileAccordingly(boolean canReplaceFile) throws InvalidInputException {
@@ -195,14 +196,6 @@ public class ExportCommand extends Command {
                 FilePrinter.unrecognizedInputMessagePrinter();
             }
         } while (true);
-    }
-
-    private void createFile() throws InvalidInputException {
-        try {
-            FileCreator.createFile(filename);
-        } catch (IOException e) {
-            throw new InvalidInputException("Unable to create file.");
-        }
     }
 
     private ArrayList<String> getColumnsToInclude() {
