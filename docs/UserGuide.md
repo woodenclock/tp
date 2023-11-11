@@ -96,7 +96,8 @@ You should see the welcome screen as the diagram below.
 Adds a new wildlife entry to the WildWatch program.
   
 > ❗ IMPORTANT  
-> * `<DATE>` has to be in the format **DD-MM-YYYY**  
+> * `<DATE>` has to be in the format **DD-MM-YYYY**
+> * <DATE>, <SPECIES>, <NAME> cannot be the same for 2 separate entries.  
   
 > ✏ Note    
 > * `R/<REMARKS>` here is optional, meaning it may be left as blank.  
