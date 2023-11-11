@@ -14,7 +14,7 @@
 - [User Stories](#user-stories-)
 - [Non-Functional Requirements](#non-functional-requirements-)
 - [Manual Testing](#manual-testing-)
-- [Command Summary](#command-summary-)
+- [Command Summary](#command-summary-%EF%B8%8F)
 - [Glossary](#glossary-)
 - [Acknowledgements](#acknowledgements-)
 
