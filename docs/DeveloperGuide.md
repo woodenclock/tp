@@ -199,6 +199,13 @@ The class diagram above shows the relationship beteen the `Entry`, `EntryList`, 
    
 ### Storage Package   
 The `Storage` components can be found within the `Storage` package.   
+The components work together to read from previously saved file in the local memory.  
+The entry data is then loaded into the program.  
+If a valid command that changes the entry data is executed, the relevant changes are saved onto the local file.  
+
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/e40d9399-a56e-4d4f-953a-024e1252054f)  
+The class diagram above shows the relationship between the different classes in the `Storage` package.
+
    
 [⬆ Back to top](#table-of-contents)   
     
