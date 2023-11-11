@@ -122,6 +122,7 @@ public class HelpCommand extends Command {
             "Summarizing Entries: summary {<SPECIES>}\n" +
             "Exporting Entries: export {<FILENAME>}\n" +
             "Exit: bye\n" +
+            "See our User Guide: https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html" +
             "\n" +
             "-------------------------HELP PAGE (short) END---------------------------\n";
 
