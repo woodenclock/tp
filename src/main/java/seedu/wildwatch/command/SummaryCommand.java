@@ -20,7 +20,7 @@ public class SummaryCommand extends Command {
     private String speciesName;
 
     public SummaryCommand(String speciesName) {
-        this.speciesName = speciesName;
+        this.speciesName = speciesName.toLowerCase();
     }
 
     /**
@@ -33,7 +33,7 @@ public class SummaryCommand extends Command {
 
         Map<String, List<Entry>> map = new HashMap<String, List<Entry>>();
         for (Entry entry : entries) {
-            String key = entry.getSpecies();
+            String key = entry.getSpecies().toLowerCase();
             if (map.containsKey(key)){
                 List<Entry> list = map.get(key);
                 list.add(entry);
@@ -52,7 +52,7 @@ public class SummaryCommand extends Command {
      * @param filteredEntries
      * @return A map of filteredEntries grouped by their name
      */
-    private static Map<String, List<Entry>> groupSpecieByName(List<Entry> filteredEntries) {
+    private static Map<String, List<Entry>> groupSpeciesByName(List<Entry> filteredEntries) {
         Map<String, List<Entry>> filteredMap = new HashMap<String, List<Entry>>();
 
         for (Entry entry : filteredEntries) {
@@ -79,7 +79,7 @@ public class SummaryCommand extends Command {
         if (hasArgument) {
             SummaryCommandPrinter.printSummaryNameMessage(speciesName);
             List<Entry> filteredEntries = map.get(speciesName);
-            Map<String, List<Entry>> filteredMap = groupSpecieByName(filteredEntries);
+            Map<String, List<Entry>> filteredMap = groupSpeciesByName(filteredEntries);
             filteredMap.forEach((key, value) -> {
                 System.out.println(key + " - (" + value.size() + ")");
                 for (Entry v : value) {
