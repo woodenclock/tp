@@ -131,12 +131,12 @@ Actual detailed implementation may differ from the architectural diagram.
   
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
-- `UI`: A class that receives input from, and prints output to the user.
-- `Parser`: A class that processes and interprets the input command of the user.
-- `Command`: A set of classes that does specific task according to the command of the user.
-- `EntryList`: A class that stores all the wildlife data, while the program is running.
-- `Entry`: A class that stores individual wildlife data, while the program is running.
-- `Storage`: A class that saves and retrieves all the wildlife data from the local storage
+- `UI`: A package that receives input from, and prints output to the user.
+- `Parser`: A package that processes and interprets the input command of the user.
+- `Command`: A package that does specific task according to the command of the user.
+- `EntryList`: A package that stores all the wildlife data, while the program is running.
+- `Entry`: A package that stores individual wildlife data, while the program is running.
+- `Storage`: A package that saves and retrieves all the wildlife data from the local storage
 
 [⬆ Back to top](#table-of-contents)  
   
