@@ -31,7 +31,9 @@ public class AddCommand extends Command {
     public AddCommand(Entry entry) {
         newEntry = entry;
     }
-
+    /**
+     * Add a new Entry
+     */
     @Override
     public void execute() {
         EntryList.addEntry(newEntry);
@@ -40,7 +42,11 @@ public class AddCommand extends Command {
         EntryPrinter.printEntry(EntryList.getArraySize()-1);
         ListCommandPrinter.entryCountPrinter();
     }
-
+    /**
+     * Override the default == operator to compare objects.
+     * This is used to compare two AddCommand, to determine if the Entry that
+     * that is being added are duplicates
+     */
     @Override
     public boolean equals(Object other) {
         if (other == this) {

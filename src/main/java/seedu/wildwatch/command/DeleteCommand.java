@@ -33,6 +33,9 @@ public class DeleteCommand extends Command {
         }
     }
 
+    /**
+     * Confirm if entry should be deleted
+     */
     public void confirmDelete() {
         Scanner scanner = new Scanner(System.in);
 

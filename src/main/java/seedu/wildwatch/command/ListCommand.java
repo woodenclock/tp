@@ -25,7 +25,9 @@ public class ListCommand extends Command {
         }
         ListCommandPrinter.entryCountPrinter();
     }
-
+    /**
+     * Print the list of Entry
+     */
     public void execute() throws InvalidInputException {
         if (EntryList.isArrayEmpty()) {
             throw new InvalidInputException(InvalidInputErrorType.EMPTY_LIST);
