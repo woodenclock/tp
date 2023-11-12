@@ -9,59 +9,64 @@ public class HelpCommand extends Command {
      */
     private static final String helpCommandMessage =
             "_________________________________________________________________\n" +
-            "1.  Get help - show the list of commands available for this app\n" +
+            "1. Get help - shows the list of commands available for WildWatch\n" +
             "     Format: help\n" +
-            "     Examples: \n" +
+            "     Example: \n" +
             "       help\n" +
             "_________________________________________________________________\n";
     private static final String addCommandMessage =
             "_________________________________________________________________\n" +
             "2.  To add a new wildlife\n" +
+            "   Standard Mode:\n" +
             "     Format: add D/<DATE> S/<SPECIES> N/<NAME> {R/<REMARKS>}\n" +
             "       DATE should be in the format DD-MM-YYYY\n" +
             "     Examples: \n" +
-            "       add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n" +
+            "       add D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n\n" +
+            "   Interactive Mode:\n" +
+            "     Format: add i/\n" +
+            "     Example: \n" +
+            "       add i/\n" +
             "_________________________________________________________________\n";
 
     private static final String listCommandMessage =
             "_________________________________________________________________\n" +
-            "3.  To list all wildlife,\n" +
+            "3. To list all wildlife entries,\n" +
             "     Format: list\n" +
-            "     Examples: \n" +
+            "     Example: \n" +
             "       list\n" +
             "_________________________________________________________________\n";
 
     private static final String deleteCommandMessage =
             "_________________________________________________________________\n" +
-            "4.  To delete a wildlife\n" +
+            "4. To delete a wildlife entry\n" +
             "     Format: delete <INDEX>\n" +
             "       The index refers to the index number shown in the displayed observation list.\n" +
             "       Note:\n" +
             "           - The index must be a positive integer:\n" +
-            "           - Deleted items may not be recoverable:\n" +
-            "     Examples: \n" +
+            "           - Deleted items are not recoverable:\n" +
+            "     Example: \n" +
             "       delete 1\n" +
             "_________________________________________________________________\n";
 
 
     private static final String editCommandMessage =
             "_________________________________________________________________\n" +
-            "5.  To edit a wildlife\n" +
+            "5. To edit a wildlife entry\n" +
             "     Format: edit I/<INDEX> {D/<DATE>} {S/<SPECIES>} {N/<NAME>} {R/<REMARKS>}\n" +
             "       The index refers to the index number shown in the displayed observation list.\n" +
             "       Note:\n" +
             "           - The index must be a positive integer:\n" +
-            "           - DATE, SPECIES, NAME, REMARKS arguments are optional.\n" +
-            "     Examples: \n" +
+            "           - DATE, SPECIES, NAME, REMARKS arguments are optional, but at least 1 is required.\n" +
+            "     Example: \n" +
             "       edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/Injured left flipper\n" +
             "_________________________________________________________________\n";
 
     private static final String summaryCommandMessage =
             "_________________________________________________________________\n" +
-            "6.  To show a summary\n" +
-            "     Format: summary <SPECIES>\n" +
+            "6. To show a summary\n" +
+            "     Format: summary {<SPECIES>}\n" +
             "       Note:\n" +
-            "           - SPECIES argument is optional\n" +
+            "           - <SPECIES> argument is optional\n" +
             "     Examples: \n" +
             "       summary \n" +
             "       summary Annam Leaf Turtle\n" +
@@ -69,31 +74,31 @@ public class HelpCommand extends Command {
 
     private static final String exportCommandMessage =
             "_________________________________________________________________\n" +
-            "7.  To export wildlife data\n" +
+            "7. To export wildlife data\n" +
             "     Format: export {<FILENAME>}\n" +
             "       Note:\n" +
-            "           - FILENAME argument is optional\n" +
-            "           - FILENAME argument if specified should end with a .csv extension\n" +
+            "           - <FILENAME> argument is optional\n" +
+            "           - <FILENAME> argument if specified should end with a \".csv\" extension\n" +
             "     Examples: \n" +
-            "       summary \n" +
-            "       summary Annam Leaf Turtle\n" +
+            "       export \n" +
+            "       export WildOnes.csv\n" +
             "_________________________________________________________________\n";
 
     private static final String findCommandMessage =
             "_________________________________________________________________\n" +
-            "8.  To find wildlife entries\n" +
+            "8. To find wildlife entries\n" +
             "     Format: find <SEARCH>\n" +
             "       Note:\n" +
-            "           - SEARCH argument could contain the species, name, date, or remarks.\n" +
-            "     Examples: \n" +
+            "           - SEARCH argument could contain the full date, or part of species, name, or remarks.\n" +
+            "     Example: \n" +
             "       find Annam Leaf Turtle\n" +
             "_________________________________________________________________\n";
 
     private static final String byeCommandMessage =
             "_________________________________________________________________\n" +
-            "9.  To exit the program\n" +
+            "9. To exit the program\n" +
             "     Format: bye\n" +
-            "     Examples: \n" +
+            "     Example: \n" +
             "       bye \n" +
             "_________________________________________________________________\n";
 
@@ -122,6 +127,7 @@ public class HelpCommand extends Command {
             "Summarizing Entries: summary {<SPECIES>}\n" +
             "Exporting Entries: export {<FILENAME>}\n" +
             "Exit: bye\n" +
+            "See our User Guide: https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html" +
             "\n" +
             "-------------------------HELP PAGE (short) END---------------------------\n";
 

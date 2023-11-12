@@ -96,7 +96,8 @@ You should see the welcome screen as the diagram below.
 Adds a new wildlife entry to the WildWatch program.
   
 > ❗ IMPORTANT  
-> * `<DATE>` has to be in the format **DD-MM-YYYY**  
+> * `<DATE>` has to be in the format **DD-MM-YYYY**
+> * `<DATE>`, `<SPECIES>`, `<NAME>` cannot be the same for 2 separate entries.  
   
 > ✏ Note    
 > * `R/<REMARKS>` here is optional, meaning it may be left as blank.  
@@ -113,7 +114,7 @@ Example:
   
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/d548f580-3098-4d9d-8635-07e0a989e47c)  
 
-[⬆ Back to top](#table-of-contents)
+<div style="page-break-after: always;"></div>  
    
 #### 1.2 Interactive Mode: `add i/`
 Did you forget the fields to in the `add` command? Fear not, we've got your back!   

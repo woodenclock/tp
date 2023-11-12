@@ -8,13 +8,21 @@
     - [Legend](#legend)
 - [Quick Start](#quick-start-)
 - [Design & Implementation](#design--implementation-)
+    - [System Architecture](#system-architecture)
+    - [Main Component](#main-component)
+    - [UI Package](#ui-package)
+    - [Parser Package](#parser-package)
+    - [Command Package](#command-package)
+    - [EntryList Package](#entrylist-package)
+    - [Entry Package](#entry-package)
+    - [Storage Package](#storage-package)
 - [Product Scope](#product-scope-)
     - [Target User Profile](#target-user-profile)
     - [Value Proposition](#value-proposition)
 - [User Stories](#user-stories-)
 - [Non-Functional Requirements](#non-functional-requirements-)
 - [Manual Testing](#manual-testing-)
-- [Command Summary](#command-summary-)
+- [Command Summary](#command-summary-%EF%B8%8F)
 - [Glossary](#glossary-)
 - [Acknowledgements](#acknowledgements-)
 
@@ -46,7 +54,7 @@ Head to the [FAQ](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#faq
 - Do you have a bug to report?   
 Head to the [Bug Reporting](https://ay2324s1-cs2113t-w11-2.github.io/tp/UserGuide.html#bug-reporting-) page in the User Guide.   
 - Do you want a concise summary of all functionalities?   
-Head to the [Command Summary](#command-summary-) page for a summary of all commands.   
+Head to the [Command Summary](#command-summary-%EF%B8%8F) page for a summary of all commands.   
 - Not sure what that word meant?    
 Head to the [Glossary](#glossary-) page for its meaning.
 
@@ -131,12 +139,12 @@ Actual detailed implementation may differ from the architectural diagram.
   
 WildWatch is comprised of 7 major components.  
 - `Main`: Entry point of the program.
-- `UI`: A class that receives input from, and prints output to the user.
-- `Parser`: A class that processes and interprets the input command of the user.
-- `Command`: A set of classes that does specific task according to the command of the user.
-- `EntryList`: A class that stores all the wildlife data, while the program is running.
-- `Entry`: A class that stores individual wildlife data, while the program is running.
-- `Storage`: A class that saves and retrieves all the wildlife data from the local storage
+- `UI`: A package that receives input from, and prints output to the user.
+- `Parser`: A package that processes and interprets the input command of the user.
+- `Command`: A package that does specific task according to the command of the user.
+- `EntryList`: A package that stores all the wildlife data, while the program is running.
+- `Entry`: A package that stores individual wildlife data, while the program is running.
+- `Storage`: A package that saves and retrieves all the wildlife data from the local storage
 
 [⬆ Back to top](#table-of-contents)  
   
@@ -179,7 +187,9 @@ The **_Parser Class Diagram_** below shows how `Execute`, `Parser`, `Error`, `Co
   
 ### Command Package  
 The `Command` components can be found within the `Command` package.  
+
 ![Command Sequence Diagram](images/AddSequenceDiagram.png)  
+The above sequence diagram depicts how WildWatch executes an `add` command.  
 
 ### EntryList Package  
 The `EntryList` class can be found within the `Entry` package.  
@@ -196,9 +206,19 @@ Each `Entry` object holds the data of a single animal entry, residing in the sta
 
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/ee46913d-dfc5-4fd5-85ef-53bb03546085)    
 The class diagram above shows the relationship beteen the `Entry`, `EntryList`, and `ArrayList` classes.  
+
+[⬆ Back to top](#table-of-contents)  
+<div style="page-break-after: always;"></div>
    
 ### Storage Package   
 The `Storage` components can be found within the `Storage` package.   
+The components work together to read from previously saved file in the local memory.  
+The entry data is then loaded into the program.  
+If a valid command that changes the entry data is executed, the relevant changes are saved onto the local file.  
+
+![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/e40d9399-a56e-4d4f-953a-024e1252054f)  
+The class diagram above shows the relationship between the different classes in the `Storage` package.
+
    
 [⬆ Back to top](#table-of-contents)   
     
@@ -309,7 +329,7 @@ Expected: You will be prompted with further questions.
   
 ### 9. Exiting the app
 1. Run the `bye` command.  
-Expected: The app stops.     
+Expected: WildWatch program terminates.       
   
 [⬆ Back to top](#table-of-contents)   
 
