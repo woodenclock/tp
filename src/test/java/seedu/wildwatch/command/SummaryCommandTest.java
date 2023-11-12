@@ -43,7 +43,9 @@ public class SummaryCommandTest {
         // Clear the EntryList after each test to avoid side effects on other tests
         EntryList.clearEntryList();
     }
-
+    /**
+     * Test to see if "summary SPECIES" command work as expected
+     */
     @Test
     public void testExecute() {
         // Before executing, the entry list size should be 2 (we added two entries beforehand)

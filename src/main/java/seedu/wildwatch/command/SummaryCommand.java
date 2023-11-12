@@ -69,6 +69,9 @@ public class SummaryCommand extends Command {
         return filteredMap;
     }
 
+    /**
+     * Prints out the summary
+     */
     public void execute() throws InvalidInputException {
         boolean hasArgument = !this.speciesName.isEmpty();
 
