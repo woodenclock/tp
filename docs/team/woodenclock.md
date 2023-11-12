@@ -46,18 +46,15 @@ To view the codes that I have contributed to the team project WildWatch, click [
 6. Created `Glossary` and `Acknowledgement` Sections.  
   
 ### Contributions to Team-Based Tasks  
-1. Set up GitHub team organization and upstream repository.  
-2. Set up foundational codes, on which WildWatch first got up and running.
-3. Set up and maintained `Issue Tracker`, gave constructive feedbacks to Pull Requests, reconciled merge conflicts.
-4. Managed creation and release of `WildWatch.jar` artefacts.  
+1. Set up GitHub team organization and upstream repository.    
+2. Set up foundational codes, on which WildWatch first got up and running.  
+3. Set up and maintained `Issue Tracker`, gave constructive feedbacks to Pull Requests, reconciled merge conflicts.  
+4. Managed all creation and release of `WildWatch.jar` artefacts.  
+5. Managed all conversions to pdf, and submission.  
+6. Soley created and editted the `Demo Video`.  
   
 ### Contributions in Reviews/Mentoring  
 1. Constructive comments and reviews were given in the [`Pull Request`](https://github.com/AY2324S1-CS2113T-W11-2/tp/pulls?page=3&q=is%3Apr+is%3Aclosed).
 2. When giving the feedbacks, [visual aids](https://github.com/AY2324S1-CS2113T-W11-2/tp/pull/1) were also attached, to better facilitate the message sent across.  
   
 --------------------------------------------------------------------------------------------------------------------------------------  
-  
-### Contributions to Developer Guide (Extracts)
-
-
-### Contributions to Developer Guide (Extracts)
