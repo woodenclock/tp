@@ -28,10 +28,7 @@
 <div style="page-break-after: always;"></div>
   
 ## Introduction 🐻
-Welcome aboard fellow animal lover! We are really excited to have you here! 😉  
-Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](#glossary-).  
-The purpose of this user guide is to familiarize you with the program and help you when you face a problem using it.  
-Its main job is to store and present animal data, this would make your job so much more convenient!
+Welcome aboard fellow animal lover! We are really excited to have you here! 😉 Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](#glossary-). The purpose of this user guide is to familiarize you with the program and help you when you face a problem using it. Its main job is to store and present animal data, this would make your job so much more convenient!
 
 ### How to use the User Guide  
 - Are you new here?  
@@ -149,7 +146,7 @@ Example:
 ### 3. Listing Entries: `list`
 Shows a list of all entries of the wildlife in WildWatch so far.  
 Shows useful information about each entry.  
-This include information such as the date, species, name, and remarks.  
+These include information such as the date, species, name, and remarks.  
 
 Format: `list` 
 
@@ -213,9 +210,7 @@ Example:
 
 <div style="page-break-after: always;"></div>  
 ### 7. Exporting Entries: `export` 
-Do you need to share the entries you've collected with someone else? No worries, we have your back!     
-We provide a convenient way for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file.    
-CSV files can be imported into universally-used tools like Microsoft Excel, allowing you to share your data and insights effortlessly.   
+Do you need to share the entries you've collected with someone else? No worries, we have your back! We provide a convenient way for you to export your data as a [Comma Separated Values (CSV)](#glossary-) file. CSV files can be imported into universally-used tools like Microsoft Excel, allowing you to share your data and insights effortlessly. We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. This would come in really handy!👍    
 
 Format: `export {<FILENAME>}`
 
@@ -223,8 +218,6 @@ Format: `export {<FILENAME>}`
 > * `<FILENAME>` here is optional.   
 > * However, if you choose to include it, note that it should end with the file extension `.csv` so that it can be recognized as a CSV file.  
 > * If unspecified, your data will be written to the default file `WildWatch.csv`.   
-
-We also guide you through the process of selecting the columns that you want to include in your CSV, if you only want to share some parts of the data. This would come in really handy!👍    
 
 Example:  
 ![image](https://github.com/AY2324S1-CS2113T-W11-2/tp/assets/69474977/e423b685-2b61-4e90-aee0-821fc4c44659)  
