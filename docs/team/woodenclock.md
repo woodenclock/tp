@@ -22,8 +22,9 @@ To view the codes that I have contributed to the team project WildWatch, click [
 8. Created `EditCommandParser`, `ListCommandParser` and `FindCommandParser` classes in `Parser Package`.
 9. Enhanced `SummaryCommandParser` class in `Parser Package` to be case-insensitive.  
 10. Created `ExistenceChecker`, `FileCreater`, `FileHandler`, `FileLoader`, `Saver`, and `EntryToStingConverter` (half) classes in `Storage Package`.  
-11. Created `EmptyDescriptionPrinter`, `EntryPrinter`, `ErrorPrinter`, `FilePrinter`, `InputConsole`, `LinePrinter`, `ListCommandPrinter`, `SearchResultPrinter` classes in `Ui Package`.
-12. Updated README.md page from Duke to WildWatch appropriately.    
+11. Created `EmptyDescriptionPrinter`, `EntryPrinter`, `ErrorPrinter`, `FilePrinter`, `InputConsole`, `LinePrinter`, `ListCommandPrinter`, `SearchResultPrinter` classes in `Ui Package`.  
+12. Created half of the all test classes, please refer to [RepoSense](https://nus-cs2113-ay2324s1.github.io/tp-dashboard/?search=woodenclock&breakdown=true).  
+13. Updated README.md page from Duke to WildWatch appropriately.    
   
 ### Contributions to User Guide  
 1. Created `Table of Contents` Section, ensured all links are working.  
