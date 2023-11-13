@@ -322,7 +322,7 @@ Expected: A summary of the wildlife record is displayed.
   
 ### 8. Exporting wildlife data to a local file
 - Run the following command `export myobservations.csv`.    
-Expected: You will be prompted with further questions.  
+Expected: You will be prompted with further questions, on exporting your data.  
    
   
 ### 9. Exiting the app
