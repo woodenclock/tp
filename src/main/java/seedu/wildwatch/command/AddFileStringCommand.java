@@ -18,7 +18,9 @@ public class AddFileStringCommand extends Command {
     public AddFileStringCommand(Entry entry) {
         newEntry = entry;
     }
-
+    /**
+     * Add new a Entry
+     */
     @Override
     public void execute() {
         EntryList.addEntry(newEntry);

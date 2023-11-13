@@ -31,9 +31,7 @@
 
 ## Introduction 🐻
 
-Welcome aboard fellow animal lover! We are really excited to have you here! 😉    
-Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](#glossary-).  
-Its main job is to store and present animal data required in everyday operations of the wildlife reserve.  
+Welcome aboard fellow animal lover! We are really excited to have you here! 😉 Wildwatch is a program for a clerk managing wildlife data in a wildlife reserve via the [Command Line Interface (CLI)](#glossary-). Its main job is to store and present animal data required in everyday operations of the wildlife reserve.  
 
 ### Purpose
 This document specifies the architectural and software design decisions in the implementation of the WildWatch.  
@@ -298,10 +296,10 @@ Expected: All wildlife records shown.
   
   
 ### 5. Editing a Wildlife Entry   
-- Run the following command `edit I/1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`.   
+- Run the following command `edit I/1 D/02-05-2020 R/looks sick`.   
 Expected: Successfully edited the wildlife record.    
 
-- Run the following command `edit I/-1 D/02-03-2023 S/Annam Leaf Turtle N/Ariel R/looks healthy`.   
+- Run the following command `edit I/-1 D/02-05-2020 R/looks sick`.   
 Expected: Failed to edit as -1 is not a valid index.   
   
   
@@ -324,11 +322,11 @@ Expected: A summary of the wildlife record is displayed.
   
 ### 8. Exporting wildlife data to a local file
 - Run the following command `export myobservations.csv`.    
-Expected: You will be prompted with further questions.  
+Expected: You will be prompted with further questions, on exporting your data.  
    
   
 ### 9. Exiting the app
-1. Run the `bye` command.  
+- Run the `bye` command.  
 Expected: WildWatch program terminates.       
   
 [⬆ Back to top](#table-of-contents)   
